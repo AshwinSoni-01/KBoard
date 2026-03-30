@@ -482,4 +482,6 @@
     <string name="timestamp_description">নিজস্বীকৃত লেআউটে \'timestamp\' key বা key code - 10043 ব্যবহার করে timestamp key সংযুক্ত করা যেতে পারে</string>
     <string name="prefs_bottom_row_scale">নিম্ন সারির স্কেল</string>
     <string name="ask_later">পরে জিজ্ঞেসা করুন</string>
+    <string name="toolbar_swipe_down_to_hide">অভিস্পর্শের মাধ্যমে কিবোর্ড আড়ালকরণ</string>
+    <string name="toolbar_swipe_down_to_hide_summary">টুলবারে নিচের দিকে অভিস্পর্শ করলে কিবোর্ড বন্ধ হবে</string>
 </resources>

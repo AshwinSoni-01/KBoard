@@ -494,4 +494,8 @@
     <string name="timestamp_description">يمكنك إضافة مفتاح الطابع الزمني باستخدام تخطيط مخصص مع مفتاح \'timestamp\'، أو رمز المفتاح -10043</string>
     <string name="prefs_bottom_row_scale">مقياس الصف السفلي</string>
     <string name="gesture_data_links">معلومات حول جمع بيانات الإيماءات في:</string>
+    <string name="toolbar_swipe_down_to_hide">أخفِ لوحة المفاتيح بالسحب</string>
+    <string name="toolbar_swipe_down_to_hide_summary">اسحب شريط الأدوات للأسفل لإغلاق لوحة المفاتيح</string>
+    <string name="gesture_data_please_switch_keyboard">يُرجى التبديل إلى %s</string>
+    <string name="gesture_data_share_limit">لتجنب تجاوز حدود الحجم، سيتم تصدير أول %s كلمة فقط</string>
 </resources>

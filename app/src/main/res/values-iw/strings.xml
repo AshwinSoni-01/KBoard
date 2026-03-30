@@ -493,4 +493,8 @@
     <string name="gesture_data_reminder_message">היי לך!\n בעבר השתמשת באיסוף נתוני המחוות, אך לא הוספת נתונים מזה זמן מה. האם ברצונך לנדב נתונים שוב?</string>
     <string name="gesture_data_take_me_there">מעבר למסך כעת</string>
     <string name="gesture_data_links">מידע על איסוף נתוני שימוש במחוות:</string>
+    <string name="gesture_data_share_limit">כדי למנוע חריגה ממגבלות הגודל, רק %s המילים הראשונות ייכללו בייצוא הנתונים</string>
+    <string name="toolbar_swipe_down_to_hide">הסתרת המקלדת ע\"י החלקה</string>
+    <string name="toolbar_swipe_down_to_hide_summary">החלקה למטה על סרגל הכלים לסגירת המקלדת</string>
+    <string name="gesture_data_please_switch_keyboard">נא לעבור אל %s</string>
 </resources>

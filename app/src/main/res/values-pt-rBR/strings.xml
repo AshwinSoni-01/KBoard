@@ -494,4 +494,8 @@
     <string name="timestamp_description">­Você pode adicionar a tecla de carimbo de data/hora usando um layout personalizado com a tecla ‘timestamp’ ou o código de tecla -10043.</string>
     <string name="prefs_bottom_row_scale">Escala da linha inferior</string>
     <string name="layout_functional_keys_khipro" tools:keep="@string/layout_functional_keys">Teclas funcionais (Khipro)</string>
+    <string name="toolbar_swipe_down_to_hide">Ocultar teclado com deslizar</string>
+    <string name="toolbar_swipe_down_to_hide_summary">Deslize para baixo na barra de ferramentas para fechar o teclado</string>
+    <string name="gesture_data_please_switch_keyboard">Mude pro %s</string>
+    <string name="gesture_data_share_limit">Para evitar passar dos limites de tamanho, somente as primeiras %s palavras serão exportadas</string>
 </resources>
