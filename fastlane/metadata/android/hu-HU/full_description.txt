@@ -14,7 +14,7 @@ Funkciók:
     <li>követheti a rendszer nappali/éjszakai beállítását Android 10+ (és néhány Android 9 verzió) esetén</li>
     <li>követheti a dinamikus színeket Android 12+ esetén</li>
   </ul>
-  <li>Billentyűzet <a href="https://github.com/Helium314/HeliBoard/blob/main/layouts.md">elrendezések</a> testreszabása (csak a <i>rendszernyelvek használata</i> letiltásakor érhető el)</li>
+  <li>Billentyűzet <a href="https://github.com/HeliBorg/HeliBoard/blob/main/layouts.md">elrendezések</a> testreszabása (csak a <i>rendszernyelvek használata</i> letiltásakor érhető el)</li>
   <li>Speciális elrendezések testreszabása, mint például szimbólumok, számok vagy funkcióbillentyűk elrendezése</li>
   <li>Többnyelvű gépelés</li>
   <li>Ujjmozdulatokkal való gépelés (<i>csak zárt forráskódú könyvtárral</i> ☹️)</li>

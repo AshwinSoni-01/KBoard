@@ -32,7 +32,7 @@ object AppWorkarounds {
         return when (packageName) {
             // Looks like Google decided to set inputType multiline and imeOptions no_enter_action
             // on their search bar in Pixel launcher, and all keyboards ignore the flags because otherwise
-            // they would actually not perform the search action on action key. See https://github.com/Helium314/HeliBoard/issues/1989
+            // they would actually not perform the search action on action key. See https://github.com/HeliBorg/HeliBoard/issues/1989
             "com.google.android.apps.nexuslauncher" -> if (imeOptions and EditorInfo.IME_FLAG_NO_ENTER_ACTION != 0) imeOptions - EditorInfo.IME_FLAG_NO_ENTER_ACTION else imeOptions
             else -> imeOptions
         }

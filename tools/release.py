@@ -146,7 +146,7 @@ def update_dict_hashes():
             f.write(line + "\n")
 
 
-# update khipro mapping json, see discussion at the bottom of https://github.com/Helium314/HeliBoard/pull/2134
+# update khipro mapping json, see discussion at the bottom of https://github.com/HeliBorg/HeliBoard/pull/2134
 def update_khipro_mappings():
     source = "https://raw.githubusercontent.com/KhiproTeam/Khipro-Mappings/refs/heads/main/output/touchscreen.json"
     target = "app/src/main/assets/khipro-mappings.json"
