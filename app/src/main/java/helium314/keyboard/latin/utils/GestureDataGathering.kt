@@ -104,7 +104,14 @@ object PassiveGatheringCache {
         updateIcon()
     }
 
-    // todo: undo button!
+    fun onUndo(lastComposedWord: CharSequence) {
+        Log.i(TAG, "undo after committing $lastComposedWord")
+        if (cachedWords.lastOrNull()?.usedWord == lastComposedWord) {
+            Log.i(TAG, "removing $lastComposedWord")
+            cachedWords.removeAt(cachedWords.lastIndex)
+        }
+        updateIcon()
+    }
 
     fun onEditWord(word: String) {
         // this is pretty aggressive, because repeated backspace might remove different words

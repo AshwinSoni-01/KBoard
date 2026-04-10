@@ -838,6 +838,8 @@ public final class InputLogic {
                 }
                 break;
             case KeyCode.UNDO:
+                if (GestureDataGatheringKt.usePassiveGathering)
+                    PassiveGatheringCache.INSTANCE.onUndo(mWordComposer.isComposingWord() ? mWordComposer.getTypedWord() : mLastComposedWord.mCommittedWord);
                 sendDownUpKeyEventWithMetaState(KeyEvent.KEYCODE_Z, KeyEvent.META_CTRL_ON);
                 break;
             case KeyCode.REDO:
