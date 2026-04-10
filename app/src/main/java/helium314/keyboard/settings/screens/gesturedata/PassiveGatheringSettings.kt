@@ -66,6 +66,8 @@ import kotlinx.coroutines.launch
 import kotlin.collections.plus
 import androidx.core.graphics.toColorInt
 import helium314.keyboard.latin.common.Links
+import helium314.keyboard.latin.utils.GestureDataGatheringSettings.getAppExclusions
+import helium314.keyboard.latin.utils.GestureDataGatheringSettings.getAppIncludeByDefault
 import helium314.keyboard.settings.painterResourceCompat
 
 // functionality for gesture data gathering as part of the NLNet Project https://nlnet.nl/project/GestureTyping/
@@ -78,6 +80,7 @@ fun PassiveGatheringSettings() {
     var showInfoDialog by remember { mutableStateOf(false) }
     var showExcludedWordsDialog by remember { mutableStateOf(false) }
     var showIncludedAppsDialog by remember { mutableStateOf(false) }
+    var packageInfos by remember { mutableStateOf(emptyList<Triple<String, String, Drawable?>>()) }
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween,
@@ -85,7 +88,12 @@ fun PassiveGatheringSettings() {
             .clickable { passiveGathering = !passiveGathering }
             .fillMaxWidth()
     ) {
-        Text(stringResource(R.string.gesture_data_passive_gathering_switch))
+        Column {
+            Text(stringResource(R.string.gesture_data_passive_gathering_switch))
+            val allowedCount = if (getAppIncludeByDefault(ctx)) packageInfos.size - getAppExclusions(ctx).size
+                else getAppExclusions(ctx).size
+            Text(stringResource(R.string.gesture_data_passive_gathering_allowed_apps, allowedCount), style = MaterialTheme.typography.bodySmall)
+        }
         Switch(passiveGathering, { passiveGathering = it; GestureDataGatheringSettings.setPassiveGatheringEnabled(ctx.prefs(), it) })
     }
     ButtonWithText(stringResource(R.string.gesture_data_passive_gathering_info), Modifier.fillMaxWidth()) { showInfoDialog = true }
@@ -147,15 +155,14 @@ fun PassiveGatheringSettings() {
             confirmButtonText = null
         )
     }
-    var packageInfos by remember { mutableStateOf(emptyList<Triple<String, String, Drawable?>>()) }
     val scope = rememberCoroutineScope()
     LaunchedEffect(packageInfos) {
         if (packageInfos.isEmpty())
             scope.launch { packageInfos = AppsManager(ctx).getPackagesWithNameAndIcon() }
     }
     if (showIncludedAppsDialog) {
-        var defaultInclude by remember { mutableStateOf(GestureDataGatheringSettings.getAppIncludeByDefault(ctx)) }
-        var excludedPackages by remember { mutableStateOf(GestureDataGatheringSettings.getAppExclusions(ctx)) }
+        var defaultInclude by remember { mutableStateOf(getAppIncludeByDefault(ctx)) }
+        var excludedPackages by remember { mutableStateOf(getAppExclusions(ctx)) }
         var sortedPackagesAndNames by remember { mutableStateOf(
             packageInfos
                 .sortedWith( compareBy({ it.first !in excludedPackages }, { it.second.lowercase() }))
