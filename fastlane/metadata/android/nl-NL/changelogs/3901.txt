@@ -1,6 +1,6 @@
-* allow switching app (settings) language in system settings
-* optionally swipe down on toolbar to hide keyboard
-* add HCESAR layout
-* inform about missing emoji dictionary when enabling emoji suggestions
-* fix issues with active gesture data gathering
-* minor fixes and improvements
+* Mogelijkheid om de app-taal (instellingen) te wijzigen in de systeem­instellingen
+* Optioneel het toetsenbord verbergen door de werk­balk naar beneden te vegen
+* HCESAR-lay-out toegevoegd
+* Melding over ontbrekend emoji-woordenboek bij het inschakelen van emoji-suggesties
+* Problemen met het verzamelen van actieve gebaren­gegevens opgelost
+* Kleine bugfixes en verbeteringen

@@ -149,7 +149,7 @@ object KeyLabel {
     //  but it has been like this "forever" and actually seems to make sense
     private fun getPeriodLabel(params: KeyboardParams): String {
         if (params.mId.isNumberLayout) return "."
-        if (params.mId.isAlphabetKeyboard || params.mId.locale.language in listOf("ar", "fa"))
+        if (params.mId.isAlphabetKeyboard || params.mId.locale.language == "ar" || params.mId.locale.language == "fa")
             return params.mLocaleKeyboardInfos.labelPeriod
         return "."
     }

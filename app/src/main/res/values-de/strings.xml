@@ -372,7 +372,6 @@
     <string name="summary_customize_background_image_landscape">Wenn nicht gesetzt, wird das Hochformat-Bild genutzt</string>
     <string name="customize_background_image_landscape">Hintergrundbild setzen (Querformat)</string>
     <string name="customize_toolbar_key_code_reset_message">Wirklich alle benutzerdefinierten Tastencodes zurücksetzen?</string>
-    <string name="enable_split_keyboard_landscape">Geteilte Tastatur aktivieren (Querformat)</string>
     <string name="number_row_hints">Hinweise auf der Zahlenzeile zeigen</string>
     <string name="split" tools:keep="@string/split">Getrennte Tastatur</string>
     <string name="prefs_font_scale">Tastatur-Schriftgrad</string>
@@ -443,4 +442,8 @@
     <string name="subtype_mhr">Ostmari</string>
     <string name="subtype_khipro_bn">%s (Khipro)</string>
     <string name="layout_functional_keys_khipro" tools:keep="@string/layout_functional_keys">Funktionale Tasten (Khipro)</string>
+    <string name="toolbar_swipe_down_to_hide">Tastatur durch Wischen ausblenden</string>
+    <string name="toolbar_swipe_down_to_hide_summary">Auf Symbolleiste nach unten wischen um Tastatur zu schließen</string>
+    <string name="ask_later">Frag mich später</string>
+    <string name="search_field_placeholder">Suche</string>
 </resources>

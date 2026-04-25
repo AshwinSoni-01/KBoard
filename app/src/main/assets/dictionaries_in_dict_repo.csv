@@ -62,8 +62,8 @@ main,en_GB,
 main,en_GB,exp
 main,en_US,
 main,en_US,exp
-symbols,en,exp
 emoji,en,
+symbols,en,exp
 emoji,en,cldr
 emoji,eo,cldr
 main,eo,
@@ -155,6 +155,7 @@ main,lb,
 emoji,mk,cldr
 main,mk,
 main,mai,
+main,mg,
 emoji,ms,cldr
 addon,ml_ZZ,exp
 emoji,ml,cldr

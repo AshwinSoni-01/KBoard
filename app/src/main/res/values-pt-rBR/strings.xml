@@ -389,7 +389,6 @@
     <string name="number_row_hints">Mostrar dicas na linha de números</string>
     <string name="prefs_language_swipe_distance">Distância do deslize para alterar idioma</string>
     <string name="split" tools:keep="@string/split">Teclado separado</string>
-    <string name="enable_split_keyboard_landscape">Ativar teclado separado (paisagem)</string>
     <string name="delete_confirmation">Realmente apagar %s?</string>
     <string name="settings_screen_secondary_layouts">Layouts secundários</string>
     <string name="layout_functional_keys_tablet" tools:keep="@string/layout_functional_keys_tablet">Teclas funcionais (tela grande)</string>

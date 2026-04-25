@@ -438,15 +438,20 @@ class DictionaryFacilitatorImpl : DictionaryFacilitator {
 
         // if suggestion was auto-capitalized, check against both the suggestion and the de-capitalized suggestion
         val decapitalizedSuggestion = if (wasAutoCapitalized) word.decapitalize(currentLocale) else word
+        val validWord = dictionaryGroups.map { isValidWord(word, DictionaryFacilitator.ALL_DICTIONARY_TYPES, it) }
         dictionaryGroups.forEach {
             if (isValidWord(word, DictionaryFacilitator.ALL_DICTIONARY_TYPES, it)) {
                 it.increaseConfidence()
                 return@forEach
             }
             // also increase confidence if suggestion was auto-capitalized and the lowercase variant it valid
-            if (wasAutoCapitalized && isValidWord(decapitalizedSuggestion, DictionaryFacilitator.ALL_DICTIONARY_TYPES, it))
+            if (wasAutoCapitalized && isValidWord(decapitalizedSuggestion, DictionaryFacilitator.ALL_DICTIONARY_TYPES, it)) {
                 it.increaseConfidence()
-            else it.decreaseConfidence()
+            } else {
+                it.decreaseConfidence()
+                if (validWord.any { it })
+                    it.decreaseConfidence() // if the word is valid in another language decrease confidence even more
+            }
         }
     }
 
@@ -751,7 +756,8 @@ private class DictionaryGroup(
     }
 
     // If confidence is above max, drop to max confidence. This does not change weights and
-    // allows conveniently typing single words from the other language without affecting suggestions
+    // allows conveniently typing single words not in the dictionary without affecting suggestions
+    // however, when the word is valid in a different active language, this is called twice to allow for better switching
     fun decreaseConfidence() {
         if (confidence > MAX_CONFIDENCE) confidence = MAX_CONFIDENCE
         else if (confidence > 0) {

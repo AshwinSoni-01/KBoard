@@ -300,7 +300,6 @@
     <string name="language_switch_key_behavior">Chování klávesy pro přepínání jazyků</string>
     <string name="vibrate_in_dnd_mode">Vibrace v režimu nerušit</string>
     <string name="settings_category_space">Mezerník</string>
-    <string name="enable_split_keyboard_landscape">Povolit rozdělenou klávesnici (na šířku)</string>
     <string name="prefs_always_show_suggestions_except_web_text_summary">Webová pole pro úpravu (nacházejí se převážně v prohlížečích) jsou velmi častou příčinou problémů s nastavením zobrazování návrhů</string>
     <string name="prefs_always_show_suggestions_except_web_text">Nezobrazovat návrhy pro webová pole pro úpravu</string>
     <string name="page_start" tools:keep="@string/page_start">Začátek stránky</string>
@@ -314,7 +313,7 @@
     <string name="gesture_floating_preview_dynamic_summary">Přesunout náhled během gesta</string>
     <string name="gesture_fast_typing_cooldown_instant">Vždy okamžitě začít</string>
     <string name="show_tld_popup_keys_summary">Nahradit vyskakovací okno tečky doménami nejvyšší úrovně při zadávání adres URL a e-mailových adres</string>
-    <string name="autospace_after_suggestion">Automatická mezera pov výběru návrhu</string>
+    <string name="autospace_after_suggestion">Automatická mezera po výběru návrhu</string>
     <string name="autospace_after_gesture_typing">Automatická mezera po napsání slova gestem</string>
     <string name="shift_removes_autospace">Zakázat automatickou mezeru po stisku Shiftu</string>
     <string name="shift_removes_autospace_summary">Shift odstraní čekající automatickou mezeru</string>

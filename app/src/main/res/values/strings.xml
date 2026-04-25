@@ -64,11 +64,9 @@
     <string name="settings_category_experimental">Experimental</string>
     <!-- Settings category title for Appearance & Layout/Misc -->
     <string name="settings_category_miscellaneous">Miscellaneous</string>
-    <!--  Option for enabling or disabling the split keyboard layout in portrait mode.-->
+    <!-- Option for enabling or disabling the split keyboard layout in portrait mode.-->
     <string name="enable_split_keyboard">Enable split keyboard</string>
-    <!--  Option for enabling or disabling the split keyboard layout in landscape mode.-->
-    <string name="enable_split_keyboard_landscape">Enable split keyboard (landscape)</string>
-    <!--  Option for setting distance for split keyboard in portrait mode -->
+    <!-- Option for setting distance for split keyboard in portrait mode -->
     <string name="split_spacer_scale">Split distance</string>
     <!-- Option name for including other IMEs in the language key switch list -->
     <string name="language_switch_key_switch_input_method">Switch to other input methods</string>
@@ -926,6 +924,8 @@ New dictionary:
     <string name="custom_subtype">Custom subtype</string>
     <!-- Name for landscape orientation, used in various settings -->
     <string name="landscape">Landscape</string>
+    <!-- When a foldable phone is folded -->
+    <string name="folded">Folded</string>
     <!-- Emoji search title bar text -->
     <string name="emoji_search_title">Search emoji</string>
     <!-- Placeholder text for search field -->

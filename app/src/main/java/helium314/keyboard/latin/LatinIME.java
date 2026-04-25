@@ -69,6 +69,7 @@ import helium314.keyboard.latin.suggestions.SuggestionStripView;
 import helium314.keyboard.latin.suggestions.SuggestionStripViewAccessor;
 import helium314.keyboard.latin.touchinputconsumer.GestureConsumer;
 import helium314.keyboard.latin.utils.ColorUtilKt;
+import helium314.keyboard.latin.utils.FoldableUtils;
 import helium314.keyboard.latin.utils.GestureDataGatheringKt;
 import helium314.keyboard.latin.utils.GestureDataGatheringSettings;
 import helium314.keyboard.latin.utils.InlineAutofillUtils;
@@ -155,6 +156,8 @@ public class LatinIME extends InputMethodService implements
 
     private final BroadcastReceiver mDictionaryDumpBroadcastReceiver =
             new DictionaryDumpBroadcastReceiver(this);
+
+    FoldableUtils.FoldableObserver foldableObserver;
 
     final static class RestartAfterDeviceUnlockReceiver extends BroadcastReceiver {
         @Override
@@ -545,6 +548,8 @@ public class LatinIME extends InputMethodService implements
         loadSettings();
         mClipboardHistoryManager.onCreate();
         mHandler.onCreate();
+        if (FoldableUtils.INSTANCE.isFoldable())
+            foldableObserver = new FoldableUtils.FoldableObserver(this);
 
         // Register to receive ringer mode change.
         final IntentFilter filter = new IntentFilter();
@@ -687,6 +692,8 @@ public class LatinIME extends InputMethodService implements
         mClipboardHistoryManager.onDestroy();
         mDictionaryFacilitator.closeDictionaries();
         mSettings.onDestroy();
+        if (foldableObserver != null)
+            foldableObserver.unregister(this);
         unregisterReceiver(mRingerModeChangeReceiver);
         unregisterReceiver(mDictionaryPackInstallReceiver);
         unregisterReceiver(mDictionaryDumpBroadcastReceiver);

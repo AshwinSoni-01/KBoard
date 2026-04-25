@@ -39,9 +39,9 @@ import helium314.keyboard.latin.utils.prefs
 import helium314.keyboard.latin.utils.Theme
 import helium314.keyboard.settings.initPreview
 import helium314.keyboard.latin.utils.previewDark
-import helium314.keyboard.settings.screens.GetIcon
 import kotlinx.serialization.json.Json
 import androidx.core.content.edit
+import helium314.keyboard.settings.GetIconOrEmpty
 import helium314.keyboard.settings.painterResourceCompat
 
 @Composable
@@ -84,7 +84,7 @@ fun CustomizeIconsDialog(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.clickable { showIconDialog = iconName to displayName }
                     ) {
-                        KeyboardIconsSet.instance.GetIcon(iconName)
+                        KeyboardIconsSet.instance.GetIconOrEmpty(iconName)
                         Text(displayName, Modifier.weight(1f))
                     }
                 }

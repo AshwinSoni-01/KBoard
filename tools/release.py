@@ -148,8 +148,8 @@ def update_dict_hashes():
 
 # update khipro mapping json, see discussion at the bottom of https://github.com/HeliBorg/HeliBoard/pull/2134
 def update_khipro_mappings():
-    source = "https://raw.githubusercontent.com/KhiproTeam/Khipro-Mappings/refs/heads/main/output/touchscreen.json"
-    target = "app/src/main/assets/khipro-mappings.json"
+    source = "https://raw.githubusercontent.com/KhiproTeam/khipro-MIM-touchscreen/main/bn-khipro.mim"
+    target = "app/src/main/assets/bn-khipro.mim"
     urlretrieve(source, target)
 
 

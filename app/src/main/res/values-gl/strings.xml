@@ -381,7 +381,6 @@
     <string name="custom_font">Establecer tipo de letra persoal desde ficheiro</string>
     <string name="customize_background_image_landscape">Establecer imaxe de fondo (paisaxe)</string>
     <string name="summary_customize_background_image_landscape">Se non se establece usarase a imaxe como retrato</string>
-    <string name="enable_split_keyboard_landscape">Activar teclado separado (paisaxe)</string>
     <string name="split" tools:keep="@string/split">Telcado separado</string>
     <string name="prefs_font_scale">Escala do tamaño da letra</string>
     <string name="prefs_emoji_font_scale">Escala da visualización de emoji</string>

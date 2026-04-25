@@ -383,7 +383,6 @@
     <string name="number_row_hints">在数字行显示提示</string>
     <string name="prefs_language_swipe_distance">切换语言滑动距离</string>
     <string name="split" tools:keep="@string/split">分离式键盘</string>
-    <string name="enable_split_keyboard_landscape">启用分离式键盘（横屏）</string>
     <string name="delete_confirmation">确定要删除 %s？</string>
     <string name="settings_screen_secondary_layouts">次要布局</string>
     <string name="layout_functional_keys_tablet" tools:keep="@string/layout_functional_keys_tablet">功能键（大屏幕）</string>

@@ -386,7 +386,6 @@
     <string name="prefs_side_padding_scale">קנה-מידה של המרווח הצדדי</string>
     <string name="number_row_hints">הצגת רמזים על שורת המספרים</string>
     <string name="prefs_language_swipe_distance">אורך מחוות ההחלקה להחלפת שפה</string>
-    <string name="enable_split_keyboard_landscape">הפעלת אפשרות מקלדת מפוצלת (במצב אופקי)</string>
     <string name="split" tools:keep="@string/split">מקלדת מפוצלת</string>
     <string name="name_invalid">השם אינו תקף</string>
     <string name="custom_subtype">תת-סוג מותאם</string>

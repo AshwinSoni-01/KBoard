@@ -47,6 +47,7 @@ import helium314.keyboard.latin.settings.Settings;
 import helium314.keyboard.latin.settings.SettingsValues;
 import helium314.keyboard.latin.suggestions.SuggestionStripView;
 import helium314.keyboard.latin.utils.CapsModeUtils;
+import helium314.keyboard.latin.utils.FoldableUtils;
 import helium314.keyboard.latin.utils.KtxKt;
 import helium314.keyboard.latin.utils.LanguageOnSpacebarUtils;
 import helium314.keyboard.latin.utils.Log;
@@ -525,8 +526,9 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     public void toggleSplitKeyboardMode() {
         final Settings settings = Settings.getInstance();
         settings.writeSplitKeyboardEnabled(
-                !settings.getCurrent().mIsSplitKeyboardEnabled,
-                mCurrentOrientation == Configuration.ORIENTATION_LANDSCAPE
+            !settings.getCurrent().mIsSplitKeyboardEnabled,
+            mCurrentOrientation == Configuration.ORIENTATION_LANDSCAPE,
+            FoldableUtils.INSTANCE.isFolded()
         );
         setOneHandedModeEnabled(settings.getCurrent().mOneHandedModeEnabled, true);
         reloadKeyboard();

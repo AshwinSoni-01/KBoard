@@ -374,7 +374,6 @@
     <string name="prefs_always_show_suggestions_except_web_text">Ez erakutsi beti iradokizunik web edizioko eremuetarako</string>
     <string name="settings_category_space">Zuriunea</string>
     <string name="use_apps_dict_summary">Erabili instalatutako aplikazioen izenak iradokizunak eta zuzenketak egiteko</string>
-    <string name="enable_split_keyboard_landscape">Gaitu teklatu banatua (horizontala)</string>
     <string name="vibrate_in_dnd_mode">Egin dar-dar ez molestatzeko moduan</string>
     <string name="prefs_always_show_suggestions_except_web_text_summary">Web ediziorako eremuak (batez ere nabigatzaileetan aurkitzen direnak) oso ohiko arrazoia dira iradokizunen konfigurazioa beti erakusten duten arazoetarako</string>
     <string name="auto_correct_shortcuts">Zuzenketa automatikorako lasterbideak</string>

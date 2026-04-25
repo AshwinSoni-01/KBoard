@@ -423,7 +423,6 @@
     <string name="prefs_side_padding_scale">Schaal van vulling zijkanten</string>
     <string name="number_row_hints">Hints weergeven bij cijferregel</string>
     <string name="prefs_language_swipe_distance">Veegafstand voor taal wisselen</string>
-    <string name="enable_split_keyboard_landscape">Gesplitst toetsenbord inschakelen (liggend)</string>
     <string name="split" tools:keep="@string/split">Gesplitst toetsenbord</string>
     <string name="delete_confirmation">%s echt verwijderen?</string>
     <string name="layout_functional_keys_tablet" tools:keep="@string/layout_functional_keys_tablet">Functionele toetsen (groot scherm)</string>

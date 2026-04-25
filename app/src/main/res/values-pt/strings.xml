@@ -178,7 +178,6 @@
     <string name="prefs_always_show_suggestions_except_web_text">Nunca mostrar sugestões para campos de edição de web</string>
     <string name="auto_correct_shortcuts_summary">Quando ativado, atalhos poderão ser expandidos pelo autocorretor</string>
     <string name="suggest_emojis">Sugerir emojis</string>
-    <string name="enable_split_keyboard_landscape">Ativar teclado dividido (paisagem)</string>
     <string name="show_emoji_descriptions">Mostrar descrição do emoji ao pressionar</string>
     <string name="center_suggestion_text_to_enter_summary">Ao clicar espaço ou pontuação, a sugestão do meio será inserida</string>
     <string name="suggest_clipboard_content">Sugerir conteúdo da área de transferência</string>

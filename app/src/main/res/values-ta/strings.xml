@@ -121,7 +121,6 @@
     <string name="settings_category_suggestions">பரிந்துரைகள்</string>
     <string name="settings_category_experimental">ஆய்வு</string>
     <string name="settings_category_miscellaneous">மற்றவை</string>
-    <string name="enable_split_keyboard_landscape">பிளவு விசைப்பலகையை இயக்கு (இயற்கை)</string>
     <string name="split_spacer_scale">பிளவு தூரம்</string>
     <string name="switch_language">மொழியை மாற்றவும்</string>
     <string name="language_switch_key_switch_both">இரண்டையும் மாற்றவும்</string>

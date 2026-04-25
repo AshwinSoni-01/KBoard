@@ -7,8 +7,6 @@
 
 <resources>
     <declare-styleable name="KeyboardTheme">
-        <!-- InputView style -->
-        <attr name="inputViewStyle" format="reference" />
         <!-- Keyboard style -->
         <attr name="keyboardStyle" format="reference" />
         <!-- KeyboardView style -->
@@ -278,8 +276,6 @@
             <flag name="keepBackgroundAspectRatio" value="0x100000" /><!-- 1048576 -->
             <!-- If true, disable keyHintLabel. -->
             <flag name="disableKeyHintLabel" value="0x40000000" /><!-- 1073741824 -->
-            <!-- If true, disable additionalPopupKeys. todo: is this still working? -->
-            <flag name="disableAdditionalPopupKeys" value="0x80000000" /><!-- 2147483648 -->
         </attr>
         <!-- The icon for disabled key -->
         <attr name="keyIconDisabled" format="string" />

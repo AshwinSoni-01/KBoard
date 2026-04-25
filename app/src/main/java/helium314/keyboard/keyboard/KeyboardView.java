@@ -97,8 +97,6 @@ public class KeyboardView extends View {
     @NonNull
     private final Paint mPaint = new Paint();
     private final Paint.FontMetrics mFontMetrics = new Paint.FontMetrics();
-    protected final Typeface mTypeface;
-    protected final Typeface mEmojiTypeface;
 
     public KeyboardView(final Context context, final AttributeSet attrs) {
         this(context, attrs, R.attr.keyboardViewStyle);
@@ -148,8 +146,6 @@ public class KeyboardView extends View {
         keyAttr.recycle();
 
         mPaint.setAntiAlias(true);
-        mTypeface = Settings.getInstance().getCustomTypeface();
-        mEmojiTypeface = Settings.getInstance().getCustomEmojiTypeface();
         setFitsSystemWindows(true);
     }
 
@@ -392,8 +388,7 @@ public class KeyboardView extends View {
         float labelBaseline = centerY;
         final String label = key.getLabel();
         if (label != null) {
-            final Typeface typeface = mEmojiTypeface != null && StringUtilsKt.isEmoji(label) ? mEmojiTypeface : mTypeface;
-            paint.setTypeface(typeface == null ? key.selectTypeface(params) : typeface);
+            paint.setTypeface(KeyboardTypeface.resolve(label, key.selectTypeface(params)));
             paint.setTextSize(key.selectTextSize(params) * mFontSizeMultiplier);
             final float labelCharHeight = TypefaceUtils.getReferenceCharHeight(paint);
             final float labelCharWidth = TypefaceUtils.getReferenceCharWidth(paint);
@@ -463,8 +458,7 @@ public class KeyboardView extends View {
             paint.setTextSize(key.selectHintTextSize(params) * mFontSizeMultiplier); // maybe take sqrt to not have such extreme changes?
             paint.setColor(key.selectHintTextColor(params));
             // TODO: Should add a way to specify type face for hint letters
-            final Typeface typeface = mEmojiTypeface != null && StringUtilsKt.isEmoji(hintLabel) ? mEmojiTypeface : mTypeface;
-            paint.setTypeface(typeface == null ? Typeface.DEFAULT_BOLD : typeface);
+            paint.setTypeface(KeyboardTypeface.resolve(hintLabel, Typeface.DEFAULT_BOLD));
             blendAlpha(paint, params.mAnimAlpha);
             final float labelCharHeight = TypefaceUtils.getReferenceCharHeight(paint);
             final float labelCharWidth = TypefaceUtils.getReferenceCharWidth(paint);

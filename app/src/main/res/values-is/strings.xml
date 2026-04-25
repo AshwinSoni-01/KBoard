@@ -372,7 +372,6 @@
     <string name="show_popup_hints">Birta ábendingar á aðgerðalyklum</string>
     <string name="load_gesture_library_message">Þú munt þurfa aðgerðasafnið fyrir \'%s\'. Ósamhæfð aðgerðasöfn gætu hrunið þegar notaður er innsláttur með bendingum. \n\nAðvörun: Öryggisáhætta getur fylgt því að hlaða inn utanaðkomandi kóða. Notaðu einungis aðgerðasöfn frá aðilum sem þú treystir.</string>
     <string name="var_toolbar_direction_summary">Öfug stefna þegar hægri-til-vinstri undirgerð lyklaborðs er valin</string>
-    <string name="enable_split_keyboard_landscape">Virkja skipt lyklaborð (lárétt)</string>
     <string name="split" tools:keep="@string/split">Skipt lyklaborð</string>
     <string name="gesture_fast_typing_cooldown">Tafir á hröðum innslætti</string>
     <string name="show_popup_hints_summary">Birtir ábendingar ef það að ýta lengi á lykil vekur upp viðbótaraðgerðir</string>

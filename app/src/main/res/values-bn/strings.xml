@@ -381,7 +381,6 @@
     <string name="prefs_emoji_font_scale">ইমোজি দর্শনের ফন্ট স্কেল</string>
     <string name="prefs_side_padding_scale">পার্শ্ব প্যাডিং স্কেল</string>
     <string name="number_row_hints">নম্বর সারিতে ইঙ্গিত প্রদর্শন</string>
-    <string name="enable_split_keyboard_landscape">বিভক্ত কিবোর্ড সক্রিয়করণ (ল্যান্ডস্কেপ)</string>
     <string name="split" tools:keep="@string/split">বিভক্ত কিবোর্ড</string>
     <string name="delete_confirmation">%s বিলোপ করতে নিশ্চিত?</string>
     <string name="layout_functional_keys_tablet" tools:keep="@string/layout_functional_keys_tablet">ফাংশনাল বোতাম (বড়ো স্ক্রিন)</string>

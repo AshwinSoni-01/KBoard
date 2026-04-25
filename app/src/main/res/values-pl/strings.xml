@@ -423,7 +423,6 @@
     <string name="prefs_side_padding_scale">Rozmiar bocznego odstępu</string>
     <string name="number_row_hints">Pokaż wskazówki na wierszu numerycznym</string>
     <string name="prefs_language_swipe_distance">Zmień język - odległość przesunięcia</string>
-    <string name="enable_split_keyboard_landscape">Włącz podzieloną klawiaturę (poziomo)</string>
     <string name="split" tools:keep="@string/split">Podziel klawiaturę</string>
     <string name="delete_confirmation">Na pewno usunąć %s?</string>
     <string name="settings_screen_secondary_layouts">Inne układy</string>

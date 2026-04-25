@@ -370,7 +370,6 @@
     <string name="vibrate_in_dnd_mode">Вібрація в режимі «Не турбувати»</string>
     <string name="subtype_dru">Даргинська (Урахі)</string>
     <string name="split" tools:keep="@string/split">Розділена клавіатура</string>
-    <string name="enable_split_keyboard_landscape">Увімкнути розділену клавіатуру (альбомну)</string>
     <string name="subtype_generic_phonetic">%s (Фонетика)</string>
     <string name="auto_correct_shortcuts">Автовиправлення комбінації клавіш</string>
     <string name="auto_correct_shortcuts_summary">Якщо увімкнено, комбінації клавіш можуть бути розгорнуті за допомогою автокорекції</string>

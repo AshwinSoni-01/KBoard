@@ -27,6 +27,9 @@ import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.core.view.doOnLayout
+import androidx.core.view.doOnNextLayout
+import androidx.core.view.doOnPreDraw
 import androidx.core.view.isVisible
 import helium314.keyboard.compat.isDeviceLocked
 import helium314.keyboard.event.HapticEvent
@@ -94,14 +97,11 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
 
         val colors = Settings.getValues().mColors
         colors.setBackground(this, ColorType.STRIP_BACKGROUND)
-        val customTypeface = Settings.getInstance().customTypeface
         repeat(SuggestedWords.MAX_SUGGESTIONS) {
             val word = TextView(context, null, R.attr.suggestionWordStyle)
             word.contentDescription = resources.getString(R.string.spoken_empty_suggestion)
             word.setOnClickListener(this)
             word.setOnLongClickListener(this)
-            if (customTypeface != null)
-                word.typeface = customTypeface
             colors.setBackground(word, ColorType.STRIP_BACKGROUND)
             wordViews.add(word)
             val divider = inflater.inflate(R.layout.suggestion_divider, null)
@@ -261,7 +261,9 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
 
         if (addCloseButton) {
             val wrapper = LinearLayout(context)
-            wrapper.layoutParams = LinearLayout.LayoutParams(suggestionsStrip.width - 30.dpToPx(resources), LayoutParams.MATCH_PARENT)
+            suggestionsStrip.doOnNextLayout {
+                wrapper.layoutParams = LinearLayout.LayoutParams(suggestionsStrip.width - 30.dpToPx(resources), LayoutParams.MATCH_PARENT)
+            }
             wrapper.addView(view)
             suggestionsStrip.addView(wrapper)
 

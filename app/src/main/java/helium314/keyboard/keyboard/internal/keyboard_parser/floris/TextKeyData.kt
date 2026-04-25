@@ -166,7 +166,10 @@ sealed interface KeyData : AbstractKeyData {
                     else -> null
                 }
                 // could change definition of numbers to query a range, or have a pre-defined list, but not that crucial
-                keyboardId.isNumberLayout || keyboardId.mMode in listOf(KeyboardId.MODE_EMAIL, KeyboardId.MODE_DATE, KeyboardId.MODE_TIME, KeyboardId.MODE_DATETIME) -> when {
+                keyboardId.isNumberLayout || when (keyboardId.mMode) {
+                    KeyboardId.MODE_EMAIL, KeyboardId.MODE_DATE, KeyboardId.MODE_TIME, KeyboardId.MODE_DATETIME -> true
+                    else -> false
+                } -> when {
                     action == EditorInfo.IME_ACTION_NEXT && navigatePrev -> POPUP_KEYS_NAVIGATE_PREVIOUS
                     action == EditorInfo.IME_ACTION_NEXT -> null
                     action == EditorInfo.IME_ACTION_PREVIOUS && navigateNext -> POPUP_KEYS_NAVIGATE_NEXT
@@ -240,7 +243,7 @@ sealed interface KeyData : AbstractKeyData {
         private fun shouldShowTldPopups(params: KeyboardParams): Boolean =
             (Settings.getInstance().current.mShowTldPopupKeys
                     && params.mId.mSubtype.layouts[LayoutType.FUNCTIONAL] != "functional_keys_tablet"
-                    && params.mId.mMode in setOf(KeyboardId.MODE_URL, KeyboardId.MODE_EMAIL))
+                    && (params.mId.mMode == KeyboardId.MODE_URL || params.mId.mMode == KeyboardId.MODE_EMAIL))
 
         // could make arrays right away, but they need to be copied anyway as popupKeys arrays are modified when creating KeyParams
         private const val POPUP_KEYS_NAVIGATE_PREVIOUS = "!icon/previous_key|!code/key_action_previous,!icon/clipboard_action_key|!code/key_clipboard"

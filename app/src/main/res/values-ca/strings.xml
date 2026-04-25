@@ -379,7 +379,6 @@
     <string name="prefs_side_padding_scale">Escala de farciment lateral</string>
     <string name="number_row_hints">Mostra suggeriments a la fila de nombres</string>
     <string name="prefs_language_swipe_distance">Canvia la distància de lliscament d\'idioma</string>
-    <string name="enable_split_keyboard_landscape">Activa el teclat dividit (apaïsat)</string>
     <string name="split" tools:keep="@string/split">Teclat dividit</string>
     <string name="delete_confirmation">Voleu suprimir %s?</string>
     <string name="settings_screen_secondary_layouts">Disposicions secundàries</string>

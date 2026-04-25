@@ -417,7 +417,6 @@
     <string name="number_row_hints">Показване на съвети в реда с числа</string>
     <string name="prefs_language_swipe_distance">Разстояние на плъзгане за превключване на езика</string>
     <string name="split" tools:keep="@string/split">Разделена клавиатура</string>
-    <string name="enable_split_keyboard_landscape">Активиране на разделена клавиатура (пейзаж)</string>
     <string name="delete_confirmation">Наистина ли изтривате %s?</string>
     <string name="layout_functional_keys_tablet" tools:keep="@string/layout_functional_keys_tablet">Функционални клавиши (голям екран)</string>
     <string name="name_invalid">Неправилно име</string>

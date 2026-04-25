@@ -146,7 +146,6 @@
     <string name="emoji_dictionary_required">Za ovu značajku je potreban rječnik emojija. Rječnici u formatu .dict mogu se preuzeti %s.</string>
     <string name="show_emoji_descriptions">Prikaži opis emojija dugim pritiskom</string>
     <string name="settings_category_space">Razmak</string>
-    <string name="enable_split_keyboard_landscape">Omogući razdvojenu tipkovnicu (horizontalno)</string>
     <string name="split_spacer_scale">Razmak razdvajanja</string>
     <string name="switch_language">Prebaci jezik</string>
     <string name="language_switch_key_switch_both">Prebaci oboje</string>

@@ -27,7 +27,6 @@
     <string name="settings_category_experimental">Arbrovel</string>
     <string name="settings_category_miscellaneous">Divers</string>
     <string name="enable_split_keyboard">Gallosegi bysowek folsys</string>
-    <string name="enable_split_keyboard_landscape">Gallosegi bysowek folsys (gorwelyek)</string>
     <string name="split_spacer_scale">Pellder fols</string>
     <string name="language_switch_key_switch_input_method">Skwychella dhe methodys ynworrans aral</string>
     <string name="switch_language">Skwychella yeth</string>
@@ -45,7 +44,7 @@
     <string name="use_apps_dict_summary">Devnydhya henwyn a appys leys rag profyansow hag ewnansow</string>
     <string name="use_personalized_dicts">Profyansow personelhys</string>
     <string name="disable_personalized_dicts_message">Gwarnyans: ow marowhe an settyans ma a wra dilea data dyskys</string>
-    <string name="add_to_personal_dictionary">Addya geryow dhe gerlyver personel</string>
+    <string name="add_to_personal_dictionary">Keworra geryow dhe erlyver personel</string>
     <string name="add_to_personal_dictionary_summary">Devnydhya gerlyver personel devis rag gwitha geryow dyskys</string>
     <string name="use_double_space_period">Dyjyn dewspas</string>
     <string name="use_double_space_period_summary">Tava diwweyth war spasbarr gorra a-bervedh unn dyjyn sewys gans unn spas</string>

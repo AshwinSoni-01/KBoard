@@ -294,7 +294,6 @@
     <string name="prefs_always_show_suggestions_except_web_text">Ne jelenítsen meg mindig javaslatokat a webes szerkesztőmezőkben</string>
     <string name="emoji" tools:keep="@string/emoji">Emodzsi</string>
     <string name="backspace_reverts_autocorrect">Backspace billentyű visszavonja az automatikus javítást</string>
-    <string name="enable_split_keyboard_landscape">Osztott billentyűzet engedélyezése (fekvő)</string>
     <string name="gesture_fast_typing_cooldown_instant">Mindig azonnal induljon el</string>
     <string name="suggest_clipboard_content">Vágólap tartalmának javaslása</string>
     <string name="suggest_clipboard_content_summary">A közelmúltban másolt vágólaptartalom megjelenítése javaslatként</string>

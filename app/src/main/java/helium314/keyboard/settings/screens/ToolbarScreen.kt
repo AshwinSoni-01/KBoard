@@ -2,10 +2,6 @@
 package helium314.keyboard.settings.screens
 
 import android.content.Context
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.size
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -13,14 +9,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet
 import helium314.keyboard.latin.R
 import helium314.keyboard.latin.settings.Defaults
 import helium314.keyboard.latin.settings.Settings
@@ -41,7 +33,6 @@ import helium314.keyboard.settings.preferences.Preference
 import helium314.keyboard.settings.preferences.ReorderSwitchPreference
 import helium314.keyboard.settings.preferences.SwitchPreference
 import helium314.keyboard.latin.utils.previewDark
-import helium314.keyboard.settings.painterResourceCompat
 
 @Composable
 fun ToolbarScreen(
@@ -58,10 +49,14 @@ fun ToolbarScreen(
         Settings.PREF_TOOLBAR_MODE,
         if (toolbarMode == ToolbarMode.HIDDEN) Settings.PREF_TOOLBAR_HIDING_GLOBAL else null,
         if (toolbarMode != ToolbarMode.HIDDEN) Settings.PREF_TOOLBAR_SWIPE_DOWN_TO_HIDE else null,
-        if (toolbarMode in listOf(ToolbarMode.EXPANDABLE, ToolbarMode.TOOLBAR_KEYS))
-            Settings.PREF_TOOLBAR_KEYS else null,
-        if (toolbarMode in listOf(ToolbarMode.EXPANDABLE, ToolbarMode.SUGGESTION_STRIP))
-            Settings.PREF_PINNED_TOOLBAR_KEYS else null,
+        when (toolbarMode) {
+             ToolbarMode.EXPANDABLE, ToolbarMode.TOOLBAR_KEYS -> Settings.PREF_TOOLBAR_KEYS
+             else -> null
+        },
+        when (toolbarMode) {
+            ToolbarMode.EXPANDABLE, ToolbarMode.SUGGESTION_STRIP -> Settings.PREF_PINNED_TOOLBAR_KEYS
+            else -> null
+        },
         if (clipboardToolbarVisible) Settings.PREF_CLIPBOARD_TOOLBAR_KEYS else null,
         if (clipboardToolbarVisible) Settings.PREF_TOOLBAR_CUSTOM_KEY_CODES else null,
         if (toolbarMode == ToolbarMode.EXPANDABLE) Settings.PREF_QUICK_PIN_TOOLBAR_KEYS else null,
@@ -140,13 +135,6 @@ fun createToolbarSettings(context: Context) = listOf(
         SwitchPreference(it, Defaults.PREF_VARIABLE_TOOLBAR_DIRECTION)
     }
 )
-
-@Composable
-fun KeyboardIconsSet.GetIcon(name: String?) {
-    Box(Modifier.size(40.dp), contentAlignment = Alignment.Center) {
-        Icon(painterResourceCompat(iconIds[name?.lowercase()]!!), name, Modifier.fillMaxSize(0.8f))
-    }
-}
 
 @Preview
 @Composable

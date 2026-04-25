@@ -431,7 +431,6 @@
     <string name="customize_icons_reset_message">Tüm özelleştirilmiş simgeleri gerçekten sıfırlamak mı istiyorsunuz?</string>
     <string name="delete_confirmation">%s\'yi gerçekten silmek istiyor musunuz?</string>
     <string name="custom_subtype">Özel alt tür</string>
-    <string name="enable_split_keyboard_landscape">Bölünmüş klavyeyi etkinleştir (yatay)</string>
     <string name="show_tld_popup_keys">TLD açılır pencere tuşlarını göster</string>
     <string name="subtype_dru">Dargwa (Urakhi)</string>
     <string name="subtype_baishakhi_bn_IN">%s (Baishakhi)</string>
@@ -445,4 +444,8 @@
     <string name="save_subtype_per_app">Her uygulama için dili hatırla</string>
     <string name="subtype_mhr">Mari (Doğu)</string>
     <string name="label_shift_key_shifted" tools:keep="@string/label_shift_key_shifted">Shift (kaydırılmış)</string>
+    <string name="toolbar_swipe_down_to_hide">Klavyeyi kaydırarak gizle</string>
+    <string name="toolbar_swipe_down_to_hide_summary">Klavyeyi kapatmak için araç çubuğunu aşağı kaydır</string>
+    <string name="custom_emoji_font">Dosyadan özel emoji fontu ayarla</string>
+    <string name="prefs_bottom_row_scale">Alt satır ölçeği</string>
 </resources>

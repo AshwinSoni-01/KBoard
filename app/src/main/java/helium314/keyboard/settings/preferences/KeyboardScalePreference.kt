@@ -34,6 +34,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import helium314.keyboard.latin.R
 import helium314.keyboard.latin.settings.createPrefKeyForBooleanSettings
+import helium314.keyboard.latin.utils.FoldableUtils
 import helium314.keyboard.latin.utils.prefs
 import helium314.keyboard.latin.utils.Theme
 import helium314.keyboard.settings.WithSmallTitle
@@ -41,17 +42,11 @@ import helium314.keyboard.settings.dialogs.ThreeButtonAlertDialog
 import helium314.keyboard.latin.utils.previewDark
 import androidx.core.content.edit
 
-// too specialized for using a more generic dialog
 // actual key for each setting is baseKey with one _true/_false appended per dimension (need to keep order!)
-// todo: possible adjustments, maybe depending on user feedback
-//  should dimension checkboxes have any other effect than just showing / hiding sliders?
-//   one could argue that e.g. when disabling the split checkbox, then split mode should not affect the setting
-//  store checkbox states?
-//   if so, per setting or global?
-//  show a description? currently commented because it could get long, even without showing the variations
-//   maybe if we store the checkbox state in a setting, we could use it for determining what to show
+// should dimension checkboxes have any other effect than just showing / hiding sliders?
+//  one could argue that e.g. when disabling the split checkbox, then split mode should not affect the setting
 @Composable
-fun MultiSliderPreference(
+fun KeyboardScalePreference(
     name: String,
     baseKey: String,
     dimensions: List<String>,
@@ -63,15 +58,13 @@ fun MultiSliderPreference(
     if (defaults.size != 1.shl(dimensions.size))
         throw ArithmeticException("defaults size does not match with dimensions, expected ${1.shl(dimensions.size)}, got ${defaults.size}")
     var showDialog by remember { mutableStateOf(false) }
-    //val (_, keys) = remember { createVariantsAndKeys(dimensions, baseKey) }
-    //val prefs = LocalContext.current.prefs()
     Preference(
         name = name,
         onClick = { showDialog = true },
-        //description = keys.mapIndexed { i, it -> description(prefs.getFloat(it, defaults[i])) }.joinToString(" $SPLIT ")
+        // no description because it can easily take up too much space
     )
     if (showDialog)
-        MultiSliderDialog(
+        KeyboardScaleDialog(
             onDismissRequest = { showDialog = false },
             title = { Text(name) },
             baseKey = baseKey,
@@ -83,9 +76,9 @@ fun MultiSliderPreference(
         )
 }
 
-// SliderDialog, but for multiple sliders with same range, each with a different setting and title
+// SliderDialog specialized for keyboard scale settings using multiple sliders with same range, each with a different setting and title
 @Composable
-private fun MultiSliderDialog(
+private fun KeyboardScaleDialog(
     onDismissRequest: () -> Unit,
     title: @Composable () -> Unit,
     baseKey: String,
@@ -97,8 +90,10 @@ private fun MultiSliderDialog(
     positionString: (Float) -> String,
 ) {
     val (variants, keys) = createVariantsAndKeys(dimensions, baseKey)
-    var checked by remember { mutableStateOf(List(variants.size) { true }) }
-    val prefs = LocalContext.current.prefs()
+    val foldedString = stringResource(R.string.folded) // we want to hide foldable settings for non-foldable phones
+    val ctx = LocalContext.current
+    var checked by remember { mutableStateOf(dimensions.map { FoldableUtils.isFoldable || !it.contains(foldedString) }) }
+    val prefs = ctx.prefs()
     val done = remember { mutableMapOf<String, () -> Unit>() }
 
     ThreeButtonAlertDialog(
@@ -114,9 +109,11 @@ private fun MultiSliderDialog(
                 Column(Modifier.verticalScroll(state)) {
                     if (dimensions.size > 1) {
                         dimensions.forEachIndexed { i, dimension ->
-                            DimensionCheckbox(checked[i], dimension) {
-                                checked = checked.mapIndexed { j, c -> if (i == j) it else c }
-                            }
+                            // hide "folded" box for non-foldables
+                            if (FoldableUtils.isFoldable || !dimension.contains(foldedString))
+                                DimensionCheckbox(checked[i], dimension) {
+                                    checked = checked.mapIndexed { j, c -> if (i == j) it else c }
+                                }
                         }
                     }
                     variants.forEachIndexed { i, variant ->
@@ -192,14 +189,14 @@ private const val SPLIT = " / "
 @Composable
 private fun Preview() {
     Theme(previewDark) {
-        MultiSliderDialog(
+        KeyboardScaleDialog(
             onDismissRequest = { },
             onDone = { },
             positionString = { "${it.toInt()}%"},
             defaultValues = Array(8) { 100f - it % 2 * 50f },
             range = 0f..500f,
             title = { Text("bottom padding scale") },
-            dimensions = listOf("landscape", "unfolded", "split"),
+            dimensions = listOf("landscape", "split", "folded"),
             baseKey = ""
         )
     }

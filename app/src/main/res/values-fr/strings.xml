@@ -98,7 +98,7 @@
     <string name="setup_step3_title">Félicitations, l\'opération est terminée !</string>
     <string name="setup_step3_instruction">Avec %s, vous pouvez saisir du texte dans toutes vos applications préférées.</string>
     <string name="setup_step3_action">Configurer le clavier</string>
-    <string name="setup_finish_action">"OK"</string>
+    <string name="setup_finish_action">Terminé</string>
     <string name="show_setup_wizard_icon">"Afficher l\'icône de l\'application"</string>
     <string name="show_setup_wizard_icon_summary">"Affiche l\'icône de l\'application dans le lanceur"</string>
     <string name="dictionary_category_title">"Dictionnaires complémentaires"</string>
@@ -148,9 +148,8 @@ Nouveau dictionnaire:
     <string name="secondary_locale">Saisie multilingue</string>
     <string name="load_gesture_library">Charger la bibliothèque de saisie gestuelle</string>
     <string name="load_gesture_library_summary">Fournir une bibliothèque native pour activer la saisie gestuelle</string>
-    <string name="load_gesture_library_message">Vous aurez besoin de la bibliothèque pour CPU \'%s\'. Les bibliothèques incompatibles peuvent crasher lors de l\'utilisation de la saisie gestuelle.
-        \n\nAttention : le chargement de fichier externe peut constituer un risque pour la sécurité. N\'utilisez qu\'une bibliothèque provenant d\'une source en laquelle vous avez confiance.</string>
-    <string name="checksum_mismatch_message">Fichier de bibliothèque inconnu. Êtes-vous sûr qu\'il provient d\'une source fiable et que c\'est pour CPU \'%s\' ?</string>
+    <string name="load_gesture_library_message">Vous aurez besoin de la bibliothèque \'%s\'. Les bibliothèques incompatibles peuvent crasher lors de l\'utilisation de la saisie gestuelle. \n\nAttention : le chargement de fichier externe peut constituer un risque pour la sécurité. N\'utilisez qu\'une bibliothèque provenant d\'une source en laquelle vous avez confiance.</string>
+    <string name="checksum_mismatch_message">Fichier de bibliothèque inconnu. Êtes-vous sûr qu\'il provient d\'une source fiable et que c\'est pour \'%s\' ?</string>
     <string name="load_gesture_library_button_load">Charger bibliothèque</string>
     <string name="load_gesture_library_button_delete">Supprimer bibliothèque</string>
     <string name="ime_settings">Paramètres d\'HeliBoard</string>
@@ -268,7 +267,7 @@ Nouveau dictionnaire:
     <string name="label_go_key">"Accès"</string>
     <string name="label_next_key">"Suiv."</string>
     <string name="label_previous_key">"Préc."</string>
-    <string name="label_done_key">"OK"</string>
+    <string name="label_done_key">Effectué</string>
     <string name="label_send_key">"Envoyer"</string>
     <string name="label_search_key">Rechercher</string>
     <string name="label_pause_key">"Pause"</string>
@@ -385,7 +384,6 @@ Nouveau dictionnaire:
     <string name="prefs_side_padding_scale">Espacement latéral</string>
     <string name="number_row_hints">Afficher les symboles sur la rangée numérique</string>
     <string name="prefs_language_swipe_distance">Distance de balayage pour changer de langue</string>
-    <string name="enable_split_keyboard_landscape">Activer le clavier divisé (paysage)</string>
     <string name="split" tools:keep="@string/split">Clavier divisé</string>
     <string name="delete_confirmation">Voulez-vous vraiment supprimer %s ?</string>
     <string name="name_invalid">Nom invalide</string>

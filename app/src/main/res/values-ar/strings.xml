@@ -386,7 +386,6 @@
     <string name="prefs_font_scale">مقياس الخط في لوحة المفاتيح</string>
     <string name="prefs_emoji_font_scale">مقياس الخط لعرض الرموز التعبيرية</string>
     <string name="prefs_side_padding_scale">مقياس الحشو الجانبي</string>
-    <string name="enable_split_keyboard_landscape">فعّل تقسيم لوحة المفاتيح (أفقي)</string>
     <string name="delete_confirmation">هل تريد حذف %s حقًا؟</string>
     <string name="split" tools:keep="@string/split">تقسيم لوحة المفاتيح</string>
     <string name="number_row_hints">أظهِر التلميحات على صف الأرقام</string>

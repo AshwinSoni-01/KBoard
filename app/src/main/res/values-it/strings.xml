@@ -376,7 +376,6 @@
     <string name="subtype_generic_phonetic">%s (Fonetico)</string>
     <string name="prefs_key_emoji_max_sdk">Forza la versione delle emoji</string>
     <string name="subtype_dru">Dargwa (Urakhi)</string>
-    <string name="enable_split_keyboard_landscape">Tastiera divisa (orizzontale)</string>
     <string name="split" tools:keep="@string/split">Tastiera divisa</string>
     <string name="auto_correct_shortcuts_summary">Scorciatoie espanse dalla correzione automatica</string>
     <string name="delete_confirmation">Vuoi davvero eliminare %s?</string>

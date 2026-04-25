@@ -80,6 +80,7 @@ import helium314.keyboard.settings.DropDownField
 import helium314.keyboard.settings.SearchScreen
 import helium314.keyboard.settings.SettingsActivity
 import helium314.keyboard.latin.utils.Theme
+import helium314.keyboard.latin.utils.previewDark
 import helium314.keyboard.settings.WithSmallTitle
 import helium314.keyboard.settings.dialogs.ConfirmationDialog
 import helium314.keyboard.settings.dialogs.LayoutEditDialog
@@ -89,7 +90,7 @@ import helium314.keyboard.settings.dialogs.ReorderDialog
 import helium314.keyboard.settings.initPreview
 import helium314.keyboard.settings.layoutFilePicker
 import helium314.keyboard.settings.layoutIntent
-import helium314.keyboard.latin.utils.previewDark
+import helium314.keyboard.settings.GetIconOrEmpty
 import java.util.Locale
 
 @Composable
@@ -384,7 +385,7 @@ private fun PopupOrderDialog(
         displayItem = { item ->
             var checked by rememberSaveable { mutableStateOf(item.state) }
             Row(verticalAlignment = Alignment.CenterVertically) {
-                KeyboardIconsSet.instance.GetIcon(item.name)
+                KeyboardIconsSet.instance.GetIconOrEmpty(item.name)
                 val text = item.name.lowercase().getStringResourceOrName("popup_keys_", ctx)
                 Text(text, Modifier.weight(1f))
                 Switch(

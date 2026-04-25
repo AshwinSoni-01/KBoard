@@ -6,7 +6,6 @@
 -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="KeyboardTheme.Rounded_Base" parent="Keyboard">
-        <item name="inputViewStyle">@style/InputView.LXX</item>
         <item name="keyboardStyle">@style/Keyboard.Rounded_Base</item>
         <item name="keyboardViewStyle">@style/KeyboardView.Rounded_Base</item>
         <item name="mainKeyboardViewStyle">@style/MainKeyboardView.Rounded_Base</item>

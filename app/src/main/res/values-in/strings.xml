@@ -389,7 +389,6 @@
     <string name="layout_functional_keys_tablet" tools:keep="@string/layout_functional_keys_tablet">Kunci fungsional (layar besar)</string>
     <string name="subtype_baishakhi_bn_IN">%s (Baishakhi)</string>
     <string name="get_layouts_message">Anda dapat menemukan dan berbagi tata letak di %s.</string>
-    <string name="enable_split_keyboard_landscape">Aktifkan keyboard terpisah (lanskap)</string>
     <string name="delete_confirmation">Benaran mau dihapus %s?</string>
     <string name="name_invalid">Nama invalid</string>
     <string name="prefs_font_scale">Skala font keyboard</string>

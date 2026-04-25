@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
@@ -38,6 +39,7 @@ import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
+import helium314.keyboard.keyboard.internal.KeyboardIconsSet
 import helium314.keyboard.latin.utils.ExpandButton
 import helium314.keyboard.latin.utils.dpToPx
 
@@ -81,6 +83,15 @@ fun IconOrImage(@DrawableRes resId: Int, name: String?, sizeDp: Int) {
     else {
         val px = sizeDp.dpToPx(LocalResources.current)
         Image(drawable!!.toBitmap(px, px).asImageBitmap(), name)
+    }
+}
+
+@Composable
+fun KeyboardIconsSet.GetIconOrEmpty(name: String?) {
+    val iconId = iconIds[name?.lowercase()]
+    Box(Modifier.size(40.dp), contentAlignment = Alignment.Center) {
+        if (iconId != null)
+            Icon(painterResourceCompat(iconId), name, Modifier.fillMaxSize(0.8f))
     }
 }
 
