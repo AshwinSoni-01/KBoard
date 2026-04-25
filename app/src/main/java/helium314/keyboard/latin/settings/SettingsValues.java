@@ -19,6 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.core.util.TypedValueCompat;
 
 import helium314.keyboard.compat.ConfigurationCompatKt;
+import helium314.keyboard.compat.IsLockedCompatKt;
 import helium314.keyboard.keyboard.KeyboardTheme;
 import helium314.keyboard.keyboard.internal.keyboard_parser.LocaleKeyboardInfosKt;
 import helium314.keyboard.latin.InputAttributes;
@@ -172,9 +173,10 @@ public class SettingsValues {
         mInputAttributes = inputAttributes;
 
         // Get the settings preferences
-        mToolbarMode = Settings.readToolbarMode(prefs);
+        boolean isLocked = IsLockedCompatKt.isDeviceLocked(context); // we want to hide the toolbar / suggestion strip entirely if device is locked
+        mToolbarMode = isLocked ? ToolbarMode.HIDDEN : Settings.readToolbarMode(prefs);
         mToolbarSwipeDownToHide = prefs.getBoolean(Settings.PREF_TOOLBAR_SWIPE_DOWN_TO_HIDE, Defaults.PREF_TOOLBAR_SWIPE_DOWN_TO_HIDE);
-        mToolbarHidingGlobal = prefs.getBoolean(Settings.PREF_TOOLBAR_HIDING_GLOBAL, Defaults.PREF_TOOLBAR_HIDING_GLOBAL);
+        mToolbarHidingGlobal = isLocked || prefs.getBoolean(Settings.PREF_TOOLBAR_HIDING_GLOBAL, Defaults.PREF_TOOLBAR_HIDING_GLOBAL);
         mAutoCap = prefs.getBoolean(Settings.PREF_AUTO_CAP, Defaults.PREF_AUTO_CAP) && ScriptUtils.scriptSupportsUppercase(mLocale);
         mVibrateOn = Settings.readVibrationEnabled(prefs);
         mVibrateInDndMode = prefs.getBoolean(Settings.PREF_VIBRATE_IN_DND_MODE, Defaults.PREF_VIBRATE_IN_DND_MODE);

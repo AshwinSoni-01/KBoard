@@ -27,11 +27,8 @@ import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.core.view.doOnLayout
 import androidx.core.view.doOnNextLayout
-import androidx.core.view.doOnPreDraw
 import androidx.core.view.isVisible
-import helium314.keyboard.compat.isDeviceLocked
 import helium314.keyboard.event.HapticEvent
 import helium314.keyboard.keyboard.KeyboardSwitcher
 import helium314.keyboard.keyboard.internal.KeyboardIconsSet
@@ -229,11 +226,9 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
     }
 
     fun setToolbarVisibility(toolbarVisible: Boolean) {
-        // avoid showing toolbar keys when locked
-        val locked = isDeviceLocked(context)
-        pinnedKeys.isVisible = !locked && !toolbarVisible
-        suggestionsStrip.isVisible = locked || !toolbarVisible
-        toolbarContainer.isVisible = !locked && toolbarVisible
+        pinnedKeys.isVisible = !toolbarVisible
+        suggestionsStrip.isVisible = !toolbarVisible
+        toolbarContainer.isVisible = toolbarVisible
 
         if (DEBUG_SUGGESTIONS) {
             for (view in debugInfoViews) {
@@ -241,7 +236,7 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
             }
         }
 
-        toolbarExpandKey.scaleX = (if (toolbarVisible && !locked) -1f else 1f) * direction
+        toolbarExpandKey.scaleX = (if (toolbarVisible) -1f else 1f) * direction
     }
 
     fun setSuggestions(suggestions: SuggestedWords, isRtlLanguage: Boolean) {
@@ -527,10 +522,8 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
             toolbarExpandKey.isVisible = toolbarIsExpandable
         }
 
-        // hide pinned keys if device is locked, and avoid expanding toolbar
-        val hideToolbarKeys = isDeviceLocked(context)
-        toolbarExpandKey.setOnClickListener(if (hideToolbarKeys || !toolbarIsExpandable) null else this)
-        pinnedKeys.visibility = if (hideToolbarKeys) GONE else suggestionsStrip.visibility
+        toolbarExpandKey.setOnClickListener(if (!toolbarIsExpandable) null else this)
+        pinnedKeys.visibility = suggestionsStrip.visibility
         isExternalSuggestionVisible = false
     }
 

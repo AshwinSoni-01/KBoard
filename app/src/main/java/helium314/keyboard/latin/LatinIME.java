@@ -761,6 +761,7 @@ public class LatinIME extends InputMethodService implements
     }
 
     public void updateSuggestionStripView(View view) {
+        Log.i("test", "update ss view");
         mSuggestionStripView = mSettings.getCurrent().mToolbarMode == ToolbarMode.HIDDEN || isEmojiSearch()?
                         null : view.findViewById(R.id.suggestion_strip_view);
         if (hasSuggestionStripView()) {
@@ -862,11 +863,24 @@ public class LatinIME extends InputMethodService implements
         mGestureConsumer = GestureConsumer.NULL_GESTURE_CONSUMER;
         mRichImm.refreshSubtypeCaches();
         final KeyboardSwitcher switcher = mKeyboardSwitcher;
-        switcher.updateKeyboardTheme(mDisplayContext);
-        final MainKeyboardView mainKeyboardView = switcher.getMainKeyboardView();
+
         // If we are starting input in a different text field from before, we'll have to reload
         // settings, so currentSettingsValues can't be final.
         SettingsValues currentSettingsValues = mSettings.getCurrent();
+        boolean inputTypeChanged = !currentSettingsValues.isSameInputType(editorInfo);
+        boolean isDifferentTextField = !restarting || inputTypeChanged;
+
+        // we need to reload the setting before using them, e.g. in startInput or in postResumeSuggestions
+        // we want to arrive here before calling updateKeyboardTheme, because this reads SettingsValues.mToolbarMode
+        if (isDifferentTextField || !currentSettingsValues.hasSameOrientation(getResources().getConfiguration())) {
+            loadSettings();
+            if (hasSuggestionStripView())
+                mSuggestionStripView.updateVoiceKey();
+        }
+
+        switcher.updateKeyboardTheme(mDisplayContext);
+        MainKeyboardView mainKeyboardView = switcher.getMainKeyboardView();
+        currentSettingsValues = mSettings.getCurrent(); // settingsValues may have been reloaded
 
         if (editorInfo == null) {
             Log.e(TAG, "Null EditorInfo in onStartInputView()");
@@ -897,9 +911,6 @@ public class LatinIME extends InputMethodService implements
             accessUtils.onStartInputViewInternal(mainKeyboardView, editorInfo, restarting);
         }
 
-        final boolean inputTypeChanged = !currentSettingsValues.isSameInputType(editorInfo);
-        final boolean isDifferentTextField = !restarting || inputTypeChanged;
-
         StatsUtils.onStartInputView(editorInfo.inputType,
                 Settings.getValues().mDisplayOrientation,
                 !isDifferentTextField);
@@ -908,13 +919,6 @@ public class LatinIME extends InputMethodService implements
         // Note: This call should be done by InputMethodService?
         updateFullscreenMode();
 
-        // we need to reload the setting before using them, e.g. in startInput or in postResumeSuggestions
-        if (isDifferentTextField || !currentSettingsValues.hasSameOrientation(getResources().getConfiguration())) {
-            loadSettings();
-            currentSettingsValues = mSettings.getCurrent();
-            if (hasSuggestionStripView())
-                mSuggestionStripView.updateVoiceKey();
-        }
         // ALERT: settings have not been reloaded and there is a chance they may be stale.
         // In the practice, if it is, we should have gotten onConfigurationChanged so it should
         // be fine, but this is horribly confusing and must be fixed AS SOON AS POSSIBLE.
