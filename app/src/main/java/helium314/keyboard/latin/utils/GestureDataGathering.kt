@@ -45,8 +45,6 @@ import kotlinx.serialization.json.Json
 //   also don't switch default if user changed allowed apps without touching the default-block setting?
 //  blocked words and app exclusions will still apply! ->  clarify in description
 //  different or same toolbar key -> better a different one, simply because of the icon (but also different code would be good)
-fun isInActiveGatheringMode(editorInfo: EditorInfo) =
-    dictTestImeOption == editorInfo.privateImeOptions && gestureDataActiveFacilitator != null
 
 // todo: remove logging, it may contain sensitive data!
 object PassiveGatheringCache {

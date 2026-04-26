@@ -3,6 +3,7 @@ package helium314.keyboard.latin.utils
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.view.inputmethod.EditorInfo
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -44,6 +45,9 @@ object GestureDataGatheringSettings {
     private const val PREF_SHOW_PROMOTION_DIALOG_NEXT = "gesture_data_show_promotion_dialog_next_time"
     private const val PREF_SHOW_REMINDER_DIALOG_NEXT = "gesture_data_show_reminder_dialog_next_time"
 
+
+    fun isInActiveGatheringMode(editorInfo: EditorInfo) =
+        dictTestImeOption == editorInfo.privateImeOptions && gestureDataActiveFacilitator != null
 
     fun isPassiveGatheringEnabled(prefs: SharedPreferences) =
         prefs.getBoolean(PREF_PASSIVE_ENABLED, false)

@@ -1844,9 +1844,9 @@ public class LatinIME extends InputMethodService implements
         }
     }
 
-    // remove when data gathering phase is done (end of 2026 latest)
-     public void setGestureDataGatheringMode(final EditorInfo editorInfo) {
-        if (GestureDataGatheringKt.isInActiveGatheringMode(editorInfo)) {
+    public void setGestureDataGatheringMode(EditorInfo editorInfo) {
+        // only for active gesture data gathering, remove when data gathering phase is done (end of 2026 latest)
+        if (GestureDataGatheringSettings.INSTANCE.isInActiveGatheringMode(editorInfo)) {
             mDictionaryFacilitator = GestureDataGatheringKt.getGestureDataActiveFacilitator();
             GestureDataGatheringKt.usePassiveGathering = false;
             mKeyboardSwitcher.setPassiveGatheringIndicator(false, false);
