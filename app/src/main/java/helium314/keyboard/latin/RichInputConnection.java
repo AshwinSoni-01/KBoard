@@ -850,7 +850,7 @@ public final class RichInputConnection implements PrivateCommandPerformer {
      *
      * @param spacingAndPunctuations the rules for spacing and punctuation
      * @param script the script we consider to be writing words, as one of ScriptUtils.SCRIPT_*
-     * @return a range containing the text surrounding the cursor (does NOT include the current selection)
+     * @return a range containing the text surrounding the cursor (does NOT include the current selection, if any)
      */
     @Nullable public TextRange getWordRangeAtCursor(final SpacingAndPunctuations spacingAndPunctuations,
             final String script) {

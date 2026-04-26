@@ -522,7 +522,7 @@ class Suggest(private val mDictionaryFacilitator: DictionaryFacilitator) {
             }
         }
 
-        /** reduces score of the first suggestion if next one is close and has more than a single letter  */
+        /** reduces score of the first suggestion if next one is close and has more than a single letter */
         private fun replaceSingleLetterFirstSuggestion(suggestionResults: MutableList<SuggestedWordInfo>) {
             if (suggestionResults.size < 2 || suggestionResults.first().mWord.length != 1) return
             // suppress single letter suggestions if next suggestion is close and has more than one letter
