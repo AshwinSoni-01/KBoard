@@ -178,8 +178,8 @@ object KeyCode {
     const val META_RIGHT =                -10049
     const val EMOJI_SEARCH =              -10050
     const val INLINE_EMOJI_SEARCH_DONE =  -10051
-    const val TOGGLE_PASSIVE_GATHERING =  -10052 // will be useless after removal of gesture data gathering, but don't remove for compatibility
-    const val PASSIVE_GATHERING_TEMP_OFF =-10053 // will be useless after removal of gesture data gathering, but don't remove for compatibility
+    const val TOGGLE_PASSIVE_GATHERING =  -10052 // will be useless after removal of gesture data gathering (keep for compatibility)
+    const val PASSIVE_GATHERING_TEMP_OFF =-10053 // will be useless after removal of gesture data gathering (keep for compatibility)
 
 
     // Intents
