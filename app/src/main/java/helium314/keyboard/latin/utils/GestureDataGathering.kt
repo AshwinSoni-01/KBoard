@@ -35,17 +35,12 @@ import kotlinx.serialization.json.Json
 
 // todo: add opt-in mode, where user needs to actively use the toolbar button to store cached data
 //  collect by default <-> discard by default switch
-//  need to think about when the cache is cleared, because we don't want previous text fields' content,
-//   but we probably (?) want data to stay in case of restart input (triggered by the app or system, possibly in connection with e.g. undo)
-//  what about rotation?
-//  what about switching app with keyboard open (especially connectbot that leaves keyboard open, but also others)
-//   consider this "always show keyboard" option that might come
-//  in case of doubt: better discard too often instead of keeping data
-//  in opt-in mode all apps are allowed by default (this is ONLY the default -> write in description)
-//   also don't switch default if user changed allowed apps without touching the default-block setting?
-//  different or same toolbar key -> better a different one, simply because of the icon (but also different code would be good)
 //  description
+//   no data saved except if you click the key
+//    in that case, only data from the current text field is saved (since the last text field switch)
 //   blocked words and app exclusions will still apply
+//    but all-apps are enabled? (only if no settings changed? requiring to enable multiple things is a bit much...)
+//    (maybe include all apps by default instead?)
 //   click will save data (even when not using opt-in mode)
 
 // todo: remove logging, it may contain sensitive data!

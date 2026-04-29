@@ -78,6 +78,7 @@ import helium314.keyboard.latin.utils.JniUtils;
 import helium314.keyboard.latin.utils.KtxKt;
 import helium314.keyboard.latin.utils.LeakGuardHandlerWrapper;
 import helium314.keyboard.latin.utils.Log;
+import helium314.keyboard.latin.utils.PassiveGatheringCache;
 import helium314.keyboard.latin.utils.RecapitalizeMode;
 import helium314.keyboard.latin.utils.StatsUtils;
 import helium314.keyboard.latin.utils.StatsUtilsManager;
@@ -848,7 +849,7 @@ public class LatinIME extends InputMethodService implements
     void onStartInputViewInternal(final EditorInfo editorInfo, final boolean restarting) {
         super.onStartInputView(editorInfo, restarting);
 
-        setGestureDataGatheringMode(editorInfo);
+        setGestureDataGatheringMode(editorInfo, restarting);
 
         mDictionaryFacilitator.onStartInput();
         // Switch to the null consumer to handle cases leading to early exit below, for which we
@@ -1844,7 +1845,7 @@ public class LatinIME extends InputMethodService implements
         }
     }
 
-    public void setGestureDataGatheringMode(EditorInfo editorInfo) {
+    public void setGestureDataGatheringMode(EditorInfo editorInfo, boolean restarting) {
         // only for gesture data gathering, remove when data gathering phase is done (end of 2026 latest)
         if (GestureDataGatheringSettings.INSTANCE.isInActiveGatheringMode(editorInfo)) {
             mDictionaryFacilitator = GestureDataGatheringKt.getGestureDataActiveFacilitator();
@@ -1856,6 +1857,9 @@ public class LatinIME extends InputMethodService implements
             // no active mode, check for passive mode
             boolean usePassive = GestureDataGatheringKt.setUsePassiveGathering(this, editorInfo);
             mKeyboardSwitcher.setPassiveGatheringIndicator(usePassive, false);
+            // restarting means we're still in the same field, so don't clear anything in opt-in mode
+            if (!restarting || !KtxKt.prefs(this).getBoolean(GestureDataGatheringSettings.PREF_PASSIVE_SAVE_ON_BUTTON, true)) // todo: default?
+                PassiveGatheringCache.flushOrClear(this);
         }
         GestureDataGatheringSettings.INSTANCE.showEndNotificationIfNecessary(this); // will do nothing for a long time
         mInputLogic.setFacilitator(mDictionaryFacilitator);

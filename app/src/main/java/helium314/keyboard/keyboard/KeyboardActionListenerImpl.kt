@@ -108,13 +108,13 @@ class KeyboardActionListenerImpl(private val latinIME: LatinIME, private val inp
             KeyCode.TOGGLE_PASSIVE_GATHERING -> {
                 GestureDataGatheringSettings.togglePassiveGatheringEnabled(latinIME.prefs())
                 PassiveGatheringCache.clear() // clear data from current text field
-                latinIME.setGestureDataGatheringMode(latinIME.currentInputEditorInfo)
+                latinIME.setGestureDataGatheringMode(latinIME.currentInputEditorInfo, false)
                 return
             }
             KeyCode.PASSIVE_GATHERING_TEMP_OFF -> {
                 GestureDataGatheringSettings.tempDisablePassiveGathering(latinIME.prefs())
                 PassiveGatheringCache.clear() // clear data from current text field
-                latinIME.setGestureDataGatheringMode(latinIME.currentInputEditorInfo)
+                latinIME.setGestureDataGatheringMode(latinIME.currentInputEditorInfo, false)
                 return
             }
             KeyCode.PASSIVE_GATHERING_SAVE -> {
@@ -124,7 +124,7 @@ class KeyboardActionListenerImpl(private val latinIME: LatinIME, private val inp
             KeyCode.TOGGLE_INCOGNITO_MODE -> {
                 settings.toggleAlwaysIncognitoMode()
                 PassiveGatheringCache.clear() // clear data from current text field
-                latinIME.setGestureDataGatheringMode(latinIME.currentInputEditorInfo)
+                latinIME.setGestureDataGatheringMode(latinIME.currentInputEditorInfo, false)
                 return
             }
         }
