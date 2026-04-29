@@ -66,9 +66,10 @@ object GestureDataGatheringSettings {
         prefs.edit { putLong(PREF_PASSIVE_DISABLED_BEFORE, System.currentTimeMillis() + 5 * 60 * 1000L) }
     }
 
-    fun String.filterPassiveGatheringToolbarKey(prefs: SharedPreferences) = split(Separators.ENTRY).filter {
+    fun String.filterPassiveGatheringToolbarKeys(prefs: SharedPreferences) = split(Separators.ENTRY).filter {
         if (prefs.contains(PREF_PASSIVE_ENABLED)) true
-        else ToolbarKey.PASSIVE_GATHERING.name !in it // only show key if passive gathering was enabled
+        // only show keys if passive gathering was enabled at some point
+        else ToolbarKey.PASSIVE_GATHERING_STATE.name !in it && ToolbarKey.PASSIVE_GATHERING_SAVE.name !in it
     }.joinToString(Separators.ENTRY)
 
     fun addWordExclusion(context: Context, exclusion: String) {

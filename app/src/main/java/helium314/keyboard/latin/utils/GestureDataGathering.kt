@@ -43,8 +43,10 @@ import kotlinx.serialization.json.Json
 //  in case of doubt: better discard too often instead of keeping data
 //  in opt-in mode all apps are allowed by default (this is ONLY the default -> write in description)
 //   also don't switch default if user changed allowed apps without touching the default-block setting?
-//  blocked words and app exclusions will still apply! ->  clarify in description
 //  different or same toolbar key -> better a different one, simply because of the icon (but also different code would be good)
+//  description
+//   blocked words and app exclusions will still apply
+//   click will save data (even when not using opt-in mode)
 
 // todo: remove logging, it may contain sensitive data!
 object PassiveGatheringCache {

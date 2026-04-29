@@ -441,7 +441,7 @@ fun GestureDataScreen(
 
             if (!activeGathering) {
                 HorizontalDivider()
-                WithSmallTitle(stringResource(R.string.passive_gathering)) {
+                WithSmallTitle(stringResource(R.string.passive_gathering_state)) {
                     PassiveGatheringSettings()
                 }
                 Spacer(Modifier.height(12.dp))

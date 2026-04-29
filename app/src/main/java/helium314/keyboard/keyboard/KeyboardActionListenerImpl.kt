@@ -117,6 +117,10 @@ class KeyboardActionListenerImpl(private val latinIME: LatinIME, private val inp
                 latinIME.setGestureDataGatheringMode(latinIME.currentInputEditorInfo)
                 return
             }
+            KeyCode.PASSIVE_GATHERING_SAVE -> {
+                PassiveGatheringCache.flush(latinIME)
+                return
+            }
             KeyCode.TOGGLE_INCOGNITO_MODE -> {
                 settings.toggleAlwaysIncognitoMode()
                 PassiveGatheringCache.clear() // clear data from current text field

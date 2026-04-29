@@ -52,7 +52,7 @@ private fun setToolbarButtonActivatedState(button: ImageButton) {
         ONE_HANDED -> Settings.getValues().mOneHandedModeEnabled
         SPLIT -> Settings.getValues().mIsSplitKeyboardEnabled
         AUTOCORRECT -> Settings.getValues().mAutoCorrectionEnabledPerUserSettings
-        PASSIVE_GATHERING -> usePassiveGathering
+        PASSIVE_GATHERING_STATE -> usePassiveGathering
         else -> true
     }
 }
@@ -88,7 +88,8 @@ fun getCodeForToolbarKey(key: ToolbarKey) = Settings.getInstance().getCustomTool
     PAGE_START -> KeyCode.MOVE_START_OF_PAGE
     PAGE_END -> KeyCode.MOVE_END_OF_PAGE
     SPLIT -> KeyCode.SPLIT_LAYOUT
-    PASSIVE_GATHERING -> KeyCode.TOGGLE_PASSIVE_GATHERING
+    PASSIVE_GATHERING_STATE -> KeyCode.TOGGLE_PASSIVE_GATHERING
+    PASSIVE_GATHERING_SAVE -> KeyCode.PASSIVE_GATHERING_SAVE
 }
 
 fun getCodeForToolbarKeyLongClick(key: ToolbarKey) = Settings.getInstance().getCustomToolbarLongpressCode(key) ?: when (key) {
@@ -107,7 +108,7 @@ fun getCodeForToolbarKeyLongClick(key: ToolbarKey) = Settings.getInstance().getC
     WORD_RIGHT -> KeyCode.MOVE_END_OF_LINE
     PAGE_UP -> KeyCode.MOVE_START_OF_PAGE
     PAGE_DOWN -> KeyCode.MOVE_END_OF_PAGE
-    PASSIVE_GATHERING -> KeyCode.PASSIVE_GATHERING_TEMP_OFF
+    PASSIVE_GATHERING_STATE -> KeyCode.PASSIVE_GATHERING_TEMP_OFF
     else -> KeyCode.UNSPECIFIED
 }
 
@@ -115,7 +116,7 @@ fun getCodeForToolbarKeyLongClick(key: ToolbarKey) = Settings.getInstance().getC
 enum class ToolbarKey {
     VOICE, CLIPBOARD, NUMPAD, UNDO, REDO, SETTINGS, SELECT_ALL, SELECT_WORD, COPY, CUT, PASTE, ONE_HANDED, SPLIT,
     INCOGNITO, AUTOCORRECT, CLEAR_CLIPBOARD, CLOSE_HISTORY, EMOJI, LEFT, RIGHT, UP, DOWN, WORD_LEFT, WORD_RIGHT,
-    PAGE_UP, PAGE_DOWN, FULL_LEFT, FULL_RIGHT, PAGE_START, PAGE_END, PASSIVE_GATHERING
+    PAGE_UP, PAGE_DOWN, FULL_LEFT, FULL_RIGHT, PAGE_START, PAGE_END, PASSIVE_GATHERING_STATE, PASSIVE_GATHERING_SAVE
 }
 
 enum class ToolbarMode {

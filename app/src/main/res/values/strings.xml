@@ -1181,7 +1181,8 @@ New dictionary:
     <string name="gesture_data_long_press_select_hint">Long-press to select</string>
     <!-- Toolbar key to enable / disable passive gesture data gathering
      string will probably be removed once data gathering is finished (end of 2026 latest) -->
-    <string name="passive_gathering" tools:keep="@string/passive_gathering">Passive data gathering</string>
+    <string name="passive_gathering_state" tools:keep="@string/passive_gathering_state">Passive data gathering</string>
+    <string name="passive_gathering_save" tools:keep="@string/passive_gathering_save">Save passive gathering data</string>
     <!-- Text showing suggestions recorded for a specific gesture
      string will probably be removed once data gathering is finished (end of 2026 latest) -->
     <string name="gesture_data_suggestions">Suggestions: %s</string>

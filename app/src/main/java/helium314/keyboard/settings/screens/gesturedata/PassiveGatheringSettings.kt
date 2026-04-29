@@ -105,7 +105,7 @@ fun PassiveGatheringSettings() {
         var reviewInfo by remember { mutableStateOf(false) }
         ThreeButtonAlertDialog(
             onDismissRequest = { showInfoDialog = false },
-            title = { Text(stringResource(R.string.passive_gathering)) },
+            title = { Text(stringResource(R.string.passive_gathering_state)) },
             content = {
                 Column {
                     Text(stringResource(R.string.gesture_data_passive_gathering_info_message))

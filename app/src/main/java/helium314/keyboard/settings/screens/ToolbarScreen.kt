@@ -16,7 +16,7 @@ import helium314.keyboard.keyboard.KeyboardSwitcher
 import helium314.keyboard.latin.R
 import helium314.keyboard.latin.settings.Defaults
 import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.GestureDataGatheringSettings.filterPassiveGatheringToolbarKey
+import helium314.keyboard.latin.utils.GestureDataGatheringSettings.filterPassiveGatheringToolbarKeys
 import helium314.keyboard.latin.utils.Log
 import helium314.keyboard.latin.utils.ToolbarMode
 import helium314.keyboard.latin.utils.getActivity
@@ -93,15 +93,15 @@ fun createToolbarSettings(context: Context) = listOf(
         SwitchPreference(it, Defaults.PREF_TOOLBAR_SWIPE_DOWN_TO_HIDE)
     },
     Setting(context, Settings.PREF_TOOLBAR_KEYS, R.string.toolbar_keys) {
-        val keys = Defaults.PREF_TOOLBAR_KEYS.filterPassiveGatheringToolbarKey(LocalContext.current.prefs())
+        val keys = Defaults.PREF_TOOLBAR_KEYS.filterPassiveGatheringToolbarKeys(LocalContext.current.prefs())
         ReorderSwitchPreference(it, keys)
     },
     Setting(context, Settings.PREF_PINNED_TOOLBAR_KEYS, R.string.pinned_toolbar_keys) {
-        val keys = Defaults.PREF_PINNED_TOOLBAR_KEYS.filterPassiveGatheringToolbarKey(LocalContext.current.prefs())
+        val keys = Defaults.PREF_PINNED_TOOLBAR_KEYS.filterPassiveGatheringToolbarKeys(LocalContext.current.prefs())
         ReorderSwitchPreference(it, keys)
     },
     Setting(context, Settings.PREF_CLIPBOARD_TOOLBAR_KEYS, R.string.clipboard_toolbar_keys) {
-        val keys = Defaults.PREF_CLIPBOARD_TOOLBAR_KEYS.filterPassiveGatheringToolbarKey(LocalContext.current.prefs())
+        val keys = Defaults.PREF_CLIPBOARD_TOOLBAR_KEYS.filterPassiveGatheringToolbarKeys(LocalContext.current.prefs())
         ReorderSwitchPreference(it, keys)
     },
     Setting(context, Settings.PREF_TOOLBAR_CUSTOM_KEY_CODES, R.string.customize_toolbar_key_codes) {
