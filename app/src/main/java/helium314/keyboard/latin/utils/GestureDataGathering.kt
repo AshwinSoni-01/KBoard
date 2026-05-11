@@ -137,12 +137,15 @@ object PassiveGatheringCache {
         val wordAtStart = getTouchedWordRange(before, "$selection$after", script, spacingAndPunctuations)
         val wordAtEnd = getTouchedWordRange("$before$selection", after, script, spacingAndPunctuations)
         Log.i(TAG, "at start \"${wordAtStart.mWord}\", at end \"${wordAtEnd.mWord}\"")
-        if (wordAtEnd.mWord == wordAtStart.mWord && selection in wordAtStart.mWord) {
+        val trimmed = selection.trim()
+        if (
+            (wordAtEnd.mWord == wordAtStart.mWord && selection in wordAtStart.mWord)
+            || (trimmed != selection && (wordAtStart == trimmed || wordAtEnd == trimmed)) // treat word + space like word
+        ) {
             Log.i(TAG, "word or part of word selected, removing word")
             cachedWords.removeAll { it.usedWord == wordAtStart.mWord }
         } else {
-            // more than one word selected
-            // todo: what to do? removing all words from cache might be overkill, because deleting much is unlikely to happen because of bad gesture typing
+            // more than one word selected, we do nothing because deleting much is unlikely to happen because of bad gesture typing
         }
         updateIcon()
     }
@@ -258,7 +261,7 @@ class WordData(
             if (word.mOriginalScore < 0 && filteredSuggestions.size > 5)
                 continue // no need to add bad matches
             if (filteredSuggestions.any { it.mWord == word.mWord })
-                continue // only first occurrence word, todo: ask whether this is ok!
+                continue // only first occurrence word
             if (filteredSuggestions.size > 18) // user sees 18 suggestions at most
             // todo: some data contains more suggestions than allowed -> there is something broken here!
                 continue // should be enough
@@ -337,7 +340,6 @@ data class GestureData(
     val uuid: String?
 ) {
     companion object {
-        // todo: make the checksums are really correct (nothing should happen with the change, but. better check)
         fun GestureData.toJsonWithChecksum(): String {
             val jsonString = Json.encodeToString(this.copy(uuid = null))
             // if uuid in the resulting string is replaced with null, we should be able to reproduce it
