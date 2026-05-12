@@ -39,9 +39,9 @@ object PassiveGatheringCache {
     private const val TAG = "PassiveGathering"
     private val scope = CoroutineScope(Dispatchers.IO)
 
-    private fun updateIcon() {
+    private fun updateIcon(save: Boolean = false) {
         scope.launch(Dispatchers.Main) { // on main thread because it's touching views
-            KeyboardSwitcher.getInstance().setPassiveGatheringIndicator(usePassiveGathering, cachedWords.isNotEmpty())
+            KeyboardSwitcher.getInstance().setPassiveGatheringIndicator(usePassiveGathering, cachedWords.isNotEmpty(), save)
         }
     }
 
@@ -50,9 +50,11 @@ object PassiveGatheringCache {
             Log.i(TAG, "inline emoji search, not adding anything")
             return
         }
+        if (!word.isSavingOk(Settings.getCurrentContext())) {
+            Log.i(TAG, "not adding ${word.usedWord} because it's not allowed")
+            return
+        }
         Log.i(TAG, "adding ${word.usedWord}")
-        // we cache the word before checking whether it can be saved because we don't have context
-        // todo: actually we could just use Settings.getCurrentContext -> would provide better feedback to users!
         cachedWords.add(word)
         updateIcon()
     }
@@ -148,11 +150,7 @@ object PassiveGatheringCache {
         val words = cachedWords.toList()
         Log.i(TAG, "save cached data")
         cachedWords.clear()
-        // todo: if anything was saved, we could shortly change the icon to green or so
-        //  but actual saving happens later...
-        //  maybe save should return a bool?
-        //  or assume we save if the cache isn't empty (this needs to do the isSavingOk check already on add)
-        updateIcon()
+        updateIcon(words.isNotEmpty())
         scope.launch { words.forEach { it.save(context) } }
     }
 
@@ -283,7 +281,7 @@ class WordData(
     }
 
     // find when we should NOT save
-    private fun isSavingOk(context: Context): Boolean {
+    fun isSavingOk(context: Context): Boolean {
         if (inputStyle != SuggestedWords.INPUT_STYLE_TAIL_BATCH)
             return false
         if (activeMode && suggestions.all { it.mSourceDict == suggestions.first().mSourceDict })

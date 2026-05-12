@@ -9,8 +9,10 @@ package helium314.keyboard.keyboard;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.view.ContextThemeWrapper;
@@ -598,11 +600,14 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         }, timeMillis);
     }
 
-    public void setPassiveGatheringIndicator(boolean enabled, boolean hasData) {
+    public void setPassiveGatheringIndicator(boolean enabled, boolean hasData, boolean saving) {
         if (mCurrentInputView == null) return;
         ImageView view = mCurrentInputView.findViewById(R.id.passiveGatheringIndicator);
         view.setVisibility(enabled ? View.VISIBLE: View.GONE);
         view.setImageResource(hasData ? R.drawable.btn_keyboard_key_action_normal_lxx_base : R.drawable.ring);
+        if (!saving) return;
+        view.setImageTintList(ColorStateList.valueOf(0xff00a000));
+        view.postDelayed(() -> view.setImageTintList(ColorStateList.valueOf(0xffa00000)), 1500);
     }
 
     // Implements {@link KeyboardState.SwitchActions}.

@@ -1143,6 +1143,7 @@ New dictionary:
         When the circle is filled, recently entered gesture data is waiting to be saved.
         Data is saved either using the toolbar key (see &lt;i&gt;%1$s&lt;/i&gt;) or automatically (when &lt;i&gt;%2$s&lt;/i&gt; is disabled).
         Automatic saving usually happens when switching text field or closing the keyboard, but may also happen on other occasions such as text field changes not under this app\'s control.
+        What data is being saved, the indicator will turn green for a short time.
     </string>
     <!-- Title for info dialog section about controlling passive data gathering
      string will probably be removed once data gathering is finished (end of 2026 latest) -->
