@@ -18,7 +18,7 @@ Please choose a meaningful title for your issue, and consider that if you want h
 **Describe the bug**
 
 **To Reproduce**
-If possible, provide all the necessary steps to reproduce your problem, including the involved apps or settings if relevant.
+If possible, provide all the necessary steps to reproduce your problem, including the involved apps and text field or settings if relevant.
 In case you cannot reproduce the bug, say so and provide information about when the bug may occur for you. Settings and the app you're writing in are usually important, please don't omit them.
 
 **Expected behavior**
