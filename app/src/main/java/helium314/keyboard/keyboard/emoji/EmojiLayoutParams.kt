@@ -45,7 +45,7 @@ internal class EmojiLayoutParams(res: Resources) {
         val emojiListHeight = defaultKeyboardHeight - bottomRowKeyboardHeight - bottomPadding + (offset.toInt())
         emojiListBottomMargin = 0
         val baseEmojiKeyboardHeight = emojiListHeight - emojiCategoryPageIdViewHeight - emojiListBottomMargin
-        emojiKeyboardHeight = (baseEmojiKeyboardHeight * 1.65f).toInt()
+        emojiKeyboardHeight = baseEmojiKeyboardHeight
     }
 
     fun setEmojiListProperties(vp: View) {
