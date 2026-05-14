@@ -6,20 +6,20 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.foundation.text.input.TextFieldLineLimits
-import androidx.compose.foundation.text.input.rememberTextFieldState
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextFieldLabelScope
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
@@ -39,20 +39,21 @@ fun TextInputDialog(
     neutralButtonText: String? = null,
     confirmButtonText: String = stringResource(android.R.string.ok),
     initialText: String = "",
-    textInputLabel: @Composable (TextFieldLabelScope.() -> Unit)? = null,
+    textInputLabel: @Composable (() -> Unit)? = null,
     singleLine: Boolean = true,
     keyboardType: KeyboardType = KeyboardType.Unspecified,
+    isPassword: Boolean = false,
     properties: DialogProperties = DialogProperties(),
     reducePadding: Boolean = false,
     checkTextValid: (text: String) -> Boolean = { it.isNotBlank() }
 ) {
-    val state = rememberTextFieldState(initialText, TextRange(if (singleLine) initialText.length else 0))
+    val textState = remember { mutableStateOf(initialText) }
 
     ThreeButtonAlertDialog(
         onDismissRequest = onDismissRequest,
-        onConfirmed = { onConfirmed(state.text.toString()) },
+        onConfirmed = { onConfirmed(textState.value) },
         confirmButtonText = confirmButtonText,
-        checkOk = { checkTextValid(state.text.toString()) },
+        checkOk = { checkTextValid(textState.value) },
         neutralButtonText = neutralButtonText,
         onNeutral = { onDismissRequest(); onNeutral() },
         modifier = modifier,
@@ -65,13 +66,15 @@ fun TextInputDialog(
                 }
                 val focusRequester = remember { FocusRequester() }
                 OutlinedTextField(
-                    state = state,
+                    value = textState.value,
+                    onValueChange = { s -> textState.value = s },
                     modifier = Modifier
                         .fillMaxWidth()
                         .focusRequester(focusRequester),
                     label = textInputLabel,
-                    keyboardOptions = KeyboardOptions(keyboardType = keyboardType),
-                    lineLimits = if (singleLine) TextFieldLineLimits.SingleLine else TextFieldLineLimits.MultiLine(),
+                    keyboardOptions = KeyboardOptions(keyboardType = if (isPassword) KeyboardType.Password else keyboardType),
+                    visualTransformation = if (isPassword) PasswordVisualTransformation() else VisualTransformation.None,
+                    singleLine = singleLine,
                     textStyle = contentTextDirectionStyle,
                 )
                 LaunchedEffect(Unit) { focusRequester.requestFocus() }

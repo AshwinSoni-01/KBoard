@@ -46,6 +46,14 @@
     <string name="settings_screen_correction">Text correction</string>
     <!-- Settings screen title for advanced settings -->
     <string name="settings_screen_advanced">Advanced</string>
+    <!-- Settings screen title for cloud & AI features -->
+    <string name="cloud_features">Cloud &amp; AI Features</string>
+    <string name="cloud_features_summary">Master switch. Allows the keyboard to connect to the internet ONLY for explicit features like AI Tools or GIF Search.</string>
+    <string name="test_connection">Test Connection</string>
+    <string name="test_connection_summary">Pings httpbin.org to verify Gatekeeper status.</string>
+    <string name="ai_tools">AI Tools</string>
+    <string name="gemini_api_key">Gemini API Key</string>
+    <string name="gemini_api_key_summary">Enter your personal Google Gemini API key.</string>
     <!-- Settings screen title for keyboard theme settings -->
     <string name="settings_screen_theme">Theme</string>
     <!-- Settings category title for Preference/Input settings -->

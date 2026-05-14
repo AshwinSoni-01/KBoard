@@ -3,10 +3,9 @@
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_columnWeight="1"
-    android:layout_margin="6dp"
+    android:layout_margin="4dp"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?android:attr/selectableItemBackground"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -15,11 +14,11 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@drawable/menu_tile_bg"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="false"
+        android:focusable="false"
         android:padding="14dp"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:tintMode="src_in" />
 
     <TextView
         android:id="@+id/menu_tile_label"

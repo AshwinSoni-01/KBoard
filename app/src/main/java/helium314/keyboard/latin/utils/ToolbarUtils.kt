@@ -85,6 +85,7 @@ fun getCodeForToolbarKey(key: ToolbarKey) = Settings.getInstance().getCustomTool
     PAGE_START -> KeyCode.MOVE_START_OF_PAGE
     PAGE_END -> KeyCode.MOVE_END_OF_PAGE
     SPLIT -> KeyCode.SPLIT_LAYOUT
+    AI_TOOLS -> KeyCode.AI_TOOLS
 }
 
 fun getCodeForToolbarKeyLongClick(key: ToolbarKey) = Settings.getInstance().getCustomToolbarLongpressCode(key) ?: when (key) {
@@ -110,7 +111,7 @@ fun getCodeForToolbarKeyLongClick(key: ToolbarKey) = Settings.getInstance().getC
 enum class ToolbarKey {
     VOICE, CLIPBOARD, NUMPAD, UNDO, REDO, SETTINGS, SELECT_ALL, SELECT_WORD, COPY, CUT, PASTE, ONE_HANDED, SPLIT,
     INCOGNITO, AUTOCORRECT, CLEAR_CLIPBOARD, CLOSE_HISTORY, EMOJI, LEFT, RIGHT, UP, DOWN, WORD_LEFT, WORD_RIGHT,
-    PAGE_UP, PAGE_DOWN, FULL_LEFT, FULL_RIGHT, PAGE_START, PAGE_END
+    PAGE_UP, PAGE_DOWN, FULL_LEFT, FULL_RIGHT, PAGE_START, PAGE_END, AI_TOOLS
 }
 
 enum class ToolbarMode {
@@ -194,7 +195,7 @@ fun removePinnedKey(prefs: SharedPreferences, key: ToolbarKey) {
 
 private fun getEnabledToolbarKeys(prefs: SharedPreferences, pref: String, default: String): List<ToolbarKey> {
     val string = prefs.getString(pref, default)!!
-    return string.split(Separators.ENTRY).mapNotNull {
+    val keys = string.split(Separators.ENTRY).mapNotNull {
         val split = it.split(Separators.KV)
         if (split.last() == "true") {
             try {
@@ -204,6 +205,20 @@ private fun getEnabledToolbarKeys(prefs: SharedPreferences, pref: String, defaul
             }
         } else null
     }
+    if (keys.isEmpty()) {
+        prefs.edit().putString(pref, default).apply()
+        return default.split(Separators.ENTRY).mapNotNull {
+            val split = it.split(Separators.KV)
+            if (split.last() == "true") {
+                try {
+                    ToolbarKey.valueOf(split.first())
+                } catch (_: IllegalArgumentException) {
+                    null
+                }
+            } else null
+        }
+    }
+    return keys
 }
 
 fun writeCustomKeyCodes(prefs: SharedPreferences, codes: EnumMap<ToolbarKey, Pair<Int?, Int?>>) {

@@ -35,6 +35,7 @@ class KeyboardState(private val switchActions: SwitchActions) {
         fun setAlphabetShiftLockShiftedKeyboard()
         fun setEmojiKeyboard()
         fun setClipboardKeyboard()
+        fun setAiToolsKeyboard()
         fun setAccessPointKeyboard()
         fun setNumpadKeyboard()
         fun toggleNumpad(withSliding: Boolean, autoCapsFlags: Int, recapitalizeMode: RecapitalizeMode?, forceReturnToAlpha: Boolean)
@@ -147,6 +148,7 @@ class KeyboardState(private val switchActions: SwitchActions) {
             Mode.SYMBOLS -> if (savedKeyboardState.shiftMode == ShiftMode.MANUAL) setSymbolsShiftedKeyboard() else setSymbolsKeyboard()
             Mode.EMOJI -> setEmojiKeyboard()
             Mode.CLIPBOARD -> setClipboardKeyboard()
+            Mode.AI_TOOLS -> setAiToolsKeyboard()
             Mode.ACCESS_POINT -> setAccessPointKeyboard()
             // don't overwrite toggle state if reloading from orientation change, etc.
             Mode.NUMPAD -> setNumpadKeyboard(false, false, false)
@@ -303,6 +305,18 @@ class KeyboardState(private val switchActions: SwitchActions) {
         switchActions.setClipboardKeyboard()
     }
 
+    private fun setAiToolsKeyboard() {
+        if (DebugFlags.DEBUG_ENABLED) {
+            Log.d(TAG, "setAiToolsKeyboard")
+        }
+        mode = Mode.AI_TOOLS
+        recapitalizeMode = null
+        // Remember caps lock mode and reset alphabet shift state.
+        prevMainKeyboardWasShiftLocked = alphabetShiftState.isShiftLocked
+        alphabetShiftState.setShiftLocked(false)
+        switchActions.setAiToolsKeyboard()
+    }
+
     private fun setAccessPointKeyboard() {
         if (DebugFlags.DEBUG_ENABLED) {
             Log.d(TAG, "setAccessPointKeyboard")
@@ -365,6 +379,7 @@ class KeyboardState(private val switchActions: SwitchActions) {
             }
             Mode.EMOJI -> setEmojiKeyboard()
             Mode.CLIPBOARD -> setClipboardKeyboard()
+            Mode.AI_TOOLS -> setAiToolsKeyboard()
             Mode.ACCESS_POINT -> setAccessPointKeyboard()
             Mode.NUMPAD -> {}
         }
@@ -677,6 +692,7 @@ class KeyboardState(private val switchActions: SwitchActions) {
             KeyCode.ALPHA -> setAlphabetKeyboard(autoCapsFlags, recapitalizeMode)
             // Note: Printing clipboard content is handled in InputLogic.handleFunctionalEvent
             KeyCode.CLIPBOARD -> if (Settings.getValues().mClipboardHistoryEnabled) setClipboardKeyboard()
+            KeyCode.AI_TOOLS -> setAiToolsKeyboard()
             KeyCode.NUMPAD -> toggleNumpad(false, autoCapsFlags, recapitalizeMode, false, true)
             KeyCode.SYMBOL -> setSymbolsKeyboard()
             KeyCode.TOGGLE_ONE_HANDED_MODE -> setOneHandedModeEnabled(!Settings.getValues().mOneHandedModeEnabled)
@@ -714,6 +730,7 @@ class KeyboardState(private val switchActions: SwitchActions) {
         SYMBOLS,
         EMOJI,
         CLIPBOARD,
+        AI_TOOLS,
         ACCESS_POINT,
         NUMPAD,
     }

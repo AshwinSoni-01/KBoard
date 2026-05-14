@@ -146,6 +146,7 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.9.8")
     implementation("sh.calvin.reorderable:reorderable:3.1.0") // for easier re-ordering
     implementation("com.github.skydoves:colorpicker-compose:1.1.3") // for user-defined colors
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     // test
     testImplementation(kotlin("test"))

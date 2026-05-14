@@ -1,16 +1,22 @@
 // SPDX-License-Identifier: GPL-3.0-only
 package helium314.keyboard.keyboard
 
+import android.content.ClipData
 import android.content.Context
 import android.util.AttributeSet
+import android.view.DragEvent
 import android.view.LayoutInflater
+import android.view.View
+import android.view.View.DragShadowBuilder
 import android.widget.GridLayout
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.FrameLayout
 import helium314.keyboard.keyboard.internal.KeyboardIconsSet
+import helium314.keyboard.latin.AudioAndHapticFeedbackManager
 import helium314.keyboard.latin.R
 import helium314.keyboard.latin.common.Constants
+import helium314.keyboard.event.HapticEvent
 import helium314.keyboard.latin.settings.Settings
 import helium314.keyboard.latin.utils.prefs
 import helium314.keyboard.latin.utils.ResourceUtils
@@ -57,28 +63,145 @@ class AccessPointMenuView @JvmOverloads constructor(
         val inflater = LayoutInflater.from(context)
         for (key in enabledKeys) {
             val tile = inflater.inflate(R.layout.menu_tile_item, grid, false)
-            val iconView = tile.findViewById<ImageButton>(R.id.menu_tile_icon)
-            val labelView = tile.findViewById<TextView>(R.id.menu_tile_label)
+            tile.tag = key
+            try {
+                tile.setBackgroundResource(R.drawable.toolbar_expand_key_background)
+                val iconView = tile.findViewById<ImageButton>(R.id.menu_tile_icon)
+                val labelView = tile.findViewById<TextView>(R.id.menu_tile_label)
 
-            iconView.setImageDrawable(KeyboardIconsSet.instance.getNewDrawable(key.name, context))
-            labelView.text = key.name.lowercase().getStringResourceOrName("", context)
+                var drawable: android.graphics.drawable.Drawable? = null
+                try {
+                    drawable = KeyboardIconsSet.instance.getNewDrawable(key.name, context)
+                } catch (e: Exception) {
+                    android.util.Log.e("AccessPointMenuView", "Failed to load drawable for ${key.name}", e)
+                }
+                if (drawable == null) {
+                    drawable = androidx.core.content.ContextCompat.getDrawable(context, R.drawable.ic_settings_default)
+                }
+
+                val keyboardTextColor = Settings.getValues().mColors.get(helium314.keyboard.latin.common.ColorType.KEY_TEXT)
+                val safeIcon = drawable?.mutate()
+                safeIcon?.setColorFilter(keyboardTextColor, android.graphics.PorterDuff.Mode.SRC_IN)
+                iconView.setImageDrawable(safeIcon)
+
+                labelView.text = key.name.lowercase().getStringResourceOrName("", context)
+                labelView.setTextColor(keyboardTextColor)
+
+                // Icon is non-interactive; touch is handled by parent tile
+                iconView.isClickable = false
+                iconView.isFocusable = false
+            } catch (e: android.content.res.Resources.NotFoundException) {
+                android.util.Log.e("AccessPointMenuView", "Resource not found for tile ${key.name}", e)
+            }
 
             // Whole tile is the touch target, not just the icon
             tile.setOnClickListener {
+                AudioAndHapticFeedbackManager.getInstance().performHapticAndAudioFeedback(helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.NOT_SPECIFIED, tile, HapticEvent.KEY_PRESS)
                 val code = getCodeForToolbarKey(key)
                 if (code != helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.UNSPECIFIED) {
                     keyboardActionListener.onCodeInput(code, Constants.SUGGESTION_STRIP_COORDINATE, Constants.SUGGESTION_STRIP_COORDINATE, false)
                 }
                 if (code != helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.CLIPBOARD &&
+                    code != helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.AI_TOOLS &&
                     code != helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.EMOJI &&
                     code != helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.NUMPAD) {
                     KeyboardSwitcher.getInstance().setAlphabetKeyboard()
                 }
             }
-            // Icon is non-interactive; touch is handled by parent tile
-            iconView.isClickable = false
-            iconView.isFocusable = false
+
+            tile.setOnLongClickListener { v ->
+                AudioAndHapticFeedbackManager.getInstance().performHapticFeedback(v, HapticEvent.KEY_LONG_PRESS)
+                val clipData = ClipData.newPlainText("ToolbarKey", key.name)
+                val shadow = DragShadowBuilder(v)
+                v.visibility = View.INVISIBLE
+                v.startDragAndDrop(clipData, shadow, v, 0)
+                true
+            }
+
+            tile.setOnDragListener { v, event ->
+                val draggedView = event.localState as? View
+                when (event.action) {
+                    DragEvent.ACTION_DRAG_STARTED -> true
+                    DragEvent.ACTION_DRAG_ENTERED -> {
+                        if (draggedView != null && draggedView != v) {
+                            v.alpha = 0.5f
+                        }
+                        true
+                    }
+                    DragEvent.ACTION_DRAG_LOCATION -> {
+                        if (draggedView != null) {
+                            for (i in 0 until grid.childCount) {
+                                val child = grid.getChildAt(i)
+                                if (child != draggedView) {
+                                    child.alpha = if (child == v) 0.5f else 1.0f
+                                }
+                            }
+                        }
+                        true
+                    }
+                    DragEvent.ACTION_DRAG_EXITED -> {
+                        v.alpha = 1.0f
+                        true
+                    }
+                    DragEvent.ACTION_DROP -> {
+                        for (i in 0 until grid.childCount) {
+                            grid.getChildAt(i).alpha = 1.0f
+                        }
+                        if (draggedView != null) {
+                            draggedView.visibility = View.VISIBLE
+                            val sourceIndex = grid.indexOfChild(draggedView)
+                            val targetIndex = grid.indexOfChild(v)
+
+                            if (sourceIndex >= 0 && targetIndex >= 0 && sourceIndex != targetIndex) {
+                                grid.removeView(draggedView)
+                                grid.addView(draggedView, targetIndex)
+                            }
+                        }
+                        saveToolbarKeyOrder(grid)
+                        true
+                    }
+                    DragEvent.ACTION_DRAG_ENDED -> {
+                        for (i in 0 until grid.childCount) {
+                            grid.getChildAt(i).alpha = 1.0f
+                        }
+                        if (draggedView != null) {
+                            draggedView.visibility = View.VISIBLE
+                        }
+                        true
+                    }
+                    else -> false
+                }
+            }
+
             grid.addView(tile)
         }
+    }
+
+    private fun saveToolbarKeyOrder(grid: GridLayout) {
+        val prefs = context.prefs()
+        val allPrefString = prefs.getString(Settings.PREF_TOOLBAR_KEYS, helium314.keyboard.latin.utils.defaultToolbarPref) ?: return
+        val allEntries = allPrefString.split(Constants.Separators.ENTRY).toMutableList()
+
+        val reorderedEnabled = mutableListOf<ToolbarKey>()
+        for (i in 0 until grid.childCount) {
+            val tile = grid.getChildAt(i)
+            val key = tile.tag as? ToolbarKey
+            if (key != null) {
+                reorderedEnabled.add(key)
+            }
+        }
+
+        val newEntries = mutableListOf<String>()
+        for (key in reorderedEnabled) {
+            newEntries.add("${key.name}${Constants.Separators.KV}true")
+        }
+        for (entry in allEntries) {
+            val name = entry.substringBefore(Constants.Separators.KV)
+            if (reorderedEnabled.none { it.name == name }) {
+                newEntries.add(entry)
+            }
+        }
+        prefs.edit().putString(Settings.PREF_TOOLBAR_KEYS, newEntries.joinToString(Constants.Separators.ENTRY)).apply()
+        Settings.getInstance().onSharedPreferenceChanged(prefs, Settings.PREF_TOOLBAR_KEYS)
     }
 }

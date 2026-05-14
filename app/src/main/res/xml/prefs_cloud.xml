@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Cloud &amp; AI Features">
+
+    <SwitchPreferenceCompat
+        android:key="pref_enable_cloud_features"
+        android:title="Enable Cloud Access"
+        android:summary="Master switch. Allows the keyboard to connect to the internet ONLY for explicit features like AI Tools or GIF Search."
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="pref_test_connection"
+        android:title="Test Connection"
+        android:summary="Pings httpbin.org to verify Gatekeeper status." />
+</PreferenceScreen>

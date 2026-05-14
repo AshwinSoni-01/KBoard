@@ -17,13 +17,17 @@ import androidx.core.content.edit
 import helium314.keyboard.latin.R
 
 @Composable
-fun TextInputPreference(setting: Setting, default: String, info: String? = null, checkTextValid: (String) -> Boolean = { true }) {
+fun TextInputPreference(setting: Setting, default: String, info: String? = null, isPassword: Boolean = false, checkTextValid: (String) -> Boolean = { true }) {
     var showDialog by rememberSaveable { mutableStateOf(false) }
     val prefs = LocalContext.current.prefs()
     Preference(
         name = setting.title,
         onClick = { showDialog = true },
-        description = prefs.getString(setting.key, default)?.takeIf { it.isNotEmpty() }
+        description = if (isPassword && !prefs.getString(setting.key, default).isNullOrEmpty()) {
+            "••••••••"
+        } else {
+            prefs.getString(setting.key, default)?.takeIf { it.isNotEmpty() }
+        }
     )
     if (showDialog) {
         TextInputDialog(
@@ -32,6 +36,7 @@ fun TextInputPreference(setting: Setting, default: String, info: String? = null,
                 prefs.edit { putString(setting.key, it) }
                 KeyboardSwitcher.getInstance().setThemeNeedsReload()
             },
+            isPassword = isPassword,
             initialText = prefs.getString(setting.key, default) ?: "",
             title = { Text(setting.title) },
             description = if (info == null) null else { { Text(info) } },
