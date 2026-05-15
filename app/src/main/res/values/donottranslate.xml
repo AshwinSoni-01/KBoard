@@ -57,7 +57,7 @@
 
     <!-- Description for Bulgarian (BDS) subtype. -->
     <string name="subtype_bulgarian_bds" translatable="false">%s (BDS)</string>
-	
+
     <!-- Description for Bulgarian (BEKL) subtype. -->
     <string name="subtype_bulgarian_bekl" translatable="false">%s (BEKL)</string>
 
@@ -70,7 +70,7 @@
     <!-- Description for Hebrew 2 subtype. -->
     <string name="subtype_hebrew_1452_2" translatable="false">%s (1452-2)</string>
 
-    <string name="english_ime_name" translatable="false">HeliBoard</string>
+    <string name="english_ime_name" translatable="false">KBoard</string>
     <!-- App slogan-->
     <string name="app_slogan" translatable="false">100% FOSS keyboard, based on AOSP.</string>
 

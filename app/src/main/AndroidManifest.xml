@@ -111,7 +111,7 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
 
         <!-- necessary for sending mail attachments, remove when data gathering phase is done (end of 2026 latest) -->
         <provider android:name="helium314.keyboard.settings.screens.gesturedata.GestureFileProvider"
-            android:authorities="@string/gesture_data_provider_authority"
+            android:authorities="com.orion.kboard.provider"
             android:enabled="true"
             android:grantUriPermissions="true"
             android:exported="false">
