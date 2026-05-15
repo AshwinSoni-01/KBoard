@@ -11,6 +11,8 @@ object CloudManager {
     const val PREF_ENABLE_CLOUD_FEATURES = "pref_enable_cloud_features"
     const val PREF_TEST_CONNECTION = "pref_test_connection"
     const val PREF_GEMINI_API_KEY = "pref_gemini_api_key"
+    const val PREF_CACHED_GEMINI_MODELS = "pref_cached_gemini_models"
+    const val PREF_GEMINI_MODELS_LAST_FETCH = "pref_gemini_models_last_fetch"
 
     val client = OkHttpClient()
 

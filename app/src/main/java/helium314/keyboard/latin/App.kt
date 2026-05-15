@@ -4,6 +4,7 @@ package helium314.keyboard.latin
 import android.app.Application
 import android.os.Build
 import helium314.keyboard.keyboard.emoji.SupportedEmojis
+import helium314.keyboard.keyboard.internal.GeminiService
 import helium314.keyboard.latin.define.DebugFlags
 import helium314.keyboard.latin.settings.Defaults
 import helium314.keyboard.latin.settings.Settings
@@ -45,6 +46,7 @@ class App : Application() {
         transferOldPinnedClips(this) // todo: remove in a few months, maybe end 2026
         app = this
         Defaults.initDynamicDefaults(this)
+        GeminiService.init(this)
     }
 
     companion object {

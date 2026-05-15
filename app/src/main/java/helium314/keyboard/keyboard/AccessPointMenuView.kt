@@ -65,7 +65,7 @@ class AccessPointMenuView @JvmOverloads constructor(
             val tile = inflater.inflate(R.layout.menu_tile_item, grid, false)
             tile.tag = key
             try {
-                tile.setBackgroundResource(R.drawable.toolbar_expand_key_background)
+                tile.setBackgroundResource(android.R.color.transparent)
                 val iconView = tile.findViewById<ImageButton>(R.id.menu_tile_icon)
                 val labelView = tile.findViewById<TextView>(R.id.menu_tile_label)
 
@@ -201,7 +201,7 @@ class AccessPointMenuView @JvmOverloads constructor(
                 newEntries.add(entry)
             }
         }
-        prefs.edit().putString(Settings.PREF_TOOLBAR_KEYS, newEntries.joinToString(Constants.Separators.ENTRY)).apply()
+        prefs.edit().putString(Settings.PREF_TOOLBAR_KEYS, newEntries.joinToString(Constants.Separators.ENTRY)).commit()
         Settings.getInstance().onSharedPreferenceChanged(prefs, Settings.PREF_TOOLBAR_KEYS)
     }
 }

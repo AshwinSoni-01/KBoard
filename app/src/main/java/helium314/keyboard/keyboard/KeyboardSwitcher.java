@@ -434,10 +434,16 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         mKeyboardView.setVisibility(View.GONE);
 
         if (mAiWritingToolsView != null) {
+            // CRITICAL: Force the panel to match the frame, not the screen
+            android.widget.FrameLayout.LayoutParams lp = new android.widget.FrameLayout.LayoutParams(
+                    android.view.ViewGroup.LayoutParams.MATCH_PARENT,
+                    android.view.ViewGroup.LayoutParams.WRAP_CONTENT
+            );
+            mAiWritingToolsView.setLayoutParams(lp);
             mAiWritingToolsView.onOpen(mLatinIME.getCurrentInputConnection());
             mAiWritingToolsView.setVisibility(View.VISIBLE);
         }
-        mStripContainer.setVisibility(getSecondaryStripVisibility());
+        mStripContainer.setVisibility(View.GONE);
 
         mEmojiTabStripView.setVisibility(View.GONE);
         mSuggestionStripView.setVisibility(View.GONE);
