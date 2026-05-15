@@ -121,7 +121,7 @@ fun Context.getDisplayContext(): Context {
 }
 
 /** Override layout parameters to expand SoftInputWindow to the entire screen, See setInputView and SoftInputWindow.updateWidthHeight */
-fun InputMethodService.updateSoftInputWindowLayoutParameters(inputView: View?, forceWrapContent: Boolean = false) {
+fun InputMethodService.updateSoftInputWindowLayoutParameters(inputView: View?, forceWrapContent: Boolean = true) {
     val window = window.window ?: return
     val windowHeight = if (forceWrapContent)
         ViewGroup.LayoutParams.WRAP_CONTENT

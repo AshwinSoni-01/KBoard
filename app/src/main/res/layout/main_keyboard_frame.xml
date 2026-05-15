@@ -60,12 +60,12 @@
         <helium314.keyboard.keyboard.AccessPointMenuView
             android:id="@+id/access_point_menu_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:visibility="gone" />
         <helium314.keyboard.keyboard.internal.AiWritingToolsView
             android:id="@+id/ai_writing_tools_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:visibility="gone" />
 
         <ImageButton

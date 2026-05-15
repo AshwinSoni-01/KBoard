@@ -36,15 +36,24 @@ object FrostedGlassHelper {
     @JvmStatic
     fun configureFrostedGlass(service: InputMethodService, inputView: View?, enable: Boolean) {
         val window = service.window?.window ?: return
+
+        // --- GLOBAL LAYOUT FIX (Applies to ALL themes) ---
+        // 1. Force the IME window to wrap to keyboard content height
+        service.updateSoftInputWindowLayoutParameters(inputView, true)
+
+        // 2. Target the specific Window attributes to anchor at bottom
+        val params = window.attributes
+        params.width = WindowManager.LayoutParams.MATCH_PARENT
+        params.height = WindowManager.LayoutParams.WRAP_CONTENT
+        params.gravity = Gravity.BOTTOM
+        window.attributes = params
+
+        // 3. Fix Background Targeting: Set root window to transparent.
+        // The actual theme background will be applied to R.id.main_keyboard_frame in InputView.java
+        window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             if (enable) {
-                service.updateSoftInputWindowLayoutParameters(inputView, true)
-                val params = window.attributes
-                params.width = WindowManager.LayoutParams.MATCH_PARENT
-                params.height = WindowManager.LayoutParams.WRAP_CONTENT
-                params.gravity = Gravity.BOTTOM
-                window.attributes = params
-
                 var isNight = ResourceUtils.isNight(service.resources)
                 if (helium314.keyboard.keyboard.KeyboardTheme.themeOverride == "light") isNight = false
                 else if (helium314.keyboard.keyboard.KeyboardTheme.themeOverride == "dark") isNight = true
@@ -55,14 +64,12 @@ object FrostedGlassHelper {
                 window.setBackgroundBlurRadius(blurRadius)
                 window.attributes.flags = window.attributes.flags or WindowManager.LayoutParams.FLAG_BLUR_BEHIND
                 window.attributes = window.attributes
-                window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             } else {
-                service.updateSoftInputWindowLayoutParameters(inputView, false)
+                // Reset blur for standard themes
                 window.setBackgroundBlurRadius(0)
-                window.setBackgroundDrawable(null)
+                window.attributes.flags = window.attributes.flags and WindowManager.LayoutParams.FLAG_BLUR_BEHIND.inv()
+                window.attributes = window.attributes
             }
-        } else {
-            service.updateSoftInputWindowLayoutParameters(inputView, false)
         }
     }
 }
