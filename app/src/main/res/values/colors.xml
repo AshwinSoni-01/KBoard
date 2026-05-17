@@ -73,4 +73,9 @@
 
     <!-- Scrollbar color -->
     <color name="toolbar_scrollbar">#66808080</color>
+
+    <color name="panelBackground">#F5F5F5</color>
+    <color name="panel_text_primary">#000000</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="panel_search_bg">#10000000</color>
 </resources>

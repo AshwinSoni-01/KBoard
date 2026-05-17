@@ -1,0 +1,103 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/klipyPanelRoot"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <!-- Search bar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/search_bar_bg">
+        <EditText
+            android:id="@+id/klipySearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:hint="@string/klipy_search_hint"
+            android:padding="0dp"
+            android:background="@null"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/foreground_weak"
+            android:textColorHighlight="@android:color/transparent"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:autofillHints="none"
+            android:stateListAnimator="@null" />
+    </FrameLayout>
+
+    <!-- Tabs for GIFs / Stickers -->
+    <LinearLayout
+        android:id="@+id/klipyTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tabGifs"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab_gifs"
+            android:textColor="@color/textColorPrimary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tabStickers"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab_stickers"
+            android:textColor="@color/textColorPrimary" />
+    </LinearLayout>
+
+    <!-- RecyclerView grids -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gifsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stickersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/emptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_recent_items"
+            android:textColor="@color/textColorPrimary"
+            android:visibility="gone" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loadingIndicator"
+            style="@style/Widget.Material3.CircularProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

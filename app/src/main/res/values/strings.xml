@@ -54,6 +54,8 @@
     <string name="ai_tools">AI Tools</string>
     <string name="gemini_api_key">Gemini API Key</string>
     <string name="gemini_api_key_summary">Enter your personal Google Gemini API key.</string>
+    <string name="klipy_api_key">Klipy API Key</string>
+    <string name="klipy_api_key_summary">Enter your personal Klipy API key. Leave blank to use the default.</string>
     <!-- Settings screen title for keyboard theme settings -->
     <string name="settings_screen_theme">Theme</string>
     <!-- Settings category title for Preference/Input settings -->
@@ -967,6 +969,11 @@ New dictionary:
     <!-- Description for toggling suggestions when using the spell checker -->
     <string name="spell_check_suggestions_summary">Show suggestions when selecting a word with red underline. Requires setting app as default spell checker.</string>
 
+    <string name="klipy_search_hint">Search GIFs &amp; Stickers</string>
+    <string name="tab_gifs">GIFs</string>
+    <string name="tab_stickers">Stickers</string>
+    <string name="gifs">GIFs</string>
+    <string name="stickers">Stickers</string>
 
     <!-- gesture data gathering, new strings for normal use should go above -->
 
@@ -1125,4 +1132,6 @@ New dictionary:
     <string name="gesture_data_links">Information on gesture data gathering on:</string>
 
     <!-- new strings should go above the section for gesture data gathering -->
+    <string name="no_recent_items">No recent items</string>
+    <string name="no_results_found">No results found</string>
 </resources>

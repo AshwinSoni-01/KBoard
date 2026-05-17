@@ -17,4 +17,9 @@
     <color name="setup_text_action">#FFFFFFFF</color>
     <color name="action_bar_color">#FF212121</color>
     <color name="navigation_bar_color">#FF303030</color>
+
+    <color name="panelBackground">#1A1A1A</color>
+    <color name="panel_text_primary">#FFFFFF</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="panel_search_bg">#20FFFFFF</color>
 </resources>

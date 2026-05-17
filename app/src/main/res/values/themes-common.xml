@@ -114,9 +114,11 @@
         <item name="android:singleLine">true</item>
         <item name="android:ellipsize">none</item>
     </style>
-    <style name="TransparentActivityTheme" parent="KeyboardTheme.LXX_Base">
+    <style name="TransparentActivityTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
     </style>
 </resources>

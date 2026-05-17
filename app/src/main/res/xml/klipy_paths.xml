@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path name="klipy_cache" path="klipy/"/>
+    <external-cache-path name="klipy_ext_cache" path="klipy/"/>
+</paths>

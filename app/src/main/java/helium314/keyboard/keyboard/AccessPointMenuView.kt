@@ -12,6 +12,7 @@ import android.widget.GridLayout
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.FrameLayout
+import android.content.Intent
 import helium314.keyboard.keyboard.internal.KeyboardIconsSet
 import helium314.keyboard.latin.AudioAndHapticFeedbackManager
 import helium314.keyboard.latin.R
@@ -98,6 +99,15 @@ class AccessPointMenuView @JvmOverloads constructor(
             tile.setOnClickListener {
                 AudioAndHapticFeedbackManager.getInstance().performHapticAndAudioFeedback(helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.NOT_SPECIFIED, tile, HapticEvent.KEY_PRESS)
                 val code = getCodeForToolbarKey(key)
+                if (code == helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.GIFS ||
+                    code == helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.STICKERS) {
+                    val intent = Intent(context, KlipyPanelActivity::class.java).apply {
+                        putExtra("defaultTab", if (code == helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.GIFS) "GIFS" else "STICKERS")
+                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    }
+                    context.startActivity(intent)
+                    return@setOnClickListener
+                }
                 if (code != helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.UNSPECIFIED) {
                     keyboardActionListener.onCodeInput(code, Constants.SUGGESTION_STRIP_COORDINATE, Constants.SUGGESTION_STRIP_COORDINATE, false)
                 }
@@ -153,11 +163,16 @@ class AccessPointMenuView @JvmOverloads constructor(
                             val targetIndex = grid.indexOfChild(v)
 
                             if (sourceIndex >= 0 && targetIndex >= 0 && sourceIndex != targetIndex) {
-                                grid.removeView(draggedView)
-                                grid.addView(draggedView, targetIndex)
+                                // Defer view hierarchy modification to avoid ConcurrentModificationException during drag dispatch
+                                grid.post {
+                                    if (grid.indexOfChild(draggedView) == sourceIndex) { // Check if still in same state
+                                        grid.removeView(draggedView)
+                                        grid.addView(draggedView, targetIndex)
+                                        saveToolbarKeyOrder(grid)
+                                    }
+                                }
                             }
                         }
-                        saveToolbarKeyOrder(grid)
                         true
                     }
                     DragEvent.ACTION_DRAG_ENDED -> {

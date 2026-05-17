@@ -24,6 +24,7 @@ fun CloudScreen(onClickBack: () -> Unit) {
         settings = listOf(
             CloudManager.PREF_ENABLE_CLOUD_FEATURES,
             CloudManager.PREF_GEMINI_API_KEY,
+            CloudManager.PREF_KLIPY_API_KEY,
             CloudManager.PREF_TEST_CONNECTION
         ),
     )
@@ -43,6 +44,14 @@ fun createCloudSettings(context: Context) = listOf(
         CloudManager.PREF_GEMINI_API_KEY,
         R.string.gemini_api_key,
         R.string.gemini_api_key_summary,
+    ) {
+        TextInputPreference(it, "", isPassword = true)
+    },
+    Setting(
+        context,
+        CloudManager.PREF_KLIPY_API_KEY,
+        R.string.klipy_api_key,
+        R.string.klipy_api_key_summary,
     ) {
         TextInputPreference(it, "", isPassword = true)
     },

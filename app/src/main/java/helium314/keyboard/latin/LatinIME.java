@@ -9,6 +9,7 @@ package helium314.keyboard.latin;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
+import android.content.ClipDescription;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -18,6 +19,7 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.inputmethodservice.InputMethodService;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Debug;
@@ -33,6 +35,8 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InlineSuggestion;
 import android.view.inputmethod.InlineSuggestionsRequest;
 import android.view.inputmethod.InlineSuggestionsResponse;
+import android.view.inputmethod.InputConnection;
+import android.view.inputmethod.InputContentInfo;
 import android.view.inputmethod.InputMethodSubtype;
 
 import helium314.keyboard.accessibility.AccessibilityUtils;
@@ -54,6 +58,7 @@ import helium314.keyboard.keyboard.Keyboard;
 import helium314.keyboard.keyboard.KeyboardId;
 import helium314.keyboard.keyboard.KeyboardLayoutSet;
 import helium314.keyboard.keyboard.KeyboardSwitcher;
+import helium314.keyboard.keyboard.KlipyPanelActivity;
 import helium314.keyboard.keyboard.MainKeyboardView;
 import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
 import helium314.keyboard.latin.common.ColorType;
@@ -100,6 +105,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
+import androidx.core.view.inputmethod.EditorInfoCompat;
+import androidx.core.view.inputmethod.InputConnectionCompat;
+import androidx.core.view.inputmethod.InputContentInfoCompat;
 
 /**
  * Input method implementation for Qwerty'ish keyboard.
@@ -109,6 +117,13 @@ public class LatinIME extends InputMethodService implements
         DictionaryFacilitator.DictionaryInitializationListener {
     static final String TAG = LatinIME.class.getSimpleName();
     private static final boolean TRACE = false;
+
+    private static LatinIME sInstance;
+
+    @Nullable
+    public static LatinIME getInstance() {
+        return sInstance;
+    }
 
     private static final int EXTENDED_TOUCHABLE_REGION_HEIGHT = 100;
     private static final int PERIOD_FOR_AUDIO_AND_HAPTIC_FEEDBACK_IN_KEY_REPEAT = 2;
@@ -608,7 +623,7 @@ public class LatinIME extends InputMethodService implements
                                 break;
                             }
                         }
-                        
+
                         // Precision removal of the old views from the direct parent container
                         android.view.ViewParent parent = mInputView.getParent();
                         if (parent instanceof android.view.ViewGroup) {
@@ -639,6 +654,7 @@ public class LatinIME extends InputMethodService implements
 
     @Override
     public void onCreate() {
+        sInstance = this;
         mSettings.startListener();
         KeyboardIconsSet.Companion.getInstance().loadIcons(this);
         mRichImm = RichInputMethodManager.getInstance();
@@ -689,6 +705,67 @@ public class LatinIME extends InputMethodService implements
 
         // Register the preference change listener
         KtxKt.prefs(this).registerOnSharedPreferenceChangeListener(mPrefsListener);
+    }
+
+    public boolean commitKlipyContent(Uri contentUri, String description, String mimeType) {
+        final EditorInfo editorInfo = getCurrentInputEditorInfo();
+        final InputConnection inputConnection = getCurrentInputConnection();
+        if (editorInfo == null || inputConnection == null) return false;
+
+        String[] mimeTypes = EditorInfoCompat.getContentMimeTypes(editorInfo);
+        boolean supported = false;
+        if (mimeTypes != null) {
+            for (String type : mimeTypes) {
+                if (ClipDescription.compareMimeTypes(type, mimeType)) {
+                    supported = true;
+                    break;
+                }
+            }
+        }
+
+        // Special check for WhatsApp stickers if not explicitly listed but image/webp is
+        if (!supported && mimeType.equals("image/webp.wasticker") && mimeTypes != null) {
+            for (String type : mimeTypes) {
+                if (ClipDescription.compareMimeTypes(type, "image/webp")) {
+                    supported = true;
+                    break;
+                }
+            }
+        }
+
+        if (supported) {
+            InputContentInfoCompat inputContentInfo = new InputContentInfoCompat(
+                    contentUri,
+                    new ClipDescription(description, new String[]{mimeType}),
+                    null
+            );
+
+            // Explicitly grant permission
+            try {
+                grantUriPermission(editorInfo.packageName, contentUri, Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            } catch (Exception e) {
+                Log.e(TAG, "Failed to grant URI permission", e);
+            }
+
+            boolean success = InputConnectionCompat.commitContent(inputConnection, editorInfo, inputContentInfo,
+                    InputConnectionCompat.INPUT_CONTENT_GRANT_READ_URI_PERMISSION, null);
+            if (success) return true;
+        }
+
+        // Fallback: Intent.ACTION_SEND if not supported or commitContent failed
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType(mimeType.contains("webp") ? "image/webp" : mimeType);
+        intent.putExtra(Intent.EXTRA_STREAM, contentUri);
+        intent.setPackage("com.whatsapp");
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        try {
+            startActivity(intent);
+            return true;
+        } catch (Exception e) {
+            Log.e(TAG, "Fallback ACTION_SEND failed", e);
+            return false;
+        }
     }
 
     private void loadSettings() {
@@ -806,6 +883,7 @@ public class LatinIME extends InputMethodService implements
 
     @Override
     public void onDestroy() {
+        sInstance = null;
         mClipboardHistoryManager.onDestroy();
         mDictionaryFacilitator.closeDictionaries();
         mSettings.onDestroy();
@@ -1573,6 +1651,20 @@ public class LatinIME extends InputMethodService implements
             KeyboardSwitcher.getInstance().onToggleKeyboard(KeyboardSwitcher.KeyboardSwitchState.AI_TOOLS);
             return;
         }
+        if (event.getKeyCode() == KeyCode.GIFS) {
+            Intent intent = new Intent(this, KlipyPanelActivity.class);
+            intent.putExtra("defaultTab", "GIFS");
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            return;
+        }
+        if (event.getKeyCode() == KeyCode.STICKERS) {
+            Intent intent = new Intent(this, KlipyPanelActivity.class);
+            intent.putExtra("defaultTab", "STICKERS");
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            return;
+        }
         final InputTransaction completeInputTransaction = mInputLogic.onCodeInput(mSettings.getCurrent(), event,
                 mKeyboardSwitcher.getKeyboardShiftMode(),
                 mKeyboardSwitcher.getCurrentKeyboardScript(), mHandler);
@@ -1933,6 +2025,15 @@ public class LatinIME extends InputMethodService implements
 
             stopSelf(startId); // Allow the service to be destroyed when unbound
             return START_NOT_STICKY;
+        }
+
+        if (intent != null && KlipyPanelActivity.KLIPY_DONE_ACTION.equals(intent.getAction())) {
+            Uri uri = intent.getParcelableExtra(KlipyPanelActivity.KLIPY_URI_KEY);
+            String mimeType = intent.getStringExtra(KlipyPanelActivity.KLIPY_MIME_KEY);
+            String label = intent.getStringExtra(KlipyPanelActivity.KLIPY_LABEL_KEY);
+            if (uri != null && mimeType != null) {
+                mHandler.postDelayed(() -> commitKlipyContent(uri, label != null ? label : "Klipy", mimeType), 100);
+            }
         }
 
         return super.onStartCommand(intent, flags, startId);
