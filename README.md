@@ -32,7 +32,7 @@ We have retired the old static toolbar in favor of the **Access Point Menu**.
 ### 3. Redesigned Emoji & Media Panel
 The Emoji panel has been rebuilt for speed and style.
 * **Updated Look:** A sleek interface that feels native to modern Android.
-* **In the Works:** Integrated **Tenor GIF & Sticker** support is coming soon! 🏗️
+* **In the Works:** Integrated **Klipy GIF & Sticker** support is coming soon!
 
 ### 4. Selective Internet Capabilities
 While the core of the keyboard remains offline-first, we have added **optional** internet capabilities.
