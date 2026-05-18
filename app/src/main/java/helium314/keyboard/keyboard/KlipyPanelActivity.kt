@@ -162,7 +162,7 @@ class KlipyPanelActivity : ComponentActivity() {
                             // 350ms gives Android enough time to re-establish the InputConnection.
                             android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
                                 applicationContext.startService(intent)
-                            }, 1000)
+                            }, 1000) // reduce the delay later
 
                         } catch (e: Exception) {
                             Log.e("KlipyPanel", "Failed to get URI for file", e)

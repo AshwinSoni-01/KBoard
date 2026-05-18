@@ -533,13 +533,9 @@ public class KeyboardView extends View {
                 hintBaseline = -mFontMetrics.top;
                 paint.setTextAlign(Align.CENTER);
             } else { // key.hasHintLetter()
-                // The hint letter is placed at top-right corner of the key. Used mainly on phone.
-                final float hintDigitWidth = TypefaceUtils.getReferenceDigitWidth(paint);
-                final float hintLabelWidth = TypefaceUtils.getStringWidth(hintLabel, paint);
+                // The hint letter is placed at top-center of the key. Used mainly on phone.
                 hintBaseline = -paint.ascent();
-                hintX = isFunctionalKeyAndRoundedStyle
-                        ? keyWidth - hintBaseline
-                        : keyWidth - mKeyHintLetterPadding - Math.max(hintDigitWidth, hintLabelWidth) / 2.0f;
+                hintX = centerX;
                 paint.setTextAlign(Align.CENTER);
             }
             final float adjustmentY = isFunctionalKeyAndRoundedStyle

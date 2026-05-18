@@ -68,6 +68,9 @@ class AccessPointMenuView @JvmOverloads constructor(
             try {
                 tile.setBackgroundResource(android.R.color.transparent)
                 val iconView = tile.findViewById<ImageButton>(R.id.menu_tile_icon)
+                val keyboardViewAttr = context.obtainStyledAttributes(null, R.styleable.KeyboardView, R.attr.keyboardViewStyle, R.style.KeyboardView)
+                iconView.background = Settings.getValues().mColors.selectAndColorDrawable(keyboardViewAttr, helium314.keyboard.latin.common.ColorType.KEY_BACKGROUND)
+                keyboardViewAttr.recycle()
                 val labelView = tile.findViewById<TextView>(R.id.menu_tile_label)
 
                 var drawable: android.graphics.drawable.Drawable? = null
@@ -218,5 +221,26 @@ class AccessPointMenuView @JvmOverloads constructor(
         }
         prefs.edit().putString(Settings.PREF_TOOLBAR_KEYS, newEntries.joinToString(Constants.Separators.ENTRY)).commit()
         Settings.getInstance().onSharedPreferenceChanged(prefs, Settings.PREF_TOOLBAR_KEYS)
+    }
+
+    fun updateThemeColors(colors: helium314.keyboard.latin.common.Colors) {
+        val keyboardViewAttr = context.obtainStyledAttributes(null, R.styleable.KeyboardView, R.attr.keyboardViewStyle, R.style.KeyboardView)
+        for (i in 0 until grid.childCount) {
+            val tile = grid.getChildAt(i)
+            val iconView = tile.findViewById<ImageButton>(R.id.menu_tile_icon)
+            iconView.background = colors.selectAndColorDrawable(keyboardViewAttr, helium314.keyboard.latin.common.ColorType.KEY_BACKGROUND)
+            
+            val labelView = tile.findViewById<TextView>(R.id.menu_tile_label)
+            val keyboardTextColor = colors.get(helium314.keyboard.latin.common.ColorType.KEY_TEXT)
+            labelView.setTextColor(keyboardTextColor)
+            
+            val drawable = iconView.drawable
+            if (drawable != null) {
+                val safeIcon = drawable.mutate()
+                safeIcon.setColorFilter(keyboardTextColor, android.graphics.PorterDuff.Mode.SRC_IN)
+                iconView.setImageDrawable(safeIcon)
+            }
+        }
+        keyboardViewAttr.recycle()
     }
 }
