@@ -38,7 +38,7 @@ android {
         minSdk = 21
         targetSdk = 36
         versionCode = providers.of(GitCommitCountValueSource::class.java) {}.get()
-        versionName = "2.0.0"
+        versionName = "2.1.0"
         buildConfigField("String", "CONTENT_PROVIDER_AUTHORITY", "\"${applicationId}.stickercontentprovider\"")
         manifestPlaceholders["stickerAuthority"] = "${applicationId}.stickercontentprovider"
         manifestPlaceholders["stickerProviderAuthority"] = "${applicationId}.stickercontentprovider"
