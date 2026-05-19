@@ -740,6 +740,8 @@ New dictionary:
     <string name="pref_frosted_saturation_title">Color Saturation Boost</string>
     <string name="pref_frosted_bg_transparency_title">Background Transparency</string>
     <string name="button_adjust_frosted_glass">Adjust Frosted Glass</string>
+    <string name="frosted_glass_blur_unsupported_title">Background blur is not supported on this device</string>
+    <string name="frosted_glass_blur_unsupported_message">%1$s does not support the live background blur required for the Frosted Glass keyboard effect. The theme will use a readable translucent tint instead.\n\nMinimum requirements for live blur:\n- Android 12 or newer with system window blur enabled, or Samsung Android 11 with Samsung legacy blur support.\n- A GPU and vendor firmware that expose live window blur to third-party app or IME windows.\n- On Samsung Android 12 or newer, support for SemBlurInfo live window blur. Captured side-panel blur requires privileged system access and cannot be used by a third-party keyboard.\n\nOlder budget and mid-range Samsung models may expose the API but still reject live window blur at runtime.</string>
     <string name="frosted_glass_test_input_title">Test Keyboard Settings Here</string>
     <string name="frosted_glass_test_wallpaper_button">Test with your wallpaper</string>
     <string name="button_reset">Reset</string>

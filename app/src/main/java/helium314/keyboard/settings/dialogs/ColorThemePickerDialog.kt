@@ -5,6 +5,7 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.os.Build
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -40,6 +41,7 @@ import helium314.keyboard.keyboard.ColorSetting
 import helium314.keyboard.keyboard.KeyboardSwitcher
 import helium314.keyboard.keyboard.KeyboardTheme
 import helium314.keyboard.latin.R
+import helium314.keyboard.latin.FrostedGlassHelper
 import helium314.keyboard.latin.common.ColorType
 import helium314.keyboard.latin.common.Links
 import helium314.keyboard.latin.common.decodeBase36
@@ -102,7 +104,17 @@ fun ColorThemePickerDialog(
         if (index >= 5) state.animateScrollToItem(index, -state.layoutInfo.viewportSize.height / 3)
     }
     var showLoadDialog by remember { mutableStateOf(false) }
+    var showUnsupportedFrostedBlurDialog by remember { mutableStateOf(false) }
     val targetScreen = if (isNight) SettingsDestination.ColorsNight else SettingsDestination.Colors
+    val onSelectColor: (String) -> Unit = { item ->
+        prefs.edit { putString(setting.key, item) }
+        KeyboardSwitcher.getInstance().setThemeNeedsReload()
+        if (FrostedGlassHelper.shouldWarnAboutFrostedGlassBlurUnsupported(item)) {
+            showUnsupportedFrostedBlurDialog = true
+        } else {
+            onDismissRequest()
+        }
+    }
     ThreeButtonAlertDialog(
         onDismissRequest = onDismissRequest,
         cancelButtonText = stringResource(R.string.dialog_close),
@@ -120,7 +132,7 @@ fun ColorThemePickerDialog(
                         if (item == "") {
                             AddColorRow(onDismissRequest, userColors, targetScreen, setting.key)
                         } else {
-                            ColorItemRow(onDismissRequest, item, item == selectedColor, item in userColors, targetScreen, setting.key)
+                            ColorItemRow(onDismissRequest, item, item == selectedColor, item in userColors, targetScreen, setting.key, onSelectColor)
                         }
                     }
                 }
@@ -165,6 +177,12 @@ fun ColorThemePickerDialog(
     }
     if (errorDialog)
         InfoDialog(stringResource(R.string.file_read_error)) { errorDialog = false } // todo: text (not always a file)
+    if (showUnsupportedFrostedBlurDialog) {
+        UnsupportedFrostedGlassBlurDialog {
+            showUnsupportedFrostedBlurDialog = false
+            onDismissRequest()
+        }
+    }
 }
 
 @Composable
@@ -199,28 +217,28 @@ private fun AddColorRow(onDismissRequest: () -> Unit, userColors: Collection<Str
 }
 
 @Composable
-private fun ColorItemRow(onDismissRequest: () -> Unit, item: String, isSelected: Boolean, isUser: Boolean, targetScreen: String, prefKey: String) {
+private fun ColorItemRow(
+    onDismissRequest: () -> Unit,
+    item: String,
+    isSelected: Boolean,
+    isUser: Boolean,
+    targetScreen: String,
+    prefKey: String,
+    onSelectColor: (String) -> Unit
+) {
     val ctx = LocalContext.current
     val prefs = ctx.prefs()
     Row(
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
-            .clickable {
-                onDismissRequest()
-                prefs.edit {putString(prefKey, item)}
-                KeyboardSwitcher.getInstance().setThemeNeedsReload()
-            }
+            .clickable { onSelectColor(item) }
             .padding(start = 6.dp)
             .heightIn(min = 40.dp)
     ) {
         RadioButton(
             selected = isSelected,
-            onClick = {
-                onDismissRequest()
-                prefs.edit { putString(prefKey, item) }
-                KeyboardSwitcher.getInstance().setThemeNeedsReload()
-            }
+            onClick = { onSelectColor(item) }
         )
         Text(
             text = item.getStringResourceOrName("theme_name_", ctx),
@@ -251,6 +269,24 @@ private fun ColorItemRow(onDismissRequest: () -> Unit, item: String, isSelected:
                 )
         }
     }
+}
+
+@Composable
+private fun UnsupportedFrostedGlassBlurDialog(onDismissRequest: () -> Unit) {
+    val deviceName = listOf(Build.MANUFACTURER, Build.MODEL)
+        .filter { it.isNotBlank() }
+        .joinToString(" ")
+    ThreeButtonAlertDialog(
+        onDismissRequest = onDismissRequest,
+        onConfirmed = { },
+        confirmButtonText = null,
+        cancelButtonText = stringResource(android.R.string.ok),
+        title = { Text(stringResource(R.string.frosted_glass_blur_unsupported_title)) },
+        content = {
+            Text(stringResource(R.string.frosted_glass_blur_unsupported_message, deviceName.ifBlank { "this device" }))
+        },
+        scrollContent = true
+    )
 }
 
 // returns whether the string was successfully deserialized and stored in prefs
