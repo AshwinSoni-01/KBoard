@@ -29,6 +29,7 @@ The Emoji and Media panel has been completely rebuilt to integrate the Klipy API
 Experience a modern, high-fidelity UI with our brand-new **Frosted Glass** engine.
 * **Dynamic Blur:** Real-time background blur for both Light and Dark modes.
 * **Fully Customizable:** Adjust the opacity, saturation, and "frost" intensity to match your wallpaper and device aesthetic.
+> ⚠️ **Note:** Live background blur is currently only supported on Google Pixel devices and a select few high-end Samsung devices. Because this feature is still in the alpha stage, it may not work perfectly on every device.
 
 ### 3. Access Point Menu (Enhanced Toolbar)
 We have retired the old static toolbar in favor of the **Access Point Menu**.
