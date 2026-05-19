@@ -1,0 +1,1000 @@
+﻿05-17 16:39:01.265   927   927 D audio_hw: adev_set_parameters: enter: cameraFacing=front
+05-17 16:39:01.268  1136 31297 I Surface : Creating surface for consumer ImageReader-480x640f23m3-3846-1239 with slotExpansion=1 for 64 slots
+05-17 16:39:01.269  1136 31297 I Surface : Creating surface for consumer ImageReader-480x640f23m3-3846-1239 with slotExpansion=1 for 64 slots
+05-17 16:39:01.270   930  1395 I GCH_HalUtils: ======== App stream configuration ========
+05-17 16:39:01.271   930  1395 I GCH_HalUtils: == stream num: 1, operation_mode:0
+05-17 16:39:01.271   930  1395 I GCH_HalUtils: ==== [0]stream_id 0, type 0, format 35, res 640x480, usage 3, is_phy 0, phy_cam_id 0, group_id -1, concurrent_group 0
+05-17 16:39:01.271   930  1395 I GCH_HalUtils: ======== App stream configuration ========
+05-17 16:39:01.271   930  1395 I Lyric   : session_setting_combination_utils.cc:216: no combination
+05-17 16:39:01.271   930  1395 I Lyric   : camera_device_session_hwl_impl.cc:1371: CameraDeviceSessionHwlImpl::IsStreamConfigurationSupported 1
+05-17 16:39:01.271   930  1395 I GCH_ZslSnapshotCaptureSession: IsStreamConfigurationSupported: no eligible JPEG or YUV stream
+05-17 16:39:01.271   930  1395 I Lyric   : lyric_basic_capture_session.cc:38: LyricBasicCaptureSession only support logical camera
+05-17 16:39:01.271   930  1395 D GCH_BasicCaptureSession: IsStreamConfigurationSupported: BasicCaptureSession supports the stream config
+05-17 16:39:01.271   930  1395 D GCH_BasicCaptureSession: IsStreamConfigurationSupported: BasicCaptureSession supports the stream config
+05-17 16:39:01.271   930  1395 I GCH_ResultDispatcher: [Cam1_ResultDispatcher] ResultDispatcher: SetRealtimeThread OK
+05-17 16:39:01.271   930  1395 I GCH_ResultDispatcher: InitializeGroupStreamIdsMap , Group Stream enable: 0
+05-17 16:39:01.272   930  1395 I Lyric   : camera_powerhal_impl.cc:265: SetPowerStreamingMode CAMERA_STREAMING_STANDARD mode
+05-17 16:39:01.272   930  1395 I Lyric   : camera_powerhal_impl.cc:265: SetPowerStreamingMode CAMERA_GPU_STANDARD mode
+05-17 16:39:01.273   622   622 I android.hardware.power-service.pixel.ext-libperfmgr: PowerExt boost CAMERA_THERMAL_MODERATE_BOOST isBoostSupported: 0
+05-17 16:39:01.273   622   622 I android.hardware.power-service.pixel.ext-libperfmgr: PowerExt boost CAMERA_THERMAL_CRITICAL_BOOST isBoostSupported: 0
+05-17 16:39:01.273   622   622 I android.hardware.power-service.pixel.ext-libperfmgr: PowerExt boost CAMERA_THERMAL_LIGHT_BOOST isBoostSupported: 0
+05-17 16:39:01.273   622   622 I android.hardware.power-service.pixel.ext-libperfmgr: PowerExt boost CAMERA_THERMAL_EMERGENCY_BOOST isBoostSupported: 0
+05-17 16:39:01.273   622   622 I android.hardware.power-service.pixel.ext-libperfmgr: PowerExt boost CAMERA_THERMAL_SEVERE_BOOST isBoostSupported: 0
+05-17 16:39:01.273   622   622 I android.hardware.power-service.pixel.ext-libperfmgr: PowerExt boost CAMERA_THERMAL_SHUTDOWN_BOOST isBoostSupported: 0
+05-17 16:39:01.273   930  1395 I Lyric   : camera_powerhal_impl.cc:189: SetPowerBoost Trigger CAMERA_BACKEND_BOOST for 300ms
+05-17 16:39:01.274   930 24807 I Lyric   : camera_device_session_hwl_impl.cc:899: BuildPipelines entered, camera_id: 1
+05-17 16:39:01.275  1745  1745 I pixel-thermal: VIRTUAL-SKIN:41.2862 raw data: VIRTUAL-SKIN:41286.2 
+05-17 16:39:01.275   930 24807 I Lyric   : active_camera_device_tracker.cc:53: Adding camera: 1, is_logical_camera: 0, is_front_camera: 1, is_1p_camera_app: 0, active devices: 0, is_tele_camera_participant: 0
+05-17 16:39:01.275   930 24807 I Lyric   : active_camera_device_tracker.cc:199: No specific graph requested, allowing lyric to select based on stream configuration.
+05-17 16:39:01.275   930 24807 I Lyric   : camera_device_session_manager_base.cc:701: Attempting to build a processing graph
+05-17 16:39:01.285   930 24807 I Lyric   : top_level_graph_utils.cc:27: Sobek system property (from enable_sobek): 0
+05-17 16:39:01.285   930 24807 I Lyric   : top_level_graph_utils.cc:41: Sobek + non-Roshi sensor mode session enabled (from GCA) : 0 for camera Front
+05-17 16:39:01.285   930 24807 I Lyric   : top_level_graph_utils.cc:50: Sobek + non-Roshi sensor enabled (from sensor properties): 0 for camera Front
+05-17 16:39:01.285   930 24807 I Lyric   : top_level_graph_utils.cc:63: Sobek system property (from enable_sobek): 0
+05-17 16:39:01.285   930 24807 I Lyric   : top_level_graph_utils.cc:77: Sobek session enabled (from GCA) : 0 for camera Front
+05-17 16:39:01.285   930 24807 I Lyric   : top_level_graph_utils.cc:86: Sobek sensor enabled (from sensor properties): 0 for camera Front
+05-17 16:39:01.285   930 24807 I Lyric   : guess_camera_mode.cc:423: GetAppInfo: vendor tags  camera 1p: 0 camera extension: 0 face auth mode: 0
+05-17 16:39:01.285   930 24807 I Lyric   : stream_info_parser.cc:148: Project11 enabled: 0
+05-17 16:39:01.285   930 24807 I Lyric   : stream_info_parser.cc:151: Comice enabled: 0
+05-17 16:39:01.285   930 24807 W Lyric   : stream_info_parser.cc:431: Camera Front unknown stream: {type: StreamInfo, stream_id: 0, camera_id: Front, format: YCBCR_420_888, width: 640, height: 480, usage: [SwReadOften], stream_type: Output, use_case: Default, data_space: DataSpace(Color)::(Standard: BT601_625, Transfer: SMPTE_170M, Range: Full), is_framework_physical_stream: 0, dynamic_range_profile: Standard, intended_for_max_resolution_mode: 0, group_id: -1, is_tunable: 1} does not fall in any known use case
+05-17 16:39:01.287   930 24807 I Lyric   : generic_subgraph.cc:1155: camera 1, video_bokeh_rendering_hw_enabled = 0
+05-17 16:39:01.288   930 24807 I Lyric   : power_throttle_controller.cc:453: camera thermal: updated config max fps: 30 min fps: 15 portrait mode? 0 camera app 1p? 0 has preview stream only? 0
+05-17 16:39:01.288   930 24807 I Lyric   : generic_subgraph.cc:1599: The aligner on camera Front is HwTnrAlign
+05-17 16:39:01.289   930 24807 I Lyric   : graph_states.cc:57: Failed to add camera id to priority map as the device doesn't support it: NOT_FOUND: Couldn't find the CameraId which has {position: front, lens_type: normal, spectrum: visible, instance: virtual, capability: {default_mode: 1, in_sensor_hdr: 1, remosaic: 0, max_resolution: 0, cropped_fov: 0, multiframe_hdr: 0}}
+05-17 16:39:01.289   930 24807 I Lyric   : generic_graph.cc:509: [MULTICAM_DEBUG] Making Generic graph.
+05-17 16:39:01.290   930 24807 I Lyric   : generic_subgraph.cc:1973: Camera id 1 supports settings override.
+05-17 16:39:01.291   930 24807 I Lyric   : generic_subgraph.cc:2270: positive_offsets_enabled: ENABLED.; enable_positive_offset = 0
+05-17 16:39:01.291   930 24807 I Lyric   : generic_subgraph.cc:2359: Roshi not supported in Front
+05-17 16:39:01.291   930 24807 I Lyric   : generic_subgraph.cc:2383: Building graph with (Sobek + non-Roshi sensor mode) disabled, and Sobek disabled
+05-17 16:39:01.295   930 24807 I Lyric   : multisensor_controller.cc:1200: Front got 0 preferred MIPI rates and 0 preferred DBR rates. Data fetching takes 1.89034ms
+05-17 16:39:01.296   930 24807 I Lyric   : sensor_generic_driver.cc:2133: MEDUSA GetModeIndex requirement {size = {width: 640, height: 480}, frame_rate_range = [15, 30], request_binning_mode = false, request_pd_stream = false, only_config_logical_cam_stream = false, camera_id = [<recursive>], require_full_fov = true, is_high_frame_rate = false, crop_margin = 0, is_sibling_camera_participating = false, sub_image_count = 1, is_face_auth = false, is_video_mode = false, is_high_resolution_mode = false, is_arkaroo_enabled = false, is_roshi_enabled = false, is_specific_aspect_ratio_video = false, require_exact_size = false, force_sensor_mode_index = -1, is_multi_cam_usecase = false, raw_stream_usecase = 0, is_high_resolution_standalone_mode = false} required aspect ratio 1.33117 pick_transition_mode 0 require exact size 0
+05-17 16:39:01.296   930 24807 I Lyric   : sensor_generic_driver.cc:2227: MEDUSA GetModeIndex requirement use_binning_mode 0
+05-17 16:39:01.296   930 24807 I Lyric   : sensor_generic_driver.cc:2234: MEDUSA candidate mode index 0, size = {width: 3280, height: 2464}, pd = 0, frame rate range = [7.5, 30], timestamp_offset = 915000, is faceauth mode 0
+05-17 16:39:01.296   930 24807 I Lyric   : sensor_generic_driver.cc:2234: MEDUSA candidate mode index 1, size = {width: 3280, height: 1848}, pd = 0, frame rate range = [7.5, 30], timestamp_offset = 1250000, is faceauth mode 0
+05-17 16:39:01.296   930 24807 I Lyric   : sensor_generic_driver.cc:2234: MEDUSA candidate mode index 2, size = {width: 1640, height: 924}, pd = 0, frame rate range = [7.5, 30], timestamp_offset = 1092800, is faceauth mode 0
+05-17 16:39:01.296   930 24807 I Lyric   : sensor_generic_driver.cc:2386: MEDUSA Matching sensor mode found, mode index: 0
+05-17 16:39:01.296   930 24807 I Lyric   : sensor_generic_driver.cc:2597: MEDUSA Mode size {width: 3280, height: 2464} FPS [7.5, 30] requested FPS [15, 30] MIPI rate 706.55 Mbps rss 32.014136ms
+05-17 16:39:01.296   930 24807 I Lyric   : sensor_generic_driver.cc:2768: dpm: camera MEDUSA, line time: 12.99275us, pixel_rate_vt: 282620000, width: 3280, height: 2464, dual pd size: {width: 0, height: 0}, sparse pd size: {width: 0, height: 0}, emb height: 0, hblanking: 392, mode.hblanking: 392, vblanking: 99(1.28628225ms), mode.vblanking: 99(1.28628225ms), frame lines: 2564, frame lines for required fps: 2564, integration time margin: 10, line pixels: 3672, FPS: 30, requested FPS: 30, binning factor: {x: 1, y: 1}, analog_gain_range: [1, 16], low_high_gain_ratio: [0/0], digital_gain_range: [1, 8], mode index = 0, size = {width: 3280, height: 2464}, pd = 0, frame rate range = [7.5, 30]
+05-17 16:39:01.297   930 24807 I Lyric   : dpm_bandwidth_controller.cc:195: dpm: camera 1, required_clock: 70585020 (triple-camera WAR enabled: 1, pip-usecase WAR enabled: 1)
+05-17 16:39:01.297   930 24807 I Lyric   : dpm_bandwidth_controller.cc:120: dpm: required_clock is 70585020 min_frontend_clock_requirement_: 0 sensor streaming: 0
+05-17 16:39:01.297   930 24807 I Lyric   : dpm_bandwidth_controller.cc:144: Vote for front-end clock for freq 70585020
+05-17 16:39:01.299   930 24807 I Lyric   : sensor_node.cc:533: sensor: CPU affinity setting: Auto
+05-17 16:39:01.299   930 24807 W Lyric   : multisensor_controller.cc:1825: Front Failed to get pdaf calibration data
+05-17 16:39:01.299   930 24807 I Lyric   : generic_subgraph.cc:2540: minimum pipeline delay: 3, is_portrait_mode: 0 pipeline delay: 3
+05-17 16:39:01.299   930 24807 I Lyric   : generic_subgraph.cc:2547: hal_touch_roi_tracking_enabled: ENABLED
+05-17 16:39:01.300   930 24807 I Lyric   : generic_subgraph.cc:2681: enable_eis_blur_refinement_mask_data_flow=0 camera=1
+05-17 16:39:01.300   930 24807 I Lyric   : generic_subgraph.cc:2836: Adding segmentation node
+05-17 16:39:01.300   930 24807 I Lyric   : segmentation_node.cc:306: Using Ultra Lite Segmentation Model
+05-17 16:39:01.300   930 24807 I Lyric   : segmentation_node.cc:405: Using ultralite segmentor
+05-17 16:39:01.300   930 24807 I Lyric   : segmentation_node.cc:423: segmentation: CPU affinity setting: Big Core
+05-17 16:39:01.300   930  1400 I Lyric   : sensor_generic_driver.cc:656: MEDUSA init success.
+05-17 16:39:01.303   930 24807 I Lyric   : face_detection_node.cc:367: Face Detection: Two stage mode is disabled
+05-17 16:39:01.303   930 24807 I Lyric   : isp_subgraph_utils.cc:541: Semantic GU is disabled
+05-17 16:39:01.303   930 24807 I Lyric   : isp_subgraph_utils.cc:574: Semantic Sharpener is disabled
+05-17 16:39:01.306   930  1400 I Lyric   : sensor_generic_driver.cc:2913: MEDUSA set mode success.
+05-17 16:39:01.310   930 24807 I Lyric   : whi_like_isp_backend_core_subgraph.cc:418: Enable TNR nodes in graph
+05-17 16:39:01.311   930 24807 I Lyric   : whi_like_isp_backend_core_subgraph.cc:539: TnrMergeNode is configured to output consumer type 2 fmt: HalImageFormat{ pixel_format = YCBCR_420_SPN_10B, stride_alignment = 16, num_buffers = 1 } for Front
+05-17 16:39:01.312   930 24807 I Lyric   : whi_like_isp_backend_core_subgraph.cc:826: RawToYuvNode is configured to output consumer type 0 fmt: HalImageFormat{ pixel_format = YCBCR_420_SPN_10B, stride_alignment = 16, num_buffers = 1 } for Front
+05-17 16:39:01.312   930 24807 I Lyric   : whi_like_isp_backend_core_subgraph.cc:931: RawToYuvNode for snapshot exceeding video is configured to output consumer type 2 fmt: HalImageFormat{ pixel_format = YCBCR_420_888, stride_alignment = 16, num_buffers = 1 } for Front
+05-17 16:39:01.314   930 24807 I Lyric   : whi_like_isp_post_proc_subgraph.cc:263: Including MeshWarpNode
+05-17 16:39:01.314   930 24807 I Lyric   : whi_like_isp_post_proc_subgraph.cc:289: Including mesh warp pipeline for preview
+05-17 16:39:01.314   930 24807 I Lyric   : whi_like_isp_post_proc_subgraph.cc:319: Preview mesh warp is configured to output HalImageFormat{ pixel_format = YCBCR_420_SPN_10B, stride_alignment = 16, num_buffers = 1 }
+05-17 16:39:01.315   930 24807 I Lyric   : camera_device_session_manager_base.cc:1751: Stream 0 limited to 7 inflight requests
+05-17 16:39:01.315   930 24807 I Lyric   : camera_device_session_manager_base.cc:1761: Front frontend limited to 3 inflight requests
+05-17 16:39:01.315   930 24807 I Lyric   : generic_subgraph.cc:4276: camera_id = 1; is_front_camera = 1; is_1p_camera_app = 0; video_call = 1
+05-17 16:39:01.317   930 24807 I Lyric   : auto_exposure_node.cc:677: ae: CPU affinity setting: Medium Core : Priority: High
+05-17 16:39:01.320   930 24807 I Lyric   : face_detection_node.cc:378: Face Detection: update expected scaled image size to 640 x 480
+05-17 16:39:01.321   930 24807 W Lyric   : rectiface_node.cc:502: Deferrable rectiface spec does not have any value
+05-17 16:39:01.323   930 24807 I Lyric   : whi_like_isp_backend_core_subgraph.cc:197: RawToYuvNode(Front) output size: {width: 1640, height: 1232}
+05-17 16:39:01.323   930 24807 I Lyric   : processing_graph.cc:220: ProcessingGraph GenericGraph top_graph_for_camera_Front finalized with NodeInstanceSequencers disabled.
+05-17 16:39:01.324   930 24807 I Lyric   : camera_device_session_manager_base.cc:714: Successfully constructed graph: top_graph_for_camera_Front, graph class: GenericGraph, graph_configuration:
+05-17 16:39:01.324   930 24807 I Lyric   : graph_configuration.cc:348: 
+05-17 16:39:01.324   930 24807 I Lyric   : {type: StreamInfo, stream_id: 0, camera_id: Front, format: YCBCR_420_888, width: 640, height: 480, usage: [SwReadOften], stream_type: Output, use_case: Default, data_space: DataSpace(Color)::(Standard: BT601_625, Transfer: SMPTE_170M, Range: Full), is_framework_physical_stream: 0, dynamic_range_profile: Standard, intended_for_max_resolution_mode: 0, group_id: -1, is_tunable: 1}
+05-17 16:39:01.324   930 24807 I Lyric   : {type: StreamConfigurationMode, Front: Normal}
+05-17 16:39:01.324   930 24807 I Lyric   : camera_performance_analyzer.cc:31: [CPA] CPA-Lite is enabled.
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:333: GraphRunner: Using GraphRunnerDeferringWorkQueue
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:335: Thread pool config , Input Priority: Realtime, affinity: Auto, process group: CameraServicePerformance, # of threads: 4
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:335: Thread pool config , Input Priority: High, affinity: Auto, process group: CameraServicePower, # of threads: 1
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:335: Thread pool config , Input Priority: High, affinity: Auto, process group: CameraServicePerformance, # of threads: 12
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:335: Thread pool config , Input Priority: Normal, affinity: Auto, process group: CameraServicePerformance, # of threads: 7
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:335: Thread pool config , Input Priority: High, affinity: Medium Core, process group: CameraServicePerformance, # of threads: 2
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:335: Thread pool config , Input Priority: High, affinity: Big Core, process group: CameraServicePerformance, # of threads: 1
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:335: Thread pool config , Input Priority: Normal, affinity: Auto, process group: CameraServicePower, # of threads: 3
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:464: Initializing deferring work queue RunnerR:P+:A with: wake threshold: 0; node group count: 4; minimum active threads: 1; soft maximum: 4; initial_eager_wakeup_frames: 0; underlying queue: fifo
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:464: Initializing deferring work queue RunnerH:P-:A with: wake threshold: 0; node group count: 2; minimum active threads: 1; soft maximum: 1; initial_eager_wakeup_frames: 0; underlying queue: fifo
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:464: Initializing deferring work queue RunnerN:P-:A with: wake threshold: 0; node group count: 3; minimum active threads: 1; soft maximum: 3; initial_eager_wakeup_frames: 0; underlying queue: fifo
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:464: Initializing deferring work queue RunnerH:P+:B with: wake threshold: 0; node group count: 1; minimum active threads: 1; soft maximum: 1; initial_eager_wakeup_frames: 0; underlying queue: fifo
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:464: Initializing deferring work queue RunnerH:P+:M with: wake threshold: 0; node group count: 2; minimum active threads: 1; soft maximum: 2; initial_eager_wakeup_frames: 0; underlying queue: fifo
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:464: Initializing deferring work queue RunnerN:P+:A with: wake threshold: 0; node group count: 14; minimum active threads: 1; soft maximum: 7; initial_eager_wakeup_frames: 0; underlying queue: fifo
+05-17 16:39:01.324   930 24807 I Lyric   : graph_runner_deferring_work_queue.cc:464: Initializing deferring work queue RunnerH:P+:A with: wake threshold: 0; node group count: 18; minimum active threads: 1; soft maximum: 12; initial_eager_wakeup_frames: 0; underlying queue: fifo
+05-17 16:39:01.324   930 24807 I Lyric   : camera_device_session_manager_base.cc:834: CameraMode: 8
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized slc
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized scsc
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized mcsc
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized gdc1
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized gdc0
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized gtnr-merge
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized itp
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized gtnr-align
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized g3aa
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized ipp
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized pdp
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized csi
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized votf
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized flash-lm3644
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized ois-lc898129
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized act-lc898129
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized eeprom-lc898129
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized eeprom-m24c64x
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized eeprom-m24c64s
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized sensor-imx363
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized sensor-imx386
+05-17 16:39:01.324   930 24807 W Lyric   : session_telemetry_controller.cc:109: Telemetry was not initialized top
+05-17 16:39:01.324   930 24807 I Lyric   : camera_device_session_manager_base.cc:1137: Attempting to start graph:top_graph_for_camera_Front
+05-17 16:39:01.325   930 24807 I Lyric   : processing_graph.cc:329: Node start critical order experiment is disabled
+05-17 16:39:01.325   930  1401 I Lyric   : sensor_node.cc:549: sensor SensorNode starting for sensor: MEDUSA, camera: Front
+05-17 16:39:01.326   930  1402 W Lyric   : statistics_node.cc:339: Failed to get pdaf calibration data
+05-17 16:39:01.326   930  1402 I Lyric   : front_end_controller.cc:2397: Camera position: front lens type: normal target pdp channel: 1
+05-17 16:39:01.326   930  1402 I Lyric   : front_end_controller.cc:1223: dpm: skipping acquire for camera 1
+05-17 16:39:01.328   930  1403 I Lyric   : catpipe_rectiface_controller.cc:73: camera_hal_id 1 active array 3280 2464
+05-17 16:39:01.330   930  1402 I Lyric   : ipp_driver.cc:820: IPP Version: 8.5.0
+05-17 16:39:01.331   930  1402 I Lyric   : pdp_driver.cc:408: PDP: about to enable device
+05-17 16:39:01.331   930 30674 I Lyric   : lwis_event_thread.cc:211: LwEv:Pdp event thread is starting . . .
+05-17 16:39:01.331   930 30673 I Lyric   : lwis_event_thread.cc:211: LwEv:Ipp event thread is starting . . .
+05-17 16:39:01.331   930  1402 I Lyric   : pdp_driver.cc:412: PDP: device enabled
+05-17 16:39:01.331   930  1402 I Lyric   : pdp_driver.cc:341: PDP SwReset, is async? 1
+05-17 16:39:01.331   930  1402 I Lyric   : pdp_driver.cc:1016: PDP: about to SetLwisEventsEnable to 1
+05-17 16:39:01.331   930  1402 I Lyric   : pdp_driver.cc:1032: PDP: finished SetLwisEventsEnable to 1
+05-17 16:39:01.331   930  1402 I Lyric   : pdp_driver.cc:933: PDP: finished starting hardware
+05-17 16:39:01.331   930  1402 I Lyric   : pdp_driver.cc:427: PDP Version: 2.5.0
+05-17 16:39:01.331   930  1402 I Lyric   : pdp_driver.cc:433: PDP: finished power up
+05-17 16:39:01.333   930  1402 I Lyric   : csi_driver.cc:784: CSI: created new context 0xb4000078885dc840 for binding 10000
+05-17 16:39:01.333   930  1402 I Lyric   : csi_driver.cc:985: Trying to initialize context with these resource assignments: Camera ID:not set, CSIS LINK:-1, CSIS EBUF:-1, WDMA INPUT:-1, CSIS WDMA:-1, PDP WDMA:-1, ZSL WDMA:-1, EBUF CH:-1, PDP CH:-1, USAGE:0x0, sensor image: 0x0, sensor pd: has value:false: 0x0
+05-17 16:39:01.333   930  1402 I Lyric   : csi_driver.cc:311: CSI Version: 5.4.0.0
+05-17 16:39:01.333   930  1402 I Lyric   : csi_driver.cc:1577: Successfully enabled EBUF Qactive!
+05-17 16:39:01.333   930  1402 I Lyric   : csi_driver.cc:1213: CSI-1: Acquire processing context done.
+05-17 16:39:01.334   930 30675 I Lyric   : lwis_event_thread.cc:211: LwEv:Csi event thread is starting . . .
+05-17 16:39:01.334   930  1402 I Lyric   : g3aa_driver.cc:1556: G3AA Product ID: 0X3AA, Version: 0.1.0
+05-17 16:39:01.334   930  1402 I Lyric   : g3aa_driver.cc:1298: Configuring global system CSRs
+05-17 16:39:01.334   930  1402 I Lyric   : g3aa_driver.cc:1094: Enabling LWIS events for context 0
+05-17 16:39:01.334   930  1402 I Lyric   : g3aa_driver.cc:1094: Enabling LWIS events for context 1
+05-17 16:39:01.334   930  1402 I Lyric   : g3aa_driver.cc:1094: Enabling LWIS events for context 2
+05-17 16:39:01.334   930  1402 I Lyric   : g3aa_driver.cc:905: ------------------------------------------------------
+05-17 16:39:01.335   930  1402 I Lyric   : g3aa_driver.cc:906: Acquiring context 0. Requirements: [Power-Up-Only]
+05-17 16:39:01.335   930  1402 I Lyric   : g3aa_driver.cc:908: ------------------------------------------------------
+05-17 16:39:01.335   930  1402 I Lyric   : g3aa_driver.cc:1983: Number of active HW contexts: 0, power-up-only contexts: 1. Details:
+05-17 16:39:01.335   930  1402 I Lyric   : front_end_controller.cc:1308: dpm: successfully acquired power-up contexts!
+05-17 16:39:01.335   930 30676 I Lyric   : lwis_event_thread.cc:211: LwEv:G3aa event thread is starting . . .
+05-17 16:39:01.335   930  1401 I Lyric   : front_end_controller.cc:1253: dpm: skipping acquire for camera 1
+05-17 16:39:01.335   930  1401 I Lyric   : front_end_controller.cc:1553: dpm: storing context for csi link 4 camera 1 context: 0xb4000078785b0ee8 sibling: 0 real context 0
+05-17 16:39:01.335   930  1401 I Lyric   : per_camera_barrier_impl.cc:47: Blocker for FrontEndBlockCam1ToStart acquired
+05-17 16:39:01.335   930  1403 I Lyric   : front_end_controller.cc:1197: dpm: skipping acquire for camera 1
+05-17 16:39:01.337   930  1402 I G3ACoordinator: awb_session_config_parser_lyric.cc:245: sensor_mode ptr [0xb4000079685f72b8], sobek_enabled [false], post_process [0]
+05-17 16:39:01.337   930  1402 I G3ACoordinator: awb_session_config_parser_lyric.cc:285: Map sensor mode property: sobek_enabled [false], hdr_mode [0]
+05-17 16:39:01.337   930  1402 I G3ACoordinator: awb_session_config_parser_lyric.cc:210: Map sensor name [MEDUSA] binning_factor [1 1] mode_index [0] to GCam sensor ID [1]
+05-17 16:39:01.337   930  1402 I G3ACoordinator: awb_session_config_parser_lyric.cc:145: Fail to read calibration data for camera[front normal]]. Use the default LED decision in tuning!
+05-17 16:39:01.339   930  1402 I G3ACoordinator: awb_engine.cc:446: Use lut file ghawb_para_lut_front_normal.binarypb
+05-17 16:39:01.340   930  1401 I G3ACoordinator: ae_session_config_parser_lyric.cc:201: ispfe_raw_input_resolution [width:3280, height:2464]
+05-17 16:39:01.340   930  1401 I G3ACoordinator: ae_session_config_parser_lyric.cc:268: Map sensor mode property: sobek_enabled = false, g3a_session_info.hdr_mode = 0, sensor_mode_property 0
+05-17 16:39:01.340   930  1401 I G3ACoordinator: ae_session_config_parser_lyric.cc:279: Map sensor name [MEDUSA], binning_factor [1, 1] and mode_index [0] to GCam sensor ID [1]
+05-17 16:39:01.341   930  1401 I G3ACoordinator: ae_session_config_parser_lyric.cc:379: Pre-LSC AE stats status: disabled
+05-17 16:39:01.341   930  1401 I G3ACoordinator: ae_engine.cc:379: session_type 0, is_comice_enabled false
+05-17 16:39:01.341   930  1401 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.341   930  1402 I G3ACoordinator: awb_engine.cc:498: Camera 1 Initial decision [2.0188465 1 1.8000677] CCT [4737] CCM[ccm=(1.49205 -0.5102 0.01815 -0.21055 1.3011 -0.09055 0.01065 -0.5432 1.53255) offset=(0 0 0) color_space_type=(1 -> 1)]
+05-17 16:39:01.343   930  1401 I G3ACoordinator: ae_engine.cc:455: GABC fatp_enable_ = 0
+05-17 16:39:01.343   930  1401 I G3ACoordinator: ae_engine.cc:456: [0, 1] AeEngine_0_1 initialized
+05-17 16:39:01.343   930  1401 W Lyric   : auto_exposure_node.cc:1093: ae failed to acquire eco context: UNAVAILABLE: Not able to create valid eco proxy client
+05-17 16:39:01.359   930  1787 I native  : I0000 00:00:1779016141.359240    1787 node_export.cc:195] CatNodeCreate(HdrnetV2Node) took 8.53426 ms
+05-17 16:39:01.359   930  1785 I native  : I0000 00:00:1779016141.358546    1785 node_export.cc:195] CatNodeCreate(RectifaceNode) took 8.56563 ms
+05-17 16:39:01.366   930  1403 I native  : I0000 00:00:1779016141.366362    1403 node_export.cc:195] CatNodeCreate(AlscNode) took 9.6429 ms
+05-17 16:39:01.370   930  1401 I native  : I0000 00:00:1779016141.370465    1401 segmenter_node.cc:385] 
+05-17 16:39:01.372   930 30672 I native  : I0000 00:00:1779016141.372102   30672 node_export.cc:195] CatNodeCreate(EisNode) took 12.1694 ms
+05-17 16:39:01.372   930 30678 I native  : I0000 00:00:1779016141.372584   30678 xeno_gpu_segmenter.cc:882] Creating CL-X segmenter.
+05-17 16:39:01.372   930  1402 E GHAWB   : Skin Stats Analyzer: skin_stats_analyzer.cc:26] SetTuning: Disable SkinStatsAnalyzer in tuning
+05-17 16:39:01.373   930  1401 I native  : I0000 00:00:1779016141.373553    1401 node_export.cc:195] CatNodeCreate(SegmenterNode) took 3.05339 ms
+05-17 16:39:01.374   930 30679 I Lyric   : csi_driver.cc:784: CSI: created new context 0xb4000078886019f0 for binding 1000
+05-17 16:39:01.375   930 30679 I Lyric   : csi_driver.cc:985: Trying to initialize context with these resource assignments: Camera ID:not set, CSIS LINK:-1, CSIS EBUF:-1, WDMA INPUT:-1, CSIS WDMA:-1, PDP WDMA:-1, ZSL WDMA:-1, EBUF CH:-1, PDP CH:-1, USAGE:0x0, sensor image: 0x0, sensor pd: has value:false: 0x0
+05-17 16:39:01.375   930 30679 I Lyric   : csi_driver.cc:1213: CSI-1: Acquire processing context done.
+05-17 16:39:01.375   930 30682 I Lyric   : gtnr_merge_driver.cc:542: Sw reset.
+05-17 16:39:01.375   930 30672 I native  : I0000 00:00:1779016141.375405   30672 rectiface_node.cc:1747] Contizoom calibration file: /mnt/vendor/persist/camera/rear/multi_cam_calibration.combined.proto
+05-17 16:39:01.375   930 30683 I Lyric   : common_gdc_driver.cc:667: whi-common-gdc0 Version: 8.5.1
+05-17 16:39:01.375   930 30682 I Lyric   : gtnr_merge_frame_control_helper.cc:294: Corex interface version: 3735945214
+05-17 16:39:01.375   930 30682 I Lyric   : gtnr_merge_driver.cc:1296: Successfully powered up merge block.
+05-17 16:39:01.375   930 30687 I Lyric   : lwis_event_thread.cc:211: LwEv:TnrMg event thread is starting . . .
+05-17 16:39:01.375   930 30684 I Lyric   : common_scaler_driver.cc:241: whi-mcsc: Power up only, 0 outputs, 0x0, fps 0, input medium DMA
+05-17 16:39:01.376   930 30681 I Lyric   : itp_core_whi.cc:82: Applying DNS LH_GLUE WA SwReset sequence rev0.4
+05-17 16:39:01.376   930  1403 I Lyric   : face_detection_engine_face_ssd.cc:321: Face Detection: FaceDetectionEngineFaceSsd::Initialize::CreateDetector takes 4.193522ms
+05-17 16:39:01.376   930  1403 I Lyric   : ensemble_face_detection_controller.cc:484: Face Detection: Using graph runner thread pool.
+05-17 16:39:01.376   930 30681 I Lyric   : itp_core_whi.cc:182: ITP Version: 1.5.0
+05-17 16:39:01.376   930 30681 I Lyric   : itp_core_whi.cc:184: ITSC Version: 8.5.1
+05-17 16:39:01.376   930 30681 I Lyric   : itp_core_whi.cc:197: Applying DNS LH_GLUE WA SwReset sequence rev0.4 for cleanup transaction.
+05-17 16:39:01.376   930 30681 I Lyric   : itp_driver.cc:1573: Camera -1 AcquireProcessingContext: 0xb4000077f85d84f0 0xb4000077f85d84f0, dimension: 0x0 (non-VOTF)
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 0, register block id = 0
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 14, num read dma = 0, process lines = 1
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 1, register block id = 1
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 0, num read dma = 4, process lines = 1
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 3, register block id = 2
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 0, num read dma = 1, process lines = 1
+05-17 16:39:01.376   930 30681 I Lyric   : itp_driver.cc:1451: Initializing ITP/DNS COREX
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 4, register block id = 3
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 0, num read dma = 2, process lines = 32
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 7, register block id = 4
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 9, num read dma = 0, process lines = 1
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 8, register block id = 5
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 0, num read dma = 4, process lines = 1
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 10, register block id = 6
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 2, num read dma = 0, process lines = 64
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 12, register block id = 7
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 2, num read dma = 0, process lines = 64
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:19: chip revision = 3, votf ip number = 13, register block id = 8
+05-17 16:39:01.376   930 30686 I Lyric   : whi_votf_c2serv.cc:23: num write dma = 0, num read dma = 3, process lines = 1
+05-17 16:39:01.377   930  1416 I Lyric   : itp_event_handler_whi.cc:97: Received Sw event: Itp.Sw.kInitConfigSuccessEvent counter 1
+05-17 16:39:01.377   930  1416 I Lyric   : itp_event_handler_whi.cc:91: Received Hw event: Itp.Int1.DnsCorexEndInt0 counter 1
+05-17 16:39:01.377   930  1416 I Lyric   : itp_event_handler_whi.cc:187: itp_corex_initialized_ was 0 dns_corex_initialized_ was 0
+05-17 16:39:01.377   930  1416 I Lyric   : itp_event_handler_whi.cc:91: Received Hw event: Itp.Int1.ItpCorexEndInt0 counter 1
+05-17 16:39:01.377   930  1416 I Lyric   : itp_event_handler_whi.cc:187: itp_corex_initialized_ was 0 dns_corex_initialized_ was 1
+05-17 16:39:01.377   930 30684 I Lyric   : common_scaler_driver.cc:432: whi-mcsc: successfully powered up, version: 8.5.1
+05-17 16:39:01.377   930 30684 I Lyric   : common_scaler_driver.cc:241: whi-scsc: Power up only, 0 outputs, 0x0, fps 0, input medium DMA
+05-17 16:39:01.377   930 30683 I Lyric   : common_gdc_driver.cc:667: whi-common-gdc1 Version: 8.5.1
+05-17 16:39:01.377   930 30672 W native  : W0000 00:00:1779016141.377774   30672 continuous_zoom_frame.cc:25] The canonical ois/vcm of B3_UW is not given, set it to zeros.
+05-17 16:39:01.377   930 30672 W native  : W0000 00:00:1779016141.377829   30672 continuous_zoom_frame.cc:25] The canonical ois/vcm of B3_UW is not given, set it to zeros.
+05-17 16:39:01.378   930 30684 I Lyric   : common_scaler_driver.cc:432: whi-scsc: successfully powered up, version: 8.5.1
+05-17 16:39:01.378   930  1401 I Lyric   : slc_driver.cc:58: SLC setup: pid = 6 : Itp-Gtnr : 8 ways (buf fd 222)
+05-17 16:39:01.378   930  1401 I Lyric   : slc_driver.cc:58: SLC setup: pid = 7 : Gdc-Scaler : 5 ways (buf fd 223)
+05-17 16:39:01.378   930  1401 I Lyric   : slc_driver.cc:58: SLC setup: pid = 4 : Gdc-Scaler : 5 ways (buf fd 224)
+05-17 16:39:01.378   930  1403 I Lyric   : stream_interface_controller.cc:522: Compression(SBWC) enabled for ITSC -> TNR for camera Front with instance id 0
+05-17 16:39:01.378   930  1401 I Lyric   : itp_driver.cc:1573: Camera 1 AcquireProcessingContext: 0xb4000077f860d1d0 0xb4000077f860d1d0, dimension: 3280x2464 (VOTF)
+05-17 16:39:01.378   930  1401 I Lyric   : raw_to_yuv_node.cc:755: Starting node raw_to_yuv with Pipeline (ID: (instance_id: 54905), IPs: [ RawToYuv ], Max Outputs: 1, IPConnections: [ ], Usecase: Realtime, Priority: Unspecified) on camera 1
+05-17 16:39:01.379   930  1403 I Lyric   : slc_driver.cc:58: SLC setup: pid = 5 : GTNR iVOTF : 5 ways (buf fd 225)
+05-17 16:39:01.379   930 30688 I Lyric   : lwis_event_thread.cc:211: LwEv:TnrAl event thread is starting . . .
+05-17 16:39:01.379   930  1401 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device gtnr-align bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.379   930  1403 I Lyric   : slc_driver.cc:58: SLC setup: pid = 8 : GTNR Prev : 4 ways (buf fd 226)
+05-17 16:39:01.379   930  1401 I Lyric   : stream_interface_controller.cc:522: Compression(SBWC) enabled for TNR -> GDC0 for camera Front with instance id 0
+05-17 16:39:01.379   930  1401 I Lyric   : thread_pool.h:44: Creating ThreadPool MeshWarpThread with number of threads: 1
+05-17 16:39:01.379   930  1401 I Lyric   : thread_pool.h:213: ThreadPool: MeshWarpThread resized to 1 active threads, and 0 inactive ones.
+05-17 16:39:01.379   930  1401 I Lyric   : thread_pool.h:44: Creating ThreadPool MeshWarpThread with number of threads: 1
+05-17 16:39:01.379   930  1403 I Lyric   : tnr_merge_node.cc:439: Starting node tnr_merge with Pipeline (ID: (instance_id: 54907), IPs: [ TnrMerge ], Max Outputs: 1, IPConnections: [ ], Usecase: Realtime, Priority: Unspecified) on camera 1
+05-17 16:39:01.379   930  1401 I Lyric   : thread_pool.h:213: ThreadPool: MeshWarpThread resized to 1 active threads, and 0 inactive ones.
+05-17 16:39:01.379   930  1401 I Lyric   : mesh_warp_node.cc:456: Starting node preview_mesh_warp with Pipeline (ID: (instance_id: 54908), IPs: [ MeshWarp ], Max Outputs: 1, IPConnections: [ ], Usecase: Realtime, Priority: Unspecified) on camera 1
+05-17 16:39:01.379   930  1401 I Lyric   : common_scaler_driver.cc:241: whi-scsc: 1 outputs, 1640x1232, fps 30, input medium DMA_VOTF
+05-17 16:39:01.380   930 30672 I native  : I0000 00:00:1779016141.379998   30672 cpu_feature_extractor.cc:119] Extracting FREAK descriptors.
+05-17 16:39:01.380   930  1401 I Lyric   : scaler_node.cc:488: Starting node preview_scaler with Pipeline (ID: (instance_id: 54913), IPs: [ Scaler ], Max Outputs: 1, IPConnections: [ ], Usecase: Realtime, Priority: Unspecified) on camera 1
+05-17 16:39:01.380   930  1401 I Lyric   : telemetry_node.cc:294: 1 calls in 175 sec(s): DmaMemoryAllocationCost size is set to 0 MiB.
+05-17 16:39:01.380   930  1401 I G3ACoordinator: auto_scene_detection_engine.cc:570: [9, 1] AutoSceneDetectionEngine_9_1 initialized
+05-17 16:39:01.380   930 30672 I native  : I0000 00:00:1779016141.380324   30672 brute_force_feature_matching.cc:49] Number of bins each image dimension is divided into: 5
+05-17 16:39:01.381   930 30672 I native  : I0000 00:00:1779016141.381354   30672 continuous_zoom_image_homography.cc:1288] ContinuousZoomImageHomography enable_temporal_feature_matching OFF
+05-17 16:39:01.381   930 30691 I Lyric   : common_scaler_driver.cc:656: whi-scsc: entering processing thread.
+05-17 16:39:01.391   930 30672 W native  : W0000 00:00:1779016141.391924   30672 continuous_zoom_frame.cc:25] The canonical ois/vcm of B3_UW is not given, set it to zeros.
+05-17 16:39:01.392   930 30672 I native  : I0000 00:00:1779016141.392026   30672 rectiface_node.cc:2240] Contizoom enabled.
+05-17 16:39:01.392   930 30672 I native  : I0000 00:00:1779016141.392977   30672 eis_node.cc:1600] Contizoom calibration file: /mnt/vendor/persist/camera/rear/multi_cam_calibration.combined.proto
+05-17 16:39:01.393   930 30672 W native  : W0000 00:00:1779016141.393038   30672 continuous_zoom_frame.cc:25] The canonical ois/vcm of B3_UW is not given, set it to zeros.
+05-17 16:39:01.393   930 30672 W native  : W0000 00:00:1779016141.393266   30672 continuous_zoom_frame.cc:25] The canonical ois/vcm of B3_UW is not given, set it to zeros.
+05-17 16:39:01.393   930 30672 I native  : I0000 00:00:1779016141.393345   30672 cpu_feature_extractor.cc:119] Extracting FREAK descriptors.
+05-17 16:39:01.393   930 30672 I native  : I0000 00:00:1779016141.393796   30672 brute_force_feature_matching.cc:49] Number of bins each image dimension is divided into: 5
+05-17 16:39:01.393   930 30672 I native  : I0000 00:00:1779016141.393827   30672 continuous_zoom_image_homography.cc:1288] ContinuousZoomImageHomography enable_temporal_feature_matching OFF
+05-17 16:39:01.394   930 30672 W native  : W0000 00:00:1779016141.394101   30672 continuous_zoom_frame.cc:25] The canonical ois/vcm of B3_UW is not given, set it to zeros.
+05-17 16:39:01.394   930 30672 I native  : I0000 00:00:1779016141.394428   30672 eis_node.cc:1272] eis_align_mode_ = 0
+05-17 16:39:01.398   930  1402 I tflite  : Replacing 4 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 5 partitions.
+05-17 16:39:01.400   930  1402 W G3ACoordinator: awb_engine.cc:529: Failed to register data types in data manager.
+05-17 16:39:01.400   930  1402 I G3ACoordinator: awb_engine.cc:532: [2, 1] AwbEngine_2_1 initialized
+05-17 16:39:01.400   930 24807 I Lyric   : camera_device_session_manager_base.cc:1141: Successfully started graph:top_graph_for_camera_Front
+05-17 16:39:01.400   930 24807 I Lyric   : malloc_tracker.cc:34: Starting malloc tracker
+05-17 16:39:01.400   930  1395 I StreamBufferCacheManager: Create: Created StreamBufferCacheManager.
+05-17 16:39:01.400   930  1395 I GCH_CameraDeviceSession: RegisterStreamsIntoCacheManagerLocked: [sbc] Registered stream 0 into SBC manager.
+05-17 16:39:01.401   930  1401 I Lyric   : page_release_controller.cc:108: Disabling page releasing.
+05-17 16:39:01.403   930  1395 I GCH_CameraDeviceSession: ProcessCaptureRequest: [sbc] Stream 0 1st req arrived, notify SBC Manager.
+05-17 16:39:01.403   930  1395 I Lyric   : retiming_node.cc:923: Front(hal id: 1), Thermal severity changed from  0 to 2
+05-17 16:39:01.403   930  1395 I Lyric   : retiming_node.cc:1413: ******** dpm: Front(hal id: 1) change DPM mode from Undefined to LowPowerUltra, is virtual transition: 0, framework request id 0, frame number: 0
+05-17 16:39:01.404   930 24798 I Lyric   : conditional_dpm_node.cc:70: conditional_dpm turn to dpm mode: LowPowerUltra, framte number: 0
+05-17 16:39:01.404   930 24789 I Lyric   : power_throttle_controller.cc:575: camera thermal status: global frame rate at 30fps for camera 1
+05-17 16:39:01.404   930 24789 W Lyric   : three_a_request_node.cc:121: 17 calls in 174 sec(s): ThreeARequestNode: Error getting  metadata entry [ANDROID_CONTROL_AF_REGIONS]: INVALID_ARGUMENT: Metadata doesn't have the entry for ANDROID_CONTROL_AF_REGIONS
+05-17 16:39:01.404   930 24789 I Lyric   : power_throttle_controller.cc:575: camera thermal status: 3A at 30fps for camera 1
+05-17 16:39:01.405   930 30678 I native  : I0000 00:00:1779016141.405609   30678 segmenter_node.cc:295] 
+05-17 16:39:01.406  1136 30666 I CameraService: Start camera streaming for com.google.android.as (PID 3846, UID 10149)
+05-17 16:39:01.406   930 24794 I G3ACoordinator: ae_input_parser_lyric.cc:2201: Starter frame: rel_frame_num [-3]
+05-17 16:39:01.406   930 24794 W G3ACoordinator: data_manager.cc:154: [5, 2, 9000] can't be found
+05-17 16:39:01.406   930 24794 I G3ACoordinator: ae_engine.cc:552: Starter Frames
+05-17 16:39:01.406   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.406  3846 24763 I gaze    : Created preview session.
+05-17 16:39:01.410   930 24794 E GABC    : GABC-SensitivityDistribution: sensitivity_distribution.cc:1020] Load: Tuning not found or Invalid Lens type received:  camera position: 2, lens type: 0
+05-17 16:39:01.413   930  1840 I Lyric   : front_end_controller.cc:1943: dpm: frontend context 1 updating power mode to low power mode
+05-17 16:39:01.413   930  1840 I Lyric   : front_end_controller.cc:139: Acquiring PDP with requirement: votf_enable:0, bayer_size:{width: 3280, height: 2464}, pd_size:{width: 0, height: 0}, enable_bayer_output_to_ipp:1, enable_bayer_output_to_g3aa:1, enable_pd_output_to_g3aa:0, enable_pdstats_output_to_wdma:0, input_type:0, bayer_scaler_type:0, lic_configuration:lic_input_context_mode:2, lic_input_bit_mode:0, yext_hdr_mode:0, pdp_channel:1, secure_operation_mode:NonSecure
+05-17 16:39:01.413   930 24793 I Lyric   : dpm_bandwidth_controller_v1.cc:489: Update minimum MIF clock to 1000000000 number of active sensor: 1
+05-17 16:39:01.413   930  1840 I Lyric   : pdp_driver.cc:990: PDP: about to SetHwEventsEnable to 1 for context 1
+05-17 16:39:01.413   930 24793 I Lyric   : dpm_bandwidth_controller.cc:120: dpm: required_clock is 70585020 min_frontend_clock_requirement_: 70585020 sensor streaming: 1
+05-17 16:39:01.413   930 24793 I Lyric   : multisensor_controller.cc:808: Front StartStreaming, waiting on barrier, request: 0
+05-17 16:39:01.413   930 24793 I Lyric   : multisensor_controller.cc:852: camera Front start prepare spend : 44.841us
+05-17 16:39:01.413   930  1840 I Lyric   : pdp_driver.cc:262: PDP: acquired votf_enable:0, bayer_size:{width: 3280, height: 2464}, pd_size:{width: 0, height: 0}, enable_bayer_output_to_ipp:1, enable_bayer_output_to_g3aa:1, enable_pd_output_to_g3aa:0, enable_pdstats_output_to_wdma:0, input_type:0, bayer_scaler_type:0, lic_configuration:lic_input_context_mode:2, lic_input_bit_mode:0, yext_hdr_mode:0, pdp_channel:1, secure_operation_mode:NonSecure address 0xb4000078485826f0 as context 1
+05-17 16:39:01.413   930  1840 I Lyric   : csi_driver.cc:784: CSI: created new context 0xb4000078885fd380 for binding 1
+05-17 16:39:01.413   930  1840 I Lyric   : csi_driver.cc:985: Trying to initialize context with these resource assignments: Camera ID:not set, CSIS LINK:-1, CSIS EBUF:-1, WDMA INPUT:-1, CSIS WDMA:-1, PDP WDMA:-1, ZSL WDMA:-1, EBUF CH:-1, PDP CH:1, USAGE:0x40, sensor image: 0x0, sensor pd: has value:false: 0x0
+05-17 16:39:01.413   930  1840 I Lyric   : csi_driver.cc:1213: CSI-1: Acquire processing context done.
+05-17 16:39:01.413   930  1840 I Lyric   : g3aa_driver.cc:905: ------------------------------------------------------
+05-17 16:39:01.413   930  1840 I Lyric   : g3aa_driver.cc:906: Acquiring context 1. Requirements: Context 1, Bayer Enabled-OTF at 3280x2464, PDAF Disabled-OTF at 0x0. Sensor MEDUSA, max-fps 30, batch size 1, camera_id=1
+05-17 16:39:01.413   930  1840 I Lyric   : g3aa_driver.cc:908: ------------------------------------------------------
+05-17 16:39:01.413   930 24794 I G3ACoordinator: awb_input_parser_lyric.cc:1393: Starter frame: rel_frame_num [-3]
+05-17 16:39:01.413   930 24794 W G3ACoordinator: awb_tuning_util.cc:50: Tuning key not found:  Usecase: 13 Sensor mode: -1 Viridian value: -1 Camera position: 2 Camera lens_type: 0 Camera spectrum: -1 Partial Usecases: {}. Try default use case  Usecase: 0 Sensor mode: -1 Viridian value: -1 Camera position: 2 Camera lens_type: 0 Camera spectrum: -1 Partial Usecases: {}
+05-17 16:39:01.413   930 24794 I G3ACoordinator: awb_engine.cc:2027: Load tuning with previous:Primary :  Usecase: 1 Sensor mode: -1 Viridian value: -1 Camera position: 2 Camera lens_type: 0 Camera spectrum: -1 Partial Usecases: {} current:Primary :  Usecase: 13 Sensor mode: -1 Viridian value: -1 Camera position: 2 Camera lens_type: 0 Camera spectrum: -1 Partial Usecases: {}
+05-17 16:39:01.413   930 24794 E GHAWB   : Skin Stats Analyzer: skin_stats_analyzer.cc:26] SetTuning: Disable SkinStatsAnalyzer in tuning
+05-17 16:39:01.413   930  1840 I Lyric   : g3aa_pipeline.cc:314: [Bayer1] Acquiring pipeline
+05-17 16:39:01.413   930  1840 I Lyric   : g3aa_bayer_pipeline.cc:1155: [Bayer1] G3AA can NOT gracefully drop the first frame. Last HW programming changed Disabled;[0x0] --> Enabled;[3280x2464]
+05-17 16:39:01.413   930 24794 I tflite  : Replacing 4 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 5 partitions.
+05-17 16:39:01.413   930  1840 I Lyric   : g3aa_pipeline.cc:1222: [Bayer1] Submitting repeating SOF-Sync transaction
+05-17 16:39:01.413   930  1840 I Lyric   : g3aa_pipeline.cc:669: [Bayer1] Acquired pipeline. last_hw_frame_num=-1, last_sw_sof_event_count=-1, next_frame_number=1, next_trigger_count=0, next_shadow_set=0, session_first_frame_number=1, batch_size=1
+05-17 16:39:01.413   930  1840 I Lyric   : g3aa_pipeline.cc:815: [Bayer1] Enabling pipeline. Next frame number will be 1
+05-17 16:39:01.414   930  1840 I Lyric   : per_camera_barrier_impl.cc:47: Blocker for G3aaBayer1BlockCam1ToStart acquired
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1983: Number of active HW contexts: 1, power-up-only contexts: 1. Details:
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1994: 	Context 1, Bayer1 pipeline. Acquired: true. Enabled: true
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1994: 	Context 1, PDAF1 pipeline. Acquired: false. Enabled: false
+05-17 16:39:01.414   930  1840 I Lyric   : per_camera_barrier_impl.cc:47: Blocker for IppBlockCam1ToStart acquired
+05-17 16:39:01.414   930  1840 I Lyric   : stream_interface_controller.cc:522: Compression(SBWC) enabled for CSIS -> DNS for camera Front with instance id 0
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:759: CSI: using the existing context 0xb4000078885fd380 for binding 1
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:985: Trying to initialize context with these resource assignments: Camera ID:not set, CSIS LINK:-1, CSIS EBUF:-1, WDMA INPUT:-1, CSIS WDMA:-1, PDP WDMA:-1, ZSL WDMA:1, EBUF CH:-1, PDP CH:1, USAGE:0x41, sensor image: 0x0, sensor pd: has value:false: 0x0
+05-17 16:39:01.414   930  1840 I Lyric   : csi_context.cc:2123: [CSI BW] Camera ID(not set) wdma: CsisZsl1, wdma_data_per_line 6560 bandwidth_peak 496742400 width: 0 pixel rate 0 pixel sample rate 0 active line time 0 required bandwidth 496742400
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1473: [CSI BW] CSIS_D0 BW: 496742400 wdmas: 1, 
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1475: [CSI BW] CSIS_D1 BW: 0 wdmas: 
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1477: [CSI BW] Update Required BW: 496742400, Required Clock: 0, Required peak BW: 496742400
+05-17 16:39:01.414   930  1840 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device csi bandwidth_read: 0 bandwidth_write: 485100 bandwidth_peak: 485100 bandwidth_rt: 485100
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1213: CSI-1: Acquire processing context done.
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:759: CSI: using the existing context 0xb4000078885fd380 for binding 1
+05-17 16:39:01.414   930  1840 I Lyric   : csi_context.cc:193:  Context's CAMERA ID #1
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:985: Trying to initialize context with these resource assignments: Camera ID:1, CSIS LINK:4, CSIS EBUF:0, WDMA INPUT:0, CSIS WDMA:-1, PDP WDMA:-1, ZSL WDMA:1, EBUF CH:0, PDP CH:1, USAGE:0x61, sensor image: 3280x2464, sensor pd: has value:false: 0x0
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1564: Successfully configured EBUF for 3 cameras!
+05-17 16:39:01.414   930  1840 I Lyric   : csi_context.cc:2123: [CSI BW] Camera ID(1) wdma: CsisZsl1, wdma_data_per_line 6560 bandwidth_peak 504896961 width: 3280 pixel rate 282620000 pixel sample rate 282620000 active line time 1.29928e-05 required bandwidth 496742400
+05-17 16:39:01.414   930  1840 I Lyric   : csi_context.cc:2096: dpm: sensor width 3280 h: 2464 fps: 30 pixel rate 282620000 headroom: 0
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1473: [CSI BW] CSIS_D0 BW: 504896961 wdmas: 1, 
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1475: [CSI BW] CSIS_D1 BW: 0 wdmas: 
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1477: [CSI BW] Update Required BW: 496742400, Required Clock: 70655000, Required peak BW: 504896961
+05-17 16:39:01.414   930  1840 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device csi bandwidth_read: 0 bandwidth_write: 485100 bandwidth_peak: 493063 bandwidth_rt: 493063
+05-17 16:39:01.414   930  1840 I Lyric   : csi_driver.cc:1213: CSI4: Acquire processing context done.
+05-17 16:39:01.414   930  1840 I Lyric   : per_camera_barrier_impl.cc:47: Blocker for CsiBlockCam1ToStop acquired
+05-17 16:39:01.414   930  1840 I Lyric   : csi_context.cc:2123: [CSI BW] Camera ID(1) wdma: CsisZsl1, wdma_data_per_line 6560 bandwidth_peak 504896961 width: 3280 pixel rate 282620000 pixel sample rate 282620000 active line time 1.29928e-05 required bandwidth 496742400
+05-17 16:39:01.414   930  1840 I Lyric   : csi_context.cc:2096: dpm: sensor width 3280 h: 2464 fps: 30 pixel rate 282620000 headroom: 0
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1683: ------------------------------------------------------
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1684: G3AA power mode for context 1 changing from Normal(Normal) -> LowPowerUltra(LowPowerUltra)
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1689: ------------------------------------------------------
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_pipeline.cc:815: [Bayer1] Enabling pipeline. Next frame number will be 1
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_pipeline.cc:827: [Bayer1] Already enabled
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1748: G3AA power mode for context 1 changed to LowPowerUltra(LowPowerUltra) done
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1983: Number of active HW contexts: 1, power-up-only contexts: 1. Details:
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1994: 	Context 1, Bayer1 pipeline. Acquired: true. Enabled: true
+05-17 16:39:01.414   930  1840 I Lyric   : g3aa_driver.cc:1994: 	Context 1, PDAF1 pipeline. Acquired: false. Enabled: false
+05-17 16:39:01.414   930  1840 I Lyric   : front_end_controller.cc:1995: dpm: frontend context 1 power mode changed to low power mode
+05-17 16:39:01.414   930  1840 I Lyric   : per_camera_barrier_impl.cc:58: Blocker for FrontEndBlockCam1ToStart released with status: OK without lwis fence.
+05-17 16:39:01.414   930 24794 E GHAWB   : CameraSyncManagerImpl: camera_sync_manager_impl.cc:416] SynchronizeCameraDecision: RecalculateDecisionFromPeer failed
+05-17 16:39:01.414   930 24794 E GHAWB   : CameraSyncManagerImpl: camera_sync_manager_impl.cc:279] CalculateSyncedHistory: GetHistoricalInformationFromPeer failed
+05-17 16:39:01.414   930 24794 E GHAWB   : CoreUnified: ghawb_core_unified.cc:3651] OverrideDecisionBySyncedResult: Synced decision is empty, likely due to RecalculateDecisionFromPeer failed for peer_info_type: 1. Falling back to previous result to prevent color flickering.
+05-17 16:39:01.414   930 24789 W Lyric   : tuning_node.cc:182: 15 calls in 174 sec(s): Cannot get main scaler output size from scaler request node
+05-17 16:39:01.414   930  1845 I G3ACoordinator: ae_input_parser_lyric.cc:2201: Starter frame: rel_frame_num [-2]
+05-17 16:39:01.415   930  1845 I G3ACoordinator: ae_engine.cc:552: Starter Frames
+05-17 16:39:01.415   930  1845 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.415   930 24789 I Lyric   : power_throttle_controller.cc:575: camera thermal status: dysco at 30fps for camera 1
+05-17 16:39:01.415   930 24789 W Lyric   : dysco_node.cc:176: LscStats payload is missing in frame 0 due to frame drop!
+05-17 16:39:01.416   930 24794 I G3ACoordinator: awb_input_parser_lyric.cc:1393: Starter frame: rel_frame_num [-2]
+05-17 16:39:01.416   930 24794 E GHAWB   : CameraSyncManagerImpl: camera_sync_manager_impl.cc:416] SynchronizeCameraDecision: RecalculateDecisionFromPeer failed
+05-17 16:39:01.416   930 24794 E GHAWB   : CameraSyncManagerImpl: camera_sync_manager_impl.cc:279] CalculateSyncedHistory: GetHistoricalInformationFromPeer failed
+05-17 16:39:01.416   930 24794 E GHAWB   : CoreUnified: ghawb_core_unified.cc:3651] OverrideDecisionBySyncedResult: Synced decision is empty, likely due to RecalculateDecisionFromPeer failed for peer_info_type: 1. Falling back to previous result to prevent color flickering.
+05-17 16:39:01.416   930  1845 I G3ACoordinator: ae_input_parser_lyric.cc:2201: Starter frame: rel_frame_num [-1]
+05-17 16:39:01.416   930  1845 I G3ACoordinator: ae_engine.cc:552: Starter Frames
+05-17 16:39:01.416   930  1845 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.424   930 24789 I Lyric   : dysco_controller_impl.cc:676: No fresh Dysco controller state found in cache for camera Front
+05-17 16:39:01.424   930 24796 I Lyric   : front_end_controller.cc:1749: dpm: node type 0 frontend context 1 was already in activate mode
+05-17 16:39:01.424   930 24789 I Lyric   : front_end_controller.cc:1749: dpm: node type 1 frontend context 1 was already in activate mode
+05-17 16:39:01.424   930 24789 I Lyric   : raw_preprocessor_node.cc:389: HalPixelFormat for RawPreprocessorNode RAW16_BAYER_SBWC
+05-17 16:39:01.424   930 24794 I G3ACoordinator: awb_input_parser_lyric.cc:1393: Starter frame: rel_frame_num [-1]
+05-17 16:39:01.424   930 24794 E GHAWB   : CameraSyncManagerImpl: camera_sync_manager_impl.cc:416] SynchronizeCameraDecision: RecalculateDecisionFromPeer failed
+05-17 16:39:01.424   930 24794 E GHAWB   : CameraSyncManagerImpl: camera_sync_manager_impl.cc:279] CalculateSyncedHistory: GetHistoricalInformationFromPeer failed
+05-17 16:39:01.424   930 24794 E GHAWB   : CoreUnified: ghawb_core_unified.cc:3651] OverrideDecisionBySyncedResult: Synced decision is empty, likely due to RecalculateDecisionFromPeer failed for peer_info_type: 1. Falling back to previous result to prevent color flickering.
+05-17 16:39:01.425   930 24796 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device ipp bandwidth_read: 0 bandwidth_write: 5135 bandwidth_peak: 5135 bandwidth_rt: 5135
+05-17 16:39:01.426   930 24796 I Lyric   : ipp_driver.cc:2478: IPP(1) block sensor since ipp configurations is not ready is_raw_config_ready? 0 is_gp_config_ready? 1
+05-17 16:39:01.429   930 24789 I Lyric   : per_camera_barrier_impl.cc:58: Blocker for IppBlockCam1ToStart released with status: OK without lwis fence.
+05-17 16:39:01.429   930 24789 I Lyric   : ipp_driver.cc:2467: IPP(1) release sensor start blocker
+05-17 16:39:01.429   930 24789 I Lyric   : per_camera_barrier_impl.cc:47: Blocker for IppBlockCam1ToStop acquired
+05-17 16:39:01.429   930 24789 I Lyric   : csi_context.cc:1902: Camera ID(1) CSI PHY configuration.
+05-17 16:39:01.429   930 24789 I Lyric   : csi_wdma.cc:2170: Successfully configured common DMA!
+05-17 16:39:01.429   930 24789 I Lyric   : csi_context.cc:542:  csi_link_info_.csis_link: 4
+05-17 16:39:01.429   930 24789 I Lyric   : csi_context.cc:543:  w: 3280  h: 2464
+05-17 16:39:01.430   930 24789 I Lyric   : per_camera_barrier_impl.cc:58: Blocker for CsiBlockCam1ToStart released with status: OK without lwis fence.
+05-17 16:39:01.430   930 24789 I Lyric   : csi_context.cc:1299: Camera ID(1) WDMA(CsisZsl1) released sensor start blocker
+05-17 16:39:01.431   930 24796 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device g3aa bandwidth_read: 0 bandwidth_write: 37748 bandwidth_peak: 429687 bandwidth_rt: 429687
+05-17 16:39:01.432   930 24796 I Lyric   : g3aa_pipeline.cc:2186: [Bayer1][Frame 1] Submitted transaction on shadow 0. TriggerAt: Immediate. Last received HW Frame -1 at SOF -1. Queue: [1]. Result: OK
+05-17 16:39:01.433   930 30676 I Lyric   : g3aa_pipeline.h:140: Releasing sensor start blocker for pipeline Bayer1 with status OK
+05-17 16:39:01.433   930 30676 I Lyric   : per_camera_barrier_impl.cc:58: Blocker for G3aaBayer1BlockCam1ToStart released with status: OK without lwis fence.
+05-17 16:39:01.433   930 24793 I Lyric   : multisensor_controller.cc:858: camera Front start wait for barrier spend : 19.988647ms
+05-17 16:39:01.433   930 24793 I Lyric   : sensor_generic_driver.cc:1357:  event thread started.
+05-17 16:39:01.433   930 24793 I Lyric   : sensor_generic_driver.cc:1556: MEDUSA stream on, size: {width: 3280, height: 2464}, frame rate range: [7.5, 30], sensor ispfe sync in userspace request id: 0
+05-17 16:39:01.433   930 24793 I Lyric   : per_camera_barrier_impl.cc:47: Blocker for MultiSensorController_Stop acquired
+05-17 16:39:01.433   930 30694 I Lyric   : sensor_generic_driver.cc:1232: MEDUSA stream on success. Transaction delay: 148.234us
+05-17 16:39:01.433   930 24789 W Lyric   : dysco_node.cc:176: LscStats payload is missing in frame 1 due to frame drop!
+05-17 16:39:01.433   930 24789 I Lyric   : dysco_controller_impl.cc:676: No fresh Dysco controller state found in cache for camera Front
+05-17 16:39:01.434   930 24789 I Lyric   : csi_wdma.cc:1309: Camera ID(1) WDMA(CsisZsl1) drops(1) frames!! last frame(1) next frame(3) target frame = 3, batch size =  1
+05-17 16:39:01.434   930 24789 W Lyric   : dysco_node.cc:176: LscStats payload is missing in frame 2 due to frame drop!
+05-17 16:39:01.434   930 24789 I Lyric   : dysco_controller_impl.cc:676: No fresh Dysco controller state found in cache for camera Front
+05-17 16:39:01.437   930 24796 W Lyric   : g3aa_pipeline.cc:936: [Bayer1][Frame 3] Skipping configuration of frames 2-2. Last received HW Frame -1 at SOF -1. Next trigger count updated from 1 to 2. Queue: [1].
+05-17 16:39:01.437   930 24796 I Lyric   : g3aa_pipeline.cc:2186: [Bayer1][Frame 3] Submitted transaction on shadow 1. TriggerAt: SOF 2. Last received HW Frame -1 at SOF -1. Queue: [1 3]. Result: OK
+05-17 16:39:01.440   930 24796 I Lyric   : g3aa_pipeline.cc:2186: [Bayer1][Frame 4] Submitted transaction on shadow 0. TriggerAt: SOF 3. Last received HW Frame -1 at SOF -1. Queue: [1 3 4]. Result: OK
+05-17 16:39:01.443   930 30694 I Lyric   : sensor_generic_driver.cc:1064: MEDUSA 1st SOF arrived. Delay from stream on: 10.207357ms Delay from stream on transaction: 9.855428ms (Delay - exposure time): 1.52707525ms
+05-17 16:39:01.443   930 30675 I Lyric   : csi_context.cc:929: Camera ID(1) Csi Link(4), SOF 1, frame seq count:1, timestamp 426634053055794
+05-17 16:39:01.443   930 30673 I Lyric   : ipp_driver.cc:1207: Ipp context(1), SOF 1 timestamp 426634053117155
+05-17 16:39:01.443   930 30676 I Lyric   : g3aa_driver.cc:1408: [FEIRQ] Received G3AA bayer event: G3aa.Interrupts.Context1BayerStartOfFrame counter: 1 time: 426634053221362
+05-17 16:39:01.443   930 30676 I Lyric   : g3aa_pipeline.cc:2158: [Bayer1][Frame 1][SOF 1][ VALID ] frame_id: [1]:363008215, Timestamp: 426634053256722, HW was last programmed at SOF of Frame 0 Queue: [1 3 4].
+05-17 16:39:01.443   930 30675 I Lyric   : dpm_bandwidth_controller_v1.cc:424: Current MIF clock 3172000
+05-17 16:39:01.443   930 30675 I Lyric   : dpm_bandwidth_controller_v1.cc:424: Current INT clock 533000
+05-17 16:39:01.443   930 30675 I Lyric   : dpm_bandwidth_controller_v1.cc:424: Current CAM clock 134000
+05-17 16:39:01.443   930 30675 I Lyric   : dpm_bandwidth_controller_v1.cc:424: Current INTCAM clock 664000
+05-17 16:39:01.443   930 30674 I Lyric   : pdp_driver.cc:690: Pdp context(1), SOF 1 timestamp 426634053159432
+05-17 16:39:01.443   930 30675 I Lyric   : dpm_bandwidth_controller_v1.cc:424: Current TNR clock 664000
+05-17 16:39:01.443   930 30675 I Lyric   : csi_wdma.cc:1828: Camera ID(1) WDMA(CsisZsl1) Channel(0) dma enable = 1, expected frame = 1, active frame ptr = 0, active_dma_ctr = f81, current fro frame = 0, dma_addr = 0xf6a26800, dma_ctrl = 0x1
+05-17 16:39:01.475   930 30676 I Lyric   : g3aa_driver.cc:1408: [FEIRQ] Received G3AA bayer event: G3aa.Interrupts.Context1BayerEndOfFrame counter: 1 time: 426634085185433
+05-17 16:39:01.475   930 30676 I Lyric   : g3aa_bayer_pipeline.cc:634: [Bayer1][Frame 1][EOF 1] Queue: [1 3 4]
+05-17 16:39:01.475   930 30674 I Lyric   : pdp_driver.cc:706: Pdp context(1), EOF 1 timestamp 426634085196460
+05-17 16:39:01.475   930 30673 I Lyric   : ipp_driver.cc:1230: Ipp context(1), EOF 1 timestamp 426634085130053
+05-17 16:39:01.476   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.476   930 24803 I native  : I0000 00:00:1779016141.476585   24803 segmenter_node.cc:436] SegmenterNode: Creating subject segmenter.
+05-17 16:39:01.476   930 24803 I native  : I0000 00:00:1779016141.476623   24803 segmenter_node.cc:437] SegmenterNode: frame_size = [640,480]
+05-17 16:39:01.477   930 30695 I native  : I0000 00:00:1779016141.477083   30695 xeno_gpu_segmenter.cc:882] Creating CL-X segmenter.
+05-17 16:39:01.478   930 30675 I Lyric   : csi_context.cc:991: Camera ID(1) Csi Link(4), EOF 1, timestamp 426634086950610
+05-17 16:39:01.478   930 30676 I Lyric   : g3aa_pipeline.cc:2158: [Bayer1][Frame 2][SOF 2][DROPPED] frame_id: [1]:363008215, Timestamp: 426634087128263, HW was last programmed at SOF of Frame 0 Queue: [3 4].
+05-17 16:39:01.481   930  1840 I Lyric   : whi_local_tone_mapping_controller.cc:822: 12 calls in 174 sec(s): flash strength: 0
+05-17 16:39:01.481   930  1840 I Lyric   : whi_local_tone_mapping_controller.cc:824: 12 calls in 174 sec(s): flash mode: off
+05-17 16:39:01.488   930  1841 W Lyric   : tnr_align_node.cc:377: No valid previous gaussian pyramid to use for frame 0(multicam_frame_number=0)
+05-17 16:39:01.493   930  1840 I Lyric   : g3aa_pipeline.cc:2186: [Bayer1][Frame 5] Submitted transaction on shadow 1. TriggerAt: SOF 4. Last received HW Frame 2 at SOF 2. Queue: [3 4 5]. Result: OK
+05-17 16:39:01.494   930 24799 I Lyric   : itp_driver.cc:1885: Camera 1: frame 0 UpdatePowerMode: mode 2
+05-17 16:39:01.494   930 24799 I Lyric   : raw_to_yuv_node.cc:1150: ITP decide to switch dma_sync from 0 to 1 on raw frame num : 0 exposure frame num 0 gain = 28.5619 power mode = 2 camera id : 1
+05-17 16:39:01.495   930 24799 I Lyric   : raw_to_yuv_node.cc:1298: HalImageFormat for YUV output: HalImageFormat{ pixel_format = YCBCR_420_SPN_10B_SBWC, stride_alignment = 64, num_buffers = 1, header_stride_alignment = 64 }
+05-17 16:39:01.495   930 24799 I Lyric   : stream_interface_controller.cc:160: Image format set to {type: ImageFormat, HalImageFormat: HalImageFormat{ pixel_format = YCBCR_420_SPN_10B_SBWC, stride_alignment = 64, num_buffers = 1, header_stride_alignment = 64 }, Width: 1640, Height: 1232} for producer TNR, consumer ITSC at frame 0 by the producer
+05-17 16:39:01.495   930 24798 I Lyric   : catpipe_rectiface_controller.cc:1182: Bypass rectiface algo processing for the first frame
+05-17 16:39:01.497   930 24798 I Lyric   : tnr_merge_node.cc:1023: TNR merge decide to switch dpm_mode from -1 to 2 on frame : 0 exposure frame num : 0 gain = 28.5619 camera id : 1
+05-17 16:39:01.497   930 24798 I Lyric   : gtnr_merge_driver.cc:2319: Camera 1: frame 0 UpdatePowerMode: mode = 2 for context 0xb40000784857e008
+05-17 16:39:01.497   930 24798 I Lyric   : gtnr_merge_driver.cc:2319: Camera 1: frame 0 UpdatePowerMode: mode = 2 for context 0xb40000784857de68
+05-17 16:39:01.497   930 24798 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device gtnr-merge bandwidth_read: 118387 bandwidth_write: 118387 bandwidth_peak: 118387 bandwidth_rt: 0
+05-17 16:39:01.498   930  1416 I Lyric   : itp_event_handler_whi.cc:97: Received Sw event: Itp.Sw.kShadowConfigSuccessEvent counter 1
+05-17 16:39:01.498   930  1416 I Lyric   : itp_event_handler_whi.cc:97: Received Sw event: Itp.Sw.kCopyShadowSuccessEvent counter 1
+05-17 16:39:01.499   930 24798 I Lyric   : tnr_merge_node.cc:1374: HalPixelFormat for TnrMergeNode YCBCR_420_SPN_10B_SBWC
+05-17 16:39:01.499   930 24798 I Lyric   : gtnr_merge_controller.cc:305: Force sharpen only process, due to: FAILED_PRECONDITION: Invalid feedback image, force sharpen only process!
+05-17 16:39:01.499   930 24798 I Lyric   : stream_interface_controller.cc:273: WhiStreamInterfaceController: VOTF connected, producer: 7 consumer: 4
+05-17 16:39:01.500   930 24798 I Lyric   : gtnr_merge_driver.cc:1144: Camera 1: frame 0 Process: Enqueue a frame command with votf enable = 1, ack = 0xf2000000
+05-17 16:39:01.500   930  1416 I Lyric   : itp_event_handler_whi.cc:79: Received GTNR Merge Hw event: GtnrMerge.Int.FrameStart counter 1
+05-17 16:39:01.500   930  1416 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device itp bandwidth_read: 485100 bandwidth_write: 13601 bandwidth_peak: 485100 bandwidth_rt: 0
+05-17 16:39:01.500   930 30687 I Lyric   : gtnr_merge_driver.cc:1394: GTNR merge frame start! curr time: 426634110 ms
+05-17 16:39:01.500   930  1416 I Lyric   : itp_event_handler_whi.cc:97: Received Sw event: Itp.Sw.kOneShotSuccessEvent counter 1
+05-17 16:39:01.500   930  1416 I Lyric   : itp_event_handler_whi.cc:91: Received Hw event: ItpFro.Int1.FrameStart counter 1
+05-17 16:39:01.504   930  1416 I Lyric   : itp_event_handler_whi.cc:91: Received Hw event: Itp.ScalerInt.WdmaFinishInt counter 1
+05-17 16:39:01.504   930  1416 I Lyric   : itp_event_handler_whi.cc:91: Received Hw event: ItpFro.Int1.FrameEndInterrupt counter 1
+05-17 16:39:01.505   930 30687 I Lyric   : gtnr_merge_driver.cc:1436: GTNR merge all frame(s) done! curr time: 426634115 ms
+05-17 16:39:01.505   930 30687 I Lyric   : gtnr_merge_driver.cc:1487: GTNR merge SW frame(s) done transaction complete!
+05-17 16:39:01.505   930  1416 I Lyric   : itp_event_handler_whi.cc:79: Received GTNR Merge Hw event: GtnrMerge.Int.AllFrameDone counter 1
+05-17 16:39:01.507   930  1841 I Lyric   : mesh_warp_node.cc:897: HalPixelFormat for MeshWarpNode YCBCR_420_SPN_10B
+05-17 16:39:01.507   930  1841 I Lyric   : stream_interface_controller.cc:160: Image format set to {type: ImageFormat, HalImageFormat: HalImageFormat{ pixel_format = YCBCR_420_SPN_10B, stride_alignment = 64, num_buffers = 1 }, Width: 1640, Height: 1232} for producer SCSC, consumer GDC0 at frame 0 by the producer
+05-17 16:39:01.507   930  1838 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device scsc bandwidth_read: 11434 bandwidth_write: 13507 bandwidth_peak: 13507 bandwidth_rt: 0
+05-17 16:39:01.508   930  1838 I Lyric   : scaler_node.cc:1041: The 0th output HalPixelFormat for preview_scaler YCBCR_420_888 resolution: 640x480
+05-17 16:39:01.508   930  1838 I Lyric   : stream_interface_controller.cc:273: WhiStreamInterfaceController: VOTF connected, producer: 10 consumer: 13
+05-17 16:39:01.509   930  1841 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device gdc0 bandwidth_read: 135583 bandwidth_write: 11434 bandwidth_peak: 135583 bandwidth_rt: 0
+05-17 16:39:01.511   930 30676 I Lyric   : g3aa_pipeline.cc:2158: [Bayer1][Frame 3][SOF 3][ VALID ] frame_id: 1:[3], Timestamp: 426634121092496, HW was last programmed at SOF of Frame 2 Queue: [3 4 5].
+05-17 16:39:01.511   930 30671 I GCH_AidlCameraDeviceSession: ProcessBatchCaptureResult: First frame done
+05-17 16:39:01.511   930 30671 I Lyric   : camera_latency_analyzer.cc:113: [CLA] Cam1-Open
+05-17 16:39:01.511   930 30671 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Open) Open latency: 79.1436
+05-17 16:39:01.511   930 30671 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Open) <-- IDLE --> latency: 13.0354
+05-17 16:39:01.511   930 30671 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Open) ConfigureStream latency: 129.78
+05-17 16:39:01.511   930 30671 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Open) <-- IDLE --> latency: 3.00419
+05-17 16:39:01.511   930 30671 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Open) First frame latency: 108.046
+05-17 16:39:01.511   930 30671 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Open) Overall latency: 333.179
+05-17 16:39:01.543   930 30676 I Lyric   : g3aa_bayer_pipeline.cc:634: [Bayer1][Frame 3][EOF 2] Queue: [3 4 5]
+05-17 16:39:01.543   930 24798 I Lyric   : power_throttle_controller.cc:575: camera thermal status: face detection at 30fps for camera 1
+05-17 16:39:01.544   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.546   930 30676 I Lyric   : g3aa_pipeline.cc:2158: [Bayer1][Frame 4][SOF 4][ VALID ] frame_id: [4]:3, Timestamp: 426634155061897, HW was last programmed at SOF of Frame 3 Queue: [4 5].
+05-17 16:39:01.552   930  1838 I Lyric   : tnr_align_node.cc:877: tnr_align pyramid source size of TnrAlignNode {width: 1640, height: 1232}
+05-17 16:39:01.553   930  1838 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device gtnr-align bandwidth_read: 10261 bandwidth_write: 580 bandwidth_peak: 10261 bandwidth_rt: 0
+05-17 16:39:01.556   930 24807 W Lyric   : tnr_merge_node.cc:1238: TNR merge uses the previous initial image frame instead of merge feedback for denoise for frame/batch: 1 in context 0xb4000078585b3b28
+05-17 16:39:01.557   930  1416 I Lyric   : itp_event_handler_whi.cc:91: Received Hw event: ItpFro.Int1.DnsCorexEndInt0 counter 1
+05-17 16:39:01.557   930  1416 I Lyric   : itp_event_handler_whi.cc:91: Received Hw event: ItpFro.Int1.ItpCorexEndInt0 counter 1
+05-17 16:39:01.558   930 24807 I Lyric   : tnr_merge_node.cc:1429: HalImageFormat for TnrMergeNode feedback HalImageFormat{ pixel_format = YCBCR_420_SPN_10B_SBWC, stride_alignment = 64, num_buffers = 1, header_stride_alignment = 64 }
+05-17 16:39:01.559   930 24807 I Lyric   : gtnr_merge_driver.cc:2123: Created luma module with input size 1640 x 1232
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:201: GTNR merge allocate luma buffer for pyramid level 0 FD: 377
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:201: GTNR merge allocate luma buffer for pyramid level 1 FD: 377
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:201: GTNR merge allocate luma buffer for pyramid level 2 FD: 377
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:201: GTNR merge allocate luma buffer for pyramid level 3 FD: 377
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:201: GTNR merge allocate luma buffer for pyramid level 4 FD: 377
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:232: GTNR merge enroll luma buffer for pyramid level 0 FD: 377 addr: 3995074560
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:274: GTNR merge enroll luma buffer for pyramid level1 FD: 377 addr: 3998149632
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:274: GTNR merge enroll luma buffer for pyramid level2 FD: 377 addr: 3998938112
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:274: GTNR merge enroll luma buffer for pyramid level3 FD: 377 addr: 3999135232
+05-17 16:39:01.560   930 24807 I Lyric   : luma_denoise_module.cc:274: GTNR merge enroll luma buffer for pyramid level4 FD: 377 addr: 3999184512
+05-17 16:39:01.560   930 24807 I Lyric   : gtnr_merge_driver.cc:2158: Created chroma module with input size 1640 x 1232
+05-17 16:39:01.561   930 24807 I Lyric   : chroma_denoise_module.cc:88: GTNR merge allocate chroma buffer FD: 378
+05-17 16:39:01.561   930 24807 I Lyric   : chroma_denoise_module.cc:99: GTNR merge enroll chroma buffer FD: 378 addr: 4066377728
+05-17 16:39:01.561   930 24807 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device gtnr-merge bandwidth_read: 166093 bandwidth_write: 206015 bandwidth_peak: 206015 bandwidth_rt: 0
+05-17 16:39:01.561   930 24807 I Lyric   : gtnr_merge_driver.cc:1144: Camera 1: frame 1 Process: Enqueue a frame command with votf enable = 1, ack = 0xf2000000
+05-17 16:39:01.563   930 24798 W Lyric   : face_detection_thread_pool.cc:175: The workload can not be finished successfully in time: DEADLINE_EXCEEDED: timed out waiting for fence with a timeout duration: 20ms will return last valid result instead. Frame number: 1
+05-17 16:39:01.564   930 24798 I native  : I0000 00:00:1779016141.564098   24798 rectiface_node.cc:2141] LiveRectiface: focal_length (mm) = 2.5
+05-17 16:39:01.564   930 24798 I native  : I0000 00:00:1779016141.564175   24798 rectiface_node.cc:2143] LiveRectiface: sensor_width (mm) = 3.6736
+05-17 16:39:01.564   930 24798 I native  : I0000 00:00:1779016141.564194   24798 rectiface_node.cc:2145] LiveRectiface: sensor_aspect_ratio (h/w) = 0.75122
+05-17 16:39:01.564   930 24798 I native  : I0000 00:00:1779016141.564206   24798 rectiface_node.cc:2147] LiveRectiface: FOV (deg) = 85.1622
+05-17 16:39:01.565   930 24798 W native  : W0000 00:00:1779016141.565917   24798 plane.cc:305] Memory re-allocation.
+05-17 16:39:01.566   930 24798 W native  : W0000 00:00:1779016141.566171   24798 plane.cc:305] Memory re-allocation.
+05-17 16:39:01.566   930 24798 W native  : W0000 00:00:1779016141.566276   24798 plane.cc:305] Memory re-allocation.
+05-17 16:39:01.566   930 24798 I native  : I0000 00:00:1779016141.566439   24798 rectiface_node.cc:1370] Live rectiface init status: enabled.
+05-17 16:39:01.577   930 30676 I Lyric   : g3aa_bayer_pipeline.cc:634: [Bayer1][Frame 4][EOF 3] Queue: [4 5 6]
+05-17 16:39:01.577   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.580   930 30676 I Lyric   : g3aa_pipeline.cc:2158: [Bayer1][Frame 5][SOF 5][ VALID ] frame_id: 4:[5], Timestamp: 426634189016406, HW was last programmed at SOF of Frame 4 Queue: [5 6].
+05-17 16:39:01.611   930 30676 I Lyric   : g3aa_bayer_pipeline.cc:634: [Bayer1][Frame 5][EOF 4] Queue: [5 6 7]
+05-17 16:39:01.611   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.646   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.679   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.684 10976 10976 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+05-17 16:39:01.713   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.747   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.781   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.815   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.849   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.883   930 24794 I G3ACoordinator: ae_engine.cc:2508: LoadTuningLibrary: is_comice_enabled = 0
+05-17 16:39:01.899  3846 24763 I AiAiAttention: Max frames per check reached: 11
+05-17 16:39:01.899  3846 24763 I AiAiAttention: reportSuccess: 0
+05-17 16:39:01.899  3846 24763 I AiAiAttention: maxDistancedSquared: 7.876383955940369E-4
+05-17 16:39:01.899   947   947 D usf_sensor_hal: accelerometer: Enter Batch. Period = 10000000, latency = 66667000.
+05-17 16:39:01.900  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2085: USF: Received reconfig sampling request for LSM6DSR Accelerometer.
+05-17 16:39:01.900   947   947 D usf_sensor_hal: IMU temperature: Enter Batch. Period = 615385000, latency = 66667000.
+05-17 16:39:01.900  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2085: USF: Received reconfig sampling request for LSM6DSR Temperature.
+05-17 16:39:01.903  3846 24763 I AiAiAttention: completed in 921 ms using 11 frames; 0 frames had face detected, 0 frames had gaze detected, 0 frames had gaze on screen.
+05-17 16:39:01.903  3846 24763 I AiAiAttention: Last face: yaw=0.0, tilt=0.0, roll=0.0
+05-17 16:39:01.904  1621  1658 V AttentionDetector: onSuccess: 0, ID: 622
+05-17 16:39:01.904  3846 24763 I gaze    : Trying to close camera
+05-17 16:39:01.904  3846 24763 I AiAiAttention: completeOrCancelWithReason
+05-17 16:39:01.904  1136  2899 D Camera2ClientBase: Camera 1: Shutting down
+05-17 16:39:01.906   930  1396 I Lyric   : camera_device_session_hwl_impl.cc:1236: Flush entered, camera_id: 1
+05-17 16:39:01.906   930  1396 I Lyric   : camera_powerhal_impl.cc:189: SetPowerBoost Trigger CAMERA_LAUNCH for 200ms
+05-17 16:39:01.907   930  1396 I Lyric   : camera_device_session_manager_base.cc:1529: Attempting to flush graph:top_graph_for_camera_Front
+05-17 16:39:01.907   930 24798 W Lyric   : face_detection_node.cc:661: 5 calls in 174 sec(s): Face Detection: producing frame drops due to request frame drop
+05-17 16:39:01.907   930 24789 W Lyric   : three_a_request_node.cc:913: 1 calls in 261 sec(s): three_a_request, frame_number: 12, shutter notification is not available
+05-17 16:39:01.907   930 24789 W Lyric   : three_a_request_node.cc:897: 5 calls in 174 sec(s): three_a_request, frame_number: 13, request frame is not available
+05-17 16:39:01.908   930  1841 W Lyric   : tnr_align_node.cc:609: 5 calls in 174 sec(s): TnrAlignNode producing alignment and noise frame drops for batch with first frame number: 12 due to error: DATA_LOSS: missing request_settings; Produced 1 alignment and noise frame drops since started. The corresponding image frame(s) will still be processed without denoising in TNR merge.
+05-17 16:39:01.908   930 24793 W Lyric   : sensor_node.cc:904: sensor SensorNode producing drops due to frame request drop on frame 15 request: 15
+05-17 16:39:01.908   930  1396 I Lyric   : sensor_node.cc:1645: sensor flush called with flush_mark at request: 16
+05-17 16:39:01.908   930  1396 I Lyric   : segmentation_node.cc:504: segmentation flush called at flush_mark_frame_number: 16
+05-17 16:39:01.908   930  1843 I Lyric   : camera_device_session_manager_base.cc:1367: Reporting metadata frame drop for camera: Front, request id: 15, partial result count: 1
+05-17 16:39:01.908   930 24789 W Lyric   : tuning_node.cc:651: 2 calls in 174 sec(s): TuningNode producing frame drop because request frame is drop
+05-17 16:39:01.908   930  1396 I Lyric   : statistics_node.cc:596: Statistics output frame stats (ignores fence-signaled drops): {process_input_count = 15, dropped_all_outputs = 0, valid_ae = 15, valid_pre_lsc_ae = 0, valid_uae = 0, valid_awb = 15, valid_histogram = 15, valid_flicker = 15, valid_motion = 15, valid_cdaf = 0, valid_pdaf = 0, valid_align = 15, valid_alias_map = 15, valid_gaussian_pyramid = 15, valid_multi_planar_image_pyramid = 0, valid_scaled_rgb_stats = 15, valid_scaled_yuv_stats = 15, valid_lsc = 15, valid_bilateral_grid = 0, valid_scaled_rgb = 0, valid_scaled_yuv = 0, valid_cam_data_dump = 0, valid_pixel_patch = 0}
+05-17 16:39:01.908   930  1840 E Lyric   : dysco_node.cc:111: tuning_point payload is missing due to frame drop!
+05-17 16:39:01.908   930  1840 W Lyric   : dysco_node.cc:176: LscStats payload is missing in frame 15 due to frame drop!
+05-17 16:39:01.908   930  1840 E Lyric   : dysco_controller_impl.cc:236: 2 calls in 174 sec(s): One of InputData fields is nullptr.
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2200: Camera ID(1) WDMA(CsisZsl1) Flush() ++++++++++++++++++++++++++++++++++++++++++++ 
+05-17 16:39:01.908   930 24793 W Lyric   : sensor_node.cc:904: sensor SensorNode producing drops due to frame request drop on frame 16 request: 16
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2228: Camera ID(1) Failed to cancel transaction ID: 57001: NOT_FOUND: Lwis TransactionCancel failed for LwisClient(csi)
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2228: Camera ID(1) Failed to cancel transaction ID: 57003: NOT_FOUND: Lwis TransactionCancel failed for LwisClient(csi)
+05-17 16:39:01.908   930 24789 I Lyric   : raw_preprocessor_node.cc:751: raw_preprocessor received incomplete request at frame number: 15, request dropped: 1, raw_otf dropped: 1, sensor_properties dropped: 1
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2321: [CSI DMA] Camera ID(1) dma_addr: 0xf4726800 is signaled due to flush
+05-17 16:39:01.908   930 24789 W Lyric   : common_fe.cc:687: 2 calls in 174 sec(s): white_balance_config is dropped on frame: 15
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2336: [CSI DMA] Camera ID(1) infight buffer queue size: IMG(2), PD(0)
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2342: [CSI DMA] Camera ID(1) dma_to_buffer size: (2)
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2346: [CSI DMA] Camera ID(1) dma_to_buffer dma_addr: 0xf5826800)
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2346: [CSI DMA] Camera ID(1) dma_to_buffer dma_addr: 0xf6a26800)
+05-17 16:39:01.908   930  1396 I Lyric   : csi_wdma.cc:2351: Camera ID(1) WDMA(CsisZsl1) Flush() -------------------------------------------- 
+05-17 16:39:01.908   930  1843 I Lyric   : camera_device_session_manager_base.cc:1367: Reporting metadata frame drop for camera: Front, request id: 16, partial result count: 1
+05-17 16:39:01.908   930 24796 W Lyric   : statistics_node.cc:422: statistics producing a frame drop for frame 15:INVALID_ARGUMENT: Sensor image input is dropped.
+05-17 16:39:01.908   930  1840 E Lyric   : dysco_node.cc:111: tuning_point payload is missing due to frame drop!
+05-17 16:39:01.908   930  1840 W Lyric   : dysco_node.cc:176: LscStats payload is missing in frame 16 due to frame drop!
+05-17 16:39:01.908   930  1396 I Lyric   : ipp_driver.cc:2093: IPP(1) flushing gp2: 0xf82c0000, alias: 0xf8df4000
+05-17 16:39:01.908   930  1840 I Lyric   : raw_preprocessor_node.cc:751: raw_preprocessor received incomplete request at frame number: 16, request dropped: 1, raw_otf dropped: 1, sensor_properties dropped: 1
+05-17 16:39:01.908   930  1396 I Lyric   : ipp_driver.cc:2520: IPP(1) flush, count of remaining GP: 2
+05-17 16:39:01.908   930  1396 I Lyric   : g3aa_driver.cc:1775: Flush() begin
+05-17 16:39:01.908   930 24796 W Lyric   : statistics_node.cc:422: statistics producing a frame drop for frame 16:INVALID_ARGUMENT: Sensor image input is dropped.
+05-17 16:39:01.908   930  1396 I Lyric   : g3aa_driver.cc:1792: Flush() end
+05-17 16:39:01.908   930  1396 I Lyric   : itp_driver.cc:1371: Camera 1 ITP continue flushing context 0xb4000077f860d1d0, dimension: 3280x2464 (VOTF)
+05-17 16:39:01.909   930  1396 I Lyric   : itp_core_whi.cc:82: Applying DNS LH_GLUE WA SwReset sequence rev0.4
+05-17 16:39:01.910   930  1396 I Lyric   : itp_core_whi.cc:182: ITP Version: 1.5.0
+05-17 16:39:01.910   930  1396 I Lyric   : itp_core_whi.cc:184: ITSC Version: 8.5.1
+05-17 16:39:01.910   930  1396 I Lyric   : itp_driver.cc:1420: Camera 1 ITP driver flush completed for context 0xb4000077f860d1d0, dimension: 3280x2464 (VOTF)
+05-17 16:39:01.910   930  1396 I Lyric   : gtnr_merge_cmd_processor.cc:311: Flushing in-process frame 11
+05-17 16:39:01.910   930  1396 I Lyric   : gtnr_merge_process_cmd.cc:450: gtnr frame processing command match the flush context, flush hw now for image  [0]: 0xb4000078785b15e8
+05-17 16:39:01.910   930  1396 I Lyric   : gtnr_merge_cmd_processor.cc:322: successfully flush inflight frame command
+05-17 16:39:01.910   930 24807 E Lyric   : gtnr_merge_driver.cc:1215: Camera 1: frame 11Error! TNR sharpener output error in sync mode due to CANCELLED: gtnr frame drop due to flush operation Input current image is 0xb4000078785b15e8 from context 0xb40000784857de68
+05-17 16:39:01.910   930 30687 I Lyric   : gtnr_merge_driver.cc:1436: GTNR merge all frame(s) done! curr time: 426634520 ms
+05-17 16:39:01.910   930 24807 W Lyric   : tnr_merge_node.cc:590: TnrMergeNode producing frame drops from context 0xb4000078585b3b28 starting at frame number: 11 due to error: INTERNAL: Error calling process on controller: gtnr frame drop due to flush operation
+05-17 16:39:01.910   930  1396 I Lyric   : whi_mesh_warp_controller.cc:431: Flush votf and whi-common-gdc0
+05-17 16:39:01.910   930  1396 I Lyric   : whi_mesh_warp_controller.cc:438: whi-common-gdc0 flush completed.
+05-17 16:39:01.910   930  1396 I Lyric   : whi_scaler_controller.cc:144: flush votf and scaler
+05-17 16:39:01.910   930  1396 I Lyric   : common_scaler_driver.cc:617: whi-scsc: flushed 0 frames; took 1.953us
+05-17 16:39:01.910   930  1396 I Lyric   : whi_scaler_controller.cc:153: flush votf and scaler completed
+05-17 16:39:01.910   930  1396 I Lyric   : auto_exposure_node.cc:1157: {type: Node, name: top_graph_for_camera_Front.ae, class_name: AutoExposureNode}: AE input statistics: {process_input_count = 17, dropped_requests = 2, stats_not_ready_count = 0, motion_stats_not_ready_count = 0, segmentation_mask_not_ready_count = 0, stage_detection_result_not_ready_count = 0, saliency_data_not_ready_count = 0, valid_flash_state = 0, valid_exposure_timestamp = 12, valid_sensor_properties = 12, valid_motion_stats = 0, valid_wb_config = 14, valid_color_correction = 14}
+05-17 16:39:01.910   930 24807 W Lyric   : tnr_merge_node.cc:590: TnrMergeNode producing frame drops from context 0xb4000078585b3b28 starting at frame number: 12 due to error: INVALID_ARGUMENT: TNR merge tuning frame is dropped.; TNR merge failed to get tuning data in context 0xb4000078585b3b28
+05-17 16:39:01.910   930 24807 W Lyric   : tnr_merge_node.cc:590: TnrMergeNode producing frame drops from context 0xb4000078585b3b28 starting at frame number: 13 due to error: INVALID_ARGUMENT: TNR merge tuning frame is dropped.; TNR merge failed to get tuning data in context 0xb4000078585b3b28
+05-17 16:39:01.910   930 24807 W Lyric   : tnr_merge_node.cc:590: TnrMergeNode producing frame drops from context 0xb4000078585b3b28 starting at frame number: 14 due to error: INVALID_ARGUMENT: TNR merge tuning frame is dropped.; TNR merge failed to get tuning data in context 0xb4000078585b3b28
+05-17 16:39:01.910   930 24807 W Lyric   : tnr_merge_node.cc:590: TnrMergeNode producing frame drops from context 0xb4000078585b3b28 starting at frame number: 15 due to error: INVALID_ARGUMENT: TNR merge tuning frame is dropped.; TNR merge failed to get tuning data in context 0xb4000078585b3b28
+05-17 16:39:01.910   930 24807 W Lyric   : tnr_merge_node.cc:590: TnrMergeNode producing frame drops from context 0xb4000078585b3b28 starting at frame number: 16 due to error: INVALID_ARGUMENT: TNR merge tuning frame is dropped.; TNR merge failed to get tuning data in context 0xb4000078585b3b28
+05-17 16:39:01.910   930  1841 W Lyric   : mesh_warp_node.cc:779: preview_mesh_warp Request frame is drop, drop all output for frame 11
+05-17 16:39:01.910   930  1841 W Lyric   : mesh_warp_node.cc:779: preview_mesh_warp Request frame is drop, drop all output for frame 12
+05-17 16:39:01.910   930 24796 I Lyric   : retiming_node.cc:590: Front(hal id: 1), Reporting image frame drop to framework for stream id: 0, request id: 11
+05-17 16:39:01.910   930  1841 W Lyric   : mesh_warp_node.cc:779: preview_mesh_warp Request frame is drop, drop all output for frame 13
+05-17 16:39:01.910   930  1841 W Lyric   : mesh_warp_node.cc:779: preview_mesh_warp Request frame is drop, drop all output for frame 14
+05-17 16:39:01.911   930  1841 W Lyric   : mesh_warp_node.cc:779: preview_mesh_warp Request frame is drop, drop all output for frame 15
+05-17 16:39:01.911   930 24789 I Lyric   : camera_device_session_manager_base.cc:1367: Reporting metadata frame drop for camera: Front, request id: 11, partial result count: 2
+05-17 16:39:01.911   930  1841 W Lyric   : mesh_warp_node.cc:779: preview_mesh_warp Request frame is drop, drop all output for frame 16
+05-17 16:39:01.911   930 24796 I Lyric   : retiming_node.cc:590: Front(hal id: 1), Reporting image frame drop to framework for stream id: 0, request id: 12
+05-17 16:39:01.911   930 24789 I Lyric   : camera_device_session_manager_base.cc:1367: Reporting metadata frame drop for camera: Front, request id: 12, partial result count: 2
+05-17 16:39:01.911   930 24796 I Lyric   : retiming_node.cc:590: Front(hal id: 1), Reporting image frame drop to framework for stream id: 0, request id: 13
+05-17 16:39:01.911   930 24789 I Lyric   : camera_device_session_manager_base.cc:1367: Reporting metadata frame drop for camera: Front, request id: 13, partial result count: 2
+05-17 16:39:01.911   930 24796 I Lyric   : retiming_node.cc:590: Front(hal id: 1), Reporting image frame drop to framework for stream id: 0, request id: 14
+05-17 16:39:01.911   930 24789 I Lyric   : camera_device_session_manager_base.cc:1367: Reporting metadata frame drop for camera: Front, request id: 14, partial result count: 2
+05-17 16:39:01.911   930 24796 I Lyric   : retiming_node.cc:590: Front(hal id: 1), Reporting image frame drop to framework for stream id: 0, request id: 15
+05-17 16:39:01.911   930 24789 I Lyric   : camera_device_session_manager_base.cc:1367: Reporting metadata frame drop for camera: Front, request id: 15, partial result count: 2
+05-17 16:39:01.911   930 24789 I Lyric   : camera_device_session_manager_base.cc:1367: Reporting metadata frame drop for camera: Front, request id: 16, partial result count: 2
+05-17 16:39:01.911   930 24796 I Lyric   : retiming_node.cc:590: Front(hal id: 1), Reporting image frame drop to framework for stream id: 0, request id: 16
+05-17 16:39:01.912   930 30671 I GCH_CameraDeviceSession: UpdatePendingRequest: [sbc] All inflight requests/streams cleared. Notified SBC for flushing.
+05-17 16:39:01.912   930  1396 I Lyric   : retiming_node.cc:1718: Front(hal id: 1), Over the past 400.19991ms there were 16 responses sent and 10 of them had no error. FPS: 39.98 Non-error FPS: 24.9875
+05-17 16:39:01.912  1136 30666 I CameraService: Stop camera streaming for com.google.android.as (PID 3846, UID 10149)
+05-17 16:39:01.912   930 30693 I GCH_CameraDeviceSession: operator(): [sbc] Flushed buf[0xb4000079985a4330] bid[3] strm[0] frm[xx]
+05-17 16:39:01.912   930  1396 I Lyric   : camera_device_session_manager_base.cc:1585: Finished flushing graph:top_graph_for_camera_Front
+05-17 16:39:01.912  1136  2899 I CameraLatencyHistogram: ProcessCaptureRequest latency histogram (17) samples:
+05-17 16:39:01.912  1136  2899 I CameraLatencyHistogram:        40     80    120    160    200    240    280    320    360    inf (max ms)
+05-17 16:39:01.912  1136  2899 I CameraLatencyHistogram:      94.12   5.88   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-17 16:39:01.913  1745  1745 I pixel-thermal: a callback has been unregistered to ThermalHAL, isFilter: 0 Type: UNKNOWN
+05-17 16:39:01.913   930  1396 I Lyric   : camera_device_session_hwl_impl.cc:1057: DestroyPipelines entered, camera_id: 1
+05-17 16:39:01.913   930  1396 I Lyric   : camera_powerhal_impl.cc:304: CAMERA_STREAMING_STANDARD mode unset
+05-17 16:39:01.913   930  1396 I Lyric   : camera_powerhal_impl.cc:304: CAMERA_GPU_STANDARD mode unset
+05-17 16:39:01.913   930  1396 I Lyric   : malloc_tracker.cc:52: Total allocation count: 0; Active allocation count: 0; recorded allocations: 0; unique allocation sizes: 0
+05-17 16:39:01.913   930  1396 I Lyric   : camera_device_session_manager_base.cc:1194: Attempting to stop graph:top_graph_for_camera_Front
+05-17 16:39:01.913   930  1402 I Lyric   : page_release_controller.cc:151: Reenabling page releasing.
+05-17 16:39:01.913   930  1396 I Lyric   : sensor_node.cc:1645: sensor flush called with flush_mark at request: 0
+05-17 16:39:01.913   930  1396 I Lyric   : segmentation_node.cc:504: segmentation flush called at flush_mark_frame_number: 9223372036854774807
+05-17 16:39:01.913   930  1396 I Lyric   : statistics_node.cc:596: Statistics output frame stats (ignores fence-signaled drops): {process_input_count = 2, dropped_all_outputs = 2, valid_ae = 0, valid_pre_lsc_ae = 0, valid_uae = 0, valid_awb = 0, valid_histogram = 0, valid_flicker = 0, valid_motion = 0, valid_cdaf = 0, valid_pdaf = 0, valid_align = 0, valid_alias_map = 0, valid_gaussian_pyramid = 0, valid_multi_planar_image_pyramid = 0, valid_scaled_rgb_stats = 0, valid_scaled_yuv_stats = 0, valid_lsc = 0, valid_bilateral_grid = 0, valid_scaled_rgb = 0, valid_scaled_yuv = 0, valid_cam_data_dump = 0, valid_pixel_patch = 0}
+05-17 16:39:01.913   930  1396 I Lyric   : ipp_driver.cc:2520: IPP(1) flush, count of remaining GP: 2
+05-17 16:39:01.913   930  1396 I Lyric   : g3aa_driver.cc:1775: Flush() begin
+05-17 16:39:01.913   930  1396 I Lyric   : g3aa_driver.cc:1792: Flush() end
+05-17 16:39:01.913   930  1396 I Lyric   : itp_driver.cc:1342: Camera 1 ITP skip flushing because driver is not running; context 0xb4000077f860d1d0, dimension: 3280x2464 (VOTF)
+05-17 16:39:01.913   930  1396 I Lyric   : whi_mesh_warp_controller.cc:431: Flush votf and whi-common-gdc0
+05-17 16:39:01.913   930  1396 I Lyric   : whi_mesh_warp_controller.cc:438: whi-common-gdc0 flush completed.
+05-17 16:39:01.913   930  1396 I Lyric   : whi_scaler_controller.cc:144: flush votf and scaler
+05-17 16:39:01.913   930  1396 I Lyric   : common_scaler_driver.cc:617: whi-scsc: flushed 0 frames; took 3.214us
+05-17 16:39:01.913   930  1396 I Lyric   : whi_scaler_controller.cc:153: flush votf and scaler completed
+05-17 16:39:01.914   930  1396 I Lyric   : processing_graph.cc:658: top_graph_for_camera_Front starting OutputPort production audit...
+05-17 16:39:01.914   930  1396 I Lyric   : processing_graph.cc:722: OutputPort production audit passed, no anomalies detected :)
+05-17 16:39:01.914   930  1403 I Lyric   : multisensor_controller.cc:959: Front StopStreaming, waiting on barrier, request: 4294967295
+05-17 16:39:01.915   930  1401 I native  : I0000 00:00:1779016141.915166    1401 gcam_face_ssd.cc:813] Face Detection: Clearing cached buffer handles.
+05-17 16:39:01.915   930  1401 E native  : E0000 00:00:1779016141.915228    1401 gcam_tflite_client.cc:323] Face Detection: Error clearing cached buffer handles because delegate is nullptr.
+05-17 16:39:01.915   930  1401 I Lyric   : face_detection_engine_face_ssd.cc:346: Face Detection: ~FaceDetectionEngineFaceSsd::delete ensemble detector takes 72.917us
+05-17 16:39:01.916   930  1401 I Lyric   : front_end_controller.cc:2020: dpm: frontend context 1 updating power mode to standby mode node_type: 1
+05-17 16:39:01.916   930  1401 I Lyric   : csi_context.cc:2408: CSI context 1 start to wait [Number of pending buffers:2. Pending dma_to_buffer dma_addr: (0xf5826800) target frame count 15 target frame time: 33.97035875ms Pending dma_to_buffer dma_addr: (0xf6a26800) target frame count 14 target frame time: 33.97035875ms] for 403.8221525ms
+05-17 16:39:01.916   930 30675 I Lyric   : csi_wdma.cc:1706: [FEIRQ] Received ZSL WDMA 1 event: CsiZslDma.Int.Context1FrameEnd0 counter: 13 time: 426634526443123
+05-17 16:39:01.916   930 30675 I Lyric   : csi_context.cc:1065: Camera ID(1) WDMA(CsisZsl1), logical channel(0), [EOF] SW frame count:13, inflight buf =Inflight size: 2
+05-17 16:39:01.916   930 30675 I Lyric   : csi_wdma.cc:2026: [CSI DMA] Camera ID(1) WDMA(CsisZsl1) logical channel(0) DequeueBuffer() -> inflight buffer queue size: 1, dequeued dma_addr: 0xf6a26800
+05-17 16:39:01.916   930  1402 I Lyric   : itp_driver.cc:1885: Camera 1: frame -1 UpdatePowerMode: mode 4
+05-17 16:39:01.916   930  1402 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device itp bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.918   930  1402 I Lyric   : gtnr_merge_driver.cc:826: 
+05-17 16:39:01.918   930  1402 I Lyric   :  WhiGtnrMergeDriver dump 
+05-17 16:39:01.918   930  1402 I Lyric   :  acquired contexts 
+05-17 16:39:01.918   930  1402 I Lyric   : context: 0xb40000784857dcc8 Camera: 0 power-up-only 
+05-17 16:39:01.918   930  1402 I Lyric   : context: 0xb40000784857de68 Camera: 1 votf-enabled
+05-17 16:39:01.918   930  1402 I Lyric   : ivotf slc buffer pointer: &{type: CachePartition, Size: 1310720, FD: 225, PartitionId: 5, Attributes: Transport: DMA, CPU Access: true, GPU Access: false, Security: None, Cached: Cached, Compression: None}
+05-17 16:39:01.918   930  1402 I Lyric   : curr rdma slc buffer pointer: &{type: CachePartition, Size: 2097152, FD: 222, PartitionId: 6, Attributes: Transport: DMA, CPU Access: true, GPU Access: false, Security: None, Cached: Cached, Compression: None}
+05-17 16:39:01.918   930  1402 I Lyric   : prev rdma slc buffer pointer: &{type: CachePartition, Size: 1048576, FD: 226, PartitionId: 8, Attributes: Transport: DMA, CPU Access: true, GPU Access: false, Security: None, Cached: Cached, Compression: None}
+05-17 16:39:01.918   930  1402 I Lyric   : End of WhiGtnrMergeDriver dump 
+05-17 16:39:01.918   930  1402 I Lyric   : 
+05-17 16:39:01.918   930  1402 I Lyric   : luma_denoise_module.cc:374: GTNR merge disenroll luma buffers
+05-17 16:39:01.918   930 30675 I Lyric   : csi_context.cc:929: Camera ID(1) Csi Link(4), SOF 15, frame seq count:15, timestamp 426634528309212
+05-17 16:39:01.918   930 30675 I Lyric   : csi_wdma.cc:1828: Camera ID(1) WDMA(CsisZsl1) Channel(0) dma enable = 1, expected frame = 1, active frame ptr = 0, active_dma_ctr = f81, current fro frame = 0, dma_addr = 0xf5826800, dma_ctrl = 0xf82
+05-17 16:39:01.918   930 30675 I Lyric   : csi_context.cc:2342: Starting FlushMonitor for CSI4
+05-17 16:39:01.918   930 30675 I Lyric   : csi_wdma.cc:1706: [FEIRQ] Received ZSL WDMA 1 event: CsiZslDma.Int.Context1FrameStart0 counter: 14 time: 426634528397713
+05-17 16:39:01.918   930 30675 I Lyric   : csi_context.cc:1035: Camera ID(1) WDMA(CsisZsl1), logical channel(0), [SOF] SW frame count:14, CSIS LINK frame count:15, inflight buf =Inflight size: 1
+05-17 16:39:01.918   930 30675 I Lyric   : csi_context.cc:1047: CSI context 1 is processing the last inflight request, release sensor blocker now
+05-17 16:39:01.918   930 30675 I Lyric   : per_camera_barrier_impl.cc:58: Blocker for CsiBlockCam1ToStop released with status: OK without lwis fence.
+05-17 16:39:01.918   930 30675 I Lyric   : per_camera_barrier_impl.cc:47: Blocker for CsiBlockCam1ToStart acquired
+05-17 16:39:01.918   930  1402 I Lyric   : chroma_denoise_module.cc:107: GTNR merge disenroll chroma buffers
+05-17 16:39:01.919   930  1402 I Lyric   : gtnr_merge_driver.cc:826: 
+05-17 16:39:01.919   930  1402 I Lyric   :  WhiGtnrMergeDriver dump 
+05-17 16:39:01.919   930  1402 I Lyric   :  acquired contexts 
+05-17 16:39:01.919   930  1402 I Lyric   : context: 0xb40000784857dcc8 Camera: 0 power-up-only 
+05-17 16:39:01.919   930  1402 I Lyric   : ivotf slc buffer pointer: &{type: CachePartition, Size: 1310720, FD: 225, PartitionId: 5, Attributes: Transport: DMA, CPU Access: true, GPU Access: false, Security: None, Cached: Cached, Compression: None}
+05-17 16:39:01.919   930  1402 I Lyric   : curr rdma slc buffer pointer: &{type: CachePartition, Size: 2097152, FD: 222, PartitionId: 6, Attributes: Transport: DMA, CPU Access: true, GPU Access: false, Security: None, Cached: Cached, Compression: None}
+05-17 16:39:01.919   930  1402 I Lyric   : prev rdma slc buffer pointer: &{type: CachePartition, Size: 1048576, FD: 226, PartitionId: 8, Attributes: Transport: DMA, CPU Access: true, GPU Access: false, Security: None, Cached: Cached, Compression: None}
+05-17 16:39:01.919   930  1402 I Lyric   : End of WhiGtnrMergeDriver dump 
+05-17 16:39:01.919   930  1402 I Lyric   : 
+05-17 16:39:01.919   930  1402 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device gtnr-merge bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.921   930  1402 I Lyric   : gtnr_align_driver_context.cc:40: About to flush in ~WhiGtnrAlignDriverContext
+05-17 16:39:01.921   930  1402 I Lyric   : gtnr_align_driver_context.cc:45: Finished flushing in ~WhiGtnrAlignDriverContext
+05-17 16:39:01.921   930  1402 I Lyric   : gtnr_align_driver.cc:609: Canceling 0 pending transaction(s) in TNR align driver for safe power down.
+05-17 16:39:01.921   930  1402 I Lyric   : lwis_event_thread.cc:119: LwEv:TnrAl RemovedLwisClient(gtnr-align) from event thread
+05-17 16:39:01.921   930 30688 I Lyric   : lwis_event_thread.cc:296: LwEv:TnrAl event thread is ending . . .
+05-17 16:39:01.922   930  1402 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device gdc0 bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.923   930  1402 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device scsc bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.923   930 30691 I Lyric   : common_scaler_driver.cc:735: whi-scsc: exiting processing thread.
+05-17 16:39:01.926   930  1402 I Lyric   : three_a_request_node.cc:948: three_a_request: Performance statistics for this session: {process_input_count = 17, dropped_request_count = 0}
+05-17 16:39:01.927   930  1402 I native  : I0000 00:00:1779016141.927045    1402 node_profiler.cc:120] enabled=0, broad_cast_period=150, frame_drop_thresh=45
+05-17 16:39:01.950   930 30675 I Lyric   : csi_wdma.cc:1706: [FEIRQ] Received ZSL WDMA 1 event: CsiZslDma.Int.Context1FrameEnd0 counter: 14 time: 426634560387541
+05-17 16:39:01.950   930 30675 I Lyric   : csi_context.cc:1065: Camera ID(1) WDMA(CsisZsl1), logical channel(0), [EOF] SW frame count:14, inflight buf =Inflight size: 1
+05-17 16:39:01.950   930 30675 I Lyric   : csi_wdma.cc:2026: [CSI DMA] Camera ID(1) WDMA(CsisZsl1) logical channel(0) DequeueBuffer() -> inflight buffer queue size: 0, dequeued dma_addr: 0xf5826800
+05-17 16:39:01.952   930  1401 I Lyric   : csi_context.cc:2096: dpm: sensor width 3280 h: 2464 fps: 30 pixel rate 282620000 headroom: 0
+05-17 16:39:01.952   930  1401 I Lyric   : csi_driver.cc:1473: [CSI BW] CSIS_D0 BW: 0 wdmas: 
+05-17 16:39:01.952   930  1401 I Lyric   : csi_driver.cc:1475: [CSI BW] CSIS_D1 BW: 0 wdmas: 
+05-17 16:39:01.952   930  1401 I Lyric   : csi_driver.cc:1477: [CSI BW] Update Required BW: 0, Required Clock: 70655000, Required peak BW: 0
+05-17 16:39:01.952   930  1401 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device csi bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.952   930  1401 I Lyric   : per_camera_barrier_impl.cc:58: Blocker for IppBlockCam1ToStop released with status: OK without lwis fence.
+05-17 16:39:01.952   930  1401 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device ipp bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_driver.cc:1683: ------------------------------------------------------
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_driver.cc:1684: G3AA power mode for context 1 changing from LowPowerUltra(LowPowerUltra) -> Standby(Standby)
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_driver.cc:1689: ------------------------------------------------------
+05-17 16:39:01.952   930 30675 I Lyric   : csi_context.cc:929: Camera ID(1) Csi Link(4), SOF 16, frame seq count:16, timestamp 426634562270027
+05-17 16:39:01.952   930 30675 I Lyric   : csi_wdma.cc:1828: Camera ID(1) WDMA(CsisZsl1) Channel(0) dma enable = 0, expected frame = 0, active frame ptr = 0, active_dma_ctr = f80, current fro frame = 0, dma_addr = 0xf5826800, dma_ctrl = 0xf82
+05-17 16:39:01.952   930 30675 I Lyric   : csi_context.cc:961: Camera ID(1) All WDMA is IDLE now
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_pipeline.cc:840: [Bayer1] Disabling pipeline
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_pipeline.cc:691: [Bayer1] Drain(timeout=0) entered. next_frame_number=17, next_shadow_set=1, last_hw_frame_num=15, last_sw_sof_event_count=15
+05-17 16:39:01.952   930  1401 W Lyric   : g3aa_pipeline.cc:705: [Bayer1] Draining the pipeline without waiting for the HW to finish. This is safe only if the HW has already been globally reset
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_pipeline.cc:389: [Bayer1] There are 1 pending transactions to cancel for frames: [16]
+05-17 16:39:01.952   930  1401 W Lyric   : g3aa_pipeline.cc:424: [Bayer1][Frame 16] Canceling transaction id 28146 for shadow 0: [FAILED]
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_pipeline.cc:787: [Bayer1] Waiting for pipeline to drain. There are 1 pending transactions for frames: [16], 0 dropped frames: []
+05-17 16:39:01.952   930  1401 W Lyric   : g3aa_pipeline.cc:720: [Bayer1] WaitUntilDrained() failed: DEADLINE_EXCEEDED: [Bayer1] Timed out waiting for the pipeline to drain. 1 pending requests remain for frames: [16]
+05-17 16:39:01.952   930  1401 E Lyric   : g3aa_pipeline.cc:1183: [Bayer1][Frame 16] Pending interrupt mask: 0X17F3
+05-17 16:39:01.952   930  1401 W Lyric   : g3aa_pipeline.cc:461: [Bayer1] Clearing pending requests for frames: [16]
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_pipeline.cc:745: [Bayer1] Drained; next_frame_number=17, next_shadow_set=1, last_hw_frame_num=15, last_sw_sof_event_count=15
+05-17 16:39:01.952   930  1401 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device g3aa bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_driver.cc:1748: G3AA power mode for context 1 changed to Standby(Standby) done
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_driver.cc:1983: Number of active HW contexts: 1, power-up-only contexts: 1. Details:
+05-17 16:39:01.952   930 30676 W Lyric   : g3aa_pipeline.cc:2156: 1 calls in 260 sec(s): [Bayer1][Frame 16][SOF 16][ VALID ] frame_id: [16]:15, Timestamp: 426634562365812, HW was last programmed at SOF of Frame 15 Queue: [].
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_driver.cc:1994: 	Context 1, Bayer1 pipeline. Acquired: true. Enabled: false
+05-17 16:39:01.952   930  1401 I Lyric   : g3aa_driver.cc:1994: 	Context 1, PDAF1 pipeline. Acquired: false. Enabled: false
+05-17 16:39:01.952   930 30694 I Lyric   : sensor_generic_driver.cc:1291: MEDUSA stream off success.
+05-17 16:39:01.953   930  1403 I Lyric   : sensor_generic_driver.cc:6867: MEDUSA is_reading_frame:1, frame count:16, eof event count:15, waiting for last frame EOF.
+05-17 16:39:01.983   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerMotionMetering) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x0000002c}
+05-17 16:39:01.984   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerHistogram0) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x00000028}
+05-17 16:39:01.984   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerHistogram1) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x00000029}
+05-17 16:39:01.984   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerHistogram2) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x0000002a}
+05-17 16:39:01.984   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerFlickerStats) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x00000027}
+05-17 16:39:01.984   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerLscStats) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x00000026}
+05-17 16:39:01.984   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerAeStats) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x00000024}
+05-17 16:39:01.984   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerAwbStats) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x00000025}
+05-17 16:39:01.984   930 30676 W Lyric   : g3aa_pipeline.cc:99: [Bayer1] Received an interrupt (G3aa.Interrupts.Context1BayerEndOfFrame) with no in-flight requests! Dropped: 1, EventCount: 15, EventId {flags: hw | device: 6 | code: 0x00000021}
+05-17 16:39:01.985   930 30694 I Lyric   : sensor_generic_driver.cc:1152: MEDUSA Received last EOF, sensor frame count:255, offset eof event count:16
+05-17 16:39:01.985   930 30694 I Lyric   : sensor_generic_driver.cc:1163: MEDUSA EOF received; signal fence and stream off.
+05-17 16:39:01.985   930  1403 I Lyric   : sensor_generic_driver.cc:1365:  event thread stopped.
+05-17 16:39:01.985   930  1403 I Lyric   : sensor_generic_driver.cc:1809: MEDUSA sensor frame drop rate at stream off: 6.25%. drop rate for hw sync: 0%
+05-17 16:39:01.985   930  1403 I Lyric   : sensor_generic_driver.cc:1852: MEDUSA stream off, size: {width: 3280, height: 2464}, frame rate range: [7.5, 30]
+05-17 16:39:01.985   930  1403 I Lyric   : per_camera_barrier_impl.cc:58: Blocker for MultiSensorController_Stop released with status: OK without lwis fence.
+05-17 16:39:01.985   930  1401 I Lyric   : csi_context.cc:665: Camera ID(1) skip wait for EOF 16 for specific sensor
+05-17 16:39:01.985   930  1401 I Lyric   : csi_context.cc:706: Camera ID(1) CleanupContextLocked() +++ 
+05-17 16:39:01.985   930  1401 I Lyric   : csi_context.cc:750: Camera ID(1) dma_to_buffer size: (0)
+05-17 16:39:01.985   930  1403 I Lyric   : dpm_bandwidth_controller_v1.cc:489: Update minimum MIF clock to 0 number of active sensor: 0
+05-17 16:39:01.985   930  1403 I Lyric   : dpm_bandwidth_controller.cc:120: dpm: required_clock is 70585020 min_frontend_clock_requirement_: 70585020 sensor streaming: 0
+05-17 16:39:01.985   930  1401 I Lyric   : csi_context.cc:813: Camera ID(1) CleanupContextLocked() --- 
+05-17 16:39:01.985   930  1401 I Lyric   : csi_driver.cc:1473: [CSI BW] CSIS_D0 BW: 0 wdmas: 
+05-17 16:39:01.985   930  1401 I Lyric   : csi_driver.cc:1475: [CSI BW] CSIS_D1 BW: 0 wdmas: 
+05-17 16:39:01.985   930  1401 I Lyric   : csi_driver.cc:1477: [CSI BW] Update Required BW: 0, Required Clock: 0, Required peak BW: 0
+05-17 16:39:01.986   930  1401 I Lyric   : dpm_bandwidth_controller_v1.cc:175: dpm: updating bandwidth for device csi bandwidth_read: 0 bandwidth_write: 0 bandwidth_peak: 0 bandwidth_rt: 0
+05-17 16:39:01.986   930  1401 I Lyric   : csi_driver.cc:1275:  Successfully cleaned up CSI context 0xb4000078885fd380
+05-17 16:39:01.986   930  1401 I Lyric   : pdp_driver.cc:272: PDP: releasing context 0xb4000078485826f0
+05-17 16:39:01.986   930  1401 I Lyric   : pdp_driver.cc:990: PDP: about to SetHwEventsEnable to 0 for context 1
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_driver.cc:957: ------------------------------------------------------
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_driver.cc:958: Releasing context 1
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_driver.cc:962: ------------------------------------------------------
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:840: [Bayer1] Disabling pipeline
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:843: [Bayer1] Already disabled
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:691: [Bayer1] Drain(timeout=0) entered. next_frame_number=17, next_shadow_set=1, last_hw_frame_num=16, last_sw_sof_event_count=16
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:389: [Bayer1] There are 0 pending transactions to cancel for frames: []
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:787: [Bayer1] Waiting for pipeline to drain. There are 0 pending transactions for frames: [], 1 dropped frames: [16]
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:803: [Bayer1] Pipeline drained.
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:745: [Bayer1] Drained; next_frame_number=17, next_shadow_set=1, last_hw_frame_num=16, last_sw_sof_event_count=16
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:337: [Bayer1] Releasing pipeline, graph_stopped: true
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:363: [Bayer1] clearing dropped_frames_ queue with [16] since graph stop was called 
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_pipeline.cc:2224: [Bayer1] Frame Drop Dump; Skipped: [2]. Frame drop rate: 5.56%
+05-17 16:39:01.986   930  1401 I Lyric   : g3aa_driver.cc:1983: Number of active HW contexts: 0, power-up-only contexts: 1. Details:
+05-17 16:39:01.987   930  1401 I Lyric   : front_end_controller.cc:2031: dpm: frontend context (all sub-drivers) 1 power mode changed to standy mode
+05-17 16:39:01.987   930  1401 E Lyric   : software_fence.cc:40: Resetting unsignaled fence 1
+05-17 16:39:01.989   930  1401 I Lyric   : gtnr_merge_driver.cc:826: 
+05-17 16:39:01.989   930  1401 I Lyric   :  WhiGtnrMergeDriver dump 
+05-17 16:39:01.989   930  1401 I Lyric   :  acquired contexts 
+05-17 16:39:01.989   930  1401 I Lyric   : curr rdma slc buffer pointer: &{type: CachePartition, Size: 2097152, FD: 222, PartitionId: 6, Attributes: Transport: DMA, CPU Access: true, GPU Access: false, Security: None, Cached: Cached, Compression: None}
+05-17 16:39:01.989   930  1401 I Lyric   : End of WhiGtnrMergeDriver dump 
+05-17 16:39:01.989   930  1401 I Lyric   : 
+05-17 16:39:01.989   930  1401 I Lyric   : gtnr_merge_driver.cc:842: Canceling 0 pending command(s) in TNR merge driver for safe power down.
+05-17 16:39:01.989   930  1401 I Lyric   : lwis_event_thread.cc:119: LwEv:TnrMg RemovedLwisClient(gtnr-merge|TnrMg) from event thread
+05-17 16:39:01.989   930 30687 I Lyric   : lwis_event_thread.cc:296: LwEv:TnrMg event thread is ending . . .
+05-17 16:39:01.989   930  1401 I Lyric   : gtnr_merge_driver.cc:1335: TNR powering down hardware
+05-17 16:39:01.989   930  1401 I Lyric   : gtnr_merge_frame_control_helper.cc:344: Flushed for power down.
+05-17 16:39:01.989   930  1401 I Lyric   : gtnr_merge_frame_control_helper.cc:372: Sw reset for power down.
+05-17 16:39:01.989   930  1401 I Lyric   : gtnr_merge_driver.cc:1358: TNR disabling hardware
+05-17 16:39:01.989   930  1401 I Lyric   : itp_driver.cc:318: ITP powering down and disabling hardware
+05-17 16:39:01.990   930  1401 I Lyric   : pdp_driver.cc:272: PDP: releasing context 0xb4000078f8675dd0
+05-17 16:39:01.990   930  1401 I Lyric   : csi_context.cc:706: Camera ID(not set) CleanupContextLocked() +++ 
+05-17 16:39:01.990   930  1401 I Lyric   : csi_context.cc:750: Camera ID(not set) dma_to_buffer size: (0)
+05-17 16:39:01.990   930  1401 I Lyric   : csi_context.cc:813: Camera ID(not set) CleanupContextLocked() --- 
+05-17 16:39:01.990   930  1401 I Lyric   : csi_driver.cc:1275:  Successfully cleaned up CSI context 0xb4000078886019f0
+05-17 16:39:01.991   930  1401 I Lyric   : csi_context.cc:706: Camera ID(not set) CleanupContextLocked() +++ 
+05-17 16:39:01.991   930  1401 I Lyric   : csi_context.cc:750: Camera ID(not set) dma_to_buffer size: (0)
+05-17 16:39:01.991   930  1401 I Lyric   : csi_context.cc:813: Camera ID(not set) CleanupContextLocked() --- 
+05-17 16:39:01.991   930  1401 I Lyric   : csi_driver.cc:1275:  Successfully cleaned up CSI context 0xb4000078885dc840
+05-17 16:39:01.991   930  1401 I Lyric   : lwis_event_thread.cc:119: LwEv:Csi RemovedLwisClient(csi) from event thread
+05-17 16:39:01.991   930 30675 I Lyric   : lwis_event_thread.cc:296: LwEv:Csi event thread is ending . . .
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:272: PDP: releasing context 0xb4000078f865e530
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:441: PDP: about to power down
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:451: PDP: about to stop hardware
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:454: PDP: finish stopping hardware
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:1016: PDP: about to SetLwisEventsEnable to 0
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:1032: PDP: finished SetLwisEventsEnable to 0
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:462: PDP: about to disable device
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:466: PDP: device disabled
+05-17 16:39:01.992   930  1401 I Lyric   : lwis_event_thread.cc:119: LwEv:Pdp RemovedLwisClient(pdp) from event thread
+05-17 16:39:01.992   930 30674 I Lyric   : lwis_event_thread.cc:296: LwEv:Pdp event thread is ending . . .
+05-17 16:39:01.992   930  1401 I Lyric   : pdp_driver.cc:483: PDP: finished power down
+05-17 16:39:01.992   930  1401 I Lyric   : lwis_event_thread.cc:119: LwEv:Ipp RemovedLwisClient(ipp) from event thread
+05-17 16:39:01.992   930 30673 I Lyric   : lwis_event_thread.cc:296: LwEv:Ipp event thread is ending . . .
+05-17 16:39:01.992   930  1401 I Lyric   : g3aa_driver.cc:957: ------------------------------------------------------
+05-17 16:39:01.992   930  1401 I Lyric   : g3aa_driver.cc:958: Releasing context [Power Up]
+05-17 16:39:01.992   930  1401 I Lyric   : g3aa_driver.cc:962: ------------------------------------------------------
+05-17 16:39:01.992   930  1401 I Lyric   : g3aa_driver.cc:1983: Number of active HW contexts: 0, power-up-only contexts: 0. Details:
+05-17 16:39:01.992   930  1401 I Lyric   : lwis_event_thread.cc:119: LwEv:G3aa RemovedLwisClient(g3aa) from event thread
+05-17 16:39:01.992   930 30676 I Lyric   : lwis_event_thread.cc:296: LwEv:G3aa event thread is ending . . .
+05-17 16:39:01.993   930  1401 W Lyric   : g3aa_driver.cc:329: DisconnectFromPdp() function is called for Sysreg.
+05-17 16:39:01.993   930  1401 W Lyric   : g3aa_driver.cc:342: G3AA disconnected from PDP via Sysreg. G3AA will no longer receive data from PDP.
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_driver.cc:408: Powering down . . .
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_driver.cc:1094: Disabling LWIS events for context 0
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:2289: [Bayer0] Pipeline received power down notification
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:435: [Bayer0] There is no repeating SOF-sync transaction to cancel
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:2289: [PDAF0] Pipeline received power down notification
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:435: [PDAF0] There is no repeating SOF-sync transaction to cancel
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_driver.cc:1094: Disabling LWIS events for context 1
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:2289: [Bayer1] Pipeline received power down notification
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:448: [Bayer1] Canceling repeating SOF-sync transaction id 28131: [OK]
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:2289: [PDAF1] Pipeline received power down notification
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:435: [PDAF1] There is no repeating SOF-sync transaction to cancel
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_driver.cc:1094: Disabling LWIS events for context 2
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:2289: [Bayer2] Pipeline received power down notification
+05-17 16:39:01.993   930  1401 I Lyric   : g3aa_pipeline.cc:435: [Bayer2] There is no repeating SOF-sync transaction to cancel
+05-17 16:39:01.993   930  1401 I Lyric   : front_end_controller.cc:1336: dpm: successfully released powered up driver contexts.
+05-17 16:39:01.994   930  1396 I Lyric   : camera_device_session_manager_base.cc:1198: Successfully stopped graph:top_graph_for_camera_Front
+05-17 16:39:01.994   930  1396 I Lyric   : camera_device_session_manager_base.cc:898: Attempting to destroy graph:top_graph_for_camera_Front
+05-17 16:39:01.995   930  1396 W Lyric   : graph_runner.cc:219: GraphRunner::StopGraph(1) called on a graph that is not running.
+05-17 16:39:01.996   930  1396 I Lyric   : sensor_node.cc:538: sensor Releasing sensor context.
+05-17 16:39:01.996   930  1396 I Lyric   : dpm_bandwidth_controller.cc:120: dpm: required_clock is 0 min_frontend_clock_requirement_: 70585020 sensor streaming: 0
+05-17 16:39:01.996   930  1396 I Lyric   : dpm_bandwidth_controller.cc:144: Vote for front-end clock for freq 0
+05-17 16:39:02.002   930  1396 I Lyric   : sensor_node.cc:544: sensor Sensor context released, spent 6.150512ms
+05-17 16:39:02.003   930  1396 I Lyric   : camera_device_session_manager_base.cc:968: Successfully destroyed graph:top_graph_for_camera_Front
+05-17 16:39:02.003   930  1396 I Lyric   : camera_device_session_hwl_impl.cc:424: Destroyed CameraDeviceSessionHwlImpl for camera 1
+05-17 16:39:02.003   930  1396 I Lyric   : camera_powerhal_impl.cc:204: CancelPowerBoost CAMERA_LAUNCH
+05-17 16:39:02.003   930  1396 I Lyric   : camera_powerhal_impl.cc:204: CancelPowerBoost CAMERA_VIDEO_RECORDING
+05-17 16:39:02.003   930  1396 I Lyric   : camera_powerhal_impl.cc:204: CancelPowerBoost CAMERA_HIGH_PERFORMANCE_BOOST
+05-17 16:39:02.003   930  1396 I Lyric   : camera_powerhal_impl.cc:204: CancelPowerBoost CAMERA_LAUNCH_EXTENDED
+05-17 16:39:02.003   930  1396 I Lyric   : camera_powerhal_impl.cc:204: CancelPowerBoost CAMERA_BACKEND_BOOST
+05-17 16:39:02.003   930  1396 I Lyric   : camera_powerhal_impl.cc:204: CancelPowerBoost CAMERA_MULTICAM_BOOST
+05-17 16:39:02.004   930  1846 I G3ACoordinator: coordinator.cc:1050: Coordinator NotifyCaptureSessionClose called for camera: {position: front, lens_type: normal, spectrum: visible, instance: real, capability: {default_mode: 1, in_sensor_hdr: 1, remosaic: 0, max_resolution: 0, cropped_fov: 0, multiframe_hdr: 0}}
+05-17 16:39:02.004   930  1402 I Lyric   : device_context.cc:216: Closing cameras synchronously
+05-17 16:39:02.004   930  1846 I G3ACoordinator: coordinator.cc:1074: Coordinator AfNotifyCaptureSessionClose called for camera: {position: front, lens_type: normal, spectrum: visible, instance: real, capability: {default_mode: 1, in_sensor_hdr: 1, remosaic: 0, max_resolution: 0, cropped_fov: 0, multiframe_hdr: 0}}
+05-17 16:39:02.004   930  1402 W Lyric   : device_context.cc:418: NotifyCaptureSessionClose: No OisController found for physical camera Front. Status: NOT_FOUND: Failed to find controller by type and camera id(Front); Controller with ID: optical image stabilization controller for camera: Front not present in device_context
+05-17 16:39:02.004   930  1846 I Lyric   : external_auto_scene_detection_controller_proxy.cc:184: ExternalAutoSceneDetectionControllerProxy::NotifyCaptureSessionClose called for camera: {position: front, lens_type: normal, spectrum: visible, instance: real, capability: {default_mode: 1, in_sensor_hdr: 1, remosaic: 0, max_resolution: 0, cropped_fov: 0, multiframe_hdr: 0}}
+05-17 16:39:02.004   930  1846 I Lyric   : external_auto_white_balance_controller_proxy.cc:237: ExternalAutoWhiteBalanceControllerProxy::NotifyCaptureSessionClose called for camera: {position: front, lens_type: normal, spectrum: visible, instance: real, capability: {default_mode: 1, in_sensor_hdr: 1, remosaic: 0, max_resolution: 0, cropped_fov: 0, multiframe_hdr: 0}}
+05-17 16:39:02.004   930  1846 I Lyric   : device_context.cc:289: Unable to get SaliencyController. Status: NOT_FOUND: Failed to find controller by type; Controller with ID: saliency controller not present in device_context
+05-17 16:39:02.004   930  1846 I Lyric   : device_context.cc:311: Unable to get RoiTrackingController. Status: NOT_FOUND: Failed to find controller by type; Controller with ID: Roi tracking controller not present in device_context
+05-17 16:39:02.004   930  1846 I Lyric   : device_context.cc:322: Unable to get SoftwareFocusValueController. Status: NOT_FOUND: Failed to find controller by type; Controller with ID: software focus value controller not present in device_context
+05-17 16:39:02.004   930  1396 I StreamBufferCacheManager: ~StreamBufferCacheManager: Destroying stream buffer cache manager.
+05-17 16:39:02.004   930 30693 I StreamBufferCacheManager: WorkloadThreadLoop: Exiting stream buffer cache manager workload thread.
+05-17 16:39:02.004   930  1396 I Lyric   : camera_latency_analyzer.cc:113: [CLA] Cam1-Close
+05-17 16:39:02.004   930  1396 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Close) Flush latency: 5.34115
+05-17 16:39:02.004   930  1396 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Close) <-- IDLE --> latency: 0.635051
+05-17 16:39:02.004   930  1396 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Close) Close latency: 91.5197
+05-17 16:39:02.004   930  1396 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Close) Overall latency: 97.5038
+05-17 16:39:02.004   930  1396 I Lyric   : camera_latency_analyzer.cc:115: [CLA] (Cam1-Close) HAL Total latency: 96.8575
+05-17 16:39:02.004   947   947 D usf_sensor_hal: ambient light: Enter Batch. Period = 250000000, latency = 0.
+05-17 16:39:02.004  1136  2899 I CameraLatencyHistogram: Stream 0 dequeueBuffer latency histogram (12) samples:
+05-17 16:39:02.004  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2085: USF: Received reconfig sampling request for TMD3719 Ambient Light.
+05-17 16:39:02.005  1136  2899 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+05-17 16:39:02.005  1136  2899 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+05-17 16:39:02.005   930  1402 I G3ACoordinator: front_als_manager.cc:211: Front ALS sensor disabled
+05-17 16:39:02.005   947   947 D usf_sensor_hal: device orientation: Enter Batch. Period = 66667000, latency = 0.
+05-17 16:39:02.005   930  1401 I Lyric   : motion_sensor_reader.cc:64: gravity sampling intervals: (count=130, min=4.56958ms, max=4.60004ms, mean=4.58608ms, stddev=0.00354325ms, skew=-0.0582802, kurtosis=8.81712)
+05-17 16:39:02.006   947   947 D usf_sensor_hal: gravity: ConfigDirectReport: stop sampling, period = 0.
+05-17 16:39:02.006  1136  2899 I CameraService: disconnect: Disconnected client for camera 1 for PID 3846
+05-17 16:39:02.006  2294  2789 I HbmSvManager:  Request state 0 req 2
+05-17 16:39:02.006  2294  2789 I HbmSvManager:  Request state 1 req 0
+05-17 16:39:02.006  2294  2789 I HbmSvManager:  Request state 2 req 0
+05-17 16:39:02.006  2294  2789 I HbmSvManager:  Request state 4 req 0
+05-17 16:39:02.006  2271  2463 D CameraStateSource: onCameraAvailable: cameraId=1
+05-17 16:39:02.007  2271  2463 D CameraStateSource: report CameraAvailability now. CameraAvailability(cameraId=1, availability=true, sequenceNumber=1393)
+05-17 16:39:02.007  3846 24763 I gaze    : Trying to close camera
+05-17 16:39:02.007  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for Gravity Sensor (active:0).
+05-17 16:39:02.007  1209  1209 D AOC     : A3:MSG: vsc_sensor.cc, 68: VSC: [Gravity Sensor] disable.
+05-17 16:39:02.007  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 550: VSC: [Gravity Sensor] stopSensorEvents: sensor 0x10001
+05-17 16:39:02.007  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Accelerometer (active:4).
+05-17 16:39:02.007  2308  2402 D LyricConfigProviderService: onCameraClosed: cameraID: 1
+05-17 16:39:02.008  1745  1745 I pixel-thermal: VIRTUAL-SKIN:41.2862 raw data: VIRTUAL-SKIN:41286.2 
+05-17 16:39:02.008  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 0: Enabled 1, odr_index 4.
+05-17 16:39:02.008  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/208/13/26 WM: 1 Intr: 208.
+05-17 16:39:02.008  2308  2388 D PersistentBackgroundCameraServices: Broadcasting action 'com.google.pixel.camera.services.cameraidremapper.action.CAMERA_CLOSED' for camera '1'...
+05-17 16:39:02.008  2271  2463 D ImpulseStateSource: Notify clients: 32912
+05-17 16:39:02.008  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 332519ns.
+05-17 16:39:02.009  2336  2336 D GRIL-S  : [7238]> UPDATE_DEVICE_STATE DeviceState: Usb:1, Wifi: 1, Wifi AP: 0, Earpiece: 0, Bluetooth: 1, Wireless charging: 0, Screen: 1, Camera: 0, 0, -, -, Motion: 0, Bluetooth tethering: 0, Voice: 0, Wifi 2.4G: 0, Radio: 1, Bluetooth connected: 0, Bluetooth media: 0, Wifi Band: 2, Wifi AP Band: 0, Wifi call: 0, mmWave: 0, mCellBackhaul: 0, mHallSensor: 0, mDozeStatus: 1, mAppClassInfo: 0, mWifiCapSensorStatus: 0, mCellCapSensorStatus: 0, mBesideHeadHandStatus: 0, mSpeakerStatus: 0, mProtectiveCaseStatus: 0, mWifiSettingStatus: 0, mGpsStatus: 0
+05-17 16:39:02.009  3846 24763 I gaze    : Camera closed
+05-17 16:39:02.009   496   496 I hwservicemanager: getTransport: Cannot find entry hardware.google.bluetooth.bt_channel_avoidance@1.0::IBTChannelAvoidance/default in either framework or device VINTF manifest.
+05-17 16:39:02.010  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 550: VSC: [Gravity Sensor] stopSensorEvents: sensor 0x10004
+05-17 16:39:02.010  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Gyroscope (active:2).
+05-17 16:39:02.010  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 430: USF: Stopping stale sample stream with sampling ID: 68485
+05-17 16:39:02.010  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 430: USF: Stopping stale sample stream with sampling ID: 68484
+05-17 16:39:02.010  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Gyroscope (active:1).
+05-17 16:39:02.010  2308  2388 I PersistentBackgroundCameraServices: Broadcast action 'com.google.pixel.camera.services.cameraidremapper.action.CAMERA_CLOSED' for camera '1'.
+05-17 16:39:02.010  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 68485 not found.
+05-17 16:39:02.010   930  1401 I Lyric   : direct_channel_motion_sensor_data_streamer.cc:615: gravity resource released.
+05-17 16:39:02.010  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Accelerometer (active:3).
+05-17 16:39:02.010  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 68484 not found.
+05-17 16:39:02.010   930  1401 I Lyric   : motion_sensor_reader.cc:64: gyroscope sampling intervals: (count=140, min=4.55307ms, max=4.60004ms, mean=4.58595ms, stddev=0.00456975ms, skew=-2.46462, kurtosis=22.5725)
+05-17 16:39:02.011   930  1401 I Lyric   : time_triggered_task_pool.cc:79: Timer is removed: TTTP[0,0]
+05-17 16:39:02.012  1209  1209 D AOC     : A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x00d4, tag: 0x34 [cntr = 46902]
+05-17 16:39:02.012  1209  1209 D AOC     : A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x00d4, tag: 0x34, rc: 0
+05-17 16:39:02.012   947   947 D usf_sensor_hal: gyroscope: ConfigDirectReport: stop sampling, period = 0.
+05-17 16:39:02.013  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Gyroscope (active:1).
+05-17 16:39:02.013  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 1: Enabled 1, odr_index 3.
+05-17 16:39:02.013  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/52/13/13 WM: 9 Intr: 21.
+05-17 16:39:02.014  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 329589ns.
+05-17 16:39:02.014   930  1401 I Lyric   : direct_channel_motion_sensor_data_streamer.cc:615: gyroscope resource released.
+05-17 16:39:02.015  1209  1209 D AOC     : A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x00d4, tag: 0x35 [cntr = 46903]
+05-17 16:39:02.015  1209  1209 D AOC     : A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x00d4, tag: 0x35, rc: 0
+05-17 16:39:02.016 23779 25833 W Turbo.DeviceHealthLeversManagerImpl: NetworkDenylist enabled: false
+05-17 16:39:02.016 23779 25833 W Turbo.DeviceHealthLeversManagerImpl: AppStandbyBucket enabled: false
+05-17 16:39:02.016 23779 25833 W Turbo.MaintenanceWindowJobService: DHL maintenance window job canceled.
+05-17 16:39:02.054  2336  3076 D GRIL-S  : [7238]< UPDATE_DEVICE_STATE 
+05-17 16:39:02.505   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:39:02.599   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:39:02.599   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:39:02.599   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:39:02.599   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:39:02.708 14177 23689 I gle.android.gms: Explicit concurrent mark compact GC freed 1991KB AllocSpace bytes, 13(576KB) LOS objects, 92% free, 18MB/256MB, paused 4.003ms,14.508ms total 714.020ms
+05-17 16:39:02.911   937   937 W TracingMuxer: type=1400 audit(0.0:115004): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1247 scontext=u:r:hal_neuralnetworks_darwinn:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+05-17 16:39:02.990  1621  1653 I system_server: NativeAlloc concurrent mark compact GC freed 23MB AllocSpace bytes, 25(1740KB) LOS objects, 79% free, 102MB/512MB, paused 2.765ms,11.780ms total 388.723ms
+05-17 16:39:03.001  1621  1654 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb400006f9f6d4010) with descriptor: '(not cached)'
+05-17 16:39:03.074  1621  1759 V DisplayPowerController[0]: Brightness [0.0] reason changing to: 'automatic [ dim throttled ]', previous reason: 'automatic [ throttled ]'.
+05-17 16:39:03.074  1621  1759 I DisplayPowerController[0]: BrightnessEvent: brt=0.0(0.0%), nits=2.0, lux=30.39681, reason=automatic [ dim throttled ], strat=AutomaticBrightnessStrategy, state=ON, stateReason=DEFAULT_POLICY, policy=DIM, flags=, initBrt=0.03936971, rcmdBrt=0.03936971, preBrt=NaN, preLux=9.333559, lastReadLux=25.771404, wasShortTermModelActive=true, autoBrightness=true (default), unclampedBrt=0.03936971, brtRange=[0.0, 0.36726907], hbmMax=0.62, hbmMode=off, thrmMax=1.0, rbcStrength=84, powerFactor=1.0, physDisp=Built-in Screen(local:4619827677550801152), logicalId=0, slowChange=false, rampSpeed=0.7047244, colorTemp=NaN, thermalStatus=moderate
+05-17 16:39:03.112   558  5446 I hwc-display: path=sysfs, id=0, level=127, nits=8.324613, brightness=0.037392, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.117   558  5446 I hwc-display: path=sysfs, id=0, level=119, nits=8.324613, brightness=0.034822, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.131   558  5446 I hwc-display: path=sysfs, id=0, level=111, nits=8.324613, brightness=0.032342, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.135   558  5446 I hwc-display: path=sysfs, id=0, level=103, nits=8.324613, brightness=0.029954, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.152   558  5446 I hwc-display: path=sysfs, id=0, level=95, nits=8.324613, brightness=0.027658, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.155  1209  1209 D AOC     : A3:MSG: tmd3719_device.cc, 4525: USF: TMD3719: dbv:95 leakage:0.000000 refresh_rate:60 status:1 op_hz:120 [1]
+05-17 16:39:03.168   558  5446 I hwc-display: path=sysfs, id=0, level=88, nits=8.324613, brightness=0.025453, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.187   558  5446 I hwc-display: path=sysfs, id=0, level=81, nits=8.324613, brightness=0.023340, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.204   558  5446 I hwc-display: path=sysfs, id=0, level=74, nits=8.324613, brightness=0.021319, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.221   558  5446 I hwc-display: path=sysfs, id=0, level=68, nits=8.324613, brightness=0.019389, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.238   558  5446 I hwc-display: path=sysfs, id=0, level=62, nits=8.324613, brightness=0.017550, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.254   558  5446 I hwc-display: path=sysfs, id=0, level=56, nits=8.324613, brightness=0.015803, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.270   558  5446 I hwc-display: path=sysfs, id=0, level=51, nits=8.324613, brightness=0.014148, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.287   558  5446 I hwc-display: path=sysfs, id=0, level=45, nits=8.324613, brightness=0.012584, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.303   558  5446 I hwc-display: path=sysfs, id=0, level=41, nits=8.324613, brightness=0.011112, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.321   558  5446 I hwc-display: path=sysfs, id=0, level=36, nits=8.324613, brightness=0.009731, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.337   558  5446 I hwc-display: path=sysfs, id=0, level=32, nits=8.324613, brightness=0.008442, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.353   558  5446 I hwc-display: path=sysfs, id=0, level=28, nits=8.324613, brightness=0.007245, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.369   558  5446 I hwc-display: path=sysfs, id=0, level=24, nits=8.324613, brightness=0.006139, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.388   558  5446 I hwc-display: path=sysfs, id=0, level=21, nits=8.324613, brightness=0.005124, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.404   558  5446 I hwc-display: path=sysfs, id=0, level=18, nits=8.324613, brightness=0.004201, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.420   558  5446 I hwc-display: path=sysfs, id=0, level=15, nits=8.324613, brightness=0.003370, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.435   558  5446 I hwc-display: path=sysfs, id=0, level=13, nits=8.324613, brightness=0.002630, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.452   558  5446 I hwc-display: path=sysfs, id=0, level=11, nits=8.324613, brightness=0.001982, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.470   558  5446 I hwc-display: path=sysfs, id=0, level=9, nits=8.324613, brightness=0.001425, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.485   558  5446 I hwc-display: path=sysfs, id=0, level=7, nits=8.324613, brightness=0.000960, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.488  1621  1973 I MdnsReplySender: Sending {MdnsReplyInfo: /192.168.31.153:5353 to /224.0.0.251:5353, answers: 1, additionalAnswers: 7, knownAnswers: 0, sendDelayMs 23}
+05-17 16:39:03.502   558  5446 I hwc-display: path=sysfs, id=0, level=6, nits=8.324613, brightness=0.000587, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.520   558  5446 I hwc-display: path=sysfs, id=0, level=5, nits=8.324613, brightness=0.000305, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.535   558  5446 I hwc-display: path=sysfs, id=0, level=4, nits=8.324613, brightness=0.000114, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.553   558  5446 I hwc-display: path=sysfs, id=0, level=4, nits=8.324613, brightness=0.000015, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:03.569   558  5446 I hwc-display: path=sysfs, id=0, level=4, nits=8.324613, brightness=0.000000, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+05-17 16:39:04.895  1135  1157 I WPKTRT  : process_address_event: 2409:40c4:153:71cf:738:6125:910e:cdb8 added to wlan0
+05-17 16:39:04.896  1135  1157 I WPKTRT  : process_address_event: 2409:40c4:153:71cf:9da8:cae7:d6c5:aae2 added to wlan0
+05-17 16:39:04.899  2213  2772 D IpClient/wlan0: addressUpdated: 2409:40c4:153:71cf:738:6125:910e:cdb8/64 on ifindex 47 flags 0x00000900 scope 0
+05-17 16:39:04.900  2213  2772 D IpClient/wlan0: addressUpdated: 2409:40c4:153:71cf:9da8:cae7:d6c5:aae2/64 on ifindex 47 flags 0x00000001 scope 0
+05-17 16:39:04.900  2213  2772 W AlarmManager: Unrecognized alarm listener com.android.networkstack.android.net.ip.IpClientLinkObserver$Dhcp6PdPreferredPrefixAlarmListener@b77b132
+05-17 16:39:04.902  2213  2772 D ApfFilter: (wlan0): Adding RA fe80::da23:e0ff:fe80:e3d7 -> ff02::1 180s 2409:40c4:153:71cf::/64 14092s/14092s DNS 180s 2409:40c4:153:71cf:da23:e0ff:fe80:e3d7 
+05-17 16:39:04.908   978   978 E WifiHAL : Setting APF program, halHandle = 0xb400006ff85cb850
+05-17 16:39:04.908   978   978 E WifiHAL : Set apf filter for iface = wlan0
+05-17 16:39:04.908   978   978 I WifiHAL : createRequest: APF set program request
+05-17 16:39:04.908   978   978 I WifiHAL : mProgramLen : 582
+05-17 16:39:05.606   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:39:05.665  1745  1764 I pixel-thermal: VIRTUAL-USB-UI:1 raw data: USB2-MINUS-CHG:-4015 VIRTUAL-USB-UI:1 charger_skin_therm:43311 usb_pwr_therm2:39296 
+05-17 16:39:05.666  1745  1764 I pixel-thermal: VIRTUAL-USB-THROTTLING:1 raw data: USB2-MINUS-CHG:-4015 VIRTUAL-USB-THROTTLING:1 usb_pwr_therm2:39296 
+05-17 16:39:05.668  1745  1764 I pixel-thermal: VIRTUAL-SKIN:41.2609 raw data: VIRTUAL-NEUTRAL:41260.9 VIRTUAL-NEUTRAL-SKIN2:41233.8 VIRTUAL-QUIET-NEUTRAL:39944.1 VIRTUAL-SKIN:41260.9 disp_therm:38828 gnss_tcxo_therm:41754 neutral_therm:40677 quiet_therm:39630 skin_therm1:42052 skin_therm2:42533 
+05-17 16:39:05.703   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:39:05.703   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:39:05.704   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:39:05.704   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:39:06.475  1745  1764 I pixel-thermal: cellular-emergency:41.2609 raw data: VIRTUAL-SKIN:41260.9 cellular-emergency:41260.9 
+05-17 16:39:06.475  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:41.2609 raw data: VIRTUAL-SKIN:41260.9 VIRTUAL-SKIN-CPU:41260.9 
+05-17 16:39:06.476  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=800 err=-0.260902 s_power=800 time_elapsed_ms=7009 p=-104.361 i=65.2683 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:39:06.476  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 124.23 mW)(S2M_VDD_CPUCL2: 114.56 mW)(S3M_VDD_CPUCL1: 84.93 mW)
+05-17 16:39:06.476  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:41.2609 raw data: VIRTUAL-SKIN:41260.9 VIRTUAL-SKIN-CPU-GPU:41260.9 
+05-17 16:39:06.477  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=2621.73 err=3.7391 s_power=800 time_elapsed_ms=7009 p=1121.73 i=700 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:39:06.477  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 124.23 mW)(S2M_VDD_CPUCL2: 114.56 mW)(S3M_VDD_CPUCL1: 84.93 mW)(S2S_VDD_G3D: 7.25 mW)
+05-17 16:39:06.477  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:41.2609 raw data: VIRTUAL-SKIN:41260.9 VIRTUAL-SKIN-HINT:41260.9 
+05-17 16:39:06.477  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:41.2609 raw data: VIRTUAL-SKIN:41260.9 VIRTUAL-SKIN-CHARGE:41260.9 
+05-17 16:39:06.479  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 631.364
+05-17 16:39:07.375 14632 14632 I adbd    : adbd service requested 'shell,v2:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'threadtime''

@@ -1,12 +1,7 @@
 package helium314.keyboard.keyboard
 
-import android.app.Activity
-import android.content.ActivityNotFoundException
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -68,9 +63,15 @@ class KlipyPanelActivity : ComponentActivity() {
     private lateinit var historyDao: KlipyHistoryDao
     private var currentTab = KlipyHistoryDao.TYPE_GIF
     private var isSearchActive = false
-    private var lastGifSearch: List<KlipyItem>? = null
-    private var lastStickerSearch: List<KlipyItem>? = null
+    private var lastGifSearch: MutableList<KlipyItem> = mutableListOf()
+    private var lastStickerSearch: MutableList<KlipyItem> = mutableListOf()
     private var searchQuery = ""
+    private var isFallbackMode = false
+    private var searchJob: kotlinx.coroutines.Job? = null
+    private var cachedCustomerId: String? = null
+    private var currentPage = 1
+    private var isLoadingMore = false
+    private var hasMorePages = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,7 +79,12 @@ class KlipyPanelActivity : ComponentActivity() {
             setContentView(R.layout.klipy_panel)
         } catch (e: Exception) {
             Log.e("KlipyPanel", "Failed to inflate layout", e)
-            setContentView(R.layout.klipy_panel_fallback)
+            try {
+                setContentView(R.layout.klipy_panel_fallback)
+            } catch (fallbackEx: Exception) {
+                Log.e("KlipyPanel", "Failed to inflate fallback layout", fallbackEx)
+            }
+            isFallbackMode = true
             return
         }
 
@@ -105,6 +111,7 @@ class KlipyPanelActivity : ComponentActivity() {
 
         // Use post to ensure the view hierarchy is ready for interactions
         window.decorView.post {
+            if (isFallbackMode) return@post
             if (currentTab == KlipyHistoryDao.TYPE_STICKER) {
                 selectStickersTab()
             } else {
@@ -115,12 +122,65 @@ class KlipyPanelActivity : ComponentActivity() {
 
     private fun setupRecyclerViews() {
         gifsAdapter = KlipyAdapter(emptyList()) { item -> onItemUsed(item) }
-        gifsRecyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        val staggeredLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL).apply {
+            gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_MOVE_ITEMS_BETWEEN_SPANS
+        }
+        gifsRecyclerView.layoutManager = staggeredLayoutManager
         gifsRecyclerView.adapter = gifsAdapter
+        gifsRecyclerView.setItemViewCacheSize(10)
+        gifsRecyclerView.addOnScrollListener(createPaginationScrollListener())
 
         stickersAdapter = KlipyAdapter(emptyList()) { item -> onItemUsed(item) }
         stickersRecyclerView.layoutManager = GridLayoutManager(this, 4)
         stickersRecyclerView.adapter = stickersAdapter
+        stickersRecyclerView.setItemViewCacheSize(10)
+        stickersRecyclerView.addOnScrollListener(createPaginationScrollListener())
+    }
+
+    private fun createPaginationScrollListener(): RecyclerView.OnScrollListener {
+        return object : RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+                if (dy <= 0 || !isSearchActive || isLoadingMore || !hasMorePages) return
+
+                val layoutManager = recyclerView.layoutManager ?: return
+                val totalItemCount = layoutManager.itemCount
+                val lastVisibleItem = when (layoutManager) {
+                    is StaggeredGridLayoutManager -> {
+                        val positions = layoutManager.findLastVisibleItemPositions(null)
+                        positions.maxOrNull() ?: 0
+                    }
+                    is GridLayoutManager -> layoutManager.findLastVisibleItemPosition()
+                    else -> return
+                }
+
+                if (lastVisibleItem >= totalItemCount - 4) {
+                    loadMoreResults()
+                }
+            }
+        }
+    }
+
+    private fun loadMoreResults() {
+        if (isLoadingMore || !hasMorePages || searchQuery.isBlank()) return
+        isLoadingMore = true
+        currentPage++
+
+        lifecycleScope.launch {
+            val results = withContext(Dispatchers.IO) {
+                fetchSearchResults(searchQuery, currentPage)
+            }
+
+            if (results.isEmpty()) {
+                hasMorePages = false
+            } else {
+                val currentList = if (currentTab == KlipyHistoryDao.TYPE_GIF) lastGifSearch else lastStickerSearch
+                currentList.addAll(results)
+                val activeAdapter = if (currentTab == KlipyHistoryDao.TYPE_GIF) gifsAdapter else stickersAdapter
+                activeAdapter.updateItems(currentList.toList())
+            }
+            isLoadingMore = false
+        }
     }
 
     private fun onItemUsed(item: KlipyItem) {
@@ -209,7 +269,7 @@ class KlipyPanelActivity : ComponentActivity() {
     }
 
     private suspend fun downloadAndPrepareFile(url: String, id: String, isSticker: Boolean): File? {
-        val client = OkHttpClient()
+        val client = CloudManager.client
         val request = Request.Builder().url(url).build()
         return try {
             val response = client.newCall(request).execute()
@@ -258,7 +318,6 @@ class KlipyPanelActivity : ComponentActivity() {
     }
 
     private fun loadHistory() {
-        val activeRecyclerView = if (currentTab == KlipyHistoryDao.TYPE_GIF) gifsRecyclerView else stickersRecyclerView
         val activeAdapter = if (currentTab == KlipyHistoryDao.TYPE_GIF) gifsAdapter else stickersAdapter
 
         gifsRecyclerView.visibility = if (currentTab == KlipyHistoryDao.TYPE_GIF) View.VISIBLE else View.GONE
@@ -266,10 +325,9 @@ class KlipyPanelActivity : ComponentActivity() {
 
         if (isSearchActive) {
             val searchResults = if (currentTab == KlipyHistoryDao.TYPE_GIF) lastGifSearch else lastStickerSearch
-            if (searchResults != null) {
-                activeAdapter.updateItems(searchResults)
-                emptyState.text = getString(R.string.no_results_found)
-                emptyState.visibility = if (searchResults.isEmpty()) View.VISIBLE else View.GONE
+            if (searchResults.isNotEmpty()) {
+                activeAdapter.updateItems(searchResults.toList())
+                emptyState.visibility = View.GONE
                 return
             } else if (searchQuery.isNotEmpty()) {
                 // If we have a query but no results for this tab yet, trigger search
@@ -300,8 +358,8 @@ class KlipyPanelActivity : ComponentActivity() {
                 if (s.isNullOrBlank()) {
                     isSearchActive = false
                     searchQuery = ""
-                    lastGifSearch = null
-                    lastStickerSearch = null
+                    lastGifSearch.clear()
+                    lastStickerSearch.clear()
                     loadHistory()
                 }
             }
@@ -324,36 +382,45 @@ class KlipyPanelActivity : ComponentActivity() {
         if (query.isBlank()) {
             isSearchActive = false
             searchQuery = ""
-            lastGifSearch = null
-            lastStickerSearch = null
+            lastGifSearch.clear()
+            lastStickerSearch.clear()
             loadHistory()
             return
         }
 
         isSearchActive = true
         searchQuery = query
+        currentPage = 1
+        hasMorePages = true
         hideKeyboard()
 
-        // Show loading indicator and hide previous results
+        // Show loading indicator but keep current items visible until results arrive
         loadingIndicator.visibility = View.VISIBLE
-        gifsAdapter.updateItems(emptyList())
-        stickersAdapter.updateItems(emptyList())
         emptyState.visibility = View.GONE
 
-        lifecycleScope.launch {
+        searchJob?.cancel()
+        searchJob = lifecycleScope.launch {
             val results = withContext(Dispatchers.IO) {
-                fetchSearchResults(query)
+                fetchSearchResults(query, 1)
             }
 
             if (currentTab == KlipyHistoryDao.TYPE_GIF) {
-                lastGifSearch = results
+                lastGifSearch.clear()
+                lastGifSearch.addAll(results)
             } else {
-                lastStickerSearch = results
+                lastStickerSearch.clear()
+                lastStickerSearch.addAll(results)
             }
+
+            hasMorePages = results.size >= 24
 
             loadingIndicator.visibility = View.GONE
             val activeAdapter = if (currentTab == KlipyHistoryDao.TYPE_GIF) gifsAdapter else stickersAdapter
             activeAdapter.updateItems(results)
+
+            // Scroll to top for new searches
+            val activeRecyclerView = if (currentTab == KlipyHistoryDao.TYPE_GIF) gifsRecyclerView else stickersRecyclerView
+            activeRecyclerView.scrollToPosition(0)
 
             if (results.isEmpty()) {
                 emptyState.text = getString(R.string.no_results_found)
@@ -364,7 +431,7 @@ class KlipyPanelActivity : ComponentActivity() {
         }
     }
 
-    private fun fetchSearchResults(query: String): List<KlipyItem> {
+    private fun fetchSearchResults(query: String, page: Int = 1): List<KlipyItem> {
         val apiKey = CloudManager.getKlipyApiKey(this)
         val endpoint = if (currentTab == KlipyHistoryDao.TYPE_GIF) "gifs" else "stickers"
 
@@ -375,17 +442,21 @@ class KlipyPanelActivity : ComponentActivity() {
             query
         }
 
-        val customerId = prefs().getString("klipy_customer_id", null) ?: run {
-            val newId = UUID.randomUUID().toString()
-            prefs().edit { putString("klipy_customer_id", newId) }
-            newId
+        val customerId = cachedCustomerId ?: run {
+            val id = prefs().getString("klipy_customer_id", null) ?: run {
+                val newId = UUID.randomUUID().toString()
+                prefs().edit { putString("klipy_customer_id", newId) }
+                newId
+            }
+            cachedCustomerId = id
+            id
         }
 
         val locale = ConfigurationCompat.getLocales(resources.configuration)[0]?.country?.lowercase() ?: "us"
 
         val url = "https://api.klipy.com/api/v1/$apiKey/$endpoint/search".toHttpUrlOrNull()?.newBuilder()
             ?.addEncodedQueryParameter("q", encodedQuery)
-            ?.addQueryParameter("page", "1")
+            ?.addQueryParameter("page", page.toString())
             ?.addQueryParameter("per_page", "24")
             ?.addQueryParameter("customer_id", customerId)
             ?.addQueryParameter("locale", locale)
@@ -398,7 +469,7 @@ class KlipyPanelActivity : ComponentActivity() {
             .addHeader("Accept", "application/json")
             .build()
 
-        val client = OkHttpClient()
+        val client = CloudManager.client
         return try {
             val response = client.newCall(request).execute()
             if (!response.isSuccessful) {
@@ -412,7 +483,6 @@ class KlipyPanelActivity : ComponentActivity() {
                 return emptyList()
             }
 
-            val json = Json { ignoreUnknownKeys = true }
             val apiResponse = try {
                 json.decodeFromString<KlipySearchResponse>(body)
             } catch (e: Exception) {
@@ -531,35 +601,47 @@ class KlipyPanelActivity : ComponentActivity() {
     }
 
     private fun applyTheme() {
-        val root = findViewById<ViewGroup>(R.id.klipyPanelRoot)
-        val isNight = ResourceUtils.isNight(resources)
+        try {
+            val root = findViewById<ViewGroup>(R.id.klipyPanelRoot)
+            val isNight = ResourceUtils.isNight(resources)
 
-        if (FrostedGlassHelper.isFrostedTheme(this) && android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-            val blurRadius = if (isNight) {
-                prefs().getInt(Settings.PREF_FROSTED_BLUR_RADIUS_NIGHT, Defaults.PREF_FROSTED_BLUR_RADIUS_NIGHT)
+            if (FrostedGlassHelper.isFrostedTheme(this) && android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+                val blurRadius = if (isNight) {
+                    prefs().getInt(Settings.PREF_FROSTED_BLUR_RADIUS_NIGHT, Defaults.PREF_FROSTED_BLUR_RADIUS_NIGHT)
+                } else {
+                    prefs().getInt(Settings.PREF_FROSTED_BLUR_RADIUS, Defaults.PREF_FROSTED_BLUR_RADIUS)
+                }
+
+                try {
+                    window.setBackgroundBlurRadius(blurRadius)
+                    window.addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND)
+                } catch (e: Exception) {
+                    Log.e("KlipyPanel", "Failed to set background blur radius", e)
+                }
+
+                // Apply Material You tint based on system theme
+                val tintColor = if (isNight) {
+                    ContextCompat.getColor(this, android.R.color.system_neutral1_800)
+                } else {
+                    ContextCompat.getColor(this, android.R.color.system_neutral1_100)
+                }
+                // Set background with alpha for frosted effect
+                val alpha = 0.7f
+                val colorWithAlpha = (alpha * 255).toInt() shl 24 or (tintColor and 0x00FFFFFF)
+                root?.setBackgroundColor(colorWithAlpha)
             } else {
-                prefs().getInt(Settings.PREF_FROSTED_BLUR_RADIUS, Defaults.PREF_FROSTED_BLUR_RADIUS)
+                // Standard theme: follow system night mode
+                root?.setBackgroundResource(R.color.panelBackground)
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+                    try {
+                        window.setBackgroundBlurRadius(0)
+                    } catch (e: Exception) {
+                        Log.e("KlipyPanel", "Failed to reset background blur radius", e)
+                    }
+                }
             }
-
-            window.setBackgroundBlurRadius(blurRadius)
-            window.addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND)
-
-            // Apply Material You tint based on system theme
-            val tintColor = if (isNight) {
-                ContextCompat.getColor(this, android.R.color.system_neutral1_800)
-            } else {
-                ContextCompat.getColor(this, android.R.color.system_neutral1_100)
-            }
-            // Set background with alpha for frosted effect
-            val alpha = 0.7f
-            val colorWithAlpha = (alpha * 255).toInt() shl 24 or (tintColor and 0x00FFFFFF)
-            root?.setBackgroundColor(colorWithAlpha)
-        } else {
-            // Standard theme: follow system night mode
-            root?.setBackgroundResource(R.color.panelBackground)
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-                window.setBackgroundBlurRadius(0)
-            }
+        } catch (e: Exception) {
+            Log.e("KlipyPanel", "Failed to apply theme", e)
         }
     }
 
@@ -568,5 +650,7 @@ class KlipyPanelActivity : ComponentActivity() {
         const val KLIPY_URI_KEY = "klipy_uri"
         const val KLIPY_MIME_KEY = "klipy_mime"
         const val KLIPY_LABEL_KEY = "klipy_label"
+
+        private val json = Json { ignoreUnknownKeys = true }
     }
 }

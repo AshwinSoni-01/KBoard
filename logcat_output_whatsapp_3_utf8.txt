@@ -1,0 +1,153 @@
+﻿
+05-17 16:27:42.699  2078  2102 V 
+WindowManagerShell: Transition requested 
+(#13254): android.os.BinderProxy@5a49a0b 
+TransitionRequestInfo { type = CLOSE, 
+triggerTask = TaskInfo{userId=0 
+taskId=3694 effectiveUid=10714 displayId=0 
+isRunning=false baseIntent=Intent { 
+flg=0x10800000 cmp=com.orion.kboard.debug/h
+elium314.keyboard.keyboard.KlipyPanelActivi
+ty } baseActivity=null topActivity=null 
+origActivity=null realActivity=ComponentInf
+o{com.orion.kboard.debug/helium314.keyboard
+.keyboard.KlipyPanelActivity} 
+realActivityIsAppLockEnabled=false 
+numActivities=0 lastActiveTime=425951170 
+supportsMultiWindow=true 
+supportsMultiWindowWithoutConstraints=true 
+resizeMode=1 isResizeable=true minWidth=-1 
+minHeight=-1 defaultMinSize=220 
+token=WCT{android.os.BinderProxy@ec048b1} 
+topActivityType=1 
+pictureInPictureParams=null 
+shouldDockBigOverlays=false 
+launchIntoPipHostTaskId=-1 
+lastParentTaskIdBeforePip=-1 
+displayCutoutSafeInsets=Rect(0, 0 - 0, 0) 
+topActivityInfo=null launchCookies=[] 
+positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=true 
+isInteractive=true isVisible=true 
+isVisibleRequested=true 
+isTopActivityNoDisplay=false 
+isSleeping=false locusId=null 
+displayAreaFeatureId=1 
+isTopActivityTransparent=false 
+isActivityStackTransparent=true 
+lastNonFullscreenBounds=Rect(276, 694 - 
+804, 1774) leafTaskBoundsFromOptions= 
+false capturedLink=null 
+capturedLinkTimestamp=0 
+requestedVisibleTypes=503 topActivityReques
+tOpenInBrowserEducationTimestamp=0 
+appCompatTaskInfo=AppCompatTaskInfo { 
+topActivityInSizeCompat=false isLeafTask= 
+true eligibleForLetterboxEducation= false 
+isLetterboxEducationEnabled= false 
+isLetterboxDoubleTapEnabled= false 
+eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false 
+isFromLetterboxDoubleTap= false 
+topActivityLetterboxVerticalPosition= -1 
+topActivityLetterboxHorizontalPosition= -1 
+topActivityLetterboxWidth=-1 
+topActivityLetterboxHeight=-1 
+topActivityAppBounds=Rect(0, 0 - 0, 0) 
+isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false 
+hasMinAspectRatioOverride=false 
+topActivityLetterboxBounds=null 
+topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null 
+isAppBubble=false}, pipChange = null, 
+remoteTransitionInfo = null, 
+displayChanges = null, requestedLocation = 
+null, userChange = null, 
+windowingLayerChange = null, 
+fullscreenRequestChange = null, flags = 0, 
+debugId = 13254 }
+05-17 16:27:42.733  1621  1690 V 
+WindowManager: Sent Transition (#13254) 
+createdAt=05-17 16:27:42.698 via 
+request=TransitionRequestInfo { type = 
+CLOSE, triggerTask = TaskInfo{userId=0 
+taskId=3694 effectiveUid=10714 displayId=0 
+isRunning=false baseIntent=Intent { 
+flg=0x10800000 cmp=com.orion.kboard.debug/h
+elium314.keyboard.keyboard.KlipyPanelActivi
+ty } baseActivity=null topActivity=null 
+origActivity=null realActivity=ComponentInf
+o{com.orion.kboard.debug/helium314.keyboard
+.keyboard.KlipyPanelActivity} 
+realActivityIsAppLockEnabled=false 
+numActivities=0 lastActiveTime=425951170 
+supportsMultiWindow=true 
+supportsMultiWindowWithoutConstraints=true 
+resizeMode=1 isResizeable=true minWidth=-1 
+minHeight=-1 defaultMinSize=220 
+token=WCT{RemoteToken{e94f884 Task{336ebb9 
+#3694 type=standard 
+A=10714:com.orion.kboard.debug}}} 
+topActivityType=1 
+pictureInPictureParams=null 
+shouldDockBigOverlays=false 
+launchIntoPipHostTaskId=-1 
+lastParentTaskIdBeforePip=-1 
+displayCutoutSafeInsets=Rect(0, 0 - 0, 0) 
+topActivityInfo=null launchCookies=[] 
+positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=true 
+isInteractive=true isVisible=true 
+isVisibleRequested=true 
+isTopActivityNoDisplay=false 
+isSleeping=false locusId=null 
+displayAreaFeatureId=1 
+isTopActivityTransparent=false 
+isActivityStackTransparent=true 
+lastNonFullscreenBounds=Rect(276, 694 - 
+804, 1774) leafTaskBoundsFromOptions= 
+false capturedLink=null 
+capturedLinkTimestamp=0 
+requestedVisibleTypes=503 topActivityReques
+tOpenInBrowserEducationTimestamp=0 
+appCompatTaskInfo=AppCompatTaskInfo { 
+topActivityInSizeCompat=false isLeafTask= 
+true eligibleForLetterboxEducation= false 
+isLetterboxEducationEnabled= false 
+isLetterboxDoubleTapEnabled= false 
+eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false 
+isFromLetterboxDoubleTap= false 
+topActivityLetterboxVerticalPosition= -1 
+topActivityLetterboxHorizontalPosition= -1 
+topActivityLetterboxWidth=-1 
+topActivityLetterboxHeight=-1 
+topActivityAppBounds=Rect(0, 0 - 0, 0) 
+isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false 
+hasMinAspectRatioOverride=false 
+topActivityLetterboxBounds=null 
+topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null 
+isAppBubble=false}, pipChange = null, 
+remoteTransitionInfo = null, 
+displayChanges = null, requestedLocation = 
+null, userChange = null, 
+windowingLayerChange = null, 
+fullscreenRequestChange = null, flags = 0, 
+debugId = 13254 }
+05-17 16:27:42.759 21491 21491 W 
+AndroidIME: LatinIMEBase.updateInputViewCov
+erNavigation():327 Null input view, cannot 
+update padding!
+05-17 16:27:43.031 26625 26625 D 
+VRI[KlipyPanelActivity]: visibilityChanged 
+oldVisibility=true newVisibility=false
+05-17 16:27:43.066  1621  1702 D 
+CoreBackPreview: Window{c9ea3a8 u0 com.orio
+n.kboard.debug/helium314.keyboard.keyboard.
+KlipyPanelActivity}: Setting back callback 
+null
+
+

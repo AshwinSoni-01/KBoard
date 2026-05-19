@@ -1,0 +1,916 @@
+﻿
+05-16 01:57:18.812 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.830 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.842 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.852 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.862 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.872 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.884 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.894 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.908 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.920 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.939 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.948 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.960 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.969 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.983 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:18.993 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.005 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.016 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.116 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.126 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.137 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.153 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.164 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.176 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.186 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.199 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.211 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.221 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.326 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.338 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.349 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.366 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.377 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.391 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.405 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.416 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.534 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.552 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.566 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.577 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.587 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.704 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.720 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.735 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.747 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.876 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.890 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:19.907 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.053 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.073 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.093 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.252 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.415 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.435 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.601 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.928 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.950 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.964 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:20.978 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:21.130 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:21.140 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:21.542 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:21.563 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:21.758 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:21.796 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 01:57:22.002 16385 16385 E 
+AndroidRuntime: 	at helium314.keyboard.lati
+n.LatinIME.onCreateInputView(LatinIME.java:
+898)
+05-16 23:45:07.279  3852  3852 E 
+AndroidRuntime: 
+java.lang.RuntimeException: Unable to 
+start activity ComponentInfo{com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity}
+05-16 23:45:07.279  3852  3852 E 
+AndroidRuntime: 	at helium314.keyboard.keyb
+oard.KlipyPanelActivity.onCreate(KlipyPanel
+Activity.kt:53)
+05-16 23:45:11.882  4005  4005 E 
+AndroidRuntime: 
+java.lang.RuntimeException: Unable to 
+start activity ComponentInfo{com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity}
+05-16 23:45:11.882  4005  4005 E 
+AndroidRuntime: 	at helium314.keyboard.keyb
+oard.KlipyPanelActivity.onCreate(KlipyPanel
+Activity.kt:53)
+05-17 14:15:32.290 29731 29731 E 
+AndroidRuntime: 
+java.lang.RuntimeException: Unable to 
+start activity ComponentInfo{com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity}
+05-17 14:15:32.290 29731 29731 E 
+AndroidRuntime: 	at helium314.keyboard.keyb
+oard.KlipyPanelActivity.onCreate(KlipyPanel
+Activity.kt:73)
+05-17 14:15:41.932 29904 29904 E 
+AndroidRuntime: 
+java.lang.RuntimeException: Unable to 
+start activity ComponentInfo{com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity}
+05-17 14:15:41.932 29904 29904 E 
+AndroidRuntime: 	at helium314.keyboard.keyb
+oard.KlipyPanelActivity.onCreate(KlipyPanel
+Activity.kt:73)
+05-17 15:00:54.382 15111 15111 E 
+AndroidRuntime: 
+java.lang.RuntimeException: Unable to 
+start activity ComponentInfo{com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity}
+05-17 15:00:54.382 15111 15111 E 
+AndroidRuntime: 	at helium314.keyboard.keyb
+oard.KlipyPanelActivity.onCreate(KlipyPanel
+Activity.kt:74)
+05-17 15:01:03.897 15248 15248 E 
+AndroidRuntime: 
+java.lang.RuntimeException: Unable to 
+start activity ComponentInfo{com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity}
+05-17 15:01:03.897 15248 15248 E 
+AndroidRuntime: 	at helium314.keyboard.keyb
+oard.KlipyPanelActivity.onCreate(KlipyPanel
+Activity.kt:74)
+05-17 15:07:51.069 17622 17622 E 
+AndroidRuntime: 
+java.lang.RuntimeException: Unable to 
+start activity ComponentInfo{com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity}
+05-17 15:07:51.069 17622 17622 E 
+AndroidRuntime: 	at helium314.keyboard.keyb
+oard.KlipyPanelActivity.onCreate(KlipyPanel
+Activity.kt:74)
+05-17 18:46:15.927  2078  2102 V 
+WindowManagerShell: Transition requested 
+(#13483): android.os.BinderProxy@21654f7 
+TransitionRequestInfo { type = CLOSE, 
+triggerTask = TaskInfo{userId=0 
+taskId=3735 effectiveUid=10714 displayId=0 
+isRunning=false baseIntent=Intent { 
+flg=0x10800000 cmp=com.orion.kboard.debug/h
+elium314.keyboard.keyboard.KlipyPanelActivi
+ty } baseActivity=null topActivity=null 
+origActivity=null realActivity=ComponentInf
+o{com.orion.kboard.debug/helium314.keyboard
+.keyboard.KlipyPanelActivity} 
+realActivityIsAppLockEnabled=false 
+numActivities=0 lastActiveTime=434236480 
+supportsMultiWindow=true 
+supportsMultiWindowWithoutConstraints=true 
+resizeMode=1 isResizeable=true minWidth=-1 
+minHeight=-1 defaultMinSize=220 
+token=WCT{android.os.BinderProxy@4d419cc} 
+topActivityType=1 
+pictureInPictureParams=null 
+shouldDockBigOverlays=false 
+launchIntoPipHostTaskId=-1 
+lastParentTaskIdBeforePip=-1 
+displayCutoutSafeInsets=Rect(0, 0 - 0, 0) 
+topActivityInfo=null launchCookies=[] 
+positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=true 
+isInteractive=true isVisible=true 
+isVisibleRequested=true 
+isTopActivityNoDisplay=false 
+isSleeping=false locusId=null 
+displayAreaFeatureId=1 
+isTopActivityTransparent=false 
+isActivityStackTransparent=true 
+lastNonFullscreenBounds=Rect(276, 694 - 
+804, 1774) leafTaskBoundsFromOptions= 
+false capturedLink=null 
+capturedLinkTimestamp=0 
+requestedVisibleTypes=503 topActivityReques
+tOpenInBrowserEducationTimestamp=0 
+appCompatTaskInfo=AppCompatTaskInfo { 
+topActivityInSizeCompat=false isLeafTask= 
+true eligibleForLetterboxEducation= false 
+isLetterboxEducationEnabled= false 
+isLetterboxDoubleTapEnabled= false 
+eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false 
+isFromLetterboxDoubleTap= false 
+topActivityLetterboxVerticalPosition= -1 
+topActivityLetterboxHorizontalPosition= -1 
+topActivityLetterboxWidth=-1 
+topActivityLetterboxHeight=-1 
+topActivityAppBounds=Rect(0, 0 - 0, 0) 
+isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false 
+hasMinAspectRatioOverride=false 
+topActivityLetterboxBounds=null 
+topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null 
+isAppBubble=false}, pipChange = null, 
+remoteTransitionInfo = null, 
+displayChanges = null, requestedLocation = 
+null, userChange = null, 
+windowingLayerChange = null, 
+fullscreenRequestChange = null, flags = 0, 
+debugId = 13483 }
+05-17 18:46:15.970  1621  1690 V 
+WindowManager: Sent Transition (#13483) 
+createdAt=05-17 18:46:15.926 via 
+request=TransitionRequestInfo { type = 
+CLOSE, triggerTask = TaskInfo{userId=0 
+taskId=3735 effectiveUid=10714 displayId=0 
+isRunning=false baseIntent=Intent { 
+flg=0x10800000 cmp=com.orion.kboard.debug/h
+elium314.keyboard.keyboard.KlipyPanelActivi
+ty } baseActivity=null topActivity=null 
+origActivity=null realActivity=ComponentInf
+o{com.orion.kboard.debug/helium314.keyboard
+.keyboard.KlipyPanelActivity} 
+realActivityIsAppLockEnabled=false 
+numActivities=0 lastActiveTime=434236480 
+supportsMultiWindow=true 
+supportsMultiWindowWithoutConstraints=true 
+resizeMode=1 isResizeable=true minWidth=-1 
+minHeight=-1 defaultMinSize=220 
+token=WCT{RemoteToken{626677d Task{828fc82 
+#3735 type=standard 
+A=10714:com.orion.kboard.debug}}} 
+topActivityType=1 
+pictureInPictureParams=null 
+shouldDockBigOverlays=false 
+launchIntoPipHostTaskId=-1 
+lastParentTaskIdBeforePip=-1 
+displayCutoutSafeInsets=Rect(0, 0 - 0, 0) 
+topActivityInfo=null launchCookies=[] 
+positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=true 
+isInteractive=true isVisible=true 
+isVisibleRequested=true 
+isTopActivityNoDisplay=false 
+isSleeping=false locusId=null 
+displayAreaFeatureId=1 
+isTopActivityTransparent=false 
+isActivityStackTransparent=true 
+lastNonFullscreenBounds=Rect(276, 694 - 
+804, 1774) leafTaskBoundsFromOptions= 
+false capturedLink=null 
+capturedLinkTimestamp=0 
+requestedVisibleTypes=503 topActivityReques
+tOpenInBrowserEducationTimestamp=0 
+appCompatTaskInfo=AppCompatTaskInfo { 
+topActivityInSizeCompat=false isLeafTask= 
+true eligibleForLetterboxEducation= false 
+isLetterboxEducationEnabled= false 
+isLetterboxDoubleTapEnabled= false 
+eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false 
+isFromLetterboxDoubleTap= false 
+topActivityLetterboxVerticalPosition= -1 
+topActivityLetterboxHorizontalPosition= -1 
+topActivityLetterboxWidth=-1 
+topActivityLetterboxHeight=-1 
+topActivityAppBounds=Rect(0, 0 - 0, 0) 
+isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false 
+hasMinAspectRatioOverride=false 
+topActivityLetterboxBounds=null 
+topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null 
+isAppBubble=false}, pipChange = null, 
+remoteTransitionInfo = null, 
+displayChanges = null, requestedLocation = 
+null, userChange = null, 
+windowingLayerChange = null, 
+fullscreenRequestChange = null, flags = 0, 
+debugId = 13483 }
+05-17 18:46:16.113  1621  4771 D 
+ImeInsetsSourceProvider: showImePostLayout 
+cancelled, serverVisible: false, frozen: 
+false, mWin is: non-null, isDrawn: false, 
+mGivenInsetsPending: false, 
+imeLayeringTarget: Window{946fa29 u0 com.or
+ion.kboard.debug/helium314.keyboard.keyboar
+d.KlipyPanelActivity}, controlTarget: 
+Window{ec2fa0a u0 
+com.whatsapp/com.whatsapp.Conversation}
+05-17 18:46:16.247  1621  4771 D 
+CoreBackPreview: Window{946fa29 u0 com.orio
+n.kboard.debug/helium314.keyboard.keyboard.
+KlipyPanelActivity}: Setting back callback 
+null
+05-17 18:49:33.900  1621  3977 V 
+ActivityTaskManager: 
+TaskLaunchParamsModifier: phase=2 
+task=Task{f651505 #3736 type=standard 
+A=10714:com.orion.kboard.debug} 
+activity=ActivityRecord{4294780 u0 com.orio
+n.kboard.debug/helium314.keyboard.keyboard.
+KlipyPanelActivity t-1} 
+display-from-task=0 display-id=0 
+task-display-area-windowing-mode=1 suggeste
+d-display-area=DefaultTaskDisplayArea@14992
+5081 inherit-from-task=fullscreen 
+non-freeform-task-display-area display-area
+=DefaultTaskDisplayArea@149925081 
+default-portrait 
+freeform-size-mismatch=Rect(276, 694 - 
+804, 1774)
+05-17 18:49:33.900  1621  3977 I 
+ActivityTaskManager: START u0 
+{flg=0x10000000 xflg=0x4 cmp=com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity} with LAUNCH_MULTIPLE from 
+uid 2000 (com.android.shell) 
+(BAL_ALLOW_ALLOWLISTED_UID) result code=0
+05-17 18:49:33.900  2078  2102 V 
+WindowManagerShell: Transition requested 
+(#13489): android.os.BinderProxy@7319c1 
+TransitionRequestInfo { type = OPEN, 
+triggerTask = TaskInfo{userId=0 
+taskId=3736 effectiveUid=10714 displayId=0 
+isRunning=true baseIntent=Intent { 
+flg=0x10800000 cmp=com.orion.kboard.debug/h
+elium314.keyboard.keyboard.KlipyPanelActivi
+ty } baseActivity=ComponentInfo{com.orion.k
+board.debug/helium314.keyboard.keyboard.Kli
+pyPanelActivity} topActivity=ComponentInfo{
+com.orion.kboard.debug/helium314.keyboard.k
+eyboard.KlipyPanelActivity} 
+origActivity=null realActivity=ComponentInf
+o{com.orion.kboard.debug/helium314.keyboard
+.keyboard.KlipyPanelActivity} 
+realActivityIsAppLockEnabled=false 
+numActivities=1 lastActiveTime=434466509 
+supportsMultiWindow=true 
+supportsMultiWindowWithoutConstraints=true 
+resizeMode=1 isResizeable=true minWidth=-1 
+minHeight=-1 defaultMinSize=220 
+token=WCT{android.os.BinderProxy@f20f566} 
+topActivityType=1 
+pictureInPictureParams=null 
+shouldDockBigOverlays=false 
+launchIntoPipHostTaskId=-1 
+lastParentTaskIdBeforePip=-1 
+displayCutoutSafeInsets=Rect(0, 132 - 0, 
+0) topActivityInfo=ActivityInfo{eb1c0a7 hel
+ium314.keyboard.keyboard.KlipyPanelActivity
+} launchCookies=[] 
+positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=false 
+isInteractive=false isVisible=false 
+isVisibleRequested=false 
+isTopActivityNoDisplay=false 
+isSleeping=false locusId=null 
+displayAreaFeatureId=1 
+isTopActivityTransparent=true 
+isActivityStackTransparent=true 
+lastNonFullscreenBounds=Rect(276, 694 - 
+804, 1774) leafTaskBoundsFromOptions= 
+false capturedLink=null 
+capturedLinkTimestamp=0 
+requestedVisibleTypes=503 topActivityReques
+tOpenInBrowserEducationTimestamp=0 
+appCompatTaskInfo=AppCompatTaskInfo { 
+topActivityInSizeCompat=false isLeafTask= 
+true eligibleForLetterboxEducation= false 
+isLetterboxEducationEnabled= false 
+isLetterboxDoubleTapEnabled= false 
+eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false 
+isFromLetterboxDoubleTap= false 
+topActivityLetterboxVerticalPosition= -1 
+topActivityLetterboxHorizontalPosition= -1 
+topActivityLetterboxWidth=-1 
+topActivityLetterboxHeight=-1 
+topActivityAppBounds=Rect(0, 0 - 1080, 
+2400) 
+isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false 
+hasMinAspectRatioOverride=false 
+topActivityLetterboxBounds=null 
+topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null 
+isAppBubble=false}, pipChange = null, 
+remoteTransitionInfo = null, 
+displayChanges = null, requestedLocation = 
+null, userChange = null, 
+windowingLayerChange = null, 
+fullscreenRequestChange = null, flags = 0, 
+debugId = 13489 }
+05-17 18:49:33.928  1621  3956 D 
+CoreBackPreview: Window{1151d0a u0 com.orio
+n.kboard.debug/helium314.keyboard.keyboard.
+KlipyPanelActivity}: Setting back callback 
+OnBackInvokedCallbackInfo{mCallback=android
+.window.IOnBackInvokedCallback$Stub$Proxy@c
+6fffd6, mPriority=-1, 
+mIsAnimationCallback=false, 
+mOverrideBehavior=0}
+05-17 18:49:33.930  1621  3956 D 
+WindowManager: setClientSurface Surface(nam
+e=VRI-com.orion.kboard.debug/helium314.keyb
+oard.keyboard.KlipyPanelActivity#141573)/@0
+x1275257 for 1151d0a com.orion.kboard.debug
+/helium314.keyboard.keyboard.KlipyPanelActi
+vity
+05-17 18:49:33.938  1621  1690 V 
+WindowManager: Sent Transition (#13489) 
+createdAt=05-17 18:49:33.893 via 
+request=TransitionRequestInfo { type = 
+OPEN, triggerTask = TaskInfo{userId=0 
+taskId=3736 effectiveUid=10714 displayId=0 
+isRunning=true baseIntent=Intent { 
+flg=0x10800000 cmp=com.orion.kboard.debug/h
+elium314.keyboard.keyboard.KlipyPanelActivi
+ty } baseActivity=ComponentInfo{com.orion.k
+board.debug/helium314.keyboard.keyboard.Kli
+pyPanelActivity} topActivity=ComponentInfo{
+com.orion.kboard.debug/helium314.keyboard.k
+eyboard.KlipyPanelActivity} 
+origActivity=null realActivity=ComponentInf
+o{com.orion.kboard.debug/helium314.keyboard
+.keyboard.KlipyPanelActivity} 
+realActivityIsAppLockEnabled=false 
+numActivities=1 lastActiveTime=434466509 
+supportsMultiWindow=true 
+supportsMultiWindowWithoutConstraints=true 
+resizeMode=1 isResizeable=true minWidth=-1 
+minHeight=-1 defaultMinSize=220 
+token=WCT{RemoteToken{9a579e5 Task{f651505 
+#3736 type=standard 
+A=10714:com.orion.kboard.debug}}} 
+topActivityType=1 
+pictureInPictureParams=null 
+shouldDockBigOverlays=false 
+launchIntoPipHostTaskId=-1 
+lastParentTaskIdBeforePip=-1 
+displayCutoutSafeInsets=Rect(0, 132 - 0, 
+0) topActivityInfo=ActivityInfo{2b6dcba hel
+ium314.keyboard.keyboard.KlipyPanelActivity
+} launchCookies=[] 
+positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=false 
+isInteractive=false isVisible=false 
+isVisibleRequested=false 
+isTopActivityNoDisplay=false 
+isSleeping=false locusId=null 
+displayAreaFeatureId=1 
+isTopActivityTransparent=true 
+isActivityStackTransparent=true 
+lastNonFullscreenBounds=Rect(276, 694 - 
+804, 1774) leafTaskBoundsFromOptions= 
+false capturedLink=null 
+capturedLinkTimestamp=0 
+requestedVisibleTypes=503 topActivityReques
+tOpenInBrowserEducationTimestamp=0 
+appCompatTaskInfo=AppCompatTaskInfo { 
+topActivityInSizeCompat=false isLeafTask= 
+true eligibleForLetterboxEducation= false 
+isLetterboxEducationEnabled= false 
+isLetterboxDoubleTapEnabled= false 
+eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false 
+isFromLetterboxDoubleTap= false 
+topActivityLetterboxVerticalPosition= -1 
+topActivityLetterboxHorizontalPosition= -1 
+topActivityLetterboxWidth=-1 
+topActivityLetterboxHeight=-1 
+topActivityAppBounds=Rect(0, 0 - 1080, 
+2400) 
+isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false 
+hasMinAspectRatioOverride=false 
+topActivityLetterboxBounds=null 
+topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null 
+isAppBubble=false}, pipChange = null, 
+remoteTransitionInfo = null, 
+displayChanges = null, requestedLocation = 
+null, userChange = null, 
+windowingLayerChange = null, 
+fullscreenRequestChange = null, flags = 0, 
+debugId = 13489 }
+05-17 18:57:06.595  1621  1767 I 
+NativeLibraryHelper: extractNativeLibs 
+specified, checking for extracted lib 
+libjni_latinime.so
+05-17 18:57:07.226  1621  1706 W 
+ActivityTaskManager: Force removing 
+ActivityRecord{4294780 u0 com.orion.kboard.
+debug/helium314.keyboard.keyboard.KlipyPane
+lActivity t3736 f}}: app died, no saved 
+state
+05-17 18:57:07.226  1621  1888 W 
+UsageStatsService: Unexpected activity 
+event reported! (com.orion.kboard.debug/hel
+ium314.keyboard.keyboard.KlipyPanelActivity
+ event : 23 instanceId : 21997914)
+05-17 18:57:07.433 14632 14632 I adbd    : 
+adbd service requested 
+'shell,v2,TERM=xterm-256color,raw:am start 
+-n com.orion.kboard.debug/helium314.keyboar
+d.keyboard.KlipyPanelActivity'
+05-17 18:57:07.520  1621  4764 V 
+ActivityTaskManager: 
+TaskLaunchParamsModifier: phase=2 
+task=Task{8e2336f #3737 type=standard 
+A=10714:com.orion.kboard.debug} 
+activity=ActivityRecord{138947703 u0 com.or
+ion.kboard.debug/helium314.keyboard.keyboar
+d.KlipyPanelActivity t-1} 
+display-from-task=0 display-id=0 
+task-display-area-windowing-mode=1 suggeste
+d-display-area=DefaultTaskDisplayArea@14992
+5081 inherit-from-task=fullscreen 
+non-freeform-task-display-area display-area
+=DefaultTaskDisplayArea@149925081 
+default-portrait 
+freeform-size-mismatch=Rect(276, 694 - 
+804, 1774)
+05-17 18:57:07.520  1621  4764 I 
+ActivityTaskManager: START u0 
+{flg=0x10000000 xflg=0x4 cmp=com.orion.kboa
+rd.debug/helium314.keyboard.keyboard.KlipyP
+anelActivity} with LAUNCH_MULTIPLE from 
+uid 2000 (com.android.shell) 
+(BAL_ALLOW_ALLOWLISTED_UID) result code=0
+05-17 18:57:07.521  2078  2102 V 
+WindowManagerShell: Transition requested 
+(#13497): android.os.BinderProxy@1491f20 
+TransitionRequestInfo { type = OPEN, 
+triggerTask = TaskInfo{userId=0 
+taskId=3737 effectiveUid=10714 displayId=0 
+isRunning=true baseIntent=Intent { 
+flg=0x10800000 cmp=com.orion.kboard.debug/h
+elium314.keyboard.keyboard.KlipyPanelActivi
+ty } baseActivity=ComponentInfo{com.orion.k
+board.debug/helium314.keyboard.keyboard.Kli
+pyPanelActivity} topActivity=ComponentInfo{
+com.orion.kboard.debug/helium314.keyboard.k
+eyboard.KlipyPanelActivity} 
+origActivity=null realActivity=ComponentInf
+o{com.orion.kboard.debug/helium314.keyboard
+.keyboard.KlipyPanelActivity} 
+realActivityIsAppLockEnabled=false 
+numActivities=1 lastActiveTime=434920129 
+supportsMultiWindow=true 
+supportsMultiWindowWithoutConstraints=true 
+resizeMode=1 isResizeable=true minWidth=-1 
+minHeight=-1 defaultMinSize=220 
+token=WCT{android.os.BinderProxy@65e30d9} 
+topActivityType=1 
+pictureInPictureParams=null 
+shouldDockBigOverlays=false 
+launchIntoPipHostTaskId=-1 
+lastParentTaskIdBeforePip=-1 
+displayCutoutSafeInsets=Rect(0, 132 - 0, 
+0) topActivityInfo=ActivityInfo{9d31a9e hel
+ium314.keyboard.keyboard.KlipyPanelActivity
+} launchCookies=[] 
+positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=false 
+isInteractive=false isVisible=false 
+isVisibleRequested=false 
+isTopActivityNoDisplay=false 
+isSleeping=true locusId=null 
+displayAreaFeatureId=1 
+isTopActivityTransparent=true 
+isActivityStackTransparent=true 
+lastNonFullscreenBounds=Rect(276, 694 - 
+804, 1774) leafTaskBoundsFromOptions= 
+false capturedLink=null 
+capturedLinkTimestamp=0 
+requestedVisibleTypes=503 topActivityReques
+tOpenInBrowserEducationTimestamp=0 
+appCompatTaskInfo=AppCompatTaskInfo { 
+topActivityInSizeCompat=false isLeafTask= 
+true eligibleForLetterboxEducation= false 
+isLetterboxEducationEnabled= false 
+isLetterboxDoubleTapEnabled= false 
+eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false 
+isFromLetterboxDoubleTap= false 
+topActivityLetterboxVerticalPosition= -1 
+topActivityLetterboxHorizontalPosition= -1 
+topActivityLetterboxWidth=-1 
+topActivityLetterboxHeight=-1 
+topActivityAppBounds=Rect(0, 0 - 1080, 
+2400) 
+isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false 
+hasMinAspectRatioOverride=false 
+topActivityLetterboxBounds=null 
+topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null 
+isAppBubble=false}, pipChange = null, 
+remoteTransitionInfo = null, 
+displayChanges = null, requestedLocation = 
+null, userChange = null, 
+windowingLayerChange = null, 
+fullscreenRequestChange = null, flags = 0, 
+debugId = 13497 }
+05-17 18:57:07.677  1621  1923 I 
+InputMethodManagerService: Input method 
+reinstalling, clearing additional 
+subtypes: ComponentInfo{com.orion.kboard.de
+bug/helium314.keyboard.latin.LatinIME}
+05-17 18:57:07.797  1621  1923 I 
+InputMethodManagerService: Input method 
+reinstalling, clearing additional 
+subtypes: ComponentInfo{com.orion.kboard.de
+bug/helium314.keyboard.latin.LatinIME}
+05-17 18:57:08.754  1621  1690 V 
+WindowManager: Sent Transition (#13497) 
+createdAt=05-17 18:57:07.512 via 
+request=TransitionRequestInfo { type = 
+OPEN, triggerTask = TaskInfo{userId=0 
+taskId=3737 effectiveUid=10714 displayId=0 
+isRunning=true baseIntent=Intent { 
+flg=0x10800000 cmp=com.orion.kboard.debug/h
+elium314.keyboard.keyboard.KlipyPanelActivi
+ty } baseActivity=ComponentInfo{com.orion.k
+board.debug/helium314.keyboard.keyboard.Kli
+pyPanelActivity} topActivity=ComponentInfo{
+com.orion.kboard.debug/helium314.keyboard.k
+eyboard.KlipyPanelActivity} 
+origActivity=null realActivity=ComponentInf
+o{com.orion.kboard.debug/helium314.keyboard
+.keyboard.KlipyPanelActivity} 
+realActivityIsAppLockEnabled=false 
+numActivities=1 lastActiveTime=434920129 
+supportsMultiWindow=true 
+supportsMultiWindowWithoutConstraints=true 
+resizeMode=1 isResizeable=true minWidth=-1 
+minHeight=-1 defaultMinSize=220 
+token=WCT{RemoteToken{f8cd593 Task{8e2336f 
+#3737 type=standard 
+A=10714:com.orion.kboard.debug}}} 
+topActivityType=1 
+pictureInPictureParams=null 
+shouldDockBigOverlays=false 
+launchIntoPipHostTaskId=-1 
+lastParentTaskIdBeforePip=-1 
+displayCutoutSafeInsets=Rect(0, 132 - 0, 
+0) topActivityInfo=ActivityInfo{b361cce hel
+ium314.keyboard.keyboard.KlipyPanelActivity
+} launchCookies=[] 
+positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=false 
+isInteractive=false isVisible=false 
+isVisibleRequested=false 
+isTopActivityNoDisplay=false 
+isSleeping=true locusId=null 
+displayAreaFeatureId=1 
+isTopActivityTransparent=true 
+isActivityStackTransparent=true 
+lastNonFullscreenBounds=Rect(276, 694 - 
+804, 1774) leafTaskBoundsFromOptions= 
+false capturedLink=null 
+capturedLinkTimestamp=0 
+requestedVisibleTypes=503 topActivityReques
+tOpenInBrowserEducationTimestamp=0 
+appCompatTaskInfo=AppCompatTaskInfo { 
+topActivityInSizeCompat=false isLeafTask= 
+true eligibleForLetterboxEducation= false 
+isLetterboxEducationEnabled= false 
+isLetterboxDoubleTapEnabled= false 
+eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false 
+isFromLetterboxDoubleTap= false 
+topActivityLetterboxVerticalPosition= -1 
+topActivityLetterboxHorizontalPosition= -1 
+topActivityLetterboxWidth=-1 
+topActivityLetterboxHeight=-1 
+topActivityAppBounds=Rect(0, 0 - 1080, 
+2400) 
+isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false 
+hasMinAspectRatioOverride=false 
+topActivityLetterboxBounds=null 
+topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null 
+isAppBubble=false}, pipChange = null, 
+remoteTransitionInfo = null, 
+displayChanges = null, requestedLocation = 
+null, userChange = null, 
+windowingLayerChange = null, 
+fullscreenRequestChange = null, flags = 0, 
+debugId = 13497 }
+05-17 18:57:09.248  1621  1693 W 
+ActivityTaskManager: Activity top resumed 
+state loss timeout for 
+ActivityRecord{138947703 u0 com.orion.kboar
+d.debug/helium314.keyboard.keyboard.KlipyPa
+nelActivity t3737}
+05-17 18:57:09.248  1621  1693 W 
+ActivityTaskManager: Activity pause 
+timeout for ActivityRecord{138947703 u0 com
+.orion.kboard.debug/helium314.keyboard.keyb
+oard.KlipyPanelActivity t3737}
+05-17 18:57:11.044  1621  2245 D 
+CoreBackPreview: Window{caa3568 u0 com.orio
+n.kboard.debug/helium314.keyboard.keyboard.
+KlipyPanelActivity}: Setting back callback 
+OnBackInvokedCallbackInfo{mCallback=android
+.window.IOnBackInvokedCallback$Stub$Proxy@6
+ed3bfe, mPriority=-1, 
+mIsAnimationCallback=false, 
+mOverrideBehavior=0}
+05-17 18:57:11.057  8264  8264 D 
+VRI[KlipyPanelActivity]: WindowInsets 
+changed: 1080x1050 
+mandatorySystemGestures:[0,0,0,84] 
+05-17 18:57:11.066  8264  8264 D 
+VRI[KlipyPanelActivity]: WindowInsets 
+changed: 1080x0 
+mandatorySystemGestures:null 
+
+

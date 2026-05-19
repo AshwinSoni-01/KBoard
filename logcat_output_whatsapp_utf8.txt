@@ -1,0 +1,23 @@
+﻿
+05-17 16:23:12.132  1621  1690 V WindowManager: Sent Transition (#13243) createdAt=05-17 16:23:07.124 via request=TransitionRequestInfo { type = 
+OPEN, triggerTask = TaskInfo{userId=0 taskId=3690 effectiveUid=10714 displayId=0 isRunning=true baseIntent=Intent { flg=0x10800000 
+cmp=com.orion.kboard.debug/helium314.keyboard.keyboard.KlipyPanelActivity } 
+baseActivity=ComponentInfo{com.orion.kboard.debug/helium314.keyboard.keyboard.KlipyPanelActivity} 
+topActivity=ComponentInfo{com.orion.kboard.debug/helium314.keyboard.keyboard.KlipyPanelActivity} origActivity=null 
+realActivity=ComponentInfo{com.orion.kboard.debug/helium314.keyboard.keyboard.KlipyPanelActivity} realActivityIsAppLockEnabled=false numActivities=1 
+lastActiveTime=425679738 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 
+defaultMinSize=220 token=WCT{RemoteToken{e04fd28 Task{bce1aa9 #3690 type=standard A=10714:com.orion.kboard.debug}}} topActivityType=1 
+pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 
+- 0, 0) topActivityInfo=ActivityInfo{2322a41 helium314.keyboard.keyboard.KlipyPanelActivity} launchCookies=[] positionInParent=Point(0, 0) 
+parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=true 
+locusId=null displayAreaFeatureId=1 isTopActivityTransparent=true isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) 
+leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 
+topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true 
+eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false 
+topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= 
+-1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false 
+isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} 
+topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, 
+userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 13243 }
+
+

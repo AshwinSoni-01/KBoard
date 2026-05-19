@@ -1,0 +1,1000 @@
+﻿05-17 19:20:14.524  1621  1657 I ImeTracker: system_server:b9be3baf: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false displayId 0
+05-17 19:20:14.525  1621  1693 I ImeTracker: system_server:b9be3baf: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-17 19:20:14.530 15040 15040 W .windscribe.vpn: Failed to find entry 'classes.dex': Entry not found
+05-17 19:20:14.531 20417 20417 I Key_event: ACTION_DREAMING_STOPPED 
+05-17 19:20:14.532 10976 15094 I NearbyConnections: Get local endpoint id from the existing localEndpointId:BBQG (last:QBJF) for client 261921619(0p:com.google.android.gms.nearby.sharing)
+05-17 19:20:14.533 15040 15040 D nativeloader: Configuring clns-9 for other apk /data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/base.apk:/data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/split_config.arm64_v8a.apk:/data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/split_config.xxhdpi.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/lib/arm64:/data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/base.apk!/lib/arm64-v8a:/data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/split_config.xxhdpi.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.windscribe.vpn
+05-17 19:20:14.535  1621  1621 W AccessibilityManagerService:  wait for adding window timeout: 10182
+05-17 19:20:14.545 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:138 RegisterScanner: in shim layer, UUID=4c1862b0-7f2f-4cf0-8c52-652e7e55439e
+05-17 19:20:14.548 14177 15092 I Dck     : (REDACTED) disableDckSupport: %s
+05-17 19:20:14.550 14177 15092 E Dck     : Could not get ProviderInfo when resolving the content provider authority. [CONTEXT service_id=289 ]
+05-17 19:20:14.550 14177 15092 E Dck     : Samsung Content Provider failed app verification [CONTEXT service_id=289 ]
+05-17 19:20:14.550 14177 15092 I Dck     : [WirelessCapabilitiesFeatures] wccSysProp: 2 [CONTEXT service_id=289 ]
+05-17 19:20:14.550 14177 15092 I Dck     : [WirelessCapabilitiesFeatures] wccOverride: not set [CONTEXT service_id=289 ]
+05-17 19:20:14.552   494   494 I lowmemorykiller: Kill 'in.amazon.mShop.android.shopping' (12409), uid 10255, oom_score_adj 975 to free 85904kB rss, 28908kB anon rss, 46324kB swap, 0kB dmabuf_pss, 0kB dmabuf_rss; reason: low watermark is breached and swap is low (74748kB < 314572kB)
+05-17 19:20:14.561 10976 13375 I NearbySharing: Advertising has started with mode BACKGROUND, Bt enabled : false
+05-17 19:20:14.565  3846 25017 I AudioBufferManager: audio-buffer-0: Audio recording finished, got 128000 samples.
+05-17 19:20:14.565  3846  5263 I AmbientMusicDetector: Received music trigger with last-matched track ID '0'  () from shard ''
+05-17 19:20:14.565  3846  5263 I NnfpMusicRecognizer: SoundSearch FP fallback configuration: AutoOnDemand: false SoSe Fps: false
+05-17 19:20:14.574 14177 15092 I Dck     : (REDACTED) [WirelessCapabilitiesFeatures] returned wcc: %s
+05-17 19:20:14.574 14177 15092 I Dck     : Dck module condition - isDckModuleEligible: true [CONTEXT service_id=289 ]
+05-17 19:20:14.574 14177 15092 I Dck     : (REDACTED) [GatedIntentOperation] Intent propagated: %s
+05-17 19:20:14.581  1621  4770 D BiometricService: canAuthenticate: User=0, Caller=0, Authenticators=32768
+05-17 19:20:14.581  1621  4770 D BiometricService/PreAuthInfo: getCanAuthenticateInternal Modality: 1 AuthenticatorStatus: 9
+05-17 19:20:14.581  1621  4770 D AuthService: canAuthenticate, userId: 0, callingUserId: 0, authenticators: 32768, result: 11
+05-17 19:20:14.582 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:239 ScanFilterEnable: in shim layer
+05-17 19:20:14.583  1621  2269 D BiometricService: canAuthenticate: User=0, Caller=0, Authenticators=32768
+05-17 19:20:14.583  1621  2269 D BiometricService/PreAuthInfo: getCanAuthenticateInternal Modality: 1 AuthenticatorStatus: 9
+05-17 19:20:14.583  1621  2269 D AuthService: canAuthenticate, userId: 0, callingUserId: 0, authenticators: 32768, result: 11
+05-17 19:20:14.585  4188  4188 W JobService: onNetworkChanged() not implemented in com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService. Must override in a subclass.
+05-17 19:20:14.590 10976 13375 I NearbySharing: Starting scanning for Fast Initiation.
+05-17 19:20:14.594 10976 13375 I NearbySharing: Started scanning for FastInitiation with mode: SCAN_MODE_BALANCED
+05-17 19:20:14.597  1621  1996 W JobServiceContext: Sending onNetworkChanged for a job that isn't started. JobStatus{4083938 androidx.work.systemjobscheduler:u0a274/81844 #UnblockWgParamsWorker#@androidx.work.systemjobscheduler@com.windscribe.vpn/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10274 TIME=-3m7s6ms:none NET READY}
+05-17 19:20:14.597  1621  1996 W JobServiceContext: Sending onNetworkChanged for a job that isn't started. JobStatus{23f9d11 androidx.work.systemjobscheduler:u0a274/81845 #NotificationWorker#@androidx.work.systemjobscheduler@com.windscribe.vpn/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10274 TIME=-3m6s434ms:none NET READY}
+05-17 19:20:14.605   494   494 I lowmemorykiller: Kill 'com.reddit.frontpage' (12397), uid 10696, oom_score_adj 975 to free 70844kB rss, 31928kB anon rss, 38316kB swap, 0kB dmabuf_pss, 0kB dmabuf_rss; reason: low watermark is breached and swap is low (80776kB < 314572kB)
+05-17 19:20:14.606  2521  2521 W JobService: onNetworkChanged() not implemented in com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain. Must override in a subclass.
+05-17 19:20:14.608 15040 15040 D CompatChangeReporter: Compat change id reported: 202956589; UID 10274; state: ENABLED
+05-17 19:20:14.618  1621  4767 D SensorService: Unregistering client listener for PID 6250
+05-17 19:20:14.624   896   896 I Zygote  : Process 6250 exited due to signal 9 (Killed)
+05-17 19:20:14.629  1621  2245 I ActivityManager: Process com.instagram.android (pid 6250) has died: cch  +85 CEM 
+05-17 19:20:14.630 14177 11262 I Dck     : Check and resume all keys that were suspended due to device lost if any [CONTEXT service_id=289 ]
+05-17 19:20:14.630 14177 11262 I Dck     : [DckEvents] Handling resume all keys that were suspended due to device lost [CONTEXT service_id=289 ]
+05-17 19:20:14.634  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10489/pid_6250
+05-17 19:20:14.634 14177  7558 I Dck     : [AgnosticClearcutEventLogger] storedAccountInfoOptional is empty, pulling info from provider. [CONTEXT service_id=289 ratelimit_period="10 MINUTES" skipped=23 ]
+05-17 19:20:14.637 10976 13375 I NearbySharing: Fast Initiation Scanning has started
+05-17 19:20:14.638 10976 13375 I NearbySharing: Dismissing HUN as there's no device nearby.
+05-17 19:20:14.640 14177 23260 I Dck     : (REDACTED) disableDckSupport: %s
+05-17 19:20:14.640 10976 15094 I NearbyMediums: NFC discovery successfully started.
+05-17 19:20:14.643 14177 23260 E Dck     : Could not get ProviderInfo when resolving the content provider authority. [CONTEXT service_id=289 ]
+05-17 19:20:14.643 14177 23260 E Dck     : Samsung Content Provider failed app verification [CONTEXT service_id=289 ]
+05-17 19:20:14.643 14177 23260 I Dck     : [WirelessCapabilitiesFeatures] wccSysProp: 2 [CONTEXT service_id=289 ]
+05-17 19:20:14.643  2722  2763 D IwlanDataService: onCapabilitiesChanged: 120 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=125264Kbps LinkDnBandwidth>=66956Kbps TransportInfo: <SSID: "JIO Wifi 5Ghz", BSSID: 5a:23:e0:80:e3:d9, MAC: ac:3e:b1:1e:2c:5c, IP: /192.168.31.62, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 1020Mbps, Tx Link speed: 1020Mbps, Max Supported Tx Link speed: 1200Mbps, Calculated Tx : 832Mbps, Rx Link speed: 1080Mbps, Max Supported Rx Link speed: 1200Mbps, Calculated Rx : 928Mbps, Frequency: 5785MHz, Net ID: 76, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"JIO Wifi 5Ghz"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 OwnerUid: 1000 AdminUids: [1000] SSID: "JIO Wifi 5Ghz" UnderlyingNetworks: Null]
+05-17 19:20:14.644  2722  2763 D IwlanDataService: Network 120 connected using transport WIFI
+05-17 19:20:14.644 14177 23260 I Dck     : [WirelessCapabilitiesFeatures] wccOverride: not set [CONTEXT service_id=289 ]
+05-17 19:20:14.644 14177 23260 I Dck     : (REDACTED) [WirelessCapabilitiesFeatures] returned wcc: %s
+05-17 19:20:14.644 14177 23260 I Dck     : Dck module condition - isDckModuleEligible: true [CONTEXT service_id=289 ]
+05-17 19:20:14.645 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:215 ScanFilterAdd: in shim layer
+05-17 19:20:14.646 14177 15092 I SystemUpdate: [Phone,PhoneModuleInitIntentOperation] Enabling the system update activity since the user is allowed to update.
+05-17 19:20:14.648 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:182 ScanFilterParamSetup: in shim layer, clientIf=1
+05-17 19:20:14.648 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:215 ScanFilterAdd: in shim layer
+05-17 19:20:14.648 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:182 ScanFilterParamSetup: in shim layer, clientIf=1
+05-17 19:20:14.648 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:150 Scan: in shim layer started
+05-17 19:20:14.648 14019 14045 I bluetooth: system/gd/hci/le_scanning_manager_impl.cc:836 stop_scan: Scanning already stopped, return. caller=configure_scan
+05-17 19:20:14.649  2722  2930 D IwlanNetworkService: onCapabilitiesChanged: 120
+05-17 19:20:14.650 14177 15120 I PersonalSafety: ConnectivityProtectionLockingIntentOperation: cancelled task [CONTEXT service_id=310 ]
+05-17 19:20:14.650  1621  1704 W ActivityManager: Rescheduling restart of crashed service com.google.android.googlequicksearchbox/org.chromium.content.app.SandboxedProcessService0:2 in 0ms for mem-pressure-event
+05-17 19:20:14.651 20346 20599 D DeviceStateHelper: Wifi freq: 5785
+05-17 19:20:14.651  2404  3545 W SHANNON_IMS: 0127 [CONN] NetworkSpecifier and TransportInfo are not valid (DefaultNetworkCallback%updateSubscriptionId:121)
+05-17 19:20:14.651  2404  3545 I SHANNON_IMS: 0128 [CONN] network:120 WIFI connected, subId: -1 [SLID:0] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+05-17 19:20:14.651  2404  3641 W SHANNON_IMS: 0129 [CONN] NetworkSpecifier and TransportInfo are not valid (DefaultNetworkCallback%updateSubscriptionId:121)
+05-17 19:20:14.651  2404  3641 I SHANNON_IMS: 0130 [CONN] network:120 WIFI connected, subId: -1 [SLID:1] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+05-17 19:20:14.653 20346 20686 I WifiSignalInfo: onCapabilitiesChanged: rssi:-45
+05-17 19:20:14.654 14019 14045 I bluetooth: system/gd/hci/le_address_manager.cc:254 register_client: Client registered
+05-17 19:20:14.654 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:150 Scan: in shim layer stopped
+05-17 19:20:14.654 14019 14059 W BtScan.ScanRadioStats: recordScanRadioStop(caller=configureRegularScanParams): No scan radio to stop
+05-17 19:20:14.654 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:315 SetScanParameters: in shim layer, scannerId1m=1, scannerIdCoded=0
+05-17 19:20:14.654 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:150 Scan: in shim layer started
+05-17 19:20:14.654 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:138 RegisterScanner: in shim layer, UUID=b023d4b6-0a21-4cc3-ba44-e62cbdc068ce
+05-17 19:20:14.655  1621  1706 D ActivityManager: Delaying restart of ServiceRecord{3390d26 u0 com.google.android.googlequicksearchbox/org.chromium.content.app.SandboxedProcessService0:2 c:com.google.android.googlequicksearchbox} because all clients are frozen
+05-17 19:20:14.656 14019 14045 I bluetooth: system/gd/hci/le_scanning_manager_impl.cc:836 stop_scan: Scanning already stopped, return. caller=configure_scan
+05-17 19:20:14.656 14019 14045 I bluetooth: system/gd/hci/le_address_manager.cc:269 unregister_client: Client unregistered
+05-17 19:20:14.656 14019 14045 I bluetooth: system/gd/hci/le_address_manager.cc:254 register_client: Client registered
+05-17 19:20:14.660  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55540, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10489 RequestorUid: 10489 RequestorPkg: com.instagram.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.660  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55523, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10489 RequestorUid: 10489 RequestorPkg: com.instagram.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.660  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55526, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10489 RequestorUid: 10489 RequestorPkg: com.instagram.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.660  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55528, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10489 RequestorUid: 10489 RequestorPkg: com.instagram.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.660  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55530, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10489 RequestorUid: 10489 RequestorPkg: com.instagram.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.661  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55532, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10489 RequestorUid: 10489 RequestorPkg: com.instagram.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.661  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55542, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10489 RequestorUid: 10489 RequestorPkg: com.instagram.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.663   929   959 I bthal.activity: LogActivities: BALANCED ScanMode
+05-17 19:20:14.669 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:239 ScanFilterEnable: in shim layer
+05-17 19:20:14.669 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:215 ScanFilterAdd: in shim layer
+05-17 19:20:14.669 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:182 ScanFilterParamSetup: in shim layer, clientIf=2
+05-17 19:20:14.669 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:215 ScanFilterAdd: in shim layer
+05-17 19:20:14.669 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:182 ScanFilterParamSetup: in shim layer, clientIf=2
+05-17 19:20:14.671   929   959 I bthal.activity: LogActivities: Enable LE Scanning, 0x2042
+05-17 19:20:14.672   929  1120 I bthal.debug_central: Command Complete Event of LE_SET_EXTENDED_SCAN_ENABLE, opcode:2042
+05-17 19:20:14.672   929  1120 I bthal.flowcontrol: HciEventPreProcess: HCI Event 0xe Opcode 0x2042 Length 6 unhandled by LeSetExtentedScanEnableEvent
+05-17 19:20:14.673   932   973 D CHRE    : @ 436303.059: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x28 msgType 112 payload size 14
+05-17 19:20:14.673   932   973 I CHRE    : @ 436303.060: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+05-17 19:20:14.673   932   973 I CHRE    : @ 436303.060: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+05-17 19:20:14.673   929   959 I bthal.activity: LogActivities: Disable LE Scanning, 0x2042
+05-17 19:20:14.673   896   896 I Zygote  : Process 11740 exited due to signal 9 (Killed)
+05-17 19:20:14.674   929  1120 I bthal.debug_central: Command Complete Event of LE_SET_EXTENDED_SCAN_ENABLE, opcode:2042
+05-17 19:20:14.674   929  1120 I bthal.flowcontrol: HciEventPreProcess: HCI Event 0xe Opcode 0x2042 Length 6 unhandled by LeSetExtentedScanEnableEvent
+05-17 19:20:14.675 14177  7557 W Dck     : [DckEvents] No active account found in account PDS [CONTEXT service_id=289 ]
+05-17 19:20:14.675   929   959 I bthal.activity: LogActivities: LOW_LATENCY ScanMode
+05-17 19:20:14.676   929   959 I bthal.activity: LogActivities: Enable LE Scanning, 0x2042
+05-17 19:20:14.677   929  1120 I bthal.debug_central: Command Complete Event of LE_SET_EXTENDED_SCAN_ENABLE, opcode:2042
+05-17 19:20:14.677   929  1120 I bthal.flowcontrol: HciEventPreProcess: HCI Event 0xe Opcode 0x2042 Length 6 unhandled by LeSetExtentedScanEnableEvent
+05-17 19:20:14.677  2368  3482 D SHANNON_RCS: 8067 [0][PROX][TELE] onCapabilitiesChanged, Network: 120, NetworkCapabilities: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=125264Kbps LinkDnBandwidth>=66956Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.62, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 1020Mbps, Tx Link speed: 1020Mbps, Max Supported Tx Link speed: 1200Mbps, Calculated Tx : 832Mbps, Rx Link speed: 1080Mbps, Max Supported Rx Link speed: 1200Mbps, Calculated Rx : 928Mbps, Frequency: 5785MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 UnderlyingNetworks: Null] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+05-17 19:20:14.678 15040 15040 V GraphicsEnvironment: Currently set values for:
+05-17 19:20:14.678 15040 15040 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+05-17 19:20:14.678 15040 15040 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+05-17 19:20:14.678 15040 15040 V GraphicsEnvironment: com.windscribe.vpn is not listed in per-application setting
+05-17 19:20:14.678 15040 15040 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+05-17 19:20:14.678  2368  3482 D SHANNON_RCS: 8068 [1][PROX][TELE] onCapabilitiesChanged, Network: 120, NetworkCapabilities: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=125264Kbps LinkDnBandwidth>=66956Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.62, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 1020Mbps, Tx Link speed: 1020Mbps, Max Supported Tx Link speed: 1200Mbps, Calculated Tx : 832Mbps, Rx Link speed: 1080Mbps, Max Supported Rx Link speed: 1200Mbps, Calculated Rx : 928Mbps, Frequency: 5785MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 UnderlyingNetworks: Null] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+05-17 19:20:14.679  1621  4771 I ActivityManager: Process yo.app.free (pid 11740) has died: cch  +85 CEM 
+05-17 19:20:14.680  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10283/pid_11740
+05-17 19:20:14.680 14177 14177 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.appset.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsApiService }
+05-17 19:20:14.680 14177  7558 W Dck     : [DckEvents] No active account found in account PDS [CONTEXT service_id=289 ]
+05-17 19:20:14.681 15040 15040 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+05-17 19:20:14.686 10976 15094 I NearbyMediums: In ScanningCancellationFlag, service-id=NearbySharing has become the first scanner. The flag has been reset.
+05-17 19:20:14.690 14177 14865 W Dck     : [DckEvents] No active account found in account PDS [CONTEXT service_id=289 ]
+05-17 19:20:14.692   927  1685 D sound_trigger_hw: handle_put_data_tunnel: enter, is_voice_recognition = false
+05-17 19:20:14.692   927  1685 D sound_trigger_platform: st_platform_stop_buffering: type: 1
+05-17 19:20:14.693   927  1685 D audio_hw_patch: patch_release_audio_patch: patch handle 1499
+05-17 19:20:14.694   896   896 I Zygote  : Process 12397 exited due to signal 9 (Killed)
+05-17 19:20:14.695 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:138 RegisterScanner: in shim layer, UUID=d15008d3-2380-46c1-8e8c-e734be797506
+05-17 19:20:14.696  1621  1657 I ActivityManager: Process com.reddit.frontpage (pid 12397) has died: cch  +75 CEM 
+05-17 19:20:14.696 10976 15099 I NearbySharing: Failed to log test code 11, due to clearcutLogger is null.
+05-17 19:20:14.697  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10696/pid_12397
+05-17 19:20:14.703 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:239 ScanFilterEnable: in shim layer
+05-17 19:20:14.703 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:215 ScanFilterAdd: in shim layer
+05-17 19:20:14.703 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:182 ScanFilterParamSetup: in shim layer, clientIf=3
+05-17 19:20:14.703 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:215 ScanFilterAdd: in shim layer
+05-17 19:20:14.703 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:182 ScanFilterParamSetup: in shim layer, clientIf=3
+05-17 19:20:14.703 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:215 ScanFilterAdd: in shim layer
+05-17 19:20:14.703 14019 14059 I bt_shim_scanner: system/main/shim/le_scanning_manager.cc:182 ScanFilterParamSetup: in shim layer, clientIf=3
+05-17 19:20:14.707 10976 10976 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+05-17 19:20:14.710 10976 13146 I NearbySharing: Loading certificates with visibility ALL_CONTACTS
+05-17 19:20:14.711  1621  2686 I PackageManager: getInstalledPackages: callingUid=10154 flags=134217728 updatedFlags=135004160 userId=0
+05-17 19:20:14.711 10976 15094 I NearbyMediums: Started BLE scanning, service-id=NearbySharing, is-extended-advert=true, power-level=2, scan-mode=3
+05-17 19:20:14.719 25111 25141 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=713 ]
+05-17 19:20:14.720  1621  1657 W ActivityManager: Foreground service started from background can not have location/camera/microphone access: service org.kustom.widget/.WidgetService
+05-17 19:20:14.720  1621  1657 I ActivityManager: Background started FGS: Allowed [callingPackage: org.kustom.widget; callingUid: 10487; uidState: FGS ; uidBFSL: [BFSL]; BFGS denied: false; intent: Intent { cmp=org.kustom.widget/.WidgetService }; code:PROC_STATE_FGS; tempAllowListReason:<null>; allowWiu:-1; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null; isBindService:false]; startForegroundDelayMs:436270512
+05-17 19:20:14.721 10976 10976 D WearableService: Creating wearable service asynchronously.
+05-17 19:20:14.723 25111 25147 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[cbf644fa-47ae]>Handler" thread_id=719 ]
+05-17 19:20:14.726   494   494 I lowmemorykiller: Kill 'com.google.android.settings.intelligence' (13589), uid 10128, oom_score_adj 965 to free 67200kB rss, 22192kB anon rss, 34272kB swap, 0kB dmabuf_pss, 0kB dmabuf_rss; reason: low watermark is breached and swap is low (63176kB < 314572kB)
+05-17 19:20:14.731  2213 15052 D NetworkMonitor/120: PROBE_HTTPS https://www.google.com/generate_204 time=358ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Sun, 17 May 2026 13:50:13 GMT], X-Android-Received-Millis=[1779025814731], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1779025814627]}
+05-17 19:20:14.733  2213 15051 D NetworkMonitor/120: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=574ms
+05-17 19:20:14.739 10976 13146 I NearbySharing: Saving the private certificate to file nearby_sharing_private_certificate_file_for_all_contacts.
+05-17 19:20:14.743 10976 15094 I NearbyConnections: Listening to visibility changes for client 261921619
+05-17 19:20:14.747 10976 10976 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.nearby.presence.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+05-17 19:20:14.748 10976 15099 I NearbyMediums: Matched service ID NearbySharing to GATT advertisement BleAdvertisement { version=2, socketVersion=2, isFast=false, serviceIdHash=[ 0xfc 0x9f 0x5e ], data=[ 0x23 0xfc 0x9f 0x5e 0x33 0x42 0x38 0x46 0x1d 0x06 0xc8 0x6e 0x90 0xef 0x0f 0xa3 0xe2 0xf6 0x40 0x55 0x3e 0x45 0x65 0x09 0xfd 0x3c 0x0b 0x41 0x73 0x68 0x77 0x69 0x6e 0x27 0x73 0x20 0x50 0x43 0xa0 0xb3 0x39 0xf2 0x17 0x77 0x00 0x00 ], deviceToken=[ 0x7c 0xb9 ], rxAdvertisement=null }.
+05-17 19:20:14.750  1621  1657 D ActivityManager: sync unfroze 10464 com.google.android.apps.messaging for 7
+05-17 19:20:14.756  1621  1970 W DnsManager: onPrivateDnsConfigChanged(120, PrivateDnsConfig{strict:dns.adguard-dns.com/[/2a10:50c0::ad1:ff, /2a10:50c0::ad2:ff, /94.140.14.14, /94.140.15.15], dohName=, dohIps=[], dohPath=, dohPort=-1})
+05-17 19:20:14.757  2213 22214 D NetworkMonitor/120: Strict mode hostname resolution 10ms OK [/2a10:50c0::ad1:ff, /2a10:50c0::ad2:ff, /94.140.14.14, /94.140.15.15] for dns.adguard-dns.com
+05-17 19:20:14.758  1621  4764 W ApplicationInfo: Large ApplicationInfo parcel: size=17880 package=com.google.android.GoogleCamera splits=45 sharedLibs=7 resDirs=2 overlayPaths=2
+05-17 19:20:14.758  1621  4764 W ParceledListSlice: Element #506 is 17884 bytes.
+05-17 19:20:14.758  1621  1970 D DnsManager: sendDnsConfigurationForNetwork(ResolverParamsParcel{netId: 120, sampleValiditySeconds: 1800, successThreshold: 25, minSamples: 8, maxSamples: 64, baseTimeoutMsec: 0, retryCount: 0, servers: [2409:40c4:153:71cf:da23:e0ff:fe80:e3d7, 192.168.31.1], domains: [lan], tlsName: dns.adguard-dns.com, tlsServers: [94.140.14.14, 94.140.15.15], tlsFingerprints: [], caCertificate: , tlsConnectTimeoutMs: 0, resolverOptions: null, transportTypes: [1], meteredNetwork: false, dohParams: null, interfaceNames: [wlan0]})
+05-17 19:20:14.759 10976 15094 I NearbyConnections: Found BleAdvertisement [ 0x23 0xfc 0x9f 0x5e 0x33 0x42 0x38 0x46 0x1d 0x06 0xc8 0x6e 0x90 0xef 0x0f 0xa3 0xe2 0xf6 0x40 0x55 0x3e 0x45 0x65 0x09 0xfd 0x3c 0x0b 0x41 0x73 0x68 0x77 0x69 0x6e 0x27 0x73 0x20 0x50 0x43 0xa0 0xb3 0x39 0xf2 0x17 0x77 0x00 0x00 ] (with EndpointId 3B8F and EndpointInfo [ 0x06 0xc8 0x6e 0x90 0xef 0x0f 0xa3 0xe2 0xf6 0x40 0x55 0x3e 0x45 0x65 0x09 0xfd 0x3c 0x0b 0x41 0x73 0x68 0x77 0x69 0x6e 0x27 0x73 0x20 0x50 0x43 ])
+05-17 19:20:14.760 10976 10996 I Wear_Controller: Wearable module requires a companion app to be installed.
+05-17 19:20:14.760 10976 10996 I WearableService: onCreate: Wearable Services not starting. Wear is not available on this device.
+05-17 19:20:14.763 10976 15094 I NearbyConnections: ClientProxy(261921619 0p:com.google.android.gms.nearby.sharing) reporting onEndpointFound(3B8F)
+05-17 19:20:14.763 10976 15094 I NearbyConnections: ClientProxy(261921619) reporting onEndpointDistanceChanged(3B8F, UNKNOWN)
+05-17 19:20:14.765 10976 26904 D WearableService: onGetService: waiting for onCreate to be completed.
+05-17 19:20:14.769 10976 26904 W WearableService: onGetService: Wear is not available on this device. Calling package: com.google.android.gms
+05-17 19:20:14.772 10976 15094 I NearbySharing: NearbySharing Internal event EndpointDiscovered(endpointId=3B8F)
+05-17 19:20:14.776  4336  6041 I KWGTSCoreService: Enabling location updates LocationProviderRequest(priority=LOW_POWER, fastestInterval=60000, interval=600000, smallestDisplacement=100.0)
+05-17 19:20:14.777   494   494 I lowmemorykiller: Kill 'com.snapchat.android' (11357), uid 10346, oom_score_adj 965 to free 77340kB rss, 36760kB anon rss, 85960kB swap, 0kB dmabuf_pss, 0kB dmabuf_rss; reason: low watermark is breached and swap is low (55600kB < 314572kB)
+05-17 19:20:14.777   896   896 I Zygote  : Process 12409 exited due to signal 9 (Killed)
+05-17 19:20:14.782  1621  1768 I ActivityManager: Process in.amazon.mShop.android.shopping (pid 12409) has died: cch  +75 CEM 
+05-17 19:20:14.782  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55711, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10255 RequestorUid: 10255 RequestorPkg: in.amazon.mShop.android.shopping UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.783  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55713, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10255 RequestorUid: 10255 RequestorPkg: in.amazon.mShop.android.shopping UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.783  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55717, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10255 RequestorUid: 10255 RequestorPkg: in.amazon.mShop.android.shopping UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.785 14177 21351 W GoogleApiManager: Not showing notification since connectionResult is not user-facing: krd{statusCode=API_UNAVAILABLE, resolution=null, message=null, clientMethodKey=null}
+05-17 19:20:14.788  1621  1768 I ActivityManager: Process com.google.android.settings.intelligence (pid 13589) has died: cch  +65 CEM 
+05-17 19:20:14.789   896   896 I Zygote  : Process 13589 exited due to signal 9 (Killed)
+05-17 19:20:14.790  1621  4764 W ActivityManager: Receiver with filter android.content.IntentFilter@41471f6 already registered for pid 4336, callerPackage is org.kustom.widget
+05-17 19:20:14.790  1621  4764 W ActivityManager: Skipping manifest association check for null package. SourceUid: -1, SourcePkg: null, TargetUid: 10487, TargetPkg: org.kustom.widget
+05-17 19:20:14.791 14177 11262 W Dck     : [WearManager] failed to list wearables [CONTEXT service_id=289 ]
+05-17 19:20:14.791 14177 11262 W Dck     : java.util.concurrent.ExecutionException: m20.kti: 17: API: Wearable.API is not available on this device. Connection failed with: krd{statusCode=API_UNAVAILABLE, resolution=null, message=null, clientMethodKey=null}
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.adso.f(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):28)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.adso.d(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):39)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.udv.b(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):13)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.sbu.j(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):3)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.sbu.i(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):2)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.odh.j(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):145)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.tnp.a(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):19)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.tnc.g(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):10)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.acel.k(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):1)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.acet.run(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):88)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.aldw.run(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):21)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.lkm.c(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):50)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.lkm.run(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):92)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at bkph.run(:com.google.android.gms@261861035@26.18.61 (260400-914183794):8)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at java.lang.Thread.run(Thread.java:1572)
+05-17 19:20:14.791 14177 11262 W Dck     : Caused by: m20.kti: 17: API: Wearable.API is not available on this device. Connection failed with: krd{statusCode=API_UNAVAILABLE, resolution=null, message=null, clientMethodKey=null}
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.lam.a(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):13)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.ldd.a(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):29)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.kvm.run(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):7)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.ljw.c(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):12)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.kvo.a(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):12)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at com.google.android.gms.common.api.internal.BasePendingResult.p(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):72)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at com.google.android.gms.common.api.internal.BasePendingResult.n(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):35)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.kvg.j(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):16)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.kuv.e(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):3)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.kwk.q(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):48)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.kwk.d(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):10)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.kwk.g(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):218)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.kwk.onConnectionFailed(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):2)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.lbw.a(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):3)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.lav.a(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):7)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.lao.c(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):77)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.lap.handleMessage(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):266)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at android.os.Handler.dispatchMessage(Handler.java:125)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.acjb.b(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):1)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at m20.acjb.dispatchMessage(:com.google.android.gms.optional_dck@261861041@26.18.61 (150400-0):139)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at android.os.Looper.loopOnce(Looper.java:296)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at android.os.Looper.loop(Looper.java:397)
+05-17 19:20:14.791 14177 11262 W Dck     : 	at android.os.HandlerThread.run(HandlerThread.java:139)
+05-17 19:20:14.791 14177 11262 I Dck     : (REDACTED) [AllWearableKeysGetter] getAllWearableKeys(%s)
+05-17 19:20:14.792  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10255/pid_12409
+05-17 19:20:14.792  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10128/pid_13589
+05-17 19:20:14.793  1621  4764 W ActivityManager: Receiver with filter android.content.IntentFilter@678d064 already registered for pid 4336, callerPackage is org.kustom.widget
+05-17 19:20:14.794 14177 11262 I Dck     : (REDACTED) [AllWearableKeysGetter] transmitting results: %s
+05-17 19:20:14.801 14177  7558 W Dck     : [DckEvents] No active account found in account PDS [CONTEXT service_id=289 ]
+05-17 19:20:14.803 14177  7557 W Dck     : [DckEvents] No active account found in account PDS [CONTEXT service_id=289 ]
+05-17 19:20:14.803  4336  5472 I KWGTSNetworkUpdateJob: Requesting network update, force false, location only false, text false, bitmap false
+05-17 19:20:14.809 15040 15040 D CompatChangeReporter: Compat change id reported: 312399441; UID 10274; state: ENABLED
+05-17 19:20:14.824  4336  5489 I KWGTSWeatherData: Weather update required: false last: 193m>150m [delta 193m>240m OR distance 0.0km>10.0km OR source OWM!=OWM OR lang:en!=en]
+05-17 19:20:14.824  4336  5489 I KWGTSAqData: Air quality update required: false, last: 4488m>15m [delta 4488m>10080m OR distance 0.11525948981087218>100.0km OR lang en!=en]
+05-17 19:20:14.830  1621  2006 D AppWidgetServiceImpl: Trying to notify widget update for package org.kustom.widget with widget id: 880
+05-17 19:20:14.835 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:14.835 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:14.835 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:14.835 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:14.835 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:14.835 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:14.851  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55747, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10346 RequestorUid: 10346 RequestorPkg: com.snapchat.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.851   896   896 I Zygote  : Process 11357 exited due to signal 9 (Killed)
+05-17 19:20:14.851  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55650, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10346 RequestorUid: 10346 RequestorPkg: com.snapchat.android UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:14.852  1621  4764 I ActivityManager: Process com.snapchat.android (pid 11357) has died: cch  +65 CEM 
+05-17 19:20:14.858 25111 25147 I BugleRcsEngine: Rcs is enabled from user settings: true [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=719 ]
+05-17 19:20:14.859  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10346/pid_11357
+05-17 19:20:14.861  4188  4309 I .x.android.lite: Waiting for a blocking GC ProfileSaver
+05-17 19:20:14.863  4188  4362 I TRuntime.CctTransportBackend: Making request to: https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/batchlog
+05-17 19:20:14.922  1621  2006 D AppWidgetServiceImpl: Trying to notify widget update for package org.kustom.widget with widget id: 876
+05-17 19:20:14.926 15040 15040 I MultiDex: VM with version 2.1.0 has multidex support
+05-17 19:20:14.926 15040 15040 I MultiDex: Installing application
+05-17 19:20:14.926 15040 15040 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+05-17 19:20:14.928 10976 13146 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-17 19:20:14.930 15040 15040 W FirebaseApp: Default FirebaseApp failed to initialize because no default options were found. This usually means that com.google.gms:google-services was not applied to your gradle project.
+05-17 19:20:14.931 15040 15040 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+05-17 19:20:14.935 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:14.935 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:14.935 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:14.935 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:14.935 10976 13146 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-17 19:20:14.938 15040 15040 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+05-17 19:20:14.939 10976 10993 I NearbyConnections: ClientProxy(0p:com.google.android.gms.nearby.sharing) allow WebRtc to use mobile data.
+05-17 19:20:14.939 10976 10993 I NearbyConnections: Client 261921619 requested to update advertising options.
+05-17 19:20:14.940 15040 15040 E .windscribe.vpn: hiddenapi: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (runtime_flags=0, domain=core-platform, api=max-target-o) from Lj$/util/DesugarCollections; (domain=app, TargetSdkVersion=35) using reflection: denied
+05-17 19:20:14.940 10976 15099 I Nearby  : (REDACTED) Note nearby client %s for operation %s
+05-17 19:20:14.940 15040 15040 E .windscribe.vpn: hiddenapi: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (runtime_flags=0, domain=core-platform, api=max-target-o) from Lj$/util/DesugarCollections; (domain=app, TargetSdkVersion=35) using reflection: denied
+05-17 19:20:14.940 15040 15040 E .windscribe.vpn: hiddenapi: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (runtime_flags=0, domain=core-platform, api=max-target-o) from Lj$/util/DesugarCollections; (domain=app, TargetSdkVersion=35) using reflection: denied
+05-17 19:20:14.941  1621  2006 D AppWidgetServiceImpl: Trying to notify widget update for package org.kustom.widget with widget id: 877
+05-17 19:20:14.943 10976 15099 I NearbyConnections: [InstantConnectionPcpMgr] In invalidateTxAdvertisementScanning(by pre_updateAdvertising) tx advertisement scanning skipped or stopped for endpointId: serviceId:NearbySharing isScreenUnlocked:true isAdvertising:true powerLevel:LOW isTxScanning:false
+05-17 19:20:14.943 10976 15099 I NearbyConnections: [PcpManager] In updateAdvertisingOptions() advertisingMediums:[WIFI_DIRECT, WIFI_HOTSPOT, WIFI_AWARE, WIFI_LAN, BLE] upgradeMediums:[USB, WIFI_LAN, WIFI_DIRECT, WIFI_AWARE, WIFI_HOTSPOT, WEB_RTC, BLE_L2CAP, BLUETOOTH, BLE, NFC] requireRegisterWifiStatusChangedCallback:true
+05-17 19:20:14.944 15040 15040 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+05-17 19:20:14.944 15040 15040 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+05-17 19:20:14.945 15040 15147 D WM-ForceStopRunnable: The default process name was not specified.
+05-17 19:20:14.946 15040 15147 D WM-ForceStopRunnable: Performing cleanup operations.
+05-17 19:20:14.951 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:14.951 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:14.951 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:14.951 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:14.955  1621  2006 D AppWidgetServiceImpl: Trying to notify widget update for package org.kustom.widget with widget id: 879
+05-17 19:20:14.961 10976 13375 I NearbySharing: [NS_DISCOVERY] DiscoveryController reported Discovered(endpointId=3B8F, metadata=DeviceMetadata(version=0, deviceType=3, deviceName=Ashwin's PC, displayName=Ashwin Soni, modelName=, imageUri=content://com.google.android.gms.fileprovider/nearby_share_images/-432472265.jpg, isSelfShare=true, isKnown=true, bluetoothMacAddress=[-96, -77, 57, -14, 23, 119], vendorId=0, matchesLocalQrCode=false))
+05-17 19:20:14.963 10976 13375 I NearbySharing: NearbySharing Internal event ReceiverEndpointMapping(endpointId=3B8F, receiverId=17)
+05-17 19:20:14.972 10976 15094 I NearbySharing: [NS_CONTROL] DiscoveryStateManager emitted ReportDiscovered(id=17, metadata=DeviceMetadata(version=0, deviceType=3, deviceName=Ashwin's PC, displayName=Ashwin Soni, modelName=, imageUri=content://com.google.android.gms.fileprovider/nearby_share_images/-432472265.jpg, isSelfShare=true, isKnown=true, bluetoothMacAddress=[-96, -77, 57, -14, 23, 119], vendorId=0, matchesLocalQrCode=false)).
+05-17 19:20:14.972 10976 15094 I NearbySharing: NearbySharing Internal event ReceiverDiscovered(receiverId=17, deviceName=Ashwin's PC, isKnown=true, isSelfShare=true, deviceType=3, hasMatchingQrCode=false, isExternal=false, providerName=null, providerId=null, cloudReceiverSessionId=null, cloudSharingId=null)
+05-17 19:20:14.972 10976 13372 I NearbySharing: SendProvider: SendManager event Discovered(receiverId=17, receiverMetadata=DeviceMetadata(version=0, deviceType=3, deviceName=Ashwin's PC, displayName=Ashwin Soni, modelName=, imageUri=content://com.google.android.gms.fileprovider/nearby_share_images/-432472265.jpg, isSelfShare=true, isKnown=true, bluetoothMacAddress=[-96, -77, 57, -14, 23, 119], vendorId=0, matchesLocalQrCode=false))
+05-17 19:20:14.972 10976 13372 I NearbySharing: SendProvider: SendManager event DistanceChanged(receiverId=17, distance=1, rangingData=null)
+05-17 19:20:14.972 10976 15098 I NearbySharing: ShareTargetDiscoveredCallback: onShareTargetDiscovered()
+05-17 19:20:14.973 10976 15098 I NearbySharing: ShareTargetDiscoveredCallback: onShareTargetDistanceChanged() with distance: 1, rangingData: null
+05-17 19:20:14.981 15040 15149 D CompatChangeReporter: Compat change id reported: 270674727; UID 10274; state: ENABLED
+05-17 19:20:14.982 15040 15149 I vpn     : {"tm":"2026-05-17 19:20:14.981","lvl":"info","mod":"vpn","msg":"[DeviceInfo]
+05-17 19:20:14.982 15040 15149 I vpn     : -------------
+05-17 19:20:14.982 15040 15149 I vpn     : [API]: 37
+05-17 19:20:14.982 15040 15149 I vpn     : [Brand]: google
+05-17 19:20:14.982 15040 15149 I vpn     : [Device]: bluejay
+05-17 19:20:14.982 15040 15149 I vpn     : [Model]: Pixel 6a
+05-17 19:20:14.982 15040 15149 I vpn     : [Manufacturer]: Google
+05-17 19:20:14.982 15040 15149 I vpn     : [Release]: 17
+05-17 19:20:14.982 15040 15149 I vpn     : [App Release Version]: 2208
+05-17 19:20:14.982 15040 15149 I vpn     : [Start of log]:
+05-17 19:20:14.982 15040 15149 I vpn     : ------------------------------------------------------
+05-17 19:20:14.982 15040 15149 I vpn     : "}
+05-17 19:20:14.982 15040 15149 I vpn     : {"tm":"2026-05-17 19:20:14.982","lvl":"info","mod":"vpn","msg":"VPN state initialized with Disconnected"}
+05-17 19:20:14.986 15040 15149 I vpn     : {"tm":"2026-05-17 19:20:14.985","lvl":"info","mod":"vpn","msg":"Preferred:  Manual: "}
+05-17 19:20:14.986 15040 15149 I vpn     : {"tm":"2026-05-17 19:20:14.986","lvl":"info","mod":"vpn","msg":"[wg:443:NextUp, ikev2:500:Disconnected, udp:443:Disconnected, tcp:443:Disconnected, stunnel:443:Disconnected, wstunnel:443:Disconnected]"}
+05-17 19:20:14.989 10976 15099 I NearbyConnections: Instant Connection Security key rotated.
+05-17 19:20:14.989 10976 15099 I NearbyConnections: Scheduled invalidation of the HPKE key alarm (delayMillis:8000) for client 261921619
+05-17 19:20:14.989 10976 15099 I NearbyConnections: Get local endpoint id from random generation PCZT (last:BBQG) for client 261921619
+05-17 19:20:14.992 15040 15156 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: Writing exception to parcel
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: java.lang.SecurityException: Settings key: <bluetooth_name> is only readable to apps with targetSdkVersion lower than or equal to: 31
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at com.android.providers.settings.SettingsProvider.checkReadableAnnotation(SettingsProvider.java:2595)
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at com.android.providers.settings.SettingsProvider.enforceSettingReadable(SettingsProvider.java:2505)
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at com.android.providers.settings.SettingsProvider.getSecureSetting(SettingsProvider.java:1795)
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:483)
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at android.content.ContentProvider.call(ContentProvider.java:2756)
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:648)
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:309)
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at android.os.Binder.execTransactInternal(Binder.java:1364)
+05-17 19:20:14.993  1621  3972 E DatabaseUtils: 	at android.os.Binder.execTransact(Binder.java:1323)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: (REDACTED) Querying wifi usable channels failed with exception
+05-17 19:20:15.010 10976 15099 I NearbyMediums: java.lang.SecurityException: Location mode is disabled for the device
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3392)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at android.os.Parcel.createException(Parcel.java:3376)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at android.os.Parcel.readException(Parcel.java:3359)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at android.os.Parcel.readException(Parcel.java:3301)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at android.net.wifi.IWifiManager$Stub$Proxy.getUsableChannels(IWifiManager.java:6713)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at android.net.wifi.WifiManager.getUsableChannels(WifiManager.java:12105)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at dpks.z(:com.google.android.gms@261861035@26.18.61 (260400-914183794):21)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at dpks.v(:com.google.android.gms@261861035@26.18.61 (260400-914183794):16)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at dlar.K(:com.google.android.gms@261861035@26.18.61 (260400-914183794):8)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at dlar.J(:com.google.android.gms@261861035@26.18.61 (260400-914183794):2)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at dlhc.aq(:com.google.android.gms@261861035@26.18.61 (260400-914183794):28)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at dlhc.al(:com.google.android.gms@261861035@26.18.61 (260400-914183794):243)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at dlhc.A(:com.google.android.gms@261861035@26.18.61 (260400-914183794):155)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at dlcl.call(:com.google.android.gms@261861035@26.18.61 (260400-914183794):13)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at java.util.concurrent.FutureTask.run(FutureTask.java:328)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at bkjq.c(:com.google.android.gms@261861035@26.18.61 (260400-914183794):50)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at bkjq.run(:com.google.android.gms@261861035@26.18.61 (260400-914183794):66)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at bkph.run(:com.google.android.gms@261861035@26.18.61 (260400-914183794):8)
+05-17 19:20:15.010 10976 15099 I NearbyMediums: 	at java.lang.Thread.run(Thread.java:1572)
+05-17 19:20:15.010 10976 15099 W NearbyConnections: [PcpManager] Role:WIFI_DIRECT_GROUP_CLIENT failed to get usable or available channels.
+05-17 19:20:15.012 10976 15099 I NearbyMediums: [DeviceCapabilities] Get wifi usable channels from cache for mode WFD_GO (tryToRefreshCache:false channels:[])
+05-17 19:20:15.012 10976 15099 W NearbyConnections: [PcpManager] Role:WIFI_DIRECT_GROUP_OWNER failed to get usable or available channels.
+05-17 19:20:15.013 10976 15099 I NearbyMediums: [DeviceCapabilities] Get wifi usable channels from cache for mode STA (tryToRefreshCache:false channels:[])
+05-17 19:20:15.013 10976 15099 W NearbyConnections: [PcpManager] Role:STA failed to get usable or available channels.
+05-17 19:20:15.013 10976 15099 I NearbyMediums: [DeviceCapabilities] Get wifi usable channels from cache for mode AWARE (tryToRefreshCache:false channels:[])
+05-17 19:20:15.013 10976 15099 W NearbyConnections: [PcpManager] Role:WIFI_AWARE failed to get usable or available channels.
+05-17 19:20:15.013 10976 15099 W NearbyConnections: In generateRxInstantConnectionAdvBytes() can't get WFD & HS & Aware connectivity capabilities. (advertisingMediums:[WIFI_DIRECT, WIFI_HOTSPOT, WIFI_AWARE, WIFI_LAN, BLE])
+05-17 19:20:15.015 10976 15099 I NearbyConnections: In generateRxInstantConnectionAdvBytes() advertisingMediums:[WIFI_DIRECT, WIFI_HOTSPOT, WIFI_AWARE, WIFI_LAN, BLE] capabilitiesSize:1 apFreq:5785 wfdGcUsableOrAvailableChs:[] wfdGoUsableOrAvailableChs:[] hsStaUsableOrAvailableChs:[] awareUsableOrAvailableChs:[] rxAdvertisement(size:39):A0:17:1A:18:E4:EC:33:F2:C9:1E:81:08:F2:89:57:3A:D1:85:FC:39:F7:7D:5B:0A:02:EC:B4:CF:A6:DB:74:4C:4C:26:83:15:01:16:99
+05-17 19:20:15.022 14019 14066 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:77 Unregister: in shim layer
+05-17 19:20:15.023 14019 14045 I bluetooth: system/gd/hci/le_address_manager.cc:269 unregister_client: Client unregistered
+05-17 19:20:15.026 14019 14065 I bluetooth: bluetooth_private_gatt::gatt::server::isolation_manager: removing server (if any) associated with advertiser AdvertiserId(1)
+05-17 19:20:15.032  2213 22214 D NetworkMonitor/120: PROBE_PRIVDNS 328b987f-dnsotls-ds.metric.gstatic.com 274ms: [/2404:6800:4002:819::2003, /142.250.182.35]
+05-17 19:20:15.034  1621  3987 E AppOps  : attributionTag IWLAN not declared in manifest of com.google.android.iwlan
+05-17 19:20:15.034  1621  1970 D ConnectivityService: [120 WIFI] validation passed
+05-17 19:20:15.036  1621  1957 I WifiClientModeImpl: WifiConnectivityDiagnosticsCallback onConnectivityReportAvailable
+05-17 19:20:15.038  2722  2918 D EpdgTunnelManager[0]: reportValidationMetricsAtom: reason=2 validationResult=2 transportType=2 duration=997 validationTriggered=true
+05-17 19:20:15.038  2722  2918 D IwlanMetrics: Send metrics data IWLAN_UNDERLYING_NETWORK_VALIDATION_RESULT_REPORTED
+05-17 19:20:15.044 15040 15040 D nativeloader: Load /data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/lib/arm64/libwg-go.so using class loader ns clns-9 (caller=/data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/base.apk!classes2.dex): ok
+05-17 19:20:15.045 10976 15099 I NearbyMediums: Device token rotated, old deviceToken : [ 0xac 0xf7 ].
+05-17 19:20:15.056 15040 15040 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+05-17 19:20:15.062  1621  2192 D ConnectivityService: requestNetwork for uid/pid:10274/15040 activeRequest: null callbackRequest: 55787 [NetworkRequest [ REQUEST id=55788, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|UNAVAIL|NC
+05-17 19:20:15.062 15040 15040 I device-state-manager: {"tm":"2026-05-17 19:20:15.062","lvl":"info","mod":"device-state-manager","msg":"Network callback registered using registerDefaultNetworkCallback()"}
+05-17 19:20:15.063  1621  1957 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55788, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:15.063  1621  1970 D ConnectivityService: NetReassign [55788 : null ΓåÆ 120] [c 0] [a 0] [i 1]
+05-17 19:20:15.064 15040 15040 I windscribe-main: {"tm":"2026-05-17 19:20:15.064","lvl":"info","mod":"windscribe-main","msg":"Application startup finished."}
+05-17 19:20:15.064 15040 15175 I device-state-manager: {"tm":"2026-05-17 19:20:15.064","lvl":"info","mod":"device-state-manager","msg":"Network: online=false, no detail"}
+05-17 19:20:15.065 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:15.065","lvl":"debug","mod":"wsnet-wrapper","msg":"Initializing WSNet..."}
+05-17 19:20:15.065  1621  1957 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55788, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:15.065  1621  1957 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=55788, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:15.065  1621  1957 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55788, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:15.068 15040 15040 I network-info-manager: {"tm":"2026-05-17 19:20:15.068","lvl":"info","mod":"network-info-manager","msg":"Network detail unavailable"}
+05-17 19:20:15.068 10976 15099 D BluetoothAdapter: isLeEnabled(): ON
+05-17 19:20:15.073  1621  1889 W JobServiceContext: Sending onNetworkChanged for a job that isn't started. JobStatus{4083938 androidx.work.systemjobscheduler:u0a274/81844 #UnblockWgParamsWorker#@androidx.work.systemjobscheduler@com.windscribe.vpn/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10274 TIME=-3m7s483ms:none NET READY}
+05-17 19:20:15.073  1621  1889 W JobServiceContext: Sending onNetworkChanged for a job that isn't started. JobStatus{23f9d11 androidx.work.systemjobscheduler:u0a274/81845 #NotificationWorker#@androidx.work.systemjobscheduler@com.windscribe.vpn/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10274 TIME=-3m6s910ms:none NET READY}
+05-17 19:20:15.074 15040 15040 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=aacc6b28-f603-4e4a-aec0-c63e0c483c01, generation=0)
+05-17 19:20:15.074 14019 14066 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:158 StartAdvertisingSet: in shim layer
+05-17 19:20:15.074 14019 14066 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:184 StartAdvertisingSet: create advertising set, app_id:255, reg_id:-243
+05-17 19:20:15.074 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:423 allocate_advertiser: Removing advertiser id 0 from removed advertisers.
+05-17 19:20:15.076 14177 14177 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.appset.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsApiService }
+05-17 19:20:15.079 15040 15040 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=c81bcece-b3bc-45b6-899a-cc572ba2fedd, generation=0)
+05-17 19:20:15.081 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:665 create_extended_advertiser_with_id: Scheduling address rotation for advertiser_id=0
+05-17 19:20:15.081 14019 14045 I bluetooth: system/gd/hci/le_address_manager.cc:557 GetNextPrivateAddressIntervalRange: client=advertising_set_0, nonwake=7m4s, wake=13m29s
+05-17 19:20:15.081 14019 14045 I bluetooth: system/gd/hci/le_address_manager.cc:254 register_client: Client registered
+05-17 19:20:15.083  1621  3978 W ApplicationInfo: Large ApplicationInfo parcel: size=22568 package=com.google.android.googlequicksearchbox splits=5 sharedLibs=5 resDirs=2 overlayPaths=2
+05-17 19:20:15.083  1621  3978 W ParceledListSlice: Element #30 is 22572 bytes.
+05-17 19:20:15.084 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:1737 on_set_advertising_set_random_address_complete: update random address for advertising set 0 : xx:xx:xx:xx:0b:a6
+05-17 19:20:15.084 14177 14177 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.api.signin.service.START xflg=0x4 pkg=com.google.android.gms }
+05-17 19:20:15.084 14177 14177 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.api.signin.service.START xflg=0x4 pkg=com.google.android.gms }
+05-17 19:20:15.093  3846 23605 I AiAiEcho: Settings changed for uri: content://settings/secure/restart_nap_after_start
+05-17 19:20:15.094  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T17:00:00Z, expiry:2026-05-17T17:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: false}, { Feature:1, creation:2026-05-17T11:52:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true} [CONTEXT sampling_count=5 ]
+05-17 19:20:15.095  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 19:20:15.095  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 19:20:15.095  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 19:20:15.096  3846  4524 I AiAiEcho: #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: lockscreen [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 19:20:15.096  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 19:20:15.097  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T17:00:00Z, expiry:2026-05-17T17:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: false}, { Feature:1, creation:2026-05-17T11:52:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true} [CONTEXT sampling_count=5 ]
+05-17 19:20:15.097  1621  1768 W ApplicationInfo: Large ApplicationInfo parcel: size=23340 package=in.amazon.mShop.android.shopping splits=2 sharedLibs=3 resDirs=2 overlayPaths=2
+05-17 19:20:15.098  1621  1768 W ParceledListSlice: Element #116 is 23344 bytes.
+05-17 19:20:15.098  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 19:20:15.098  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 19:20:15.098  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 19:20:15.098  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 19:20:15.099  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T17:00:00Z, expiry:2026-05-17T17:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: false}, { Feature:1, creation:2026-05-17T11:52:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true} [CONTEXT sampling_count=5 ]
+05-17 19:20:15.101  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 19:20:15.101  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 19:20:15.101  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 19:20:15.103 15040 15147 D WM-Processor: t: processing WorkGenerationalId(workSpecId=aacc6b28-f603-4e4a-aec0-c63e0c483c01, generation=0)
+05-17 19:20:15.104  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 19:20:15.104  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T17:00:00Z, expiry:2026-05-17T17:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: false}, { Feature:1, creation:2026-05-17T11:52:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true} [CONTEXT sampling_count=5 ]
+05-17 19:20:15.105  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 19:20:15.105  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 19:20:15.105  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 19:20:15.106  3846  4524 I AiAiEcho: #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: home [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 19:20:15.107 15040 15147 D WM-Processor: t: processing WorkGenerationalId(workSpecId=c81bcece-b3bc-45b6-899a-cc572ba2fedd, generation=0)
+05-17 19:20:15.107  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 19:20:15.111 10976 10976 I NearbySharing: ShortcutInfoManager added shortcut Ashwin's PC
+05-17 19:20:15.111 10976 10976 I NearbyMediums: [InstantOnLostManager] Start instant onLost extended advertising, hashes = [ 0xda 0x09 0x40 0x14 ].
+05-17 19:20:15.112 10976 15099 I NearbyMediums: Successfully stopped BLE advertising for service NearbySharing
+05-17 19:20:15.112  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 3 (types=[9, 9, 1])
+05-17 19:20:15.113  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface glanceable_hub with targets# 0 (types=[])
+05-17 19:20:15.114  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-17 19:20:15.115  2078  2116 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-17 19:20:15.116  2078  2078 I WeatherSmartspaceView: setFormattedContentDescription: text=38┬░C, iconDescription=Clear, contentDescription=Clear, 38┬░C
+05-17 19:20:15.116  2078  2078 I WeatherSmartspaceView: setFormattedContentDescription: text=38┬░C, iconDescription=Clear, contentDescription=Clear, 38┬░C
+05-17 19:20:15.116  2078  2078 I WeatherData: Weather data parsed SUNNY ("Clear") 38┬░C from Bundle[{description=Clear, feedback_intent=null, explanation_intent=Supplier{VAL_PARCELABLE@136+1744}, is_gaia_linked_data=true, use_celsius=true, state=1, temperature=38}]
+05-17 19:20:15.117  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 2 (types=[9, 1])
+05-17 19:20:15.118  2078  2078 D LockscreenSmartspaceController: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=SmartspaceTarget{mSmartspaceTargetId='ambientData:sportsScore:/g/11nb5ws1b5', mHeaderAction=SmartspaceAction{mId='SPORTS', mIcon=null, mTitle=, mSubtitle=, mContentDescription=, mPendingIntent=null, mIntent=Intent { act=android.intent.action.VIEW dat=https://www.google.com/... }, mUserHandle=UserHandle{0}, mExtras=Bundle[mParcelledData.dataSize=3952]}, mBaseAction=SmartspaceAction{mId='', mIcon=null, mTitle=, mSubtitle=, mContentDescription=, mPendingIntent=null, mIntent=null, mUserHandle=UserHandle{0}, mExtras=Bundle[{feedback_intent=Supplier{VAL_PARCELABLE@40+2392}, explanation_intent=Supplier{VAL_PARCELABLE@2476+1436}, SCREEN_EXTRA=1}]}, mCreationTimeMillis=1779024212047, mExpiryTimeMillis=1779027300000, mScore=0.0, mActionChips=[], mIconGrid=[], mFeatureType=9, mSensitive=false, mShouldShowExpanded=false, mSourceNotificationKey='', mComponentName=ComponentInfo{package_name/class_name}, mUserHandle=UserHandle{0}, mAssociatedSmartspaceTargetId='null', mSliceUri=null, mWidget=null, mTemplateData=null, mRemoteViews=android.widget.RemoteViews@2ae47b0}, mSmartspaceActionId='', mEventType=8}
+05-17 19:20:15.126 10976 15099 D BluetoothAdapter: isLeEnabled(): ON
+05-17 19:20:15.131 15040 15040 D WM-WorkerWrapper: Starting work for com.windscribe.vpn.workers.worker.UnblockWgParamsWorker
+05-17 19:20:15.132 14177 14187 W Auth.Api.SignIn: [Service,SignInChimeraService] **************************** WARNING ***************************
+05-17 19:20:15.132 14177 14187 W Auth.Api.SignIn: You are using the deprecated legacy Google Sign-In APIs from
+05-17 19:20:15.132 14177 14187 W Auth.Api.SignIn: play-services-auth SDK. Please migrate to the Credential Manager
+05-17 19:20:15.132 14177 14187 W Auth.Api.SignIn: APIs, see https://goo.gle/gsi-migration.
+05-17 19:20:15.132 14177 14187 W Auth.Api.SignIn: ****************************************************************
+05-17 19:20:15.134 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:15.134 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:15.134 10560 10560 D SsCardRecyclerViewAdapter: [rmv] Refreshing RemoteViews card
+05-17 19:20:15.134 10560 10560 W AppWidgetHostView: can't inflate defaultView, missing defaultLayout, mInfo: null
+05-17 19:20:15.135  2078  2078 D SsCardRecyclerViewAdapter: [rmv] Refreshing RemoteViews card
+05-17 19:20:15.135  2078  2078 W AppWidgetHostView: can't inflate defaultView, missing defaultLayout, mInfo: null
+05-17 19:20:15.141 15040 15040 D WM-WorkerWrapper: Starting work for com.windscribe.vpn.workers.worker.NotificationWorker
+05-17 19:20:15.144 15040 15176 D migration: {"tm":"2026-05-17 19:20:15.143","lvl":"debug","mod":"migration","msg":"Starting notification data update."}
+05-17 19:20:15.155 14019 14066 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:158 StartAdvertisingSet: in shim layer
+05-17 19:20:15.155 14019 14066 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:184 StartAdvertisingSet: create advertising set, app_id:255, reg_id:-244
+05-17 19:20:15.155 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:423 allocate_advertiser: Removing advertiser id 1 from removed advertisers.
+05-17 19:20:15.155 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:665 create_extended_advertiser_with_id: Scheduling address rotation for advertiser_id=1
+05-17 19:20:15.155 14019 14045 I bluetooth: system/gd/hci/le_address_manager.cc:557 GetNextPrivateAddressIntervalRange: client=advertising_set_1, nonwake=7m25s, wake=14m23s
+05-17 19:20:15.158 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:1737 on_set_advertising_set_random_address_complete: update random address for advertising set 1 : xx:xx:xx:xx:c0:2a
+05-17 19:20:15.166 10976 15099 I NearbyMediums: Started BLE extended advertising. Regular Advertised : false, Fast Advertised : true, AdvertisingSetting : BleAdvertisingSetting{powerLevel= BALANCED_POWER, isConnectable= false, isPrivateGatt= true}.
+05-17 19:20:15.166 10976 15099 D BluetoothAdapter: isLeEnabled(): ON
+05-17 19:20:15.170 10976 10976 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-17 19:20:15.171 14019 14066 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:158 StartAdvertisingSet: in shim layer
+05-17 19:20:15.171 14019 14066 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:184 StartAdvertisingSet: create advertising set, app_id:255, reg_id:-245
+05-17 19:20:15.171 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:423 allocate_advertiser: Removing advertiser id 2 from removed advertisers.
+05-17 19:20:15.172 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:665 create_extended_advertiser_with_id: Scheduling address rotation for advertiser_id=2
+05-17 19:20:15.172 14019 14045 I bluetooth: system/gd/hci/le_address_manager.cc:557 GetNextPrivateAddressIntervalRange: client=advertising_set_2, nonwake=7m25s, wake=14m20s
+05-17 19:20:15.173 14019 14045 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:1737 on_set_advertising_set_random_address_complete: update random address for advertising set 2 : xx:xx:xx:xx:74:42
+05-17 19:20:15.174 10976 13375 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+05-17 19:20:15.176 10976 15099 I NearbyMediums: Started BLE Legacy advertising. Regular Header Advertised : false, Fast Advertised : true, AdvertisingSettings : BleAdvertisingSetting{powerLevel= BALANCED_POWER, isConnectable= false, isPrivateGatt= true}, isAcceptingConnection : false
+05-17 19:20:15.176 10976 15099 I NearbyMediums: Successfully started BLE advertising of size 23 for service NearbySharing, deviceToken : [ 0x0a 0xc4 ].
+05-17 19:20:15.188  3846  5263 I OnDemandManagerImpl: Not showing ondemand note for music score 0.13 (threshold: 0.48).
+05-17 19:20:15.191 10976 15099 I NearbyMediums: Successfully bound ServerSocket for service NearbySharing to the stable port 53601.
+05-17 19:20:15.192 10976 15099 I NearbyMediums: Successfully started listening for incoming Wifi Lan connections.
+05-17 19:20:15.194  1621  3978 W ApplicationInfo: Large ApplicationInfo parcel: size=21752 package=com.google.android.GoogleCamera splits=45 sharedLibs=7 resDirs=2 overlayPaths=2
+05-17 19:20:15.194  1621  3978 W ParceledListSlice: Element #506 is 21756 bytes.
+05-17 19:20:15.198  3846  5263 I NnfpMusicRecognizer: Finished recognition for region in and DB version 4065 with result: NOT_MUSIC
+05-17 19:20:15.199  3846  5263 I RecognitionStateHandler: Dsp model overrides: reloadDetectionModel = [true] : new squelch = [55000]
+05-17 19:20:15.199  3846  5263 I RecognitionStateHandler: Reconfiguration [# afys@27e097ab] Latest:[# aetw@e9a7e4ea]
+05-17 19:20:15.199 15040 15164 I app_icon_cache: {"tm":"2026-05-17 19:20:15.199","lvl":"info","mod":"app_icon_cache","msg":"Preloading 519 app icons..."}
+05-17 19:20:15.199 15040 15164 D DesktopExperienceFlags: Toggle override initialized to: false
+05-17 19:20:15.204  4188  4309 I .x.android.lite: WaitForGcToComplete blocked ProfileSaver on Background for 343.325ms
+05-17 19:20:15.206  3846  5263 I MusicRelayApiImpl: MusicRelayApiImpl -  AmbientMusicResult: # wrm@e5952b6d
+05-17 19:20:15.206  3846  5263 I MusicRecognitionHandler: Music recognition was skipped, because secondary music detector score below threshold (= 0.45)
+05-17 19:20:15.211 10976 15089 W NearbyPresence: TidepoolIdentityProvider: Main Tidepool status toggle not enabled! Returned empty shared credentials. [CONTEXT service_id=317 ]
+05-17 19:20:15.211 10976 15089 W NearbyPresence: TidepoolIdentityProvider: Main Tidepool status toggle not enabled! Returned empty broadcast credentials. [CONTEXT service_id=317 ]
+05-17 19:20:15.211 10976 15089 W NearbyPresence: TidepoolIdentityProvider: Main Tidepool status toggle not enabled! Returned empty shared credentials. [CONTEXT service_id=317 ]
+05-17 19:20:15.211 10976 15089 W NearbyPresence: TidepoolIdentityProvider: Main Tidepool status toggle not enabled! Returned empty broadcast credentials. [CONTEXT service_id=317 ]
+05-17 19:20:15.211  1621  3972 I WifiService: acquireMulticastLock uid=10144 lockTag=nearby-connections-57292303
+05-17 19:20:15.213 10976 15099 I Nearby  : (REDACTED) NsdManagerCompat acquired multicast lock %d.
+05-17 19:20:15.217  1621  1973 I serviceDiscovery: [MdnsAdvertiser] Adding service name: I1BDWlT8n14AAA, type: _FC9F5ED42C8A._tcp, subtypes: , hostAddresses: , hostname: null, port: 53601, network: null, expirationTime: null, txtRecord: {f=5785, n=MlJlEhwxsOpAXbncqnxHHqc, IPv4=192.168.31.62} with ID 1444 and subtypes {} advertisingOptions MdnsAdvertisingOptions{ }
+05-17 19:20:15.229 10976 15089 W NearbyPresence: TidepoolIdentityProvider: Main Tidepool status toggle not enabled! Returned empty broadcast credentials. [CONTEXT service_id=317 ]
+05-17 19:20:15.229 10976 15089 W NearbyPresence: TidepoolIdentityProvider: Main Tidepool status toggle not enabled! Returned empty shared credentials. [CONTEXT service_id=317 ]
+05-17 19:20:15.230  3846  5263 I AmbientMusicDetector: Pipeline run finished, restarting model: true
+05-17 19:20:15.236  2078  2093 W System  : A resource failed to call release. 
+05-17 19:20:15.236  2078  2093 W System  : A resource failed to call release. 
+05-17 19:20:15.236  2078  2093 W System  : A resource failed to call release. 
+05-17 19:20:15.236  3846  5263 I AmbientMusicServiceMana: Trying to load model /product/etc/firmware/music_detector.sound_model_tflite from 
+05-17 19:20:15.237  3846  5263 I AmbientMusicServiceMana: Applying config override: # aets@cb31000b
+05-17 19:20:15.238  3846  5263 I SmoothedLatchingClassif: Reconfiguring tflite model.
+05-17 19:20:15.240  3846  5263 I SoundTriggerManagerComp: Loading model 9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15
+05-17 19:20:15.240 15040 15160 I O4.i    : Provider GmsCore_OpenSSL not available
+05-17 19:20:15.240   927  1685 D sound_trigger_hw: stdev_stop_recognition: entry handle 1
+05-17 19:20:15.240   927  1685 D sound_trigger_platform: enable_ambient_music: enable 0
+05-17 19:20:15.241  1209  1209 D AOC     : F1:MSG: controller.cc, 273: AudioInCtrl: cmd ID: 0x0101, tag: 0xc7 [cntr = 18407]
+05-17 19:20:15.241   927  1685 D sound_trigger_hw: [1] stop sound model
+05-17 19:20:15.241   927  1685 D sound_trigger_hw: send_control_cmd:cmd 1
+05-17 19:20:15.241  1209  1209 D AOC     : F1:MSG: controller.cc, 811: AudioInCtrl: ipc: sound_trigger, cmd ID: 0x0101, tag: 0xc7, rc: 0
+05-17 19:20:15.241   927  1364 D sound_trigger_hw: handle_control_cmd:get cmd 1
+05-17 19:20:15.241  1621  3978 I SoundTriggerMiddlewareLogging: STOP_RECOGNITION (873)
+05-17 19:20:15.241   927  1685 D sound_trigger_hw: stdev_unload_sound_model: entry handle 1
+05-17 19:20:15.241   927  1685 D sound_trigger_hw: [1] unload sound model
+05-17 19:20:15.242   927  1685 D sound_trigger_hw: release client handle 1
+05-17 19:20:15.242  1209  1209 D AOC     : F1:MSG: controller.cc, 273: AudioInCtrl: cmd ID: 0x0109, tag: 0xc8 [cntr = 18408]
+05-17 19:20:15.242  1209  1209 D AOC     : F1:MSG: controller.cc, 811: AudioInCtrl: ipc: sound_trigger, cmd ID: 0x0109, tag: 0xc8, rc: 0
+05-17 19:20:15.242  1621  3978 I SoundTriggerMiddlewareLogging: UNLOAD_MODEL (873)
+05-17 19:20:15.242  1621  3978 W SoundTriggerHelper: Unload error: Attempting unload invalid generic model with id:9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15
+05-17 19:20:15.243  3846  5263 I AmbientMusicServiceMana: Re-starting music detector model.
+05-17 19:20:15.243  1621  3978 V SoundTriggerHelper: startRecognition
+05-17 19:20:15.243  1621  3978 V SoundTriggerHelper: isRecognitionAllowed
+05-17 19:20:15.243  1621  3978 V SoundTriggerHelper: deviceState: ENABLE
+05-17 19:20:15.243  1621  3978 V SoundTriggerHelper: updateRecognitionLocked
+05-17 19:20:15.243  1621  3978 V SoundTriggerHelper: isRecognitionAllowed
+05-17 19:20:15.243  1621  3978 V SoundTriggerHelper: deviceState: ENABLE
+05-17 19:20:15.243  1621  3978 V SoundTriggerHelper: prepareForRecognition
+05-17 19:20:15.245  1621  1704 W ActivityManager: Rescheduling restart of crashed service com.google.android.googlequicksearchbox/org.chromium.content.app.SandboxedProcessService0:2 in 0ms for mem-pressure-event
+05-17 19:20:15.245   927  1685 D sound_trigger_hw: stdev_load_sound_model: entry
+05-17 19:20:15.245   927  1685 D sound_trigger_hw: get client handle: 1
+05-17 19:20:15.245  1621  1706 D ActivityManager: Delaying restart of ServiceRecord{3390d26 u0 com.google.android.googlequicksearchbox/org.chromium.content.app.SandboxedProcessService0:2 c:com.google.android.googlequicksearchbox} because all clients are frozen
+05-17 19:20:15.245   927  1685 D sound_trigger_hw: [1] load sound model
+05-17 19:20:15.246  1209  1209 D AOC     : F1:MSG: controller.cc, 273: AudioInCtrl: cmd ID: 0x0107, tag: 0xc9 [cntr = 18409]
+05-17 19:20:15.247  1209  1209 D AOC     : F1:MSG: hotword_input_processor.cc, 754: Update size of ambient model as 16384
+05-17 19:20:15.251  1209  1209 D AOC     : F1:MSG: controller.cc, 811: AudioInCtrl: ipc: sound_trigger, cmd ID: 0x0107, tag: 0xc9, rc: 0
+05-17 19:20:15.251  1209  1209 D AOC     : F1:MSG: controller.cc, 273: AudioInCtrl: cmd ID: 0x0107, tag: 0xca [cntr = 18410]
+05-17 19:20:15.252  1209  1209 D AOC     : F1:MSG: hotword_input_processor.cc, 754: Update size of ambient model as 22932
+05-17 19:20:15.252  1209  1209 D AOC     : F1:MSG: controller.cc, 811: AudioInCtrl: ipc: sound_trigger, cmd ID: 0x0107, tag: 0xca, rc: 0
+05-17 19:20:15.252  1209  1209 D AOC     : F1:MSG: controller.cc, 273: AudioInCtrl: cmd ID: 0x0108, tag: 0xcb [cntr = 18411]
+05-17 19:20:15.252  1209  1209 E AOC     : F1:ERR: hotword_input_processor.cc, 849: Wrong CRC: 0x1e8da48d, expected: 0x24789a4f
+05-17 19:20:15.253  1209  1209 D AOC     : F1:MSG: controller.cc, 811: AudioInCtrl: ipc: sound_trigger, cmd ID: 0x0108, tag: 0xcb, rc: 0
+05-17 19:20:15.254  1621  3978 I SoundTriggerMiddlewareLogging: LOAD_MODEL ("9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15") -> 874
+05-17 19:20:15.254  1621  3978 V SoundTriggerHelper: startRecognitionLocked
+05-17 19:20:15.254  1621  3978 V SoundTriggerHelper: isRecognitionAllowed
+05-17 19:20:15.254  1621  3978 V SoundTriggerHelper: deviceState: ENABLE
+05-17 19:20:15.254   927  1685 D sound_trigger_hw: stdev_start_recognition_extended: HIDL 2.3
+05-17 19:20:15.254   927  1685 D sound_trigger_hw: stdev_start_recognition_internal: entry handle 1
+05-17 19:20:15.254   927  1685 D sound_trigger_hw: [1] start sound model
+05-17 19:20:15.254   927  1685 D sound_trigger_platform: enable_ambient_music: enable 1
+05-17 19:20:15.254   927  1685 D sound_trigger_hw: send_control_cmd:cmd 1
+05-17 19:20:15.254  1209  1209 D AOC     : F1:MSG: controller.cc, 273: AudioInCtrl: cmd ID: 0x0100, tag: 0xcc [cntr = 18412]
+05-17 19:20:15.254   927  1364 D sound_trigger_hw: handle_control_cmd:get cmd 1
+05-17 19:20:15.254  1209  1209 D AOC     : F1:MSG: controller.cc, 811: AudioInCtrl: ipc: sound_trigger, cmd ID: 0x0100, tag: 0xcc, rc: 0
+05-17 19:20:15.255  1621  3978 I SoundTriggerMiddlewareLogging: START_RECOGNITION (874, RecognitionConfig{captureRequested: true, phraseRecognitionExtras: [], audioCapabilities: 0, data: []}) -> android.os.Binder@66d7015
+05-17 19:20:15.255  1621  3978 I SoundTriggerHelper: startRecognition successful.
+05-17 19:20:15.255  1621  3978 W SoundTriggerService: error onStart(): Model 9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15 already started
+05-17 19:20:15.255  3846  5263 I AmbientMusicServiceMana: Trying to unloading model 12caddb1-acdb-4dce-8cb0-2e95a2313aee
+05-17 19:20:15.255  3846  5263 I SoundTriggerManagerComp: Unloading model 12caddb1-acdb-4dce-8cb0-2e95a2313aee
+05-17 19:20:15.255  1621  3978 W SoundTriggerHelper: Unload error: Attempting unload invalid generic model with id:12caddb1-acdb-4dce-8cb0-2e95a2313aee
+05-17 19:20:15.255  1621  3978 I SoundTriggerService: error onStop(): Model 12caddb1-acdb-4dce-8cb0-2e95a2313aee has no stats available
+05-17 19:20:15.257  3846  5263 I AmbientMusicServiceMana: Update config: # aets@cb31000b Success: true
+05-17 19:20:15.265 15040 15160 I secure_prefs: {"tm":"2026-05-17 19:20:15.265","lvl":"info","mod":"secure_prefs","msg":"Encrypted storage initialized successfully"}
+05-17 19:20:15.290  1621  1706 W ActivityManager: Skipping manifest association check for null package. SourceUid: -1, SourcePkg: null, TargetUid: 10487, TargetPkg: org.kustom.widget
+05-17 19:20:15.314  1745  1764 I pixel-thermal: cellular-emergency:38.261 raw data: cellular-emergency:38260.9 
+05-17 19:20:15.314  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:38.261 raw data: VIRTUAL-SKIN:38260.9 VIRTUAL-SKIN-CPU:38260.9 
+05-17 19:20:15.314  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=1993.23 err=2.73905 s_power=800 time_elapsed_ms=7016 p=1095.62 i=97.6063 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 19:20:15.314  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 241.73 mW)(S2M_VDD_CPUCL2: 533.49 mW)(S3M_VDD_CPUCL1: 167.71 mW)
+05-17 19:20:15.314  1745  1764 I pixel-thermal: VIRTUAL-SKIN:38.261 raw data: VIRTUAL-SKIN:38260.9 
+05-17 19:20:15.315  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:38.261 raw data: VIRTUAL-SKIN:38260.9 VIRTUAL-SKIN-CPU-GPU:38260.9 
+05-17 19:20:15.315  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3521.71 err=6.73905 s_power=800 time_elapsed_ms=7016 p=2021.71 i=700 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 19:20:15.315  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 241.73 mW)(S2M_VDD_CPUCL2: 533.49 mW)(S3M_VDD_CPUCL1: 167.71 mW)(S2S_VDD_G3D: 11.91 mW)
+05-17 19:20:15.315  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:38.261 raw data: VIRTUAL-SKIN:38260.9 VIRTUAL-SKIN-HINT:38260.9 
+05-17 19:20:15.315  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:38.261 raw data: VIRTUAL-SKIN:38260.9 VIRTUAL-SKIN-CHARGE:38260.9 
+05-17 19:20:15.315  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 1187.92
+05-17 19:20:15.315  1745  1764 I pixel-thermal: Successfully update cdev fcc sysfs to 4
+05-17 19:20:15.319  1621  1693 I BrightnessSynchronizer: Swallowing update of 11(i) by update: {[6105] 0.039266676(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=322078846}
+05-17 19:20:15.319  1621  1693 I BrightnessSynchronizer: Completed Update: {[6105] 0.039266676(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=322078846}
+05-17 19:20:15.319  1621  1693 I BrightnessSynchronizer: [6106] New Update 0.043306638(f) set brightness values:  12(i)
+05-17 19:20:15.340  2078  2078 D DLObserver: onReceive(); android.intent.action.BATTERY_CHANGED
+05-17 19:20:15.340  2078  2078 D DLObserver: plugged=2
+05-17 19:20:15.341  2078  2078 D SystemEventDataSource: onReceive: android.intent.action.BATTERY_CHANGED
+05-17 19:20:15.341  2078  2078 D PowerNotificationWarningsGoogleImpl: onReceive: android.intent.action.BATTERY_CHANGED
+05-17 19:20:15.341  2078  2078 D PulsarController: dispatchIntent: android.intent.action.BATTERY_CHANGED
+05-17 19:20:15.341  2078  2078 D IncompatibleChargerNotification: dispatchIntent: android.intent.action.BATTERY_CHANGED
+05-17 19:20:15.341  2078  2078 D BatteryReplacementNotification: battery health: 2, cycle count: 1310
+05-17 19:20:15.341  2078  2078 D KeyguardIndicationGoogle: isChargeLimitEnabled= true, user= 0
+05-17 19:20:15.341  2078  2078 D KeyguardIndicationGoogle: Charge limit enabled, charging policy = 4
+05-17 19:20:15.342  2078  2185 D GoogleBatteryDataSource: fetchDwellDefendStatus: CONNECTED
+05-17 19:20:15.342  2078  2185 D GoogleBatteryDataSource: fetchTempDefendStatus: t_sum=0, time_sum=0 t_avg=0 lst_v=0 lst_t=0 lst_u=0, dt=0, t=0 e=0
+05-17 19:20:15.342  2078  2185 D SystemEventDataSource: updatedEventData: SystemEventData(intentAction=android.intent.action.BATTERY_CHANGED, plugged=EventData(value=2), batteryScale=EventData(value=100), batteryLevel=EventData(value=80), chargingStatus=EventData(value=4), maxChargingCurrent=EventData(value=3000000), maxChargingVoltage=EventData(value=5000000), batteryStatus=EventData(value=4), halEventData=HalEventData(dockDefendStatus=EventData(value=-3), tempDefendEventData=EventData(value=false), dwellDefendEventData=EventData(value=false)), settingsEventData=SettingsEventData(dockDefenderBypass=EventData(value=0), chargingLimitSettings=EventData(value=1), dndState=EventData(value=false), airplaneState=EventData(value=false)), frameworkApiEventData=FrameworkApiEventData(batterySaverState=EventData(value=false), extremeBatterySaverState=EventData(value=false)))
+05-17 19:20:15.342  2078  2185 D DwellDefendBatteryModule: validate: false -> false
+05-17 19:20:15.342  2078  2185 D TempDefendBatteryModule: validate: false -> false
+05-17 19:20:15.344  2078 13058 D PowerUI : can't show warning due to - plugged: true status unknown: false
+05-17 19:20:15.372  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.uprobestats' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.396  1621  1693 I BrightnessSynchronizer: Swallowing update of 12(i) by update: {[6106] 0.043306638(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=322080219}
+05-17 19:20:15.397  1621  1693 I BrightnessSynchronizer: Completed Update: {[6106] 0.043306638(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=322080219}
+05-17 19:20:15.433  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.uwb' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.434  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.bt' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.435  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.widevine.nonupdatable' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.478  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.gmssystem' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.539  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.apex.cts.shim' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.548 15040 15160 I device-state-manager: {"tm":"2026-05-17 19:20:15.547","lvl":"info","mod":"device-state-manager","msg":"Network: online=true, no detail"}
+05-17 19:20:15.596  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.appsearch' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.599  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.art' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.630  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.profiling' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.630 15040 15168 D nativeloader: Load /data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/lib/arm64/libwsnet.so using class loader ns clns-9 (caller=/data/app/~~iFOLH8MV3EyN7TrC6YUszQ==/com.windscribe.vpn-lizawFJ1ZFwtCEs0o_HdXA==/base.apk!classes2.dex): ok
+05-17 19:20:15.648  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.mediaprovider' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.670  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.pixel.camera.hal' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.670  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.crashrecovery' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.678  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.resolv' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.717  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.configinfrastructure' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.720  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.media' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.727  4336  4336 I KWGTSWidgetService: Refresh: 
+05-17 19:20:15.727  4336  4336 I KWGTSWidgetService: Refresh: 
+05-17 19:20:15.777  4188  4362 I TRuntime.CctTransportBackend: Status Code: 200
+05-17 19:20:15.801  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.sdkext' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.816  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.hardware.biometrics.fingerprint.virtual' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.818  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.adservices' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.818  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.tethering' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.843 10976 10976 I NearbyPresence: (REDACTED) %s: Charging state changed: %b
+05-17 19:20:15.844 10976 15089 I NearbyPresence: (REDACTED) %s verified [==] new request %s equals to the old request
+05-17 19:20:15.853 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:15.852","lvl":"debug","mod":"wsnet-wrapper","msg":"wsnet version: 1.5.6-0-g2b3dd53"}
+05-17 19:20:15.855 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:15.855","lvl":"debug","mod":"wsnet-wrapper","msg":"c-ares version: 1.34.5"}
+05-17 19:20:15.870  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.cellbroadcast' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.871  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.pixel.wifi.ext' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:15.877 15040 15209 D wsnet-wrapper: {"tm":"2026-05-17 19:20:15.876","lvl":"debug","mod":"wsnet-wrapper","msg":"DNS servers in channel: [2409:40c4:153:71cf:da23:e0ff:fe80:e3d7]:53,192.168.31.1:53"}
+05-17 19:20:15.886  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.rkpd' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:16.033  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.pixel.euicc.update' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:16.057  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.compos' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:16.058  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.tzdata6' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:16.083  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.permission' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:16.131  1621  1973 I serviceDiscovery: [MdnsAdvertiser.wlan0] Probing finished for service 1444
+05-17 19:20:16.133 10976 11030 I NearbyMediums: WIFI_LAN registered service name:I1BDWlT8n14AAA type:null at ip:null port:0
+05-17 19:20:16.133 10976 15099 I NearbyMediums: Successfully advertised I1BDWlT8n14AAA on serviceID NearbySharing over Wifi LAN.
+05-17 19:20:16.134 10976 15099 I NearbyMediums: [WifiNetworkV2] WifiStatusChangedCallback registered for NearbySharing (wifiStatusChangedCallbacks.size:1)
+05-17 19:20:16.135 10976 15099 I NearbyConnections: Get local endpoint id from the existing localEndpointId:PCZT (last:BBQG) for client 261921619(0p:com.google.android.gms.nearby.sharing)
+05-17 19:20:16.137 10976 15099 I NearbyMediums: Started BLE scanning, service-id=NearbyConnections.TxAdvertisement, is-extended-advert=true, power-level=2, scan-mode=3
+05-17 19:20:16.137 10976 15099 I NearbyConnections: [InstantConnectionPcpMgr] In invalidateTxAdvertisementScanning(by final_updateAdvertising) tx advertisement scanning successfully started for enpointId:PCZT serviceId:NearbySharing isScreenUnlocked:true powerLevel:BALANCED
+05-17 19:20:16.138 10976 15099 I NearbySharing: [broadcast provider] advertising options updated (BroadcastProviderOptions(powerLevel=2, flowId=5179303333622484222, uwbSenderInfo=[], deviceType=1, advertisingMediums=[8, 3, 6, 5, 4], upgradeMediums=[11, 5, 8, 6, 3, 9, 10, 2, 4, 7], useStableIdentifiers=false, allowBluetoothRadioToggling=false, allowWifiRadioToggling=false, enableBleL2capListening=false, allowGattConnections=false, enableFastAdvertisement=true)).
+05-17 19:20:16.139 10976 15099 I NearbySharing: NearbySharing Internal event ReceiveManagerUpdate(mode=2, isEveryoneMode=false, dataUsage=2, useQrCode=false, success=true)
+05-17 19:20:16.140 10976 15089 I NearbySharing: [ClearcutLog] ADVERTISE_DEVICE_PRESENCE_START sessionId=0 flowId=5179303333622484222 sessionStatus: 1, visibility: 1
+05-17 19:20:16.143 10976 13146 I NearbySharing: Failed to log ADVERTISE_DEVICE_PRESENCE_START, due to clearcutLogger is null.
+05-17 19:20:16.165 10976 15111 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 437088774]
+05-17 19:20:16.179 10976 13995 W ChimeraUtils: Module com.google.android.gms.gcm missing resource null(0)
+05-17 19:20:16.186 10976 13995 I AlarmManager: setExactAndAllowWhileIdle [name: FcmRetry type: 2 triggerAtMillis: 436428795]
+05-17 19:20:16.196  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.wifi' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:16.197  1621  1706 D ActivityManager: sync unfroze 20318 com.google.android.googlequicksearchbox:googleapp for 3
+05-17 19:20:16.204 20318 25633 W cr_ChildProcessConn: onServiceDisconnected (crash or killed by oom): pid=1386 bindings:W  S
+05-17 19:20:16.208  1621  1899 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@5a7d35ae does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-17 19:20:16.227  2163  2163 D Zygote  : Forked child process 15214
+05-17 19:20:16.233  1621  1707 I ActivityManager: Start proc 15214:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:2/u0i786 for bound-service {com.google.android.googlequicksearchbox/org.chromium.content.app.SandboxedProcessService0:2}
+05-17 19:20:16.237 15214 15214 E libc    : SetHeapTaggingLevel: re-enabling tagging after it was disabled is not supported
+05-17 19:20:16.245 15214 15214 I Zygote  : Process 15214 created for com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:2
+05-17 19:20:16.246 15214 15214 I ocessService0:2: Using generational CollectorTypeCMC GC.
+05-17 19:20:16.259 15214 15214 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-17 19:20:16.279 15214 15214 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-17 19:20:16.279 15214 15214 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+05-17 19:20:16.293 15214 15214 I cr_WebViewApkApp: version=147.0.7727.138 (772713803) minSdkVersion=29 processName=com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:2 splits=<none>
+05-17 19:20:16.293 20318 20318 E chromium: [ERROR:android_webview/browser/aw_browser_terminator.cc:175] Renderer process (1386) crash detected (code -1).
+05-17 19:20:16.297  1621  3972 I ActivityManager: Killing 15214:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:2/u0a141i786 (adj 905): isolated not needed
+05-17 19:20:16.320  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.telephonycore' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:16.326  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_99786/pid_15214
+05-17 19:20:16.326  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_99786
+05-17 19:20:16.326  2163  2163 I Zygote  : Process 15214 exited due to signal 9 (Killed)
+05-17 19:20:16.376 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.376 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.385 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.386 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.387 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.387 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.387 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20318 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_CAP_CHANGED message
+05-17 19:20:16.394 20318 20322 W chbox:googleapp: Reducing the number of considered missed Gc histogram windows from 231 to 100
+05-17 19:20:16.403 20318 15231 E FirebaseMessaging: Default FirebaseApp has not been initialized. Skip logging event to GA.
+05-17 19:20:16.403 20318 15231 I FirebaseMessaging: FirebaseApp has not being initialized. Device might be in direct boot mode. Skip exporting delivery metrics to Big Query
+05-17 19:20:16.411  1621  3956 W ApplicationInfo: Large ApplicationInfo parcel: size=17880 package=com.google.android.GoogleCamera splits=45 sharedLibs=7 resDirs=2 overlayPaths=2
+05-17 19:20:16.430 20318 20357 I ekkb    : Received an intent for GNP, won't process
+05-17 19:20:16.442  1621  4764 W ApplicationInfo: Large ApplicationInfo parcel: size=17880 package=com.google.android.GoogleCamera splits=45 sharedLibs=7 resDirs=2 overlayPaths=2
+05-17 19:20:16.449   494   494 I lowmemorykiller: Kill 'com.google.android.cellbroadcastreceiver' (13286), uid 10233, oom_score_adj 965 to free 55776kB rss, 15560kB anon rss, 34752kB swap, 0kB dmabuf_pss, 0kB dmabuf_rss; reason: low watermark is breached and swap is low (552kB < 314572kB)
+05-17 19:20:16.454  1621  1768 W ApplicationInfo: Large ApplicationInfo parcel: size=17880 package=com.google.android.GoogleCamera splits=45 sharedLibs=7 resDirs=2 overlayPaths=2
+05-17 19:20:16.454  1621  3972 W ApplicationInfo: Large ApplicationInfo parcel: size=17880 package=com.google.android.GoogleCamera splits=45 sharedLibs=7 resDirs=2 overlayPaths=2
+05-17 19:20:16.461 12979 13055 I ekkb    : Received an intent for GNP, won't process
+05-17 19:20:16.477  1621  1768 I ActivityManager: Process com.google.android.cellbroadcastreceiver (pid 13286) has died: cch  +65 CEM 
+05-17 19:20:16.478   896   896 I Zygote  : Process 13286 exited due to signal 9 (Killed)
+05-17 19:20:16.478   494   494 I lowmemorykiller: Kill 'com.truecaller' (9584), uid 10376, oom_score_adj 955 to free 105540kB rss, 56044kB anon rss, 78656kB swap, 0kB dmabuf_pss, 0kB dmabuf_rss; reason: low watermark is breached and swap is low (12kB < 314572kB)
+05-17 19:20:16.495  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10233/pid_13286
+05-17 19:20:16.523  1621  1768 I ActivityManager: Process com.truecaller (pid 9584) has died: cch  +55 CEM 
+05-17 19:20:16.523  1621  2721 D SensorService: Unregistering client listener for PID 9584
+05-17 19:20:16.524  1621  1970 D ConnectivityService: releasing NetworkRequest [ REQUEST id=55607, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10376 RequestorUid: 10376 RequestorPkg: com.truecaller UnderlyingNetworks: Null] ] (release request)
+05-17 19:20:16.524 14177 14177 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+05-17 19:20:16.527   896   896 I Zygote  : Process 9584 exited due to signal 9 (Killed)
+05-17 19:20:16.527  1621  1708 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10376/pid_9584
+05-17 19:20:16.856  4336  4336 I KWGTSWidgetService: Refresh: BATTERY
+05-17 19:20:16.856  4336  4336 I KWGTSWidgetService: Refresh: BATTERY
+05-17 19:20:16.873  1621  1653 I system_server: NativeAlloc concurrent mark compact GC freed 31MB AllocSpace bytes, 16(956KB) LOS objects, 80% free, 101MB/512MB, paused 2.953ms,12.627ms total 604.236ms
+05-17 19:20:17.115 14019 14066 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:77 Unregister: in shim layer
+05-17 19:20:17.115 14019 14065 I bluetooth: bluetooth_private_gatt::gatt::server::isolation_manager: removing server (if any) associated with advertiser AdvertiserId(0)
+05-17 19:20:17.212  4336  6041 I KWGTSSystemColorsConfig: Reloaded Material colors 2ms
+05-17 19:20:17.222  1621  2006 D AppWidgetServiceImpl: Trying to notify widget update for package org.kustom.widget with widget id: 877
+05-17 19:20:17.232  1621  2006 D AppWidgetServiceImpl: Trying to notify widget update for package org.kustom.widget with widget id: 879
+05-17 19:20:17.236 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:17.236 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:17.236 10560 10560 D ShortcutAndWidgetContainer: appWidgetScale - [x,y]: [1.0,1.0]
+05-17 19:20:17.237 10560 10560 D NavigableAppWidgetHostView: updateScale - [fitScale,bounceScale]: [1.0,1.0]
+05-17 19:20:17.240  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.media.swcodec' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.380  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.adbd' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.391 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.391","lvl":"debug","mod":"wsnet-wrapper","msg":"CertManager number of certificates : 131"}
+05-17 19:20:17.393 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.392","lvl":"debug","mod":"wsnet-wrapper","msg":"openssl version: 3.6.1"}
+05-17 19:20:17.393 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.393","lvl":"debug","mod":"wsnet-wrapper","msg":"curl version: 8.19.0"}
+05-17 19:20:17.394  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.i18n' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.401 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.401","lvl":"debug","mod":"wsnet-wrapper","msg":"Base platform: android"}
+05-17 19:20:17.402 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.402","lvl":"debug","mod":"wsnet-wrapper","msg":"Platform name: android"}
+05-17 19:20:17.402 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.402","lvl":"debug","mod":"wsnet-wrapper","msg":"Use staging domains: false"}
+05-17 19:20:17.402 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.402","lvl":"debug","mod":"wsnet-wrapper","msg":"App version: 4.0.2208"}
+05-17 19:20:17.402 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.402","lvl":"debug","mod":"wsnet-wrapper","msg":"OpenVpn version: 2.6.0"}
+05-17 19:20:17.402 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.402","lvl":"debug","mod":"wsnet-wrapper","msg":"Language: en"}
+05-17 19:20:17.402 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.402","lvl":"debug","mod":"wsnet-wrapper","msg":"ServerAPI settings settled sucessfully"}
+05-17 19:20:17.409  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.conscrypt' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.431  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.neuralnetworks' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.432  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.webapp' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.433  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.runtime' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.435  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.ipsec' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.436  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.devicelock' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.447  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.ondevicepersonalization' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.456  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.healthfitness' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.493  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.extservices' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.494 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.493","lvl":"debug","mod":"wsnet-wrapper","msg":"ServerAPI_impl::ServerAPI_impl, use a failover from settings"}
+05-17 19:20:17.499 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.498","lvl":"debug","mod":"wsnet-wrapper","msg":"WSNet is ready"}
+05-17 19:20:17.499 15040 15168 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.499","lvl":"debug","mod":"wsnet-wrapper","msg":"WSNet initialized successfully"}
+05-17 19:20:17.503  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.virt' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.515  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.nfcservices' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.516 15040 15040 W .windscribe.vpn: type=1400 audit(0.0:117393): avc:  denied  { read } for  name="net" dev="sysfs" ino=27053 scontext=u:r:untrusted_app_34:s0:c18,c257,c512,c768 tcontext=u:object_r:sysfs_net:s0 tclass=dir permissive=0 app=com.windscribe.vpn
+05-17 19:20:17.516 15040 15040 W .windscribe.vpn: type=1400 audit(0.0:117394): avc:  denied  { bind } for  scontext=u:r:untrusted_app_34:s0:c18,c257,c512,c768 tcontext=u:r:untrusted_app_34:s0:c18,c257,c512,c768 tclass=netlink_route_socket permissive=0 app=com.windscribe.vpn
+05-17 19:20:17.516 15040 15040 W .windscribe.vpn: type=1400 audit(0.0:117395): avc:  denied  { bind } for  scontext=u:r:untrusted_app_34:s0:c18,c257,c512,c768 tcontext=u:r:untrusted_app_34:s0:c18,c257,c512,c768 tclass=netlink_route_socket permissive=0 app=com.windscribe.vpn
+05-17 19:20:17.516 15040 15040 W .windscribe.vpn: type=1400 audit(0.0:117396): avc:  denied  { search } for  name="/" dev="configfs" ino=12318 scontext=u:r:untrusted_app_34:s0:c18,c257,c512,c768 tcontext=u:object_r:configfs:s0 tclass=dir permissive=0 app=com.windscribe.vpn
+05-17 19:20:17.531  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.os.statsd' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.533 15040 15208 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.533","lvl":"debug","mod":"wsnet-wrapper","msg":"Trying: hrd: win"}
+05-17 19:20:17.534  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.npumanager' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.554   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 19:20:17.584  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.scheduling' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.587  2521  2521 W Finsky  : [2] STU: Failed to get storage stats for package 'com.android.hardware.biometrics.face.virtual' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-17 19:20:17.595  2521  2521 I Finsky  : [2] App states replicator found 82 unowned apps
+05-17 19:20:17.597 15040 15208 D wsnet-wrapper: {"tm":"2026-05-17 19:20:17.597","lvl":"debug","mod":"wsnet-wrapper","msg":"New curl request : https://api.windscribe.com/UnblockParams/amneziawg?amneziawg_version=2.0.0&platform=android&app_version=4.0.2208"}
+05-17 19:20:17.608  2521  2561 I Finsky  : [695] Completed 0 account content syncs with 0 successful.
+05-17 19:20:17.609  2521  2521 I Finsky  : [2] [ContentSync] Installation state replication succeeded.
+05-17 19:20:17.609  2521  2521 I Finsky  : [2] SCH: jobFinished: 12-1. TimeElapsed: 3301ms.
+05-17 19:20:17.609  2521  2521 I Finsky  : [2] WM::SCH: Logging work end for 12-1
+05-17 19:20:17.634  2521  2561 I Finsky  : [695] SCH: Scheduling phonesky job Id: 1-1337, CT: 1779019381061, Constraints: [{ L: 43156845, D: 86356845, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+05-17 19:20:17.635  2521  2561 I Finsky  : [695] SCH: Scheduling phonesky job Id: 34-7425, CT: 1779019387536, Constraints: [{ L: 604800000, D: 2444083565, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+05-17 19:20:17.635  2521  2561 I Finsky  : [695] SCH: Scheduling phonesky job Id: 34-7431, CT: 1779019387536, Constraints: [{ L: 604800000, D: 2523296594, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+05-17 19:20:17.635  2521  2561 I Finsky  : [695] SCH: Scheduling phonesky job Id: 34-7436, CT: 1779019387536, Constraints: [{ L: 10495357, D: 1306495357, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+05-17 19:20:17.643  2521  2556 I Finsky  : [690] SCH: Scheduling 1 system job(s)
+05-17 19:20:17.647  2521  2556 I Finsky  : [690] SCH: Scheduling system job Id: 9724, L: 4065250, D: 79920263, C: false, I: false, N: 1
+05-17 19:20:17.652   978  1032 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 19:20:17.652   978  1032 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 19:20:17.652   978  1032 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 19:20:17.652   978  1032 D WifiHAL : len = 4, expected len = 4
+05-17 19:20:17.653  2521 15044 I Finsky  : [3254] SCH: job service finished with id 9718.
+05-17 19:20:18.066 15040 15176 I PlayCore: UID: [10274]  PID: [15040] ReviewService : requestInAppReview (com.windscribe.vpn)
+05-17 19:20:18.068 15040 15237 I PlayCore: UID: [10274]  PID: [15040] ReviewService : Initiate binding to the service.
+05-17 19:20:18.089 15040 15040 I PlayCore: UID: [10274]  PID: [15040] ReviewService : ServiceConnectionImpl.onServiceConnected(ComponentInfo{com.android.vending/com.google.android.finsky.inappreviewservice.InAppReviewService})
+05-17 19:20:18.090 15040 15237 I PlayCore: UID: [10274]  PID: [15040] ReviewService : linkToDeath
+05-17 19:20:18.109 15040 15235 D wsnet-wrapper: {"tm":"2026-05-17 19:20:18.108","lvl":"debug","mod":"wsnet-wrapper","msg":"  Trying 193b2cdee5eeb3e29352c4d568be3ace:443...\n"}
+05-17 19:20:18.120 15040 15208 D wsnet-wrapper: {"tm":"2026-05-17 19:20:18.120","lvl":"debug","mod":"wsnet-wrapper","msg":"New curl request : https://api.windscribe.com/Notifications?lang=en&platform=android&app_version=4.0.2208"}
+05-17 19:20:18.120 15040 15163 I UnblockWgParamsRepository: {"tm":"2026-05-17 19:20:18.119","lvl":"info","mod":"UnblockWgParamsRepository","msg":"Fetched 9 unblock wg params"}
+05-17 19:20:18.149 15040 15152 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=aacc6b28-f603-4e4a-aec0-c63e0c483c01, tags={ com.windscribe.vpn.workers.worker.UnblockWgParamsWorker,636f6d2e77696e647363726962652e76706e2e776f726b6572732e776f726b65722e556e626c6f636b5767506172616d73576f726b6572 } ]
+05-17 19:20:18.151 15040 15040 D WM-Processor: t aacc6b28-f603-4e4a-aec0-c63e0c483c01 executed; reschedule = false
+05-17 19:20:18.151 15040 15040 D WM-SystemJobService: aacc6b28-f603-4e4a-aec0-c63e0c483c01 executed on JobScheduler
+05-17 19:20:18.157 15040 15152 D WM-GreedyScheduler: Cancelling work ID aacc6b28-f603-4e4a-aec0-c63e0c483c01
+05-17 19:20:18.161 15040 15152 D CompatChangeReporter: Compat change id reported: 311402873; UID 10274; state: ENABLED
+05-17 19:20:18.161 15040 15152 D CompatChangeReporter: Compat change id reported: 323349338; UID 10274; state: ENABLED
+05-17 19:20:18.161 15040 15152 D WM-SystemJobScheduler: Scheduling work ID aacc6b28-f603-4e4a-aec0-c63e0c483c01Job ID 81844
+05-17 19:20:18.163  1621  3978 D CompatChangeReporter: Compat change id reported: 311402873; UID 10274; state: ENABLED
+05-17 19:20:18.163  1621  3978 D CompatChangeReporter: Compat change id reported: 323349338; UID 10274; state: ENABLED
+05-17 19:20:18.163  2521  2558 I System.out: Caught a exception encoding the public key: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.163  2521  2558 W System.err: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.164  2521  2558 W System.err: 	at msz.co(PG:212)
+05-17 19:20:18.164  2521  2558 W System.err: 	at msz.X(PG:2)
+05-17 19:20:18.164  2521  2558 W System.err: 	at msz.U(PG:101)
+05-17 19:20:18.164  2521  2558 W System.err: 	at msz.V(PG:13)
+05-17 19:20:18.164  2521  2558 W System.err: 	at slr.bJ(PG:45)
+05-17 19:20:18.164  2521  2558 W System.err: 	at yoe.z(PG:424)
+05-17 19:20:18.164  2521  2558 W System.err: 	at yoe.c(PG:79)
+05-17 19:20:18.164  2521  2558 W System.err: 	at yoe.b(PG:18)
+05-17 19:20:18.164  2521  2558 W System.err: 	at aqoh.pF(PG:73)
+05-17 19:20:18.164  2521  2558 W System.err: 	at aqoh.ap(PG:90)
+05-17 19:20:18.164  2521  2558 W System.err: 	at tas.call(PG:194)
+05-17 19:20:18.164  2521  2558 W System.err: 	at bmvi.a(PG:3)
+05-17 19:20:18.164  2521  2558 W System.err: 	at bmun.run(PG:19)
+05-17 19:20:18.164  2521  2558 W System.err: 	at bmvj.run(PG:5)
+05-17 19:20:18.164  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+05-17 19:20:18.164  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05-17 19:20:18.164  2521  2558 W System.err: 	at vpo.run(PG:638)
+05-17 19:20:18.164  2521  2558 W System.err: 	at java.lang.Thread.run(Thread.java:1572)
+05-17 19:20:18.165  2521  2558 W System.err: Caused by: com.android.apksig.internal.asn1.Asn1BerParser$Asn1UnexpectedTagException: Tag mismatch. Expected: UNIVERSAL BIT STRING, but found UNIVERSAL SEQUENCE
+05-17 19:20:18.165  2521  2558 W System.err: 	at mnp.a(PG:49)
+05-17 19:20:18.165  2521  2558 W System.err: 	at msz.co(PG:171)
+05-17 19:20:18.165  2521  2558 W System.err: 	... 17 more
+05-17 19:20:18.165 15040 15152 D WM-GreedyScheduler: Starting tracking for 04085a7b-f117-496c-9885-24401043264d
+05-17 19:20:18.167  2521  2558 I System.out: Caught a exception encoding the public key: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.167  2521  2558 W System.err: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.167  2521  2558 W System.err: 	at msz.co(PG:212)
+05-17 19:20:18.167  2521  2558 W System.err: 	at msz.X(PG:2)
+05-17 19:20:18.167  2521  2558 W System.err: 	at msz.U(PG:101)
+05-17 19:20:18.167  2521  2558 W System.err: 	at msz.V(PG:13)
+05-17 19:20:18.167  2521  2558 W System.err: 	at slr.bJ(PG:45)
+05-17 19:20:18.167  2521  2558 W System.err: 	at msz.cq(PG:338)
+05-17 19:20:18.167  2521  2558 W System.err: 	at msz.Z(PG:60)
+05-17 19:20:18.167  2521  2558 W System.err: 	at aqoh.pF(PG:65)
+05-17 19:20:18.167  2521  2558 W System.err: 	at aqoh.ap(PG:119)
+05-17 19:20:18.167  2521  2558 W System.err: 	at tas.call(PG:194)
+05-17 19:20:18.167  2521  2558 W System.err: 	at bmvi.a(PG:3)
+05-17 19:20:18.167  2521  2558 W System.err: 	at bmun.run(PG:19)
+05-17 19:20:18.167  2521  2558 W System.err: 	at bmvj.run(PG:5)
+05-17 19:20:18.167  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+05-17 19:20:18.167  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05-17 19:20:18.167  2521  2558 W System.err: 	at vpo.run(PG:638)
+05-17 19:20:18.167  2521  2558 W System.err: 	at java.lang.Thread.run(Thread.java:1572)
+05-17 19:20:18.167  2521  2558 W System.err: Caused by: com.android.apksig.internal.asn1.Asn1BerParser$Asn1UnexpectedTagException: Tag mismatch. Expected: UNIVERSAL BIT STRING, but found UNIVERSAL SEQUENCE
+05-17 19:20:18.167  2521  2558 W System.err: 	at mnp.a(PG:49)
+05-17 19:20:18.167  2521  2558 W System.err: 	at msz.co(PG:171)
+05-17 19:20:18.167  2521  2558 W System.err: 	... 16 more
+05-17 19:20:18.168 15040 15152 D WM-ConstraintTracker: j: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true)
+05-17 19:20:18.168 15040 15152 D WM-NetworkStateTracker: Registering network callback
+05-17 19:20:18.169  1621  3978 D ConnectivityService: requestNetwork for uid/pid:10274/15040 activeRequest: null callbackRequest: 55789 [NetworkRequest [ REQUEST id=55790, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC
+05-17 19:20:18.169 15040 15152 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=04085a7b-f117-496c-9885-24401043264d, generation=0)
+05-17 19:20:18.170 15040 15152 D WM-Processor: t: processing WorkGenerationalId(workSpecId=04085a7b-f117-496c-9885-24401043264d, generation=0)
+05-17 19:20:18.171 15040 15040 D WM-WorkerWrapper: Starting work for com.windscribe.vpn.workers.worker.SessionWorker
+05-17 19:20:18.174  1621  1957 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55790, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:18.175 15040 15187 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=125264Kbps LinkDnBandwidth>=66956Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.62, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 1020Mbps, Tx Link speed: 1020Mbps, Max Supported Tx Link speed: 1200Mbps, Calculated Tx : 832Mbps, Rx Link speed: 1080Mbps, Max Supported Rx Link speed: 1200Mbps, Calculated Rx : 928Mbps, Frequency: 5785MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 UnderlyingNetworks: Null]
+05-17 19:20:18.176  1621  1957 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55790, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:18.176  1621  1957 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=55790, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:18.176  1621  1957 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55790, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:18.177  1621  1970 D ConnectivityService: NetReassign [55790 : null ΓåÆ 120] [c 0] [a 1] [i 6]
+05-17 19:20:18.178  2521  2558 I System.out: Caught a exception encoding the public key: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.178  2521  2558 W System.err: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.178  2521  2558 W System.err: 	at msz.co(PG:212)
+05-17 19:20:18.178  2521  2558 W System.err: 	at msz.X(PG:2)
+05-17 19:20:18.178  2521  2558 W System.err: 	at msz.U(PG:101)
+05-17 19:20:18.178  2521  2558 W System.err: 	at msz.V(PG:13)
+05-17 19:20:18.178  2521  2558 W System.err: 	at slr.bJ(PG:45)
+05-17 19:20:18.178  2521  2558 W System.err: 	at yoe.z(PG:424)
+05-17 19:20:18.178 15040 15208 D wsnet-wrapper: {"tm":"2026-05-17 19:20:18.178","lvl":"debug","mod":"wsnet-wrapper","msg":"New curl request : https://api.windscribe.com/Session?inv_rev=3029&platform=android&app_version=4.0.2208"}
+05-17 19:20:18.178  2521  2558 W System.err: 	at yoe.c(PG:79)
+05-17 19:20:18.178  2521  2558 W System.err: 	at yoe.b(PG:18)
+05-17 19:20:18.178  2521  2558 W System.err: 	at aqoh.pF(PG:73)
+05-17 19:20:18.178  2521  2558 W System.err: 	at aqoh.ap(PG:90)
+05-17 19:20:18.178  2521  2558 W System.err: 	at tas.call(PG:194)
+05-17 19:20:18.178  2521  2558 W System.err: 	at bmvi.a(PG:3)
+05-17 19:20:18.178  2521  2558 W System.err: 	at bmun.run(PG:19)
+05-17 19:20:18.178  2521  2558 W System.err: 	at bmvj.run(PG:5)
+05-17 19:20:18.179  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+05-17 19:20:18.179  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05-17 19:20:18.179  2521  2558 W System.err: 	at vpo.run(PG:638)
+05-17 19:20:18.179  2521  2558 W System.err: 	at java.lang.Thread.run(Thread.java:1572)
+05-17 19:20:18.179  2521  2558 W System.err: Caused by: com.android.apksig.internal.asn1.Asn1BerParser$Asn1UnexpectedTagException: Tag mismatch. Expected: UNIVERSAL BIT STRING, but found UNIVERSAL SEQUENCE
+05-17 19:20:18.179  2521  2558 W System.err: 	at mnp.a(PG:49)
+05-17 19:20:18.179  2521  2558 W System.err: 	at msz.co(PG:171)
+05-17 19:20:18.179  2521  2558 W System.err: 	... 17 more
+05-17 19:20:18.180  2521  2558 I System.out: Caught a exception encoding the public key: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.180  2521  2558 W System.err: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.180  2521  2558 W System.err: 	at msz.co(PG:212)
+05-17 19:20:18.180  2521  2558 W System.err: 	at msz.X(PG:2)
+05-17 19:20:18.180  2521  2558 W System.err: 	at msz.U(PG:101)
+05-17 19:20:18.180  2521  2558 W System.err: 	at msz.V(PG:13)
+05-17 19:20:18.180  2521  2558 W System.err: 	at slr.bJ(PG:45)
+05-17 19:20:18.180  2521  2558 W System.err: 	at msz.cq(PG:338)
+05-17 19:20:18.180  2521  2558 W System.err: 	at msz.Z(PG:60)
+05-17 19:20:18.180  2521  2558 W System.err: 	at aqoh.pF(PG:65)
+05-17 19:20:18.180  2521  2558 W System.err: 	at aqoh.ap(PG:119)
+05-17 19:20:18.180  2521  2558 W System.err: 	at tas.call(PG:194)
+05-17 19:20:18.180  2521  2558 W System.err: 	at bmvi.a(PG:3)
+05-17 19:20:18.180  2521  2558 W System.err: 	at bmun.run(PG:19)
+05-17 19:20:18.180  2521  2558 W System.err: 	at bmvj.run(PG:5)
+05-17 19:20:18.180  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+05-17 19:20:18.180  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05-17 19:20:18.180  2521  2558 W System.err: 	at vpo.run(PG:638)
+05-17 19:20:18.180  2521  2558 W System.err: 	at java.lang.Thread.run(Thread.java:1572)
+05-17 19:20:18.180  2521  2558 W System.err: Caused by: com.android.apksig.internal.asn1.Asn1BerParser$Asn1UnexpectedTagException: Tag mismatch. Expected: UNIVERSAL BIT STRING, but found UNIVERSAL SEQUENCE
+05-17 19:20:18.180  2521  2558 W System.err: 	at mnp.a(PG:49)
+05-17 19:20:18.180  2521  2558 W System.err: 	at msz.co(PG:171)
+05-17 19:20:18.180  2521  2558 W System.err: 	... 16 more
+05-17 19:20:18.187  2521  2558 I System.out: Caught a exception encoding the public key: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.187  2521  2558 W System.err: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.187  2521  2558 W System.err: 	at msz.co(PG:212)
+05-17 19:20:18.187  2521  2558 W System.err: 	at msz.X(PG:2)
+05-17 19:20:18.187  2521  2558 W System.err: 	at msz.U(PG:101)
+05-17 19:20:18.187  2521  2558 W System.err: 	at msz.V(PG:13)
+05-17 19:20:18.187  2521  2558 W System.err: 	at slr.bJ(PG:45)
+05-17 19:20:18.187  2521  2558 W System.err: 	at yoe.z(PG:424)
+05-17 19:20:18.187  2521  2558 W System.err: 	at yoe.c(PG:79)
+05-17 19:20:18.187  2521  2558 W System.err: 	at yoe.b(PG:18)
+05-17 19:20:18.187  2521  2558 W System.err: 	at aqoh.pF(PG:73)
+05-17 19:20:18.187  2521  2558 W System.err: 	at aqoh.ap(PG:90)
+05-17 19:20:18.187  2521  2558 W System.err: 	at tas.call(PG:194)
+05-17 19:20:18.187  2521  2558 W System.err: 	at bmvi.a(PG:3)
+05-17 19:20:18.187  2521  2558 W System.err: 	at bmun.run(PG:19)
+05-17 19:20:18.187  2521  2558 W System.err: 	at bmvj.run(PG:5)
+05-17 19:20:18.187  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+05-17 19:20:18.187  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05-17 19:20:18.187  2521  2558 W System.err: 	at vpo.run(PG:638)
+05-17 19:20:18.187  2521  2558 W System.err: 	at java.lang.Thread.run(Thread.java:1572)
+05-17 19:20:18.187  2521  2558 W System.err: Caused by: com.android.apksig.internal.asn1.Asn1BerParser$Asn1UnexpectedTagException: Tag mismatch. Expected: UNIVERSAL BIT STRING, but found UNIVERSAL SEQUENCE
+05-17 19:20:18.187  2521  2558 W System.err: 	at mnp.a(PG:49)
+05-17 19:20:18.187  2521  2558 W System.err: 	at msz.co(PG:171)
+05-17 19:20:18.187  2521  2558 W System.err: 	... 17 more
+05-17 19:20:18.188  2521  2558 I System.out: Caught a exception encoding the public key: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.188  2521  2558 W System.err: com.android.apksig.internal.asn1.Asn1DecodingException: Failed to parse moi.a
+05-17 19:20:18.188  2521  2558 W System.err: 	at msz.co(PG:212)
+05-17 19:20:18.188  2521  2558 W System.err: 	at msz.X(PG:2)
+05-17 19:20:18.188  2521  2558 W System.err: 	at msz.U(PG:101)
+05-17 19:20:18.188  2521  2558 W System.err: 	at msz.V(PG:13)
+05-17 19:20:18.188  2521  2558 W System.err: 	at slr.bJ(PG:45)
+05-17 19:20:18.188  2521  2558 W System.err: 	at msz.cq(PG:338)
+05-17 19:20:18.188  2521  2558 W System.err: 	at msz.Z(PG:60)
+05-17 19:20:18.188  2521  2558 W System.err: 	at aqoh.pF(PG:65)
+05-17 19:20:18.188  2521  2558 W System.err: 	at aqoh.ap(PG:119)
+05-17 19:20:18.188  2521  2558 W System.err: 	at tas.call(PG:194)
+05-17 19:20:18.188  2521  2558 W System.err: 	at bmvi.a(PG:3)
+05-17 19:20:18.189  2521  2558 W System.err: 	at bmun.run(PG:19)
+05-17 19:20:18.189  2521  2558 W System.err: 	at bmvj.run(PG:5)
+05-17 19:20:18.189  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+05-17 19:20:18.189  2521  2558 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05-17 19:20:18.189  2521  2558 W System.err: 	at vpo.run(PG:638)
+05-17 19:20:18.189  2521  2558 W System.err: 	at java.lang.Thread.run(Thread.java:1572)
+05-17 19:20:18.189  2521  2558 W System.err: Caused by: com.android.apksig.internal.asn1.Asn1BerParser$Asn1UnexpectedTagException: Tag mismatch. Expected: UNIVERSAL BIT STRING, but found UNIVERSAL SEQUENCE
+05-17 19:20:18.189  2521  2558 W System.err: 	at mnp.a(PG:49)
+05-17 19:20:18.189  2521  2558 W System.err: 	at msz.co(PG:171)
+05-17 19:20:18.189  2521  2558 W System.err: 	... 16 more
+05-17 19:20:18.195 15040 15056 I PlayCore: UID: [10274]  PID: [15040] OnRequestInstallCallback : onGetLaunchReviewFlowInfo
+05-17 19:20:18.195 15040 15237 I PlayCore: UID: [10274]  PID: [15040] ReviewService : Unbind from service.
+05-17 19:20:18.197 15040 15040 D state   : {"tm":"2026-05-17 19:20:18.197","lvl":"debug","mod":"state","msg":"Launching review flow."}
+05-17 19:20:18.488 20318 20345 I incfs-mounts: [incfs] Loaded incremental-fs mount info: 2 instances, 4 mount points
+05-17 19:20:18.625 15040 15163 D migration: {"tm":"2026-05-17 19:20:18.625","lvl":"debug","mod":"migration","msg":"Popup notification 179 already exists, preserving local state"}
+05-17 19:20:18.630 15040 15176 D migration: {"tm":"2026-05-17 19:20:18.630","lvl":"debug","mod":"migration","msg":"Replaced notifications cache with 5 items from API"}
+05-17 19:20:18.631 15040 15155 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=04085a7b-f117-496c-9885-24401043264d, tags={ com.windscribe.vpn.workers.worker.SessionWorker,636f6d2e77696e647363726962652e76706e2e776f726b6572732e776f726b65722e53657373696f6e576f726b6572 } ]
+05-17 19:20:18.632 15040 15155 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=c81bcece-b3bc-45b6-899a-cc572ba2fedd, tags={ com.windscribe.vpn.workers.worker.NotificationWorker,636f6d2e77696e647363726962652e76706e2e776f726b6572732e776f726b65722e4e6f74696669636174696f6e576f726b6572 } ]
+05-17 19:20:18.632 15040 15040 D WM-Processor: t 04085a7b-f117-496c-9885-24401043264d executed; reschedule = false
+05-17 19:20:18.632 15040 15040 D WM-SystemJobService: 04085a7b-f117-496c-9885-24401043264d executed on JobScheduler
+05-17 19:20:18.632 15040 15040 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=04085a7b-f117-496c-9885-24401043264d, generation=0)
+05-17 19:20:18.632 15040 15040 D WM-Processor: t c81bcece-b3bc-45b6-899a-cc572ba2fedd executed; reschedule = false
+05-17 19:20:18.633 15040 15040 D WM-SystemJobService: c81bcece-b3bc-45b6-899a-cc572ba2fedd executed on JobScheduler
+05-17 19:20:18.634 15040 15155 D WM-GreedyScheduler: Cancelling work ID 04085a7b-f117-496c-9885-24401043264d
+05-17 19:20:18.634  1621  3978 D CompatChangeReporter: Compat change id reported: 311208629; UID 10274; state: ENABLED
+05-17 19:20:18.635 15040 15163 I data    : {"tm":"2026-05-17 19:20:18.634","lvl":"info","mod":"data","msg":"Auto mode: No server recommendation for Protocol Tweaks"}
+05-17 19:20:18.640 15040 15155 D WM-SystemJobScheduler: Scheduling work ID 04085a7b-f117-496c-9885-24401043264dJob ID 81883
+05-17 19:20:18.641 15040 15155 D WM-SystemJobScheduler: Scheduling work ID c81bcece-b3bc-45b6-899a-cc572ba2feddJob ID 81845
+05-17 19:20:18.643 15040 15155 D WM-NetworkStateTracker: Unregistering network callback
+05-17 19:20:18.653 15040 15155 D WM-GreedyScheduler: Cancelling work ID c81bcece-b3bc-45b6-899a-cc572ba2fedd
+05-17 19:20:18.698  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 4: Enabled 0, odr_index 0.
+05-17 19:20:18.698  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 416/416/13/52 WM: 57 Intr: 16.
+05-17 19:20:18.698  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 210450ns.
+05-17 19:20:18.699  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:6).
+05-17 19:20:18.699  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 0: Enabled 1, odr_index 3.
+05-17 19:20:18.700  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 52/416/13/52 WM: 33 Intr: 17.
+05-17 19:20:18.700  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 323975ns.
+05-17 19:20:18.701  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Gyroscope (active:1).
+05-17 19:20:18.701  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 1: Enabled 1, odr_index 3.
+05-17 19:20:18.701  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 52/52/13/6 WM: 6 Intr: 21.
+05-17 19:20:18.701  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 307373ns.
+05-17 19:20:18.703  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Stationary Detect (active:-1).
+05-17 19:20:18.703  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 69945 not found.
+05-17 19:20:18.703  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 145: USF: Received kErrNotFound when disabling one shot sensor.
+05-17 19:20:18.704   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001019 endpoint 0x3: Type 0x1f4 size 12 
+05-17 19:20:18.704   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001019 endpoint 0x3: Type 0x1f4 size 12 
+05-17 19:20:19.188  1621  1899 D ActivityManager: freezing 11608 com.google.android.euicc
+05-17 19:20:19.190  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 19:20:19.191  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 19:20:19.191  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10126} in 2ms
+05-17 19:20:19.428  2213  2772 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 47 up
+05-17 19:20:19.516 15040 15155 W JobInfo : Requested important-while-foreground flag for job81884 is ignored and takes no effect
+05-17 19:20:19.517 15040 15155 D WM-SystemJobScheduler: Scheduling work ID bd984fb1-3df1-4ecb-a255-6e62b29d6f45Job ID 81884
+05-17 19:20:19.524 15040 15040 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=bd984fb1-3df1-4ecb-a255-6e62b29d6f45, generation=0)
+05-17 19:20:19.525 15040 15155 D WM-GreedyScheduler: Starting tracking for bd984fb1-3df1-4ecb-a255-6e62b29d6f45
+05-17 19:20:19.527 15040 15155 D WM-Processor: t: processing WorkGenerationalId(workSpecId=bd984fb1-3df1-4ecb-a255-6e62b29d6f45, generation=0)
+05-17 19:20:19.531 15040 15040 D WM-WorkerWrapper: Starting work for com.windscribe.vpn.workers.worker.LatencyWorker
+05-17 19:20:19.533 15040 15155 D WM-ConstraintTracker: j: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true)
+05-17 19:20:19.533 15040 15155 D WM-NetworkStateTracker: Registering network callback
+05-17 19:20:19.533  1621  3977 D ConnectivityService: requestNetwork for uid/pid:10274/15040 activeRequest: null callbackRequest: 55791 [NetworkRequest [ REQUEST id=55792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC
+05-17 19:20:19.534 15040 15155 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=bd984fb1-3df1-4ecb-a255-6e62b29d6f45, generation=0)
+05-17 19:20:19.535 15040 15187 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=125264Kbps LinkDnBandwidth>=66956Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.62, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 1020Mbps, Tx Link speed: 1020Mbps, Max Supported Tx Link speed: 1200Mbps, Calculated Tx : 832Mbps, Rx Link speed: 1080Mbps, Max Supported Rx Link speed: 1200Mbps, Calculated Rx : 928Mbps, Frequency: 5785MHz, Net ID: -1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 UnderlyingNetworks: Null]
+05-17 19:20:19.535 15040 15155 D WM-Processor: Work WorkGenerationalId(workSpecId=bd984fb1-3df1-4ecb-a255-6e62b29d6f45, generation=0) is already enqueued for processing
+05-17 19:20:19.536  1621  1957 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:19.536  1621  1957 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:19.536  1621  1970 D ConnectivityService: NetReassign [55792 : null ΓåÆ 120] [c 0] [a 1] [i 1]
+05-17 19:20:19.536  1621  1957 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=55792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:19.536  1621  1957 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10274 RequestorUid: 10274 RequestorPkg: com.windscribe.vpn UnderlyingNetworks: Null] ]
+05-17 19:20:19.595 15040 15159 D ping    : {"tm":"2026-05-17 19:20:19.595","lvl":"debug","mod":"ping","msg":"Requesting latency for 195 cities."}
+05-17 19:20:19.639  2071  2074 I deeptouch: I0000 00:00:1779025819.638824    2074 tf_lite_classifier.cc:415] Event stream classified as kNone
+05-17 19:20:19.683  1621  1970 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 2]
+05-17 19:20:19.685  1621  1970 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+05-17 19:20:19.688  1621  1970 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 3]
+05-17 19:20:19.689  1621  1970 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 1]
+05-17 19:20:19.691  1621  1970 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+05-17 19:20:19.692  1621  1970 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+05-17 19:20:19.693  1621  1970 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 1]
+05-17 19:20:19.694  1621  1970 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 1]
+05-17 19:20:19.696 14632 14632 I adbd    : adbd service requested 'shell,v2:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'threadtime''
+05-17 19:20:19.729 10976 10976 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }

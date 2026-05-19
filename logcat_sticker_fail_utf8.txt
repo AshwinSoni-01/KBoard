@@ -1,0 +1,200 @@
+﻿05-17 18:49:40.579  1621  1702 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.581  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: papaya, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.582  5679  5754 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=papaya checkDisk=false
+05-17 18:49:40.582  5679  5754 W SoLoader: Registering application split papaya split_papaya.apk
+05-17 18:49:40.591  5679  5754 W SoLoader: Prepending SoSource papaya-asset-libs: SuperpackSoSource[root = /data/data/com.facebook.katana/modules/papaya_6ff6e77c24559aef9084576da43b69e3d9637c993bb8ddcb74f25d4cb453a53b/lib-compressed/arm64-v8a/968460542/asset-libs flags = 1 split = dynamic split:papaya compressedPath = assets/papaya/libs.spo identity = papaya]
+05-17 18:49:40.594  5679  5697 W fb4a.AppInitScheduler|Run: DeadlockMonitor exiting.
+05-17 18:49:40.595  2459  2847 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.595  1621  3977 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.596  2459  2847 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.597  2459  2850 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.598  1621  3956 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.598  2459  2850 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.605  2459  2850 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.606  1621  3972 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.606  2459  2850 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.652  5679  5754 W fb4a.FbVoltronModuleLoader: Split loaded: papaya
+05-17 18:49:40.653  5679  5754 E fb4a.ActionQueryTaskListener: 0 onLoadBatchComplete exception: null FOREGROUND modules: [papaya] actions: [LOAD=[papaya],COMPLETE_SUCCESS=[papaya]]
+05-17 18:49:40.662  5679  5740 W SoLoader[NativeDeps]: Couldn't find libpapayamerged_papaya.so in native deps file
+05-17 18:49:40.662  5679  5740 W SoLoader[NativeDeps]: Falling back to custom ELF parsing when loading libpapayamerged_papaya.so, this can be slow
+05-17 18:49:40.662  5679  5754 E fb4a.ActionQueryTaskListener: 0 onTaskComplete [true,false,] FOREGROUND modules: [papaya] actions: [LOAD=[papaya],COMPLETE_SUCCESS=[papaya]]
+05-17 18:49:40.669  5679  5740 D nativeloader: Load /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/lib/arm64/libc++_shared.so using class loader ns clns-9 (caller=/data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk): ok
+05-17 18:49:40.664  5679  5679 W CombinedTP3: type=1400 audit(0.0:117210): avc:  granted  { execute } for  path="/data/data/com.facebook.katana/modules/papaya_6ff6e77c24559aef9084576da43b69e3d9637c993bb8ddcb74f25d4cb453a53b/lib-compressed/arm64-v8a/968460542/asset-libs/libpapayamerged_papaya.so" dev="dm-61" ino=4619850 scontext=u:r:untrusted_app_34:s0:c82,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c82,c257,c512,c768 tclass=file app=com.facebook.katana
+05-17 18:49:40.672  5679  5740 D nativeloader: Load /data/data/com.facebook.katana/modules/papaya_6ff6e77c24559aef9084576da43b69e3d9637c993bb8ddcb74f25d4cb453a53b/lib-compressed/arm64-v8a/968460542/asset-libs/libpapayamerged_papaya.so using class loader ns clns-9 (caller=/data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk): ok
+05-17 18:49:40.702  5679  5740 E fb4a.ActionQueryTaskListener: 1 onTaskStart FOREGROUND modules: [papaya(*),papayatorch,s_papayaanalyticstorch_papayatorch_torchedlooper(*),pytorch(*),s_papayaanalyticstorch_papayatorch(*),s_papayatorch_torchedlooper(*)] actions: [LOAD=[papayatorch, s_papayaanalyticstorch_papayatorch_torchedlooper, pytorch, s_papayaanalyticstorch_papayatorch, s_papayatorch_torchedlooper],COMPLETE_SUCCESS=[papaya, papayatorch, s_papayaanalyticstorch_papayatorch_torchedlooper, pytorch, s_papayaanalyticstorch_papayatorch, s_papayatorch_torchedlooper]]
+05-17 18:49:40.703  5679  5754 E fb4a.ActionQueryTaskListener: 1 onLoadBatchStart FOREGROUND modules: [papaya(*),papayatorch,s_papayaanalyticstorch_papayatorch_torchedlooper(*),pytorch(*),s_papayaanalyticstorch_papayatorch(*),s_papayatorch_torchedlooper(*)] actions: [LOAD=[papayatorch, s_papayaanalyticstorch_papayatorch_torchedlooper, pytorch, s_papayaanalyticstorch_papayatorch, s_papayatorch_torchedlooper],COMPLETE_SUCCESS=[papaya, papayatorch, s_papayaanalyticstorch_papayatorch_torchedlooper, pytorch, s_papayaanalyticstorch_papayatorch, s_papayatorch_torchedlooper]]
+05-17 18:49:40.704  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: papayatorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.704  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: papayatorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.705  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayaanalyticstorch_papayatorch_torchedlooper, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.705  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayaanalyticstorch_papayatorch_torchedlooper, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.705  5679  5740 E fb4a.ActionQueryTaskListener: 2 onTaskStart FOREGROUND modules: [papaya(*),s_papayaanalyticstorch_papayatorch_torchedlooper(*),papayaanalyticstorch,pytorch(*),s_papayaanalyticstorch_papayatorch(*)] actions: [LOAD=[s_papayaanalyticstorch_papayatorch_torchedlooper, papayaanalyticstorch, pytorch, s_papayaanalyticstorch_papayatorch],COMPLETE_SUCCESS=[papaya, s_papayaanalyticstorch_papayatorch_torchedlooper, papayaanalyticstorch, pytorch, s_papayaanalyticstorch_papayatorch]]
+05-17 18:49:40.706  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: pytorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.706  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: pytorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.707  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayaanalyticstorch_papayatorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.707  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayaanalyticstorch_papayatorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.708  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayatorch_torchedlooper, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.708  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayatorch_torchedlooper, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.708  5679  5733 E fb4a.ActionQueryTaskListener: 2 onLoadBatchStart FOREGROUND modules: [papaya(*),s_papayaanalyticstorch_papayatorch_torchedlooper(*),papayaanalyticstorch,pytorch(*),s_papayaanalyticstorch_papayatorch(*)] actions: [LOAD=[s_papayaanalyticstorch_papayatorch_torchedlooper, papayaanalyticstorch, pytorch, s_papayaanalyticstorch_papayatorch],COMPLETE_SUCCESS=[papaya, s_papayaanalyticstorch_papayatorch_torchedlooper, papayaanalyticstorch, pytorch, s_papayaanalyticstorch_papayatorch]]
+05-17 18:49:40.709  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: papayatorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.710  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayatorch_torchedlooper, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.711  5679  5754 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=s_papayatorch_torchedlooper checkDisk=false
+05-17 18:49:40.711  5679  5754 W SoLoader: Registering application split s_papayatorch_torchedlooper split_s_papayatorch_torchedlooper.apk
+05-17 18:49:40.712  5679  5754 W SoLoader: Prepending SoSource s_papayatorch_torchedlooper-asset-libs: SuperpackSoSource[root = /data/data/com.facebook.katana/modules/s_papayatorch_torchedlooper_0bf057def94bde6909aeba2c0263cf9d8b55a713ccdf2b2cfaa67ec53c097c95/lib-compressed/arm64-v8a/968460542/asset-libs flags = 1 split = dynamic split:s_papayatorch_torchedlooper compressedPath = assets/s_papayatorch_torchedlooper/libs.spo identity = s_papayatorch_torchedlooper]
+05-17 18:49:40.717  5679  5754 W fb4a.FbVoltronModuleLoader: Split loaded: s_papayatorch_torchedlooper
+05-17 18:49:40.722  1621  3978 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.722  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayaanalyticstorch_papayatorch_torchedlooper, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.722  5679  5754 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=s_papayaanalyticstorch_papayatorch_torchedlooper checkDisk=false
+05-17 18:49:40.722  5679  5754 W SoLoader: Registering application split s_papayaanalyticstorch_papayatorch_torchedlooper split_s_papayaanalyticstorch_papayatorch_torchedlooper.apk
+05-17 18:49:40.723  2459  2850 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.723  5679  5754 W SoLoader: Prepending SoSource s_papayaanalyticstorch_papayatorch_torchedlooper-asset-libs: SuperpackSoSource[root = /data/data/com.facebook.katana/modules/s_papayaanalyticstorch_papayatorch_torchedlooper_0532c28449e00c542797de3637b27c6763c87be68cf9ea0815378266907a92e1/lib-compressed/arm64-v8a/968460542/asset-libs flags = 1 split = dynamic split:s_papayaanalyticstorch_papayatorch_torchedlooper compressedPath = assets/s_papayaanalyticstorch_papayatorch_torchedlooper/libs.spo identity = s_papayaanalyticstorch_papayatorch_torchedlooper]
+05-17 18:49:40.724  1621  4767 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.725  2459  2847 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.725  2459  2850 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.725  2459  2847 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.733  5679  5754 W fb4a.FbVoltronModuleLoader: Split loaded: s_papayaanalyticstorch_papayatorch_torchedlooper
+05-17 18:49:40.736  1621  2721 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.736  2459  2847 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.737  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayaanalyticstorch_papayatorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.738  5679  5754 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=s_papayaanalyticstorch_papayatorch checkDisk=false
+05-17 18:49:40.738  5679  5754 W SoLoader: Registering application split s_papayaanalyticstorch_papayatorch split_s_papayaanalyticstorch_papayatorch.apk
+05-17 18:49:40.739  2459  2847 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.739  5679  5754 W SoLoader: Prepending SoSource s_papayaanalyticstorch_papayatorch-asset-libs: SuperpackSoSource[root = /data/data/com.facebook.katana/modules/s_papayaanalyticstorch_papayatorch_801c8aeb92ad8493e202ae876417dfd5c7b47214c8226c6218093bec0f4d54e4/lib-compressed/arm64-v8a/968460542/asset-libs flags = 1 split = dynamic split:s_papayaanalyticstorch_papayatorch compressedPath = assets/s_papayaanalyticstorch_papayatorch/libs.spo identity = s_papayaanalyticstorch_papayatorch]
+05-17 18:49:40.745  5679  5754 W fb4a.FbVoltronModuleLoader: Split loaded: s_papayaanalyticstorch_papayatorch
+05-17 18:49:40.746  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: pytorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.747  5679  5754 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=pytorch checkDisk=false
+05-17 18:49:40.747  5679  5754 W SoLoader: Registering application split pytorch split_pytorch.apk
+05-17 18:49:40.748  5679  5754 W SoLoader: Prepending SoSource pytorch-asset-libs: SuperpackSoSource[root = /data/data/com.facebook.katana/modules/pytorch_02a09d1ea406796ebc7ef0d201ba60524f0c4efc759d47a8cc0e520a718790aa/lib-compressed/arm64-v8a/968460542/asset-libs flags = 1 split = dynamic split:pytorch compressedPath = assets/pytorch/libs.spo identity = pytorch]
+05-17 18:49:40.753  5679  5754 W fb4a.FbVoltronModuleLoader: Split loaded: pytorch
+05-17 18:49:40.753  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: papaya, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.754  5679  5754 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=papaya checkDisk=false
+05-17 18:49:40.754  5679  5754 W SoLoader: Registering application split papaya split_papaya.apk
+05-17 18:49:40.754  5679  5754 W fb4a.FbVoltronModuleLoader: Split loaded: papaya
+05-17 18:49:40.758  5679  5754 E fb4a.FbVoltronModuleLoader: Created context for split: papayatorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.758  5679  5754 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=papayatorch checkDisk=false
+05-17 18:49:40.758  5679  5754 W SoLoader: Registering application split papayatorch split_papayatorch.apk
+05-17 18:49:40.760  5679  5754 W SoLoader: Prepending SoSource papayatorch-asset-libs: SuperpackSoSource[root = /data/data/com.facebook.katana/modules/papayatorch_d772bb061e5daac540e4044e5db40e8b0ef9fe94616e28ffc5b14753c417e2f6/lib-compressed/arm64-v8a/968460542/asset-libs flags = 1 split = dynamic split:papayatorch compressedPath = assets/papayatorch/libs.spo identity = papayatorch]
+05-17 18:49:40.768  5679  5754 W fb4a.FbVoltronModuleLoader: Split loaded: papayatorch
+05-17 18:49:40.771  5679  5754 E fb4a.ActionQueryTaskListener: 1 onLoadBatchComplete exception: null FOREGROUND modules: [papaya(*),papayatorch,s_papayaanalyticstorch_papayatorch_torchedlooper(*),pytorch(*),s_papayaanalyticstorch_papayatorch(*),s_papayatorch_torchedlooper(*)] actions: [LOAD=[papayatorch, s_papayaanalyticstorch_papayatorch_torchedlooper, pytorch, s_papayaanalyticstorch_papayatorch, s_papayatorch_torchedlooper],COMPLETE_SUCCESS=[papaya, papayatorch, s_papayaanalyticstorch_papayatorch_torchedlooper, pytorch, s_papayaanalyticstorch_papayatorch, s_papayatorch_torchedlooper]]
+05-17 18:49:40.772  5679  5733 E fb4a.FbVoltronModuleLoader: Created context for split: papayaanalyticstorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.773  5679  5733 E fb4a.FbVoltronModuleLoader: Created context for split: papayaanalyticstorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.773  5679  5733 E fb4a.FbVoltronModuleLoader: Created context for split: papayaanalyticstorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.775  5679  5733 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayaanalyticstorch_papayatorch_torchedlooper, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.776  5679  5733 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=s_papayaanalyticstorch_papayatorch_torchedlooper checkDisk=false
+05-17 18:49:40.775  1621  1702 D StorageStatsService: getFreeBytes: 1044467712
+05-17 18:49:40.776  5679  5733 W SoLoader: Registering application split s_papayaanalyticstorch_papayatorch_torchedlooper split_s_papayaanalyticstorch_papayatorch_torchedlooper.apk
+05-17 18:49:40.776  1621  3977 D StorageStatsService: getFreeBytes: 1044467712
+05-17 18:49:40.777  5679  5733 W fb4a.FbVoltronModuleLoader: Split loaded: s_papayaanalyticstorch_papayatorch_torchedlooper
+05-17 18:49:40.777  5679  5733 E fb4a.FbVoltronModuleLoader: Created context for split: s_papayaanalyticstorch_papayatorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.777  5679  5733 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=s_papayaanalyticstorch_papayatorch checkDisk=false
+05-17 18:49:40.777  5679  5733 W SoLoader: Registering application split s_papayaanalyticstorch_papayatorch split_s_papayaanalyticstorch_papayatorch.apk
+05-17 18:49:40.778  5679  5733 W fb4a.FbVoltronModuleLoader: Split loaded: s_papayaanalyticstorch_papayatorch
+05-17 18:49:40.778  5679  5733 E fb4a.FbVoltronModuleLoader: Created context for split: pytorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.779  5679  5733 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=pytorch checkDisk=false
+05-17 18:49:40.779  5679  5733 W SoLoader: Registering application split pytorch split_pytorch.apk
+05-17 18:49:40.783  5679  5733 W fb4a.FbVoltronModuleLoader: Split loaded: pytorch
+05-17 18:49:40.784  5679  5733 E fb4a.FbVoltronModuleLoader: Created context for split: papaya, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.784  5679  5733 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=papaya checkDisk=false
+05-17 18:49:40.785  5679  5733 W SoLoader: Registering application split papaya split_papaya.apk
+05-17 18:49:40.785  5679  5754 E fb4a.ActionQueryTaskListener: 1 onTaskComplete [true,false,] FOREGROUND modules: [papaya(*),papayatorch,s_papayaanalyticstorch_papayatorch_torchedlooper(*),pytorch(*),s_papayaanalyticstorch_papayatorch(*),s_papayatorch_torchedlooper(*)] actions: [LOAD=[papayatorch, s_papayaanalyticstorch_papayatorch_torchedlooper, pytorch, s_papayaanalyticstorch_papayatorch, s_papayatorch_torchedlooper],COMPLETE_SUCCESS=[papaya, papayatorch, s_papayaanalyticstorch_papayatorch_torchedlooper, pytorch, s_papayaanalyticstorch_papayatorch, s_papayatorch_torchedlooper]]
+05-17 18:49:40.785  5679  5733 W fb4a.FbVoltronModuleLoader: Split loaded: papaya
+05-17 18:49:40.787  5679  5733 E fb4a.FbVoltronModuleLoader: Created context for split: papayaanalyticstorch, location: /data/app/~~vFcpl-aPhDysnOtyswVwEA==/com.facebook.katana-hYJoJk04XvJ6TCDgzLlxHg==/base.apk
+05-17 18:49:40.787  5679  5733 W fb4a.FbVoltronModuleLoader: loadSplitWithRetry: main split=papayaanalyticstorch checkDisk=false
+05-17 18:49:40.787  5679  5733 W SoLoader: Registering application split papayaanalyticstorch split_papayaanalyticstorch.apk
+05-17 18:49:40.789  5679  5733 W SoLoader: Prepending SoSource papayaanalyticstorch-asset-libs: SuperpackSoSource[root = /data/data/com.facebook.katana/modules/papayaanalyticstorch_1fee7029af4dc0efb4c6f56c880d252bebe2946d46fd98251019fb935dea9332/lib-compressed/arm64-v8a/968460542/asset-libs flags = 1 split = dynamic split:papayaanalyticstorch compressedPath = assets/papayaanalyticstorch/libs.spo identity = papayaanalyticstorch]
+05-17 18:49:40.795  5679  5733 W fb4a.FbVoltronModuleLoader: Split loaded: papayaanalyticstorch
+05-17 18:49:40.796  5679  5733 E fb4a.ActionQueryTaskListener: 2 onLoadBatchComplete exception: null FOREGROUND modules: [papaya(*),s_papayaanalyticstorch_papayatorch_torchedlooper(*),papayaanalyticstorch,pytorch(*),s_papayaanalyticstorch_papayatorch(*)] actions: [LOAD=[s_papayaanalyticstorch_papayatorch_torchedlooper, papayaanalyticstorch, pytorch, s_papayaanalyticstorch_papayatorch],COMPLETE_SUCCESS=[papaya, s_papayaanalyticstorch_papayatorch_torchedlooper, papayaanalyticstorch, pytorch, s_papayaanalyticstorch_papayatorch]]
+05-17 18:49:40.798  1621  3972 D StorageStatsService: getFreeBytes: 1044463616
+05-17 18:49:40.798  5679  5733 E fb4a.ActionQueryTaskListener: 2 onTaskComplete [true,false,] FOREGROUND modules: [papaya(*),s_papayaanalyticstorch_papayatorch_torchedlooper(*),papayaanalyticstorch,pytorch(*),s_papayaanalyticstorch_papayatorch(*)] actions: [LOAD=[s_papayaanalyticstorch_papayatorch_torchedlooper, papayaanalyticstorch, pytorch, s_papayaanalyticstorch_papayatorch],COMPLETE_SUCCESS=[papaya, s_papayaanalyticstorch_papayatorch_torchedlooper, papayaanalyticstorch, pytorch, s_papayaanalyticstorch_papayatorch]]
+05-17 18:49:40.803  1621  3956 D StorageStatsService: getFreeBytes: 1044463616
+05-17 18:49:40.871  1621  3983 D StorageStatsService: getFreeBytes: 1044439040
+05-17 18:49:40.872  2459  2847 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.873  2459  2847 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.873  1621  4766 D StorageStatsService: getFreeBytes: 1044439040
+05-17 18:49:40.874  2459  2799 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.875  2459  2799 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.875  1621  3956 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.876  2459  2850 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:1
+05-17 18:49:40.877  2459  2850 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.jio.home:getActiveSubscriptionInfoList:3
+05-17 18:49:40.877  1621  3983 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.877  1621  3978 D StorageStatsService: getFreeBytes: 1044439040
+05-17 18:49:40.882  1621  3956 D FileUtils: Rounded bytes from 119530373120 to 128000000000
+05-17 18:49:40.995  1621  3956 D StorageStatsService: getFreeBytes: 1044426752
+05-17 18:49:40.995  1621  3978 D StorageStatsService: getFreeBytes: 1044426752
+05-17 18:49:40.998  1621  4766 D StorageStatsService: getFreeBytes: 1044426752
+05-17 18:49:41.492  5679  5753 W facebook.katana: JNI RegisterNativeMethods: attempt to register 0 native methods for com.facebook.traffic.nts.providers.reachability.ReachabilityV2ProviderAppLayerUpcallsImpl
+05-17 18:49:41.494  1621  4766 D ConnectivityService: requestNetwork for uid/pid:10338/5679 activeRequest: null callbackRequest: 55484 [NetworkRequest [ REQUEST id=55485, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|LP
+05-17 18:49:41.497  1745  1745 I pixel-thermal: VIRTUAL-SKIN:39.3249 raw data: VIRTUAL-NEUTRAL:39324.9 VIRTUAL-NEUTRAL-SKIN2:39282.5 VIRTUAL-QUIET-NEUTRAL:38434.5 VIRTUAL-SKIN:39324.9 disp_therm:37916 gnss_tcxo_therm:39519 neutral_therm:38606 quiet_therm:38361 skin_therm1:39941 skin_therm2:40861 
+05-17 18:49:41.498  2271  2463 D ImpulseStateSource: Notify clients: 33721
+05-17 18:49:41.501  1621  1957 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55485, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:41.501  1621  1957 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55485, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:41.502  1621  1957 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=55485, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:41.502  1621  1957 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55485, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:41.503  1621  1970 D ConnectivityService: NetReassign [55485 : null ΓåÆ 120] [c 0] [a 2] [i 5]
+05-17 18:49:41.820  5679  5752 W fb4a.MultiSignalANRDetectorLacrima: Pausing error state checks
+05-17 18:49:42.103  5679  5753 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: user_visitation_event
+05-17 18:49:42.105  5679  5753 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: cell_tower_federated_event
+05-17 18:49:42.106  5679  5740 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: cell_tower_federated_event
+05-17 18:49:42.107  5679  5753 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: cell_tower_federated_event
+05-17 18:49:42.109  5679  5740 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: cell_tower_federated_event
+05-17 18:49:42.111  5679  5753 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: cell_tower_federated_event
+05-17 18:49:42.112  5679  5740 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: user_visitation_event_v2
+05-17 18:49:42.116  5679  5753 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: user_visitation_event_v2
+05-17 18:49:42.118  5679  5740 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: user_visitation_event_v2
+05-17 18:49:42.120  5679  5753 E Sink.cc : [Papaya] MldwCore.cc: 24 Core Read Error: no such table: fa_double_logging_event
+05-17 18:49:42.141  1621  4766 W JobScheduler: Job didn't exist in JobStore: ac5e723 #u0a338/771751936 com.facebook.katana/com.facebook.papaya.fb.client.services.FBPapayaJobService
+05-17 18:49:42.164  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 18:49:42.166  1621  1970 D InetDiagMessage: Destroyed 4 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 18:49:42.166  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10450} in 4ms
+05-17 18:49:42.167  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 18:49:42.168  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 18:49:42.168  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={20450} in 2ms
+05-17 18:49:42.537   978  1032 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 18:49:42.628   978  1032 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 18:49:42.628   978  1032 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 18:49:42.628   978  1032 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 18:49:42.628   978  1032 D WifiHAL : len = 4, expected len = 4
+05-17 18:49:43.577 14632 14632 I adbd    : adbd service requested 'shell,v2:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'threadtime''
+05-17 18:49:44.313  1745  1764 I pixel-thermal: cellular-emergency:39.3249 raw data: VIRTUAL-NEUTRAL:39324.9 VIRTUAL-NEUTRAL-SKIN2:39282.5 VIRTUAL-QUIET-NEUTRAL:38434.5 VIRTUAL-SKIN:39324.9 cellular-emergency:39324.9 disp_therm:37916 gnss_tcxo_therm:39519 neutral_therm:38606 quiet_therm:38361 skin_therm1:39941 skin_therm2:40861 
+05-17 18:49:44.313  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:39.3249 raw data: VIRTUAL-SKIN:39324.9 VIRTUAL-SKIN-CPU:39324.9 
+05-17 18:49:44.313  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=1567.67 err=1.67515 s_power=800 time_elapsed_ms=7008 p=670.059 i=97.6063 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 18:49:44.313  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 372.57 mW)(S2M_VDD_CPUCL2: 351.86 mW)(S3M_VDD_CPUCL1: 136.62 mW)
+05-17 18:49:44.313  1745  1764 I pixel-thermal: VIRTUAL-SKIN:39.3249 raw data: VIRTUAL-SKIN:39324.9 
+05-17 18:49:44.313  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:39.3249 raw data: VIRTUAL-SKIN:39324.9 VIRTUAL-SKIN-CPU-GPU:39324.9 
+05-17 18:49:44.313  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3202.54 err=5.67515 s_power=800 time_elapsed_ms=7008 p=1702.54 i=700 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 18:49:44.314  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 372.57 mW)(S2M_VDD_CPUCL2: 351.86 mW)(S3M_VDD_CPUCL1: 136.62 mW)(S2S_VDD_G3D: 142.76 mW)
+05-17 18:49:44.314  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:39.3249 raw data: VIRTUAL-SKIN:39324.9 VIRTUAL-SKIN-HINT:39324.9 
+05-17 18:49:44.314  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:39.3249 raw data: VIRTUAL-SKIN:39324.9 VIRTUAL-SKIN-CHARGE:39324.9 
+05-17 18:49:44.314  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 1380.99
+05-17 18:49:44.443  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 18:49:44.444  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 18:49:44.444  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10588} in 5ms
+05-17 18:49:44.446  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 18:49:44.447  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 18:49:44.447  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={20588} in 3ms
+05-17 18:49:44.737  2078  2093 W System  : A resource failed to call release. 
+05-17 18:49:44.737  2078  2093 W System  : A resource failed to call release. 
+05-17 18:49:44.820  5679  5679 W fb4a.PeriodicThreadBoost: Periodic thread booster disabled by MC
+05-17 18:49:44.834  1621  3956 W PackageInfo: Large parcel: size=29484 pkg=com.facebook.katana uid=10338 serv=23800(151) prevAllowSquashing=false
+05-17 18:49:44.846  5679  5739 W facebook.katana: JNI RegisterNativeMethods: attempt to register 0 native methods for com.facebook.msys.mci.EventLoggingData
+05-17 18:49:44.862  5679  5739 W soft_error.cpp: [DGWClientConfig] : sgConnectTimeout: value 0 outside valid range [1, 120] <force_oncall:mi_client_infra:force_oncall>
+05-17 18:49:44.862  5679  5739 W soft_error.cpp: [DGWClientConfig] : sgPingTimeout: value 0 outside valid range [1, 60] <force_oncall:mi_client_infra:force_oncall>
+05-17 18:49:44.862  5679  5739 W soft_error.cpp: [DGWClientConfig] : tunnelConnectTimeout: value 0 outside valid range [1, 120] <force_oncall:mi_client_infra:force_oncall>
+05-17 18:49:44.862  5679  5739 W soft_error.cpp: [DGWClientConfig] : tunnelConnectAckTimeout: value 0 outside valid range [1, 120] <force_oncall:mi_client_infra:force_oncall>
+05-17 18:49:44.864  1621  3956 D ConnectivityService: requestNetwork for uid/pid:10338/5679 activeRequest: null callbackRequest: 55486 [NetworkRequest [ REQUEST id=55487, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|LP
+05-17 18:49:44.867  1621  1957 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55487, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:44.867  1621  1957 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55487, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:44.867  1621  1957 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=55487, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:44.867  1621  1957 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55487, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:44.868  1621  1970 D ConnectivityService: NetReassign [55487 : null ΓåÆ 120] [c 0] [a 1] [i 2]
+05-17 18:49:44.998  5679  5749 W facebook.katana: JNI RegisterNativeMethods: attempt to register 0 native methods for com.facebook.omnistore.OmnistoreCollectionFrontendHolder
+05-17 18:49:45.032  1621  3956 D ConnectivityService: requestNetwork for uid/pid:10338/5679 activeRequest: null callbackRequest: 55488 [NetworkRequest [ REQUEST id=55489, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC
+05-17 18:49:45.036  1621  1957 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55489, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:45.036  1621  1957 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55489, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:45.036  1621  1957 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=55489, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:45.037  1621  1957 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=55489, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10338 RequestorUid: 10338 RequestorPkg: com.facebook.katana UnderlyingNetworks: Null] ]
+05-17 18:49:45.037  1621  1970 D ConnectivityService: NetReassign [55489 : null ΓåÆ 120] [c 0] [a 1] [i 3]
+05-17 18:49:45.250  1621  1653 I system_server: NativeAlloc concurrent mark compact GC freed 25MB AllocSpace bytes, 3(76KB) LOS objects, 80% free, 101MB/512MB, paused 3.882ms,13.835ms total 462.415ms
+05-17 18:49:45.350  5679  5739 E InterpreterCacheClear: Could not find symbol to hook
+05-17 18:49:45.352  5679  5739 W LogPrintlnFixie: Hook disabled by config
+05-17 18:49:45.379  5679  5846 W fb4a.AppInfoCore: [AI] Package not found when getting package info
+05-17 18:49:45.394  5679  5846 W fb4a.AppInfoCore: [AI] Package not found when getting package info

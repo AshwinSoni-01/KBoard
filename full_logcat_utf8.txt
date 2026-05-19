@@ -1,0 +1,1000 @@
+﻿05-17 16:28:39.486 21491 25824 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+05-17 16:28:39.486 21491 25824 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+05-17 16:28:39.486 21491 25824 I DictationClient: DictationClient$1.onNext():152 Handshake done; eligibility: 1 locale_config_eligibility: {en-US=1, hi-Latn-IN=28, hi-IN=28, ja-JP=1} [SDG]
+05-17 16:28:39.487 21491 25814 I KeyboardEligibilityNotifier: KeyboardEligibilityNotifier.notifyEligibility():76 Keyboard notified that eligibility=ELIGIBLE [SD]
+05-17 16:28:39.487 21491 25824 I DictationClient: DictationClient$1.onCompleted():177 Handshake completed. [SDG]
+05-17 16:28:39.487 21491 25823 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onKeyboardShown():156 #onKeyboardShown scheduled [SD]
+05-17 16:28:39.487 21491 25825 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onKeyboardShown():159 #onKeyboardShown [SD]
+05-17 16:28:39.488 21491 25822 I SpeechEnhancementLogger: SpeechEnhancementLogger.logAtInfo():24 Speech enhancement is disabled because device model is not supported [SD]
+05-17 16:28:39.488 21491 25804 I PackageStatusChecker: PackageStatusChecker.isPackageSuspended():24 Current package suspended=false [SD]
+05-17 16:28:39.490 21491 25814 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+05-17 16:28:39.490 21491 25814 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+05-17 16:28:39.490 21491 25814 I AsrProviderChoice: AsrProviderChoice.setChosenProvider():83 Setting chosen ASR provider to: 6 [SD]
+05-17 16:28:39.490 21491 25814 I EligibilityChecker: EligibilityChecker.triggerProactiveLanguagePackUpdate():475 Never attempted LP download before, triggering download for potential updates [SD]
+05-17 16:28:39.490 21491 25814 I EligibilityChecker: EligibilityChecker.getDictationConfigEligibilityForLocale():310 Dictation is enabled. workprofile=false [SD]
+05-17 16:28:39.490 21491 25812 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():81 Starting language download job for en-US [SD]
+05-17 16:28:39.490 21491 25814 I EligibilityChecker: EligibilityChecker.checkLocaleEligibility():456 Dictation is not enabled for unsupported keyboard locale: hi_IN_#Latn; supported locales: es_ES,en_SG,en_AU,ja_JP,fr_BE,fr_CA,de_CH,de_BE,it_CH,de_DE,en_IN,es_US,it_IT,en_IE,fr_FR,en_US,en_CA,de_AT,fr_CH,en_GB. workprofile=false [SD]
+05-17 16:28:39.490 21491 25814 I AsrProviderSelector: AsrProviderSelector.selectProvider():28 SBG path failed. Reason: 28. Trying S3 path. [SD]
+05-17 16:28:39.490 21491 25812 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():101 Skip download for en-US due to another recent attempt [SD]
+05-17 16:28:39.490 21491 25814 I EligibilityChecker: EligibilityChecker.checkLocaleEligibility():456 Dictation is not enabled for unsupported keyboard locale: hi_IN; supported locales: es_ES,en_SG,en_AU,ja_JP,fr_BE,fr_CA,de_CH,de_BE,it_CH,de_DE,en_IN,es_US,it_IT,en_IE,fr_FR,en_US,en_CA,de_AT,fr_CH,en_GB. workprofile=false [SD]
+05-17 16:28:39.490 21491 25814 I AsrProviderSelector: AsrProviderSelector.selectProvider():28 SBG path failed. Reason: 28. Trying S3 path. [SD]
+05-17 16:28:39.491 21491 25824 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+05-17 16:28:39.491 21491 25824 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+05-17 16:28:39.491 21491 25824 I EligibilityChecker: EligibilityChecker.triggerProactiveLanguagePackUpdate():475 Never attempted LP download before, triggering download for potential updates [SD]
+05-17 16:28:39.491 21491 25824 I EligibilityChecker: EligibilityChecker.getDictationConfigEligibilityForLocale():310 Dictation is enabled. workprofile=false [SD]
+05-17 16:28:39.492 21491 25824 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+05-17 16:28:39.492 21491 25824 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+05-17 16:28:39.492 21491 25810 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():81 Starting language download job for ja-JP [SD]
+05-17 16:28:39.492 21491 21491 I NgaStateManager: NgaStateManager.setConnected():161 Connected false -> true [SDG]
+05-17 16:28:39.492 21491 21491 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():188 AssistantDictationEligibility = 1 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, en-US) = 1 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, hi-Latn-IN) = 28 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, hi-IN) = 28 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, ja-JP) = 1 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():197 AssistantDictationEligibility(inputField) = 1 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaInputHandlerFactory: NgaInputHandlerFactory.restorePrimary():138 restoring primary [SDG]
+05-17 16:28:39.493 21491 21491 I NgaVoiceInputHandlerSwitcher: NgaVoiceInputHandlerSwitcher.restorePrimary():240 not switching to primary. fallback is null [SDG]
+05-17 16:28:39.493 21491 25810 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():101 Skip download for ja-JP due to another recent attempt [SD]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():188 AssistantDictationEligibility = 1 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, en-US) = 1 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, hi-Latn-IN) = 28 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, hi-IN) = 28 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, ja-JP) = 1 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():197 AssistantDictationEligibility(inputField) = 1 [SDG]
+05-17 16:28:39.493 21491 21491 I NgaInputHandlerFactory: NgaInputHandlerFactory.restorePrimary():138 restoring primary [SDG]
+05-17 16:28:39.493 21491 21491 I NgaVoiceInputHandlerSwitcher: NgaVoiceInputHandlerSwitcher.restorePrimary():240 not switching to primary. fallback is null [SDG]
+05-17 16:28:39.493 21491 21491 I NgaExtension: NgaExtension.onDictatingStateChanged():921 Dictating state changed: dictating=false, status=0 [SDG]
+05-17 16:28:39.493 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020513, callback=wim@e809408, lastModifier=2, keyCodes=[32], actions=[0]}
+05-17 16:28:39.493 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020513, callback=wim@9a7a1, lastModifier=0, keyCodes=[319], actions=[0]}
+05-17 16:28:39.493 21491 21491 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence aduc{labelResId=2132020513, callback=wim@246ce1b, lastModifier=2, keyCodes=[32], actions=[0]}
+05-17 16:28:39.493 21491 21491 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence aduc{labelResId=2132020513, callback=wim@ed42bb8, lastModifier=0, keyCodes=[319], actions=[0]}
+05-17 16:28:39.493 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020513, callback=wim@62e4a7f, lastModifier=2, keyCodes=[32], actions=[0]}
+05-17 16:28:39.493 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020513, callback=wim@9a29a4c, lastModifier=0, keyCodes=[319], actions=[0]}
+05-17 16:28:39.494 21491 21491 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence aduc{labelResId=2132020513, callback=wim@df8dd91, lastModifier=2, keyCodes=[32], actions=[0]}
+05-17 16:28:39.494 21491 21491 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence aduc{labelResId=2132020513, callback=wim@59eb4f6, lastModifier=0, keyCodes=[319], actions=[0]}
+05-17 16:28:39.580  1621  1973 I MdnsReplySender: Sending {MdnsReplyInfo: /192.168.31.153:5353 to /224.0.0.251:5353, answers: 1, additionalAnswers: 4, knownAnswers: 0, sendDelayMs 0}
+05-17 16:28:39.622  2271  2465 D ImpulseConnection: timeout didn't happen: com.google.android.apps.turbo
+05-17 16:28:39.643  1745  1745 I pixel-thermal: VIRTUAL-SKIN:38.7675 raw data: VIRTUAL-NEUTRAL:38767.4 VIRTUAL-NEUTRAL-SKIN2:38666.3 VIRTUAL-QUIET-NEUTRAL:37791.3 VIRTUAL-SKIN:38767.4 disp_therm:37293 gnss_tcxo_therm:39096 neutral_therm:38072 quiet_therm:37671 skin_therm1:39429 skin_therm2:40053 
+05-17 16:28:39.644  2271  2463 D ImpulseStateSource: Notify clients: 32839
+05-17 16:28:39.646 21047 21047 I ImeTracker: com.whatsapp:1e5c0011: onShown
+05-17 16:28:39.658 21047 21047 D VRI[Conversation]: WindowInsets changed: ime:[0,0,0,1017] 
+05-17 16:28:40.814 10976 25757 I NearbyMediums: Found BLE GATT Advertisements :
+05-17 16:28:40.814 10976 25757 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=false, serviceIdHash=[ 0xfc 0x9f 0x5e ], data=[ 0x23 0xfc 0x9f 0x5e 0x33 0x42 0x38 0x46 0x1d 0x06 0x87 0x5a 0x1d 0x02 0xcc 0xb8 0xfa 0xef 0xec 0xdb 0x67 0x69 0x56 0xb4 0xc2 0x09 0x0b 0x41 0x73 0x68 0x77 0x69 0x6e 0x27 0x73 0x20 0x50 0x43 0xa0 0xb3 0x39 0xf2 0x17 0x77 0x00 0x00 ], deviceToken=[ 0xee 0x40 ], rxAdvertisement=null } : 19 times.
+05-17 16:28:40.814 10976 25757 I NearbyMediums: Total 19 GATT advertisements from 1 unique advertisers.
+05-17 16:28:40.814 10976 25757 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-17 16:28:41.065  1135  1157 I WPKTRT  : process_address_event: 2409:40c4:153:71cf:738:6125:910e:cdb8 added to wlan0
+05-17 16:28:41.065  1135  1157 I WPKTRT  : process_address_event: 2409:40c4:153:71cf:9da8:cae7:d6c5:aae2 added to wlan0
+05-17 16:28:41.065  2213  2772 D IpClient/wlan0: addressUpdated: 2409:40c4:153:71cf:738:6125:910e:cdb8/64 on ifindex 47 flags 0x00000900 scope 0
+05-17 16:28:41.065  2213  2772 D IpClient/wlan0: addressUpdated: 2409:40c4:153:71cf:9da8:cae7:d6c5:aae2/64 on ifindex 47 flags 0x00000001 scope 0
+05-17 16:28:41.065  2213  2772 W AlarmManager: Unrecognized alarm listener com.android.networkstack.android.net.ip.IpClientLinkObserver$Dhcp6PdPreferredPrefixAlarmListener@b77b132
+05-17 16:28:41.067  2213  2772 D ApfFilter: (wlan0): Adding RA fe80::da23:e0ff:fe80:e3d7 -> ff02::1 180s 2409:40c4:153:71cf::/64 14716s/14716s DNS 180s 2409:40c4:153:71cf:da23:e0ff:fe80:e3d7 
+05-17 16:28:41.070   978   978 E WifiHAL : Setting APF program, halHandle = 0xb400006ff85cb850
+05-17 16:28:41.070   978   978 E WifiHAL : Set apf filter for iface = wlan0
+05-17 16:28:41.070   978   978 I WifiHAL : createRequest: APF set program request
+05-17 16:28:41.071   978   978 I WifiHAL : mProgramLen : 582
+05-17 16:28:41.207  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:6).
+05-17 16:28:41.211   932   973 I CHRE    : @ 426009.593: [AR] ON => IDLE
+05-17 16:28:41.326 10560 10560 D OtherActivityInputConsumer: ACTION_DOWN: mIsDeferredDownTarget=true
+05-17 16:28:41.393  1562 26853 D Vibrator: waitForComplete: Vibrator is already off
+05-17 16:28:41.598 21047 21051 I com.whatsapp: NativeAlloc concurrent mark compact GC freed 28MB AllocSpace bytes, 125(7592KB) LOS objects, 92% free, 20MB/256MB, paused 444us,1.192ms total 104.856ms
+05-17 16:28:41.744  1745  1764 I pixel-thermal: VIRTUAL-SKIN:38.7675 raw data: VIRTUAL-NEUTRAL:38767.4 VIRTUAL-NEUTRAL-SKIN2:38666.3 VIRTUAL-QUIET-NEUTRAL:37791.3 VIRTUAL-SKIN:38767.4 disp_therm:37293 gnss_tcxo_therm:39096 neutral_therm:38072 quiet_therm:37671 skin_therm1:39429 skin_therm2:40053 
+05-17 16:28:41.753  1621  1768 W InputChannel-JNI: Channel already disposed.
+05-17 16:28:41.756  2078  2078 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Dialog$$ExternalSyntheticLambda2@e8af558
+05-17 16:28:41.756  2078  2078 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): com.android.systemui.animation.back.OnBackAnimationCallbackExtensionKt$onBackAnimationCallbackFrom$4@1fb76b1
+05-17 16:28:41.756  1621  1768 D CoreBackPreview: Window{33db1d9 u0 IME Switcher Menu}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4783738, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+05-17 16:28:41.756  1621  1768 D CoreBackPreview: Window{33db1d9 u0 IME Switcher Menu}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@552c311, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}
+05-17 16:28:41.771  1621  3982 D WindowManager: setClientSurface Surface(name=VRI-IME Switcher Menu#139101)/@0xbd26c76 for 33db1d9 IME Switcher Menu
+05-17 16:28:41.773  2078  2078 I Surface : Creating surface for consumer unnamed-2078-8843 with slotExpansion=1 for 64 slots
+05-17 16:28:41.773  2078  2078 I Surface : Creating surface for consumer VRI[IME Switcher Menu]#8455(BLAST Consumer)8455 with slotExpansion=1 for 64 slots
+05-17 16:28:41.776  1621  1694 I ImeTracker: system_server:668cfeb2: onRequestShow at ORIGIN_SERVER reason CONTROLS_CHANGED fromUser false displayId 0
+05-17 16:28:41.777 21047 21047 I ImeTracker: system_server:668cfeb2: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+05-17 16:28:41.786  1562 26854 D Vibrator: waitForComplete: Vibrator is already off
+05-17 16:28:41.931  2071  2074 I deeptouch: I0000 00:00:1779015521.931084    2074 tf_lite_classifier.cc:415] Event stream classified as kNone
+05-17 16:28:41.931 10560 10560 I NavHandleLongPressHandler: Contextual Search invocation: touch finished with reason: touch action up
+05-17 16:28:41.931 10560 10560 D OtherActivityInputConsumer: finishTouchTracking: mPassedWindowMoveSlop=false
+05-17 16:28:41.931 10560 10560 D OtherActivityInputConsumer: finishTouchTracking: mInteractionHandler=null
+05-17 16:28:41.932 10560 10560 D OtherActivityInputConsumer: finishTouchTracking: ev=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=915.0, y[0]=2383.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=AMBIGUOUS_GESTURE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=311921078, downTime=311920470, deviceId=4, source=0x1002, displayId=0, eventId=707038963 }
+05-17 16:28:41.932 10560 10560 D OtherActivityInputConsumer: finishTouchTracking: mActiveCallbacks=null
+05-17 16:28:42.025   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:28:42.073  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:42.074  1621  1970 D InetDiagMessage: Destroyed 4 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:42.074  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10450} in 3ms
+05-17 16:28:42.075  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:42.075  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:42.075  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={20450} in 1ms
+05-17 16:28:42.111   978  1032 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:28:42.111   978  1032 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:28:42.111   978  1032 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:28:42.111   978  1032 D WifiHAL : len = 4, expected len = 4
+05-17 16:28:42.182  2071  2074 I deeptouch: I0000 00:00:1779015522.182846    2074 tf_lite_classifier.cc:415] Event stream classified as kNone
+05-17 16:28:42.320  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Motion Detect (active:0).
+05-17 16:28:42.320  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 68320 not found.
+05-17 16:28:42.320  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 161: USF: Received kErrNotFound when disabling one shot sensor.
+05-17 16:28:42.320  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Stationary Detect (active:1).
+05-17 16:28:42.321  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 4: Enabled 1, odr_index 1.
+05-17 16:28:42.321  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/52/13/13 WM: 9 Intr: 21.
+05-17 16:28:42.321  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 249: USF: Lsm6dsrDevice: Config sampling too slow. Took 385010ns.
+05-17 16:28:42.321  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 385010ns.
+05-17 16:28:42.323  1209  1209 D AOC     : A3:MSG: motion_state_sensor.cc, 327: USF: MoSt: StationaryDetect sampling started with sampling ID 68322.
+05-17 16:28:42.323  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 3: Enabled 0, odr_index 0.
+05-17 16:28:42.323  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/52/13/13 WM: 9 Intr: 21.
+05-17 16:28:42.324  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 371582ns.
+05-17 16:28:42.324  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Motion Detect (active:-1).
+05-17 16:28:42.324  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 68321 not found.
+05-17 16:28:42.325  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 145: USF: Received kErrNotFound when disabling one shot sensor.
+05-17 16:28:42.326  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 550: VSC: [Step Counter] stopSensorEvents: sensor 0x20002
+05-17 16:28:42.326  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 532: VSC: [Step Counter] requestSensorEvents: sensor 0x10001, period=20 latency=1000ms.
+05-17 16:28:42.327  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:6).
+05-17 16:28:42.327  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 550: VSC: [Significant Motion] stopSensorEvents: sensor 0x20002
+05-17 16:28:42.328  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 532: VSC: [Significant Motion] requestSensorEvents: sensor 0x10001, period=20 latency=3200ms
+05-17 16:28:42.328  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:7).
+05-17 16:28:42.329  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 0: Enabled 1, odr_index 4.
+05-17 16:28:42.329  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/52/13/13 WM: 9 Intr: 21.
+05-17 16:28:42.330  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 331787ns.
+05-17 16:28:42.331  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:7).
+05-17 16:28:42.332  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:7).
+05-17 16:28:42.332   932   973 I CHRE    : @ 426010.710: [AR] IDLE => ON
+05-17 16:28:42.333  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 0: Enabled 1, odr_index 6.
+05-17 16:28:42.333  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 416/52/13/52 WM: 33 Intr: 17.
+05-17 16:28:42.334  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 597900ns.
+05-17 16:28:42.335  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Gyroscope (active:2).
+05-17 16:28:42.335  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 1: Enabled 1, odr_index 6.
+05-17 16:28:42.336  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 416/416/13/52 WM: 57 Intr: 16.
+05-17 16:28:42.336  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 357910ns.
+05-17 16:28:42.337  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Stationary Detect (active:2).
+05-17 16:28:42.338  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR FreeFall Detect (active:1).
+05-17 16:28:42.339  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 5: Enabled 1, odr_index 1.
+05-17 16:28:42.339  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 416/416/13/52 WM: 57 Intr: 16.
+05-17 16:28:42.339  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 312011ns.
+05-17 16:28:42.342  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Motion Detect (active:-1).
+05-17 16:28:42.343  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 68319 not found.
+05-17 16:28:42.343  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 145: USF: Received kErrNotFound when disabling one shot sensor.
+05-17 16:28:42.344   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001019 endpoint 0x3: Type 0x1f4 size 12 
+05-17 16:28:42.345   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001019 endpoint 0x3: Type 0x1f4 size 12 
+05-17 16:28:42.594  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:42.596  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:42.596  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10126} in 2ms
+05-17 16:28:42.597  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:42.598  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:42.599  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={20126} in 3ms
+05-17 16:28:42.622   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001019 endpoint 0x3: Type 0x1f4 size 12 
+05-17 16:28:42.624   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001019 endpoint 0x3: Type 0x1f4 size 12 
+05-17 16:28:42.704  2071  2074 I deeptouch: I0000 00:00:1779015522.704355    2074 tf_lite_classifier.cc:415] Event stream classified as kNone
+05-17 16:28:42.704  2078  2078 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-17 16:28:42.704  1621  3983 D CoreBackPreview: Window{33db1d9 u0 IME Switcher Menu}: Setting back callback null
+05-17 16:28:42.708  1621  1914 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+05-17 16:28:42.710  1621  1690 D HintManagerService: Sent cleanup message for uid 10179
+05-17 16:28:42.711 21491 21491 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():1661 onFinishInputView(true)
+05-17 16:28:42.712 21491 21491 W SupplementaryKeyboardsWrapper: SupplementaryKeyboardsWrapper.deactivateKeyboard():162 keyboard composing_text_consumer is not activated before!
+05-17 16:28:42.713 21491 21491 I EmojifyExtensionImpl: EmojifyExtensionImpl.onDeactivate():556 Deactivating Emojify extension kqe@752c795.
+05-17 16:28:42.719  1478  1775 I twoshay.TouchContextService: Got new packet! ContextPacket{orientation: PORTRAIT, audioMode: NORMAL, adaptiveTouchSensitivity: OFF, screenProtectorMode: ON, imeState: ImeState{displayId: 0, visible: false, top: 0, left: 0, bottom: 0, right: 0}, audioDeviceInfo: TYPE_BUILTIN_EARPIECE}
+05-17 16:28:42.720  2078  2078 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+05-17 16:28:42.722 21047 21047 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda14@c0ce6a5
+05-17 16:28:42.722 21491 21491 I GlobeKeyExtension: GlobeKeyExtension.onDeactivate():154 
+05-17 16:28:42.722  1621  3982 D CoreBackPreview: Window{7aeb856 u0 com.whatsapp/com.whatsapp.Conversation}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@2f6acfe, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+05-17 16:28:42.723 21491 21491 I NgaExtension: NgaExtension.onDeactivate():687 NgaExtension#onDeactivate [SDG]
+05-17 16:28:42.724  1621  1693 V WindowManager: Unknown focus tokens, dropping reportFocusChanged
+05-17 16:28:42.724 21491 21491 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener oij@bbd5d85 was not registered for notification class aaod
+05-17 16:28:42.725 21491 25823 I NgaDataShareClient: NgaDataShareClient.sendCorrectionsAndEndSession():412 endDataPushSession() [SDG]
+05-17 16:28:42.725 21491 25823 I NgaDataShareClient: NgaDataShareClient.sendCorrectionsList():420 sendCorrectionsList() [SDG]
+05-17 16:28:42.725 21491 25823 W NgaDataShareClient: NgaDataShareClient.getClientInfo():504 null TriggerApplicationId provided. [SDG]
+05-17 16:28:42.725 21491 21491 I PkDeviceHelper: PkDeviceHelper.refreshDevices():87 refreshing devices
+05-17 16:28:42.726 21491 25823 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener omg@e85f2e8 was not registered for notification class aaye
+05-17 16:28:42.726 21491 21491 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+05-17 16:28:42.726 21491 25823 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener omf@67b4d01 was not registered for notification class aaod
+05-17 16:28:42.726 21491 25823 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardVisibilityEvent():214 Handling KeyboardVisibilityEvent: KEYBOARD_CLOSED [SD]
+05-17 16:28:42.726 21491 21491 I PkDeviceHelper: PkDeviceHelper.refreshDevices():87 refreshing devices
+05-17 16:28:42.726 21491 25823 I DataShareHelper: DataShareHelper.shareCorrections():24 shareCorrections() [SD]
+05-17 16:28:42.726 21491 21491 I NgaVoiceInputHandler: NgaVoiceInputHandler.shutdownInternalLegacy():342 VoiceInputHandler:deactivating with reason: SHUTDOWN_UNIVERSAL_EXTENSION_ON_DEACTIVATE [SDG]
+05-17 16:28:42.726 21491 21491 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener acna@56345e7 was not registered for notification class acnb
+05-17 16:28:42.726 21491 21491 W SmartEdit: SmartEdit.setGenAiVoiceEditManager():827 Cannot set LC UI delegate: promotionManager is null
+05-17 16:28:42.726 21491 21491 I NgaInputManager: NgaInputManager.onDeactivate():482 SmartEdit: unloading models false [SDG]
+05-17 16:28:42.726 21491 21491 I UniversalDictationUiProvider: UniversalDictationUiProvider.onDeactivate():69 onDeactivate() [UD]
+05-17 16:28:42.727 21491 21491 I InputBundle: InputBundle.consumeEvent():1056 Skip consuming an event as keyboard status is INACTIVE
+05-17 16:28:42.728 21491 21491 E native  : E0000 00:00:1779015522.727965   21491 key-correction-manager.cc:360] User feature cache is not ready for key correction!
+05-17 16:28:42.730 21491 21491 I AndroidIME: AbstractIme.onDeactivate():213 LatinIme.onDeactivate()
+05-17 16:28:42.730  1621  3982 E InputMethodManagerService: Ignoring com.android.server.inputmethod.InputMethodManagerService$InputMethodPrivilegedOperationsImpl.updateStatusIconAsync:6846 due to an invalid token. uid:10179 token:android.os.Binder@b29327d
+05-17 16:28:42.730 21491 21491 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+05-17 16:28:42.731 21491 21525 I NebulaeTrainingCacheMetricsProcessor: NebulaeTrainingCacheMetricsProcessor.processEndSession():616 End training cache session: 01ea16f09cbaa21a79348379c04a7b42595ec00f97221ca0b342a940252a312a/01ea16f09cbaa21a79348379c04a7b42595ec00f97221ca0b342a940252a312a
+05-17 16:28:42.731 21491 21491 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-17 16:28:42.731 21491 21491 I GoogleInputMethodService: GoogleInputMethodService.onDestroy():1018 
+05-17 16:28:42.732 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020512, callback=wim@367158b, lastModifier=2, keyCodes=[48], actions=[0]}
+05-17 16:28:42.733 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020511, callback=wim@9c759eb, lastModifier=65536, keyCodes=[76], actions=[0]}
+05-17 16:28:42.733 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132018865, callback=wim@a69865, lastModifier=2, keyCodes=[39], actions=[0]}
+05-17 16:28:42.733 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020519, callback=wim@dd0721c, lastModifier=2, keyCodes=[47], actions=[0]}
+05-17 16:28:42.733 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020510, callback=wim@8c0c305, lastModifier=2, keyCodes=[37], actions=[0]}
+05-17 16:28:42.733 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020507, callback=wim@5def74d, lastModifier=2, keyCodes=[50], actions=[0]}
+05-17 16:28:42.733 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020508, callback=wim@3a4d469, lastModifier=2, keyCodes=[56], actions=[0]}
+05-17 16:28:42.734 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020508, callback=wim@81c9eee, lastModifier=0, keyCodes=[317], actions=[0]}
+05-17 16:28:42.734 21047 21047 D VRI[Conversation]: WindowInsets changed: ime:null 
+05-17 16:28:42.737 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020513, callback=wim@df8dd91, lastModifier=2, keyCodes=[32], actions=[0]}
+05-17 16:28:42.737 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020513, callback=wim@59eb4f6, lastModifier=0, keyCodes=[319], actions=[0]}
+05-17 16:28:42.739 21491 21525 I NebulaeTrainingCacheMetricsProcessor: NebulaeTrainingCacheMetricsProcessor.processEndSession():657 No input action collection in this session, skip logging.
+05-17 16:28:42.739 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020518, callback=weu@5e3af58, lastModifier=2, keyCodes=[62], actions=[0]}
+05-17 16:28:42.740 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module wfc is unavailable
+05-17 16:28:42.740 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020508, callback=wim@1d6f202, lastModifier=2, keyCodes=[56], actions=[0]}
+05-17 16:28:42.741 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020508, callback=wim@5cdd713, lastModifier=0, keyCodes=[317], actions=[0]}
+05-17 16:28:42.741 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020512, callback=wim@8070a95, lastModifier=2, keyCodes=[48], actions=[0]}
+05-17 16:28:42.741 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020510, callback=wim@8b0bb49, lastModifier=2, keyCodes=[37], actions=[0]}
+05-17 16:28:42.741 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020507, callback=wim@a850f38, lastModifier=2, keyCodes=[50], actions=[0]}
+05-17 16:28:42.741 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020513, callback=wim@246ce1b, lastModifier=2, keyCodes=[32], actions=[0]}
+05-17 16:28:42.741 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020513, callback=wim@ed42bb8, lastModifier=0, keyCodes=[319], actions=[0]}
+05-17 16:28:42.741 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module wjm is unavailable
+05-17 16:28:42.741 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module wff is unavailable
+05-17 16:28:42.741 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aawl is unavailable
+05-17 16:28:42.742 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aawo is unavailable
+05-17 16:28:42.742 21491 21491 I GlobeKeyExtension: GlobeKeyExtension.onDestroyExtension():172 
+05-17 16:28:42.742 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module zyd is unavailable
+05-17 16:28:42.742 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module abtp is unavailable
+05-17 16:28:42.742 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=2132020519, callback=itn@a98a54a, lastModifier=2, keyCodes=[47], actions=[0]}
+05-17 16:28:42.742 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module itp is unavailable
+05-17 16:28:42.742 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aawr is unavailable
+05-17 16:28:42.743 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aawt is unavailable
+05-17 16:28:42.743 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module riy is unavailable
+05-17 16:28:42.743 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aaww is unavailable
+05-17 16:28:42.743 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module adzz is unavailable
+05-17 16:28:42.743 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=0, callback=abtr@43cc16, lastModifier=0, keyCodes=[204], actions=[0]}
+05-17 16:28:42.743 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module abtu is unavailable
+05-17 16:28:42.744 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aaxb is unavailable
+05-17 16:28:42.744 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module ysi is unavailable
+05-17 16:28:42.745 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module xdd is unavailable
+05-17 16:28:42.745 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module qao is unavailable
+05-17 16:28:42.745 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module abtg is unavailable
+05-17 16:28:42.745 21047 21047 W RemoteInputConnectionImpl: requestCursorUpdates on inactive InputConnection
+05-17 16:28:42.745 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rrv is unavailable
+05-17 16:28:42.745 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module adsb is unavailable
+05-17 16:28:42.745 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rju is unavailable
+05-17 16:28:42.746 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rtl is unavailable
+05-17 16:28:42.746 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aefh is unavailable
+05-17 16:28:42.746 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module jft is unavailable
+05-17 16:28:42.746 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module qay is unavailable
+05-17 16:28:42.746 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module adse is unavailable
+05-17 16:28:42.746 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module xle is unavailable
+05-17 16:28:42.746 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module seh is unavailable
+05-17 16:28:42.746 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rtk is unavailable
+05-17 16:28:42.746  3846 10972 W ContentCaptureEvent: Text is not a SpannableString.
+05-17 16:28:42.747 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=0, callback=qbu@d51020, lastModifier=0, keyCodes=[57, 57], actions=[1, 0]}
+05-17 16:28:42.747 21491 21491 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence aduc{labelResId=0, callback=qbu@e61cdd9, lastModifier=0, keyCodes=[58, 58], actions=[1, 0]}
+05-17 16:28:42.747 21491 21491 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():536 Destroy existing keyboard group manager in qgr
+05-17 16:28:42.747 21491 21491 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():556 KeyboardGroupManager destroyed in qgr.
+05-17 16:28:42.747 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module IEmojiSearchExtension is unavailable
+05-17 16:28:42.749 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module sem is unavailable
+05-17 16:28:42.749 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module iuf is unavailable
+05-17 16:28:42.749 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module jbo is unavailable
+05-17 16:28:42.749 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module qqn is unavailable
+05-17 16:28:42.750 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module llq is unavailable
+05-17 16:28:42.751 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module scs is unavailable
+05-17 16:28:42.751 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module IStickerExtension is unavailable
+05-17 16:28:42.751 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module IGifKeyboardExtension is unavailable
+05-17 16:28:42.751 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module ITranslateUiExtension is unavailable
+05-17 16:28:42.753 21491 21491 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener jah@38fe618 was not registered for notification class acma
+05-17 16:28:42.753 21491 21491 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener jcx@2047418 was not registered for notification class acma
+05-17 16:28:42.756 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module jeu is unavailable
+05-17 16:28:42.758 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module mcf is unavailable
+05-17 16:28:42.758 21491 21491 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id autofill_banner_fallback_toast not found in tooltipManager.
+05-17 16:28:42.759 21491 21491 W NotificationCenter: NotificationCenter$NotificationQueue.notifyPendingNotificationsOnExecutor():877 Heavy notify work detected on UI thread: [aaxu->acus, aaxu->acus, aaxu->acut, aaxu->acus, aaxu->acus, aaxu->acus, acnb->acna, acnb->acna, acnb->acna, wkf->acus, wkf->acus, wkf->acut, wkf->acus, wkf->acus, wkf->acus, wkf->acus, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, aabb->mcs, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna] takes 26ms
+05-17 16:28:42.759 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aews is unavailable
+05-17 16:28:42.759 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module lrp is unavailable
+05-17 16:28:42.760 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aerh is unavailable
+05-17 16:28:42.760 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rzp is unavailable
+05-17 16:28:42.760 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module acul is unavailable
+05-17 16:28:42.760 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rth is unavailable
+05-17 16:28:42.761 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module phn is unavailable
+05-17 16:28:42.762  3846 10972 I AiAiEcho: Settings changed for uri: content://settings/secure/input_methods_subtype_history
+05-17 16:28:42.762 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module npv is unavailable
+05-17 16:28:42.763 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module IEmojiKitchenBrowseExtension is unavailable
+05-17 16:28:42.763 21491 21491 I EmojifyExtensionImpl: EmojifyExtensionImpl.onDestroy():611 Destroying Emojify extension kqe@752c795.
+05-17 16:28:42.763 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module koy is unavailable
+05-17 16:28:42.763 21491 21491 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():536 Destroy existing keyboard group manager in krw
+05-17 16:28:42.763 21491 21491 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():556 KeyboardGroupManager destroyed in krw.
+05-17 16:28:42.763  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.763 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module IExpressionMomentExtension is unavailable
+05-17 16:28:42.763 21491 21491 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():536 Destroy existing keyboard group manager in qpb
+05-17 16:28:42.764 21491 21491 I BaseExpressionKeyboard: BaseExpressionKeyboard.onKeyboardViewDiscarded():125 Discarded required view with type HEADER
+05-17 16:28:42.764  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.764  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.764  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.764 21491 21491 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():556 KeyboardGroupManager destroyed in qpb.
+05-17 16:28:42.764 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module FastAccessBarExtension is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module IEmojiOrGifExtension is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module IBannerExtension is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module mcy is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module zau is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module qnf is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module IEmoticonExtension is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module kkd is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module lxi is unavailable
+05-17 16:28:42.765 21491 21491 I JapaneseMozcExtension: JapaneseMozcExtension.onDestroy():52 
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module nvy is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module niw is unavailable
+05-17 16:28:42.765 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module nms is unavailable
+05-17 16:28:42.766 21491 21491 I NewS3RecognizerModule: NewS3RecognizerModule.onDestroy():28 onDestroy [news3]
+05-17 16:28:42.766 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module svx is unavailable
+05-17 16:28:42.766  3846  4524 I AiAiEcho: #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: lockscreen [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.766 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module quv is unavailable
+05-17 16:28:42.766 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module adcg is unavailable
+05-17 16:28:42.766 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module pej is unavailable
+05-17 16:28:42.766 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module mfq is unavailable
+05-17 16:28:42.766  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.766  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.767  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.767  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.767  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.770 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module adxh is unavailable
+05-17 16:28:42.770 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module afar is unavailable
+05-17 16:28:42.770 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module sgk is unavailable
+05-17 16:28:42.770 21491 21491 I UniversalDictationExtension: UniversalDictationExtension.onDestroyExtension():138 onDestroy [UD]
+05-17 16:28:42.771  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.771 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module sgm is unavailable
+05-17 16:28:42.771 21491 21491 I UniversalDictationUiProvider: UniversalDictationUiProvider.onDestroyExtension():34 onDestroy [UD]
+05-17 16:28:42.771 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module skg is unavailable
+05-17 16:28:42.772  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.772 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module smf is unavailable
+05-17 16:28:42.772 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module afcb is unavailable
+05-17 16:28:42.772 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aeaj is unavailable
+05-17 16:28:42.772 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module sfj is unavailable
+05-17 16:28:42.772 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module jkw is unavailable
+05-17 16:28:42.772  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.772  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.772  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.773 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rjn is unavailable
+05-17 16:28:42.773 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module kkv is unavailable
+05-17 16:28:42.773 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module kiw is unavailable
+05-17 16:28:42.773  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.774  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.775  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.775  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.775  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.776  3846  4524 I AiAiEcho: #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: home [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.776  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.776  1621  1922 D ActivityManager: sync unfroze 26625 com.orion.kboard.debug for 6
+05-17 16:28:42.778 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module yaa is unavailable
+05-17 16:28:42.778 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module kim is unavailable
+05-17 16:28:42.779 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module kzd is unavailable
+05-17 16:28:42.781 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module wyp is unavailable
+05-17 16:28:42.781 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module nve is unavailable
+05-17 16:28:42.781 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module nmp is unavailable
+05-17 16:28:42.782 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module kaa is unavailable
+05-17 16:28:42.782 21491 21491 W NotificationCenter: NotificationCenter$NotificationQueue.notifyPendingNotificationsOnExecutor():877 Heavy notify work detected on UI thread: [aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acut, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, aaxx->acus, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna, acnb->acna] takes 24ms
+05-17 16:28:42.782  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 1 (types=[1])
+05-17 16:28:42.782 21491 21491 I ExpressiveConceptsPredictionModuleImpl: ExpressiveConceptsPredictionModuleImpl.onDestroy():80 onDestroy()
+05-17 16:28:42.782 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module qoc is unavailable
+05-17 16:28:42.783  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface glanceable_hub with targets# 0 (types=[])
+05-17 16:28:42.783 21491 21491 I NgaExtension: NgaExtension.onDestroy():363 onDestroy [SDG]
+05-17 16:28:42.784 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module odf is unavailable
+05-17 16:28:42.784 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module oih is unavailable
+05-17 16:28:42.784 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module jhd is unavailable
+05-17 16:28:42.784 21491 25858 I KeyboardActiveSessionStreamManager: KeyboardActiveSessionStreamManager.closeStream():125 Closing stream. [SDG]
+05-17 16:28:42.784 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module jhx is unavailable
+05-17 16:28:42.784 21491 25858 I Interaction: Interaction$KeyboardEventStreamObserver.onCompleted():141 Interaction#2 completed by the client [SD]
+05-17 16:28:42.784 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module nln is unavailable
+05-17 16:28:42.784 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module ivt is unavailable
+05-17 16:28:42.785 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aaia is unavailable
+05-17 16:28:42.785 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rsi is unavailable
+05-17 16:28:42.785 21491 25823 I Interaction: Interaction.shutdownAndForget$java_com_google_android_libraries_inputmethod_voice_smartdictation_service_interaction_interaction():92 Shutting down Interaction#2 [SD]
+05-17 16:28:42.785 21491 25823 I KeyboardActiveSessionStreamManager: KeyboardActiveSessionStreamManager$AssistantEventObserver.onCompleted():275 Assistant event stream completed. [SDG]
+05-17 16:28:42.785 21491 25823 I InteractionManager: InteractionManager.forgetInteraction$java_com_google_android_libraries_inputmethod_voice_smartdictation_service_interaction_interaction():50 Forgetting Interaction#2 [SD]
+05-17 16:28:42.785  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-17 16:28:42.786 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module iwi is unavailable
+05-17 16:28:42.786 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rrt is unavailable
+05-17 16:28:42.787 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module rsp is unavailable
+05-17 16:28:42.787 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module ltt is unavailable
+05-17 16:28:42.787 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module zxm is unavailable
+05-17 16:28:42.787 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module jwo is unavailable
+05-17 16:28:42.787 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aclp is unavailable
+05-17 16:28:42.787 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module aduv is unavailable
+05-17 16:28:42.787 21491 21491 I ModuleManager: ModuleManager$ModuleInitListener.maybeUnloadModuleOnUnavailable():1457 module afaj is unavailable
+05-17 16:28:42.788  2078  2116 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-17 16:28:42.789 21491 21491 I GoogleInputMethodService: GoogleInputMethodService.onDestroy():1053 Maybe update OEM display config because of service destruction
+05-17 16:28:42.790  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: DeviceModeModule.calculateAndNotify():198 Window metrics is not available, fallback to app context.
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: DeviceModeModule.calculateAndNotify():219 Failed to get context from InputMethodServiceHelper
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: java.lang.IllegalStateException: No context when service is unavailable
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at aauf.aa(PG:5)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at aauh.aa(PG:3)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at ypb.c(PG:268)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at yoz.cQ(PG:6)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at acvi.run(PG:71)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at apql.execute(PG:1)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at acvg.b(PG:10)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at acvl.l(PG:93)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at acvl.h(PG:39)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at ihc.q(PG:109)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at aavm.onDestroy(PG:179)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at android.app.ActivityThread.handleStopService(ActivityThread.java:5846)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at android.app.ActivityThread.-$$Nest$mhandleStopService(ActivityThread.java:0)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2878)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at android.os.Looper.loopOnce(Looper.java:296)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at android.os.Looper.loop(Looper.java:397)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at android.app.ActivityThread.main(ActivityThread.java:9531)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at java.lang.reflect.Method.invoke(Native Method)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:934)
+05-17 16:28:42.792 21491 21491 I DeviceModeModule: DeviceModeModule.calculateAndNotify():237 Device mode 'phone' from display metrics 'DisplayMetrics{density=0.0, width=1080, height=2400, scaledDensity=0.0, xdpi=428.625, ydpi=429.295}' or smallestScreenWidthDp: 411
+05-17 16:28:42.792 21491 21491 I GoogleInputMethodService: GoogleInputMethodService.clearInputMethodServiceData():1125 clearInputMethodServiceData for onDestroy
+05-17 16:28:42.793 21491 21491 I MotionEventHandlerManager: MotionEventHandlerManager.newHandlerInstance():562 Created handler instance from HiltMotionEventHandlerFactory .libs.latin5.handler.HeaderMotionEventHandler
+05-17 16:28:42.793 21491 21491 I MotionEventHandlerManager: MotionEventHandlerManager.newHandlerInstance():562 Created handler instance from HiltMotionEventHandlerFactory .libs.latin5.handler.LatinMotionEventHandler
+05-17 16:28:42.793 21491 21491 I MotionEventHandlerManager: MotionEventHandlerManager.newHandlerInstance():562 Created handler instance from HiltMotionEventHandlerFactory .libs.latin5.handler.LatinPreemptiveDecodeHandler
+05-17 16:28:42.793 21491 21491 I MotionEventHandlerManager: MotionEventHandlerManager.newHandlerInstance():562 Created handler instance from HiltMotionEventHandlerFactory .libs.latin5.handler.LatinGestureMotionEventHandler
+05-17 16:28:42.791 26625 26625 W on.kboard.debug: type=1400 audit(0.0:114774): avc:  granted  { execute } for  path="/data/data/com.orion.kboard.debug/files/libjni_latinime.so" dev="dm-61" ino=4619838 scontext=u:r:untrusted_app_34:s0:c202,c258,c512,c768 tcontext=u:object_r:app_data_file:s0:c202,c258,c512,c768 tclass=file app=com.orion.kboard.debug
+05-17 16:28:42.794 21491 21491 I MotionEventHandlerManager: MotionEventHandlerManager.newHandlerInstance():562 Created handler instance from HiltMotionEventHandlerFactory .motioneventhandler.scrubmove.ScrubDeleteMotionEventHandler
+05-17 16:28:42.794 21491 21491 I MotionEventHandlerManager: MotionEventHandlerManager.newHandlerInstance():562 Created handler instance from HiltMotionEventHandlerFactory .inlinesuggestion.InlineSuggestionScrubSpaceMotionEventHandler
+05-17 16:28:42.794 21491 21491 I MotionEventHandlerManager: MotionEventHandlerManager.newHandlerInstance():562 Created handler instance from HiltMotionEventHandlerFactory .motioneventhandler.scrubmove.ScrubMoveMotionEventHandler
+05-17 16:28:42.794 21491 21491 I MotionEventHandlerManager: MotionEventHandlerManager.newHandlerInstance():574 Created handler instance from reflection .libs.latin5.handler.LatinKeyboardLayoutHandler: com.google.android.apps.inputmethod.libs.latin5.handler.LatinKeyboardLayoutHandler@3592df4
+05-17 16:28:42.794 21491 21491 I GoogleInputMethodService: GoogleInputMethodService.discardAllKeyboardViewAndInputView():1361 discardAllKeyboardViewAndInputView()
+05-17 16:28:42.794 21491 21525 I ProtoXDBBufferWrapper: ProtoXDBBufferWrapper.flushToStorage():158 Flushed 2 data item(s) to storage.
+05-17 16:28:42.796  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Gyroscope (active:3).
+05-17 16:28:42.796 26625 26625 D nativeloader: Load /data/user/0/com.orion.kboard.debug/files/libjni_latinime.so using class loader ns clns-9 (caller=/data/app/~~j-9PFjV1EVw7I-w-vqCKGw==/com.orion.kboard.debug-8StguPfGDKF_e1E7OYmnCA==/base.apk!classes4.dex): ok
+05-17 16:28:42.796  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for MMC56X3X Magnetometer (active:2).
+05-17 16:28:42.796  1209  1209 D AOC     : A3:MSG: mmc56x3x_device.cc, 409: USF: MMC56X3X0: mmc56x3x_enable_measure odr = 100.
+05-17 16:28:42.798 21491 21491 I InputMethodEntryManager: InputMethodEntryManager.notifyCurrentInputMethodEntryOnContextChanged():557 notifyCurrentInputMethodEntryOnContextChanged()
+05-17 16:28:42.798 21491 21491 I InputMethodEntryManager: InputMethodEntryManager.notifyCurrentInputMethodEntryOnContextChanged():574 Notify current input method entry changed on context change
+05-17 16:28:42.798 21491 21491 I KeyboardThemeProvider: KeyboardThemeProvider.reset():39 Reset keyboard theme
+05-17 16:28:42.798 21491 21491 I KeyboardContextProvider: KeyboardContextProvider.setBaseContextAndInvalidKeyboardContextCache():88 setBaseContextAndInvalidKeyboardContextCache(): null
+05-17 16:28:42.799 21491 21491 D ImeBackCallbackSender: Unregister OnBackInvokedCallback at app window (packageName=com.whatsapp)
+05-17 16:28:42.800 21491 21525 I InputActionMetricsProcessor: InputActionMetricsProcessor.onDetached():110 Detached from metrics manager.
+05-17 16:28:42.801 21047 21047 W ImeBackCallbackProxy: Ime callback not found. Ignoring unregisterReceivedCallback. callbackId: 32862930 remaining callbacks: 0
+05-17 16:28:42.802  1621  3982 W WindowManager: Cannot find window which accessibility connection is added to
+05-17 16:28:42.802  2078  2078 I WeatherSmartspaceView: setFormattedContentDescription: text=42┬░C, iconDescription=Sunny, contentDescription=Sunny, 42┬░C
+05-17 16:28:42.802  2078  2078 I WeatherSmartspaceView: setFormattedContentDescription: text=42┬░C, iconDescription=Sunny, contentDescription=Sunny, 42┬░C
+05-17 16:28:42.802  2078  2078 I WeatherData: Weather data parsed SUNNY ("Sunny") 42┬░C from Bundle[{description=Sunny, feedback_intent=null, explanation_intent=Supplier{VAL_PARCELABLE@136+1744}, is_gaia_linked_data=true, use_celsius=true, state=1, temperature=42}]
+05-17 16:28:42.805 21491 21491 D HWUI    : endAllStagingAnimators on 0xb400006ebf67b0e0 (KeyButtonView)
+05-17 16:28:42.806 26625 26625 I LatinIME: Hardware accelerated drawing: true
+05-17 16:28:42.809  1621  4771 W WindowManager: Failed looking up window session=Session{11ae44a 21491:u0a10179} callers=com.android.server.wm.WindowManagerService.removeClientToken:2335 com.android.server.wm.Session.remove:274 android.view.IWindowSession$Stub.onTransact:638 
+05-17 16:28:42.814 21491 21491 W WindowTokenClientController: Can't find attached WindowTokenClient for android.window.WindowTokenClient@17d9834
+05-17 16:28:42.814 21491 21491 W InputChannel-JNI: Channel already disposed.
+05-17 16:28:42.814 21491 21491 W InputChannel-JNI: Channel already disposed.
+05-17 16:28:42.814 21491 21491 W InputChannel-JNI: Channel already disposed.
+05-17 16:28:42.818 21491 21491 I AppBase : AppBase.onTrimMemory():284 onTrimMemory(): 40
+05-17 16:28:42.818 21491 21491 I KeyboardDefCache: MemoryFileCache$1.onTrimMemory():124 clearMemory() for trim memory: 40
+05-17 16:28:42.818 21491 21491 I KeyboardDefCache: MemoryFileCache.clearMemory():408 evictAll()
+05-17 16:28:42.835 26625 26625 W InputAttributes: No editor info for this field. Bug?
+05-17 16:28:42.835 26625 26625 I Settings: loadSettings
+05-17 16:28:42.845 26625 26625 I DictionaryFacilitatorImpl: resetDictionaries, force reloading main dictionary: false
+05-17 16:28:42.850 26625 26860 I LatinIME:LogUtils: Dictionary info: dictionary = userunigram.hi-Latn ; version = 1779015522 ; date = ?
+05-17 16:28:42.851 26625 26861 I LatinIME:LogUtils: Dictionary info: dictionary = UserHistoryDictionary.hi-Latn ; version = 1778785306 ; date = 1779014354
+05-17 16:28:42.853  1621  3983 D ActivityManager: sync unfroze 21187 android.process.acore for 7
+05-17 16:28:42.859  1621  3983 W ActivityManager: Skipping manifest association check for null package. SourceUid: -1, SourcePkg: null, TargetUid: 10714, TargetPkg: com.orion.kboard.debug
+05-17 16:28:42.859  1621  1706 W ActivityManager: Skipping manifest association check for null package. SourceUid: -1, SourcePkg: null, TargetUid: 10714, TargetPkg: com.orion.kboard.debug
+05-17 16:28:42.860 26625 26648 I LatinIME:LogUtils: Dictionary info: dictionary = emoji:hi_zz ; version = 19 ; date = 1757236527
+05-17 16:28:42.860 26625 26648 I LatinIME:LogUtils: Dictionary info: dictionary = emoji:hi_zz ; version = 19 ; date = 1757236527
+05-17 16:28:42.861 26625 26648 I LatinIME:LogUtils: Dictionary info: dictionary = main:hi_zz ; version = 19 ; date = 1693140262
+05-17 16:28:42.862 26625 26648 I LatinIME:LogUtils: Dictionary info: dictionary = main:hi_zz ; version = 19 ; date = 1693140262
+05-17 16:28:42.862 26625 26625 I LatinIME: ringer mode changed, zen_mode on: false
+05-17 16:28:42.876  1621  4771 D CompatChangeReporter: Compat change id reported: 463899193; UID 10714; state: ENABLED
+05-17 16:28:42.877  1621  4771 W SurfaceControl: setCompositionFilterFlag was called but flag is disabled.
+05-17 16:28:42.877  1621  4771 I ImeTracker: system_server:eddeafae: onRequestShow at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false displayId 0
+05-17 16:28:42.877  1745  1764 I pixel-thermal: cellular-emergency:38.7675 raw data: VIRTUAL-SKIN:38767.4 cellular-emergency:38767.4 
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:38.7675 raw data: VIRTUAL-SKIN:38767.4 VIRTUAL-SKIN-CPU:38767.4 
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=1756.13 err=2.23255 s_power=800 time_elapsed_ms=7005 p=893.019 i=63.1079 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 307.20 mW)(S2M_VDD_CPUCL2: 571.86 mW)(S3M_VDD_CPUCL1: 143.90 mW)
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:38.7675 raw data: VIRTUAL-SKIN:38767.4 VIRTUAL-SKIN-CPU-GPU:38767.4 
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3369.76 err=6.23255 s_power=800 time_elapsed_ms=7005 p=1869.76 i=700 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 307.20 mW)(S2M_VDD_CPUCL2: 571.86 mW)(S3M_VDD_CPUCL1: 143.90 mW)(S2S_VDD_G3D: 97.17 mW)
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:38.7675 raw data: VIRTUAL-SKIN:38767.4 VIRTUAL-SKIN-HINT:38767.4 
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:38.7675 raw data: VIRTUAL-SKIN:38767.4 VIRTUAL-SKIN-CHARGE:38767.4 
+05-17 16:28:42.877  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 1536.5
+05-17 16:28:42.877  1621  4771 W InputChannel-JNI: Channel already disposed.
+05-17 16:28:42.877  1745  1764 I pixel-thermal: Successfully update cdev fcc sysfs to 4
+05-17 16:28:42.896  3846 10972 I AiAiEcho: Settings changed for uri: content://settings/secure/selected_input_method_subtype
+05-17 16:28:42.897  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.897  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.897  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.897  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.898  3846  4524 I AiAiEcho: #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: lockscreen [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.898  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.898  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.898  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.898  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.898  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.898  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.899  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.899  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.899  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.899  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.899  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.899  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.899  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.899  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.899  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.901   622   622 W powerhal-libperfmgr: Sess(24176), cannot resume, already active
+05-17 16:28:42.904 26625 26625 D LatinIME: onInitializeInterface
+05-17 16:28:42.905  3846  4524 I AiAiEcho: #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: home [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.905  1621  4771 W InputChannel-JNI: Channel already disposed.
+05-17 16:28:42.905  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.909  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 1 (types=[1])
+05-17 16:28:42.910  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface glanceable_hub with targets# 0 (types=[])
+05-17 16:28:42.910  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-17 16:28:42.910  2078  2078 I WeatherSmartspaceView: setFormattedContentDescription: text=42┬░C, iconDescription=Sunny, contentDescription=Sunny, 42┬░C
+05-17 16:28:42.910  2078  2116 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-17 16:28:42.910  2078  2078 I WeatherSmartspaceView: setFormattedContentDescription: text=42┬░C, iconDescription=Sunny, contentDescription=Sunny, 42┬░C
+05-17 16:28:42.910  2078  2078 I WeatherData: Weather data parsed SUNNY ("Sunny") 42┬░C from Bundle[{description=Sunny, feedback_intent=null, explanation_intent=Supplier{VAL_PARCELABLE@136+1744}, is_gaia_linked_data=true, use_celsius=true, state=1, temperature=42}]
+05-17 16:28:42.911 26625 26625 I Settings: loadSettings
+05-17 16:28:42.913  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+05-17 16:28:42.947 26625 26625 D BogusMoveEventDetector: needsProximateBogusDownMoveUpEventHack=false smallestScreenWidthDp=411 densityDpi=420 screenMetrics=0
+05-17 16:28:42.957 26625 26625 D BogusMoveEventDetector: needsProximateBogusDownMoveUpEventHack=false smallestScreenWidthDp=411 densityDpi=420 screenMetrics=0
+05-17 16:28:42.962 26625 26625 D BogusMoveEventDetector: needsProximateBogusDownMoveUpEventHack=false smallestScreenWidthDp=411 densityDpi=420 screenMetrics=0
+05-17 16:28:42.966 26625 26625 D CompatChangeReporter: Compat change id reported: 376561342; UID 10714; state: ENABLED
+05-17 16:28:42.977  1621  1621 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+05-17 16:28:42.978  1621  1621 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService}, new:{com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService}
+05-17 16:28:42.978  1621  1621 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+05-17 16:28:42.978  1621  1621 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+05-17 16:28:42.978  1621  1621 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{com.android.server.accessibility/OneHandedMode, com.android.server.accessibility/ColorInversion, com.android.server.accessibility/Daltonizer, com.android.server.accessibility/ReduceBrightColors}, new:{com.android.server.accessibility/OneHandedMode, com.android.server.accessibility/ColorInversion, com.android.server.accessibility/Daltonizer, com.android.server.accessibility/ReduceBrightColors}
+05-17 16:28:42.978  1621  1621 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+05-17 16:28:42.978  1621  1621 V AccessibilityUserState: updateShortcutTargets: type:accessibility_top_row_key_targets, current:{}, new:{}
+05-17 16:28:42.978  1621  1621 V AccessibilityUserState: updateShortcutTargets: type:accessibility_quick_access_targets, current:{}, new:{}
+05-17 16:28:42.978  1621  1621 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+05-17 16:28:42.978  3846 10972 I AiAiEcho: Settings changed for uri: content://settings/secure/default_input_method
+05-17 16:28:42.979  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.980  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.980  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.980  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.981  3846  4524 I AiAiEcho: #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: lockscreen [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.981  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.982  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.982  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.982  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.982  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.983  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.983  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.985  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.985  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.985  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.986  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.986  3846  4524 I AiAiEcho: Predicting[7]: { Feature:1, creation:2026-05-17T15:00:00Z, expiry:2026-05-17T15:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T16:00:00Z, expiry:2026-05-17T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T13:00:00Z, expiry:2026-05-17T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T14:00:00Z, expiry:2026-05-17T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T11:00:00Z, expiry:2026-05-17T11:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T12:00:00Z, expiry:2026-05-17T12:00:00Z, isExpired: true}, { Feature:1, creation:2026-05-17T10:51:00Z, expiry:2026-05-17T11:00:00Z, isExpired: false} [CONTEXT sampling_count=5 ]
+05-17 16:28:42.987  3846  4524 I AiAiEcho: EchoTargets: Feature:1
+05-17 16:28:42.987  3846  4524 I AiAiEcho: Filtered by AiAi flag check: 
+05-17 16:28:42.987  3846  4524 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.988  3846  4524 I AiAiEcho: #weatherSubItemsTwiddler: Weather removes SubtitleSupplementalItem in surface: home [CONTEXT ratelimit_period="10 SECONDS" ]
+05-17 16:28:42.988  3846  4524 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-17 16:28:42.990 26625 26625 I Settings: loadSettings
+05-17 16:28:42.992  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 1 (types=[1])
+05-17 16:28:42.992 26625 26625 I LatinIME:LogUtils: Dictionary info: dictionary = emoji:hi_zz ; version = 19 ; date = 1757236527
+05-17 16:28:42.992 26625 26625 I LatinIME:LogUtils: Dictionary info: dictionary = emoji:hi_zz ; version = 19 ; date = 1757236527
+05-17 16:28:42.992 26625 26625 I LatinIME: Starting input. Cursor position = 0,0
+05-17 16:28:42.992  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface glanceable_hub with targets# 0 (types=[])
+05-17 16:28:42.992  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-17 16:28:42.993  2078  2116 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-17 16:28:42.993  2078  2078 I WeatherSmartspaceView: setFormattedContentDescription: text=42┬░C, iconDescription=Sunny, contentDescription=Sunny, 42┬░C
+05-17 16:28:42.993  2078  2078 I WeatherSmartspaceView: setFormattedContentDescription: text=42┬░C, iconDescription=Sunny, contentDescription=Sunny, 42┬░C
+05-17 16:28:42.993  2078  2078 I WeatherData: Weather data parsed SUNNY ("Sunny") 42┬░C from Bundle[{description=Sunny, feedback_intent=null, explanation_intent=Supplier{VAL_PARCELABLE@136+1744}, is_gaia_linked_data=true, use_celsius=true, state=1, temperature=42}]
+05-17 16:28:42.993 26625 26625 D LatinIME: editorInfo: inputType: 0x0022C001, imeOptions: 0x40000006
+05-17 16:28:42.993 26625 26625 D LatinIME: All caps: false, sentence caps: true, word caps: false
+05-17 16:28:42.996  3846  4524 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+05-17 16:28:43.088 26625 26625 D KeyboardState: setAlphabetKeyboard: [keyboard=UNSHIFTED shift=RELEASING symbol=RELEASING switch=ALPHA] autoCapsFlags=sentences recapitalizeMode=null
+05-17 16:28:43.150 26625 26625 D KeyboardParser: adding key q, 0
+05-17 16:28:43.150 26625 26625 D KeyboardParser: adding key w, 0
+05-17 16:28:43.150 26625 26625 D KeyboardParser: adding key e, 0
+05-17 16:28:43.150 26625 26625 D KeyboardParser: adding key r, 0
+05-17 16:28:43.150 26625 26625 D KeyboardParser: adding key t, 0
+05-17 16:28:43.150 26625 26625 D KeyboardParser: adding key y, 0
+05-17 16:28:43.151 26625 26625 D KeyboardParser: adding key u, 0
+05-17 16:28:43.151 26625 26625 D KeyboardParser: adding key i, 0
+05-17 16:28:43.151 26625 26625 D KeyboardParser: adding key o, 0
+05-17 16:28:43.151 26625 26625 D KeyboardParser: adding key p, 0
+05-17 16:28:43.151 26625 26625 D KeyboardParser: adding key a, 0
+05-17 16:28:43.151 26625 26625 D KeyboardParser: adding key s, 0
+05-17 16:28:43.152 26625 26625 D KeyboardParser: adding key d, 0
+05-17 16:28:43.152 26625 26625 D KeyboardParser: adding key f, 0
+05-17 16:28:43.152 26625 26625 D KeyboardParser: adding key g, 0
+05-17 16:28:43.152 26625 26625 D KeyboardParser: adding key h, 0
+05-17 16:28:43.152 26625 26625 D KeyboardParser: adding key j, 0
+05-17 16:28:43.152 26625 26625 D KeyboardParser: adding key k, 0
+05-17 16:28:43.152 26625 26625 D KeyboardParser: adding key l, 0
+05-17 16:28:43.153 26625 26625 D KeyboardParser: adding key z, 0
+05-17 16:28:43.153 26625 26625 D KeyboardParser: adding key x, 0
+05-17 16:28:43.153 26625 26625 D KeyboardParser: adding key c, 0
+05-17 16:28:43.153 26625 26625 D KeyboardParser: adding key v, 0
+05-17 16:28:43.153 26625 26625 D KeyboardParser: adding key b, 0
+05-17 16:28:43.153 26625 26625 D KeyboardParser: adding key n, 0
+05-17 16:28:43.153 26625 26625 D KeyboardParser: adding key m, 0
+05-17 16:28:43.154 26625 26625 D Keyboard.Builder: setting size and position for q, 113: x 0, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for w, 119: x 108, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for e, 101: x 216, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for r, 114: x 324, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for t, 116: x 432, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for y, 121: x 540, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for u, 117: x 648, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for i, 105: x 756, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for o, 111: x 864, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for p, 112: x 972, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for null, -10008: x 0, w 53
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for a, 97: x 53, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for s, 115: x 161, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for d, 100: x 269, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for f, 102: x 377, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for g, 103: x 485, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for h, 104: x 593, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for j, 106: x 701, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for k, 107: x 809, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for l, 108: x 917, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for null, -10008: x 1026, w 53
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for shift_key, -11: x 0, w 162
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for z, 122: x 162, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for x, 120: x 270, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for c, 99: x 378, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for v, 118: x 486, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for b, 98: x 594, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for n, 110: x 702, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for m, 109: x 810, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for delete_key, -7: x 918, w 162
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for ?123, -10001: x 0, w 162
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for ,, 44: x 162, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for emoji, -212: x 270, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for space_key, 32: x 378, w 431
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for ., 46: x 810, w 108
+05-17 16:28:43.155 26625 26625 D Keyboard.Builder: setting size and position for enter_key, 10: x 918, w 162
+05-17 16:28:43.191 26625 26625 D KeyboardState: setShifted: shiftMode=AUTOMATIC [keyboard=UNSHIFTED shift=RELEASING symbol=RELEASING switch=ALPHA]
+05-17 16:28:43.198 26625 26625 D KeyboardParser: adding key q, 0
+05-17 16:28:43.198 26625 26625 D KeyboardParser: adding key w, 0
+05-17 16:28:43.199 26625 26625 D KeyboardParser: adding key e, 0
+05-17 16:28:43.199 26625 26625 D KeyboardParser: adding key r, 0
+05-17 16:28:43.199 26625 26625 D KeyboardParser: adding key t, 0
+05-17 16:28:43.199 26625 26625 D KeyboardParser: adding key y, 0
+05-17 16:28:43.199 26625 26625 D KeyboardParser: adding key u, 0
+05-17 16:28:43.199 26625 26625 D KeyboardParser: adding key i, 0
+05-17 16:28:43.200 26625 26625 D KeyboardParser: adding key o, 0
+05-17 16:28:43.200 26625 26625 D KeyboardParser: adding key p, 0
+05-17 16:28:43.200 26625 26625 D KeyboardParser: adding key a, 0
+05-17 16:28:43.200 26625 26625 D KeyboardParser: adding key s, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key d, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key f, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key g, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key h, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key j, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key k, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key l, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key z, 0
+05-17 16:28:43.201 26625 26625 D KeyboardParser: adding key x, 0
+05-17 16:28:43.202 26625 26625 D KeyboardParser: adding key c, 0
+05-17 16:28:43.202 26625 26625 D KeyboardParser: adding key v, 0
+05-17 16:28:43.202 26625 26625 D KeyboardParser: adding key b, 0
+05-17 16:28:43.202 26625 26625 D KeyboardParser: adding key n, 0
+05-17 16:28:43.202 26625 26625 D KeyboardParser: adding key m, 0
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for Q, 81: x 0, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for W, 87: x 108, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for E, 69: x 216, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for R, 82: x 324, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for T, 84: x 432, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for Y, 89: x 540, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for U, 85: x 648, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for I, 73: x 756, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for O, 79: x 864, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for P, 80: x 972, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for null, -10008: x 0, w 53
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for A, 65: x 53, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for S, 83: x 161, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for D, 68: x 269, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for F, 70: x 377, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for G, 71: x 485, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for H, 72: x 593, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for J, 74: x 701, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for K, 75: x 809, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for L, 76: x 917, w 108
+05-17 16:28:43.203 26625 26625 D Keyboard.Builder: setting size and position for null, -10008: x 1026, w 53
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for shift_key_shifted, -11: x 0, w 162
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for Z, 90: x 162, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for X, 88: x 270, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for C, 67: x 378, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for V, 86: x 486, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for B, 66: x 594, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for N, 78: x 702, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for M, 77: x 810, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for delete_key, -7: x 918, w 162
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for ?123, -10001: x 0, w 162
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for ,, 44: x 162, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for emoji, -212: x 270, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for space_key, 32: x 378, w 431
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for ., 46: x 810, w 108
+05-17 16:28:43.204 26625 26625 D Keyboard.Builder: setting size and position for enter_key, 10: x 918, w 162
+05-17 16:28:43.217 26625 26625 D ImeBackCallbackSender: Register OnBackInvokedCallback with priority=-1 at app window (packageName=com.whatsapp)
+05-17 16:28:43.222  1621  3982 D WindowManager: setClientSurface Surface(name=VRI-InputMethod#139111)/@0x4e37ab3 for 9454d2f InputMethod
+05-17 16:28:43.224 26625 26625 I Surface : Creating surface for consumer unnamed-26625-1 with slotExpansion=1 for 64 slots
+05-17 16:28:43.224 26625 26625 I Surface : Creating surface for consumer VRI[InputMethod]#1(BLAST Consumer)1 with slotExpansion=1 for 64 slots
+05-17 16:28:43.227 26625 26625 W View    : requestLayout() improperly called by android.widget.LinearLayout{dc2136 V.E...... ......ID 0,0-1080,1006 #7f0a0151 app:id/main_keyboard_frame} during layout: running second layout pass
+05-17 16:28:43.234 21047 21047 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@c06f254
+05-17 16:28:43.234  1621  3982 D CoreBackPreview: Window{7aeb856 u0 com.whatsapp/com.whatsapp.Conversation}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@35c5c6e, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}
+05-17 16:28:43.275 26625 26625 I ContentCaptureHelper: Setting logging level to OFF
+05-17 16:28:43.276 26625 26625 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+05-17 16:28:43.280  1478  1775 I twoshay.TouchContextService: Got new packet! ContextPacket{orientation: PORTRAIT, audioMode: NORMAL, adaptiveTouchSensitivity: OFF, screenProtectorMode: ON, imeState: ImeState{displayId: 0, visible: true, top: 0, left: 0, bottom: 0, right: 0}, audioDeviceInfo: TYPE_BUILTIN_EARPIECE}
+05-17 16:28:43.280  1478  1774 I twoshay.TouchContextService: Got new packet! ContextPacket{orientation: PORTRAIT, audioMode: NORMAL, adaptiveTouchSensitivity: OFF, screenProtectorMode: ON, imeState: ImeState{displayId: 0, visible: true, top: 1395, left: 0, bottom: 2400, right: 1080}, audioDeviceInfo: TYPE_BUILTIN_EARPIECE}
+05-17 16:28:43.281  1621  3983 I ImeTracker: system_server:eddeafae: onCancelled at PHASE_SERVER_POST_LAYOUT_NOTIFY_CONTROLS_CHANGED
+05-17 16:28:43.300   558  5446 E hwc-display: [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=0 error(-22)
+05-17 16:28:43.300   558  5446 E hwc-display: Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+05-17 16:28:43.300   558  5446 E hwc-display: Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+05-17 16:28:43.300   558  5446 E hwc-display: Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+05-17 16:28:43.300   551   551 E SurfaceFlinger: [VRI-InputMethod#139111] Invalid device requested composition type change: Client (1) --> Device (2)
+05-17 16:28:43.299   558   558 W HwBinder:558_3: type=1400 audit(0.0:114775): avc:  denied  { search } for  name="log" dev="dm-61" ino=313 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+05-17 16:28:43.299   558   558 W HwBinder:558_3: type=1400 audit(0.0:114776): avc:  denied  { search } for  name="log" dev="dm-61" ino=313 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+05-17 16:28:43.302  1621  1694 I ImeTracker: system_server:ff7d50be: onRequestShow at ORIGIN_SERVER reason CONTROLS_CHANGED fromUser false displayId 0
+05-17 16:28:43.316   551   551 E SurfaceFlinger: [VRI-InputMethod#139111] Invalid device requested composition type change: Client (1) --> Device (2)
+05-17 16:28:43.326 21491 25814 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardHidden():293 Keyboard closed, ending dictation. [SD]
+05-17 16:28:43.333 21047 21047 D VRI[Conversation]: WindowInsets changed: ime:[0,0,0,1005] 
+05-17 16:28:43.367   558  5446 E hwc-display: [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=0 error(-22)
+05-17 16:28:43.367   558  5446 E hwc-display: Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+05-17 16:28:43.367   558  5446 E hwc-display: Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+05-17 16:28:43.367   558  5446 E hwc-display: Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+05-17 16:28:43.367   558  5446 E hwc-display: [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+05-17 16:28:43.367   558  5446 E hwc-display: Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+05-17 16:28:43.367   558  5446 E hwc-display: Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+05-17 16:28:43.367   558  5446 E hwc-display: Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+05-17 16:28:43.363   558   558 W HwBinder:558_3: type=1400 audit(0.0:114777): avc:  denied  { search } for  name="log" dev="dm-61" ino=313 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+05-17 16:28:43.363   558   558 W HwBinder:558_3: type=1400 audit(0.0:114778): avc:  denied  { search } for  name="log" dev="dm-61" ino=313 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+05-17 16:28:43.363   558   558 W HwBinder:558_3: type=1400 audit(0.0:114779): avc:  denied  { search } for  name="log" dev="dm-61" ino=313 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+05-17 16:28:43.363   558   558 W HwBinder:558_3: type=1400 audit(0.0:114780): avc:  denied  { search } for  name="log" dev="dm-61" ino=313 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+05-17 16:28:43.534 21047 21047 I ImeTracker: system_server:ff7d50be: onShown
+05-17 16:28:43.714 27387 28112 I esps    : HDM. appOpsListener android:record_audio com.google.android.inputmethod.latin
+05-17 16:28:43.714 27387 28112 I esps    : HDM. Ignoring irrelevant audio permission changes for package com.google.android.inputmethod.latin
+05-17 16:28:43.715  1621  1900 D HintManagerService: Starts cleaning for 10179
+05-17 16:28:43.731 21491 25858 I KeyboardActiveSessionStreamManager: KeyboardActiveSessionStreamManager.closeStream():125 Closing stream. [SDG]
+05-17 16:28:45.115   978  1032 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:28:45.247   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:28:45.247   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:28:45.247   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:28:45.247   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:28:47.043  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 4: Enabled 0, odr_index 0.
+05-17 16:28:47.043  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 416/416/13/52 WM: 57 Intr: 16.
+05-17 16:28:47.043  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 248779ns.
+05-17 16:28:47.043  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Stationary Detect (active:-1).
+05-17 16:28:47.043  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 68322 not found.
+05-17 16:28:47.044  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 161: USF: Received kErrNotFound when disabling one shot sensor.
+05-17 16:28:47.044  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Motion Detect (active:1).
+05-17 16:28:47.044  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 3: Enabled 1, odr_index 1.
+05-17 16:28:47.044  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 416/416/13/52 WM: 57 Intr: 16.
+05-17 16:28:47.045  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 251221ns.
+05-17 16:28:47.045  1209  1209 D AOC     : A3:MSG: motion_state_sensor.cc, 327: USF: MoSt: MotionDetect sampling started with sampling ID 68327.
+05-17 16:28:47.046  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Motion Detect (active:2).
+05-17 16:28:47.047  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:7).
+05-17 16:28:47.048  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 0: Enabled 1, odr_index 4.
+05-17 16:28:47.048  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/416/13/52 WM: 36 Intr: 17.
+05-17 16:28:47.049  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 370605ns.
+05-17 16:28:47.049  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Gyroscope (active:2).
+05-17 16:28:47.050  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 1: Enabled 1, odr_index 5.
+05-17 16:28:47.050  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/208/13/26 WM: 20 Intr: 18.
+05-17 16:28:47.051  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 361328ns.
+05-17 16:28:47.051  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR FreeFall Detect (active:0).
+05-17 16:28:47.052  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 5: Enabled 0, odr_index 0.
+05-17 16:28:47.052  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/208/13/26 WM: 20 Intr: 18.
+05-17 16:28:47.052  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 255859ns.
+05-17 16:28:47.053  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Stationary Detect (active:-1).
+05-17 16:28:47.053  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 68325 not found.
+05-17 16:28:47.053  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 145: USF: Received kErrNotFound when disabling one shot sensor.
+05-17 16:28:47.057   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001019 endpoint 0x3: Type 0x1f4 size 12 
+05-17 16:28:47.060   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001019 endpoint 0x3: Type 0x1f4 size 12 
+05-17 16:28:47.084  1621  1899 D ActivityManager: freezing 17461 com.x.android.lite
+05-17 16:28:47.093  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:47.095  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:47.095  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10450} in 5ms
+05-17 16:28:47.367  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Gyroscope (active:3).
+05-17 16:28:47.368  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 1: Enabled 1, odr_index 3.
+05-17 16:28:47.368  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/52/13/13 WM: 9 Intr: 21.
+05-17 16:28:47.368  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 385010ns.
+05-17 16:28:47.369  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for MMC56X3X Magnetometer (active:2).
+05-17 16:28:47.370  1209  1209 D AOC     : A3:MSG: mmc56x3x_device.cc, 409: USF: MMC56X3X0: mmc56x3x_enable_measure odr = 10.
+05-17 16:28:47.592  1621  1899 D ActivityManager: freezing 24881 com.google.android.euicc
+05-17 16:28:47.596  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:47.598  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:47.598  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10126} in 4ms
+05-17 16:28:47.825  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:47.827  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:47.827  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10179} in 4ms
+05-17 16:28:47.829  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:47.831  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:47.831  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={20179} in 4ms
+05-17 16:28:48.251   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:28:48.334   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:28:48.334   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:28:48.334   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:28:48.334   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:28:48.587  1745  1764 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB2-MINUS-CHG:-4878 VIRTUAL-USB-UI:0 charger_skin_therm:42349 usb_pwr_therm2:37471 
+05-17 16:28:48.587  1745  1764 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB2-MINUS-CHG:-4878 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm2:37471 
+05-17 16:28:48.587  1745  1764 I pixel-thermal: Power rails total power: 668.63 mW for 60008 ms
+05-17 16:28:48.587  1745  1764 I pixel-thermal: Power rails [L8S_UFS_VCCQ: 36.07 mW] [S2S_VDD_G3D: 22.02 mW] [S10S_VDD2L: 18.93 mW] [S5S_VDDQ_MEM: 7.36 mW] [S4S_VDD2H_MEM: 35.84 mW] [S9S_VDD_AOC: 29.98 mW] 
+05-17 16:28:48.587  1745  1764 I pixel-thermal: Power rails [S10M_VDD_TPU: 11.77 mW] [L2S_VDD_AOC_RET: 5.12 mW] [L9S_GNSS_CORE: 0.49 mW] [S1M_VDD_MIF: 50.57 mW] [S5M_VDD_INT: 32.24 mW] [S4M_VDD_CPUCL0: 91.96 mW] 
+05-17 16:28:48.587  1745  1764 I pixel-thermal: Power rails [S2M_VDD_CPUCL2: 98.50 mW] [S3M_VDD_CPUCL1: 42.52 mW] [L15M_VDD_SLC_M: 11.09 mW] [VSYS_PWR_DISPLAY: 174.17 mW] 
+05-17 16:28:48.587  1745  1764 I pixel-thermal: CDEV log usbc-port state:0 fcc state:4 thermal-cpufreq-1 state:0 tpu_cooling state:2 thermal-gpufreq-0 state:0 thermal-cpufreq-2 state:0 thermal-cpufreq-0 state:0 
+05-17 16:28:48.750  1745  1764 I pixel-thermal: VIRTUAL-SKIN:38.9745 raw data: VIRTUAL-NEUTRAL:38974.5 VIRTUAL-NEUTRAL-SKIN2:38875.8 VIRTUAL-QUIET-NEUTRAL:37797.9 VIRTUAL-SKIN:38974.5 disp_therm:37204 gnss_tcxo_therm:39229 neutral_therm:38094 quiet_therm:37671 skin_therm1:39852 skin_therm2:40700 
+05-17 16:28:49.633  2271  3351 D ImpulseConnection: timeout happen: com.google.android.apps.turbo
+05-17 16:28:49.636  2271  3351 D ImpulseConnection: unbindService for releasing a CONNECTED connection com.google.android.apps.turbo
+05-17 16:28:49.647  1745  1745 I pixel-thermal: VIRTUAL-SKIN:38.9745 raw data: VIRTUAL-SKIN:38974.5 
+05-17 16:28:49.649  1745  1745 I pixel-thermal: VIRTUAL-SKIN:38.9745 raw data: VIRTUAL-SKIN:38974.5 
+05-17 16:28:49.650  2271  2463 I TemperatureStateSource: temperature was set
+05-17 16:28:49.650  2271  2463 D ImpulseStateSource: Notify clients: 32840
+05-17 16:28:49.650  2271  2465 D ImpulseConnection: bindService: com.google.android.apps.turbo
+05-17 16:28:49.669  2271  2271 D ImpulseConnection: onServiceConnected: ComponentInfo{com.google.android.apps.turbo/com.google.android.apps.turbo.adaptiveplatform.impulse.ImpulseClientService} service is null false
+05-17 16:28:49.885  1745  1764 I pixel-thermal: cellular-emergency:38.9745 raw data: VIRTUAL-SKIN:38974.5 cellular-emergency:38974.5 
+05-17 16:28:49.885  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:38.9745 raw data: VIRTUAL-SKIN:38974.5 VIRTUAL-SKIN-CPU:38974.5 
+05-17 16:28:49.886  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=1673.31 err=2.0255 s_power=800 time_elapsed_ms=7007 p=810.199 i=63.1079 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:28:49.886  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 192.92 mW)(S2M_VDD_CPUCL2: 165.85 mW)(S3M_VDD_CPUCL1: 100.65 mW)
+05-17 16:28:49.886  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:38.9745 raw data: VIRTUAL-SKIN:38974.5 VIRTUAL-SKIN-CPU-GPU:38974.5 
+05-17 16:28:49.886  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3307.65 err=6.0255 s_power=800 time_elapsed_ms=7007 p=1807.65 i=700 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:28:49.886  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 192.92 mW)(S2M_VDD_CPUCL2: 165.85 mW)(S3M_VDD_CPUCL1: 100.65 mW)(S2S_VDD_G3D: 66.82 mW)
+05-17 16:28:49.886  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:38.9745 raw data: VIRTUAL-SKIN:38974.5 VIRTUAL-SKIN-HINT:38974.5 
+05-17 16:28:49.886  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:38.9745 raw data: VIRTUAL-SKIN:38974.5 VIRTUAL-SKIN-CHARGE:38974.5 
+05-17 16:28:49.886  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 844.702
+05-17 16:28:50.687 10976 14079 I NearbyDiscovery: FastPair: isDestroyable: Scanner is alive. [CONTEXT service_id=265 ]
+05-17 16:28:50.687 10976 14079 I NearbyDiscovery: DiscoveryService: Skip stopSelf(), fast pair controller is not destroyable. [CONTEXT service_id=265 ]
+05-17 16:28:50.817 10976 21250 I NearbyMediums: Found BLE GATT Advertisements :
+05-17 16:28:50.817 10976 21250 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=false, serviceIdHash=[ 0xfc 0x9f 0x5e ], data=[ 0x23 0xfc 0x9f 0x5e 0x33 0x42 0x38 0x46 0x1d 0x06 0x87 0x5a 0x1d 0x02 0xcc 0xb8 0xfa 0xef 0xec 0xdb 0x67 0x69 0x56 0xb4 0xc2 0x09 0x0b 0x41 0x73 0x68 0x77 0x69 0x6e 0x27 0x73 0x20 0x50 0x43 0xa0 0xb3 0x39 0xf2 0x17 0x77 0x00 0x00 ], deviceToken=[ 0xee 0x40 ], rxAdvertisement=null } : 17 times.
+05-17 16:28:50.817 10976 21250 I NearbyMediums: Total 17 GATT advertisements from 1 unique advertisers.
+05-17 16:28:50.817 10976 21250 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-17 16:28:51.339   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:28:51.436   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:28:51.436   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:28:51.437   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:28:51.437   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:28:51.567 21047 21050 I com.whatsapp: Method exceeds compiler instruction limit: 25728 in java.lang.Long X.Ch5.A00(java.lang.Integer)
+05-17 16:28:52.067  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 532: VSC: [Significant Motion] requestSensorEvents: sensor 0x20002, period=18446744073709 la
+05-17 16:28:52.067  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Motion Detect (active:3).
+05-17 16:28:52.068  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 550: VSC: [Significant Motion] stopSensorEvents: sensor 0x10001
+05-17 16:28:52.069  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:7).
+05-17 16:28:52.069  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 763: USF: Lsm6dsrDevice: Sensor 0: Enabled 1, odr_index 4.
+05-17 16:28:52.069  1209  1209 D AOC     : A3:MSG: lsm6dsr_fifo.cc, 750: USF: Lsm6dsrFifo: ODR: XL/G/T/TS: 104/52/13/13 WM: 9 Intr: 21.
+05-17 16:28:52.070  1209  1209 D AOC     : A3:MSG: lsm6dsr_device.cc, 671: USF: Lsm6dsrDevice: Fifo was disabled for 332031ns.
+05-17 16:28:52.808  1621  1899 D ActivityManager: freezing 17365 app.revanced.android.gms
+05-17 16:28:52.814  1621  1899 D ActivityManager: freezing 21491 com.google.android.inputmethod.latin
+05-17 16:28:52.818  1621  1899 D ActivityManager: freezing 14177 com.google.android.gms
+05-17 16:28:52.826  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:28:52.828  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:28:52.828  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10179} in 5ms
+05-17 16:28:54.308  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 532: VSC: [Step Counter] requestSensorEvents: sensor 0x20002, period=18446744073709 latency=
+05-17 16:28:54.308  1209  1209 D AOC     : A3:MSG: vsc_controller.cc, 550: VSC: [Step Counter] stopSensorEvents: sensor 0x10001
+05-17 16:28:54.308  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Accelerometer (active:5).
+05-17 16:28:54.309  1209  1209 D AOC     : A3:MSG: usf_sensor_client.cc, 430: USF: Stopping stale sample stream with sampling ID: 68323
+05-17 16:28:54.309  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Accelerometer (active:4).
+05-17 16:28:54.309  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 2037: USF: Sampling configuration 68323 not found.
+05-17 16:28:54.446   978  1032 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:28:54.543   978  1032 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:28:54.543   978  1032 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:28:54.543   978  1032 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:28:54.543   978  1032 D WifiHAL : len = 4, expected len = 4
+05-17 16:28:55.509 14632 14632 I adbd    : adbd service requested 'shell:getprop'
+05-17 16:28:55.755  1745  1764 I pixel-thermal: VIRTUAL-SKIN:39.0899 raw data: VIRTUAL-NEUTRAL:39089.8 VIRTUAL-NEUTRAL-SKIN2:38994.9 VIRTUAL-QUIET-NEUTRAL:37799.7 VIRTUAL-SKIN:39089.8 disp_therm:37226 gnss_tcxo_therm:39452 neutral_therm:38205 quiet_therm:37626 skin_therm1:39897 skin_therm2:40838 
+05-17 16:28:56.892  1745  1764 I pixel-thermal: cellular-emergency:39.0899 raw data: VIRTUAL-SKIN:39089.8 cellular-emergency:39089.8 
+05-17 16:28:56.892  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:39.0899 raw data: VIRTUAL-SKIN:39089.8 VIRTUAL-SKIN-CPU:39089.8 
+05-17 16:28:56.892  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=1627.17 err=1.91015 s_power=800 time_elapsed_ms=7005 p=764.059 i=63.1079 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:28:56.892  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 95.76 mW)(S2M_VDD_CPUCL2: 28.36 mW)(S3M_VDD_CPUCL1: 31.56 mW)
+05-17 16:28:56.892  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:39.0899 raw data: VIRTUAL-SKIN:39089.8 VIRTUAL-SKIN-CPU-GPU:39089.8 
+05-17 16:28:56.892  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3273.04 err=5.91015 s_power=800 time_elapsed_ms=7005 p=1773.04 i=700 d=-0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:28:56.892  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 95.76 mW)(S2M_VDD_CPUCL2: 28.36 mW)(S3M_VDD_CPUCL1: 31.56 mW)(S2S_VDD_G3D: 24.19 mW)
+05-17 16:28:56.893  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:39.0899 raw data: VIRTUAL-SKIN:39089.8 VIRTUAL-SKIN-HINT:39089.8 
+05-17 16:28:56.893  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:39.0899 raw data: VIRTUAL-SKIN:39089.8 VIRTUAL-SKIN-CHARGE:39089.8 
+05-17 16:28:56.893  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 460.201
+05-17 16:28:56.894  1745  1764 I pixel-thermal: Successfully update cdev fcc sysfs to 0
+05-17 16:28:57.246  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1573: USF: Received start sampling request for LSM6DSR Accelerometer (active:6).
+05-17 16:28:57.249   932   973 I CHRE    : @ 426025.634: [AR] ON => IDLE
+05-17 16:28:57.553   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:28:57.665   978   978 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 111 ms
+05-17 16:28:57.712   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:28:57.712   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:28:57.712   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:28:57.712   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:28:59.659  1745  1745 I pixel-thermal: VIRTUAL-SKIN:39.0592 raw data: VIRTUAL-NEUTRAL:39059.2 VIRTUAL-NEUTRAL-SKIN2:38960.4 VIRTUAL-QUIET-NEUTRAL:37815.8 VIRTUAL-SKIN:39059.2 disp_therm:37226 gnss_tcxo_therm:39474 neutral_therm:38205 quiet_therm:37649 skin_therm1:39808 skin_therm2:40723 
+05-17 16:28:59.663  2271  2465 D ImpulseStateSource: Notify clients: 32841
+05-17 16:29:00.669  1621  1768 D ActivityManager: sync unfroze 14177 com.google.android.gms for 6
+05-17 16:29:00.671  1621  2006 D AppWidgetServiceImpl: Trying to notify widget update for package org.kustom.widget with widget id: 880
+05-17 16:29:00.687  1621  2006 D AppWidgetServiceImpl: Trying to notify widget update for package org.kustom.widget with widget id: 879
+05-17 16:29:00.716   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:29:00.801   978  1032 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:29:00.801   978  1032 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:29:00.801   978  1032 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:29:00.801   978  1032 D WifiHAL : len = 4, expected len = 4
+05-17 16:29:00.819 10976 25757 I NearbyMediums: Found BLE GATT Advertisements :
+05-17 16:29:00.819 10976 25757 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=false, serviceIdHash=[ 0xfc 0x9f 0x5e ], data=[ 0x23 0xfc 0x9f 0x5e 0x33 0x42 0x38 0x46 0x1d 0x06 0x87 0x5a 0x1d 0x02 0xcc 0xb8 0xfa 0xef 0xec 0xdb 0x67 0x69 0x56 0xb4 0xc2 0x09 0x0b 0x41 0x73 0x68 0x77 0x69 0x6e 0x27 0x73 0x20 0x50 0x43 0xa0 0xb3 0x39 0xf2 0x17 0x77 0x00 0x00 ], deviceToken=[ 0xee 0x40 ], rxAdvertisement=null } : 16 times.
+05-17 16:29:00.819 10976 25757 I NearbyMediums: Total 16 GATT advertisements from 1 unique advertisers.
+05-17 16:29:00.819 10976 25757 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-17 16:29:01.084  1621  1653 I system_server: NativeAlloc concurrent mark compact GC freed 22MB AllocSpace bytes, 26(1992KB) LOS objects, 79% free, 105MB/512MB, paused 2.737ms,11.768ms total 412.877ms
+05-17 16:29:01.099  1621  1654 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb400006f9f5f8590) with descriptor: '(not cached)'
+05-17 16:29:01.105  1621  1654 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb400006f9f77ae50) with descriptor: '(not cached)'
+05-17 16:29:02.275   937   937 W TracingMuxer: type=1400 audit(0.0:114781): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1247 scontext=u:r:hal_neuralnetworks_darwinn:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+05-17 16:29:02.722  1135  1157 I WPKTRT  : process_address_event: 2409:40c4:153:71cf:738:6125:910e:cdb8 added to wlan0
+05-17 16:29:02.723  1135  1157 I WPKTRT  : process_address_event: 2409:40c4:153:71cf:9da8:cae7:d6c5:aae2 added to wlan0
+05-17 16:29:02.729  2213  2772 D IpClient/wlan0: addressUpdated: 2409:40c4:153:71cf:738:6125:910e:cdb8/64 on ifindex 47 flags 0x00000900 scope 0
+05-17 16:29:02.730  2213  2772 D IpClient/wlan0: addressUpdated: 2409:40c4:153:71cf:9da8:cae7:d6c5:aae2/64 on ifindex 47 flags 0x00000001 scope 0
+05-17 16:29:02.731  2213  2772 W AlarmManager: Unrecognized alarm listener com.android.networkstack.android.net.ip.IpClientLinkObserver$Dhcp6PdPreferredPrefixAlarmListener@b77b132
+05-17 16:29:02.733  2213  2772 D ApfFilter: (wlan0): Ignoring RA RA fe80::da23:e0ff:fe80:e3d7 -> ff02::1 180s 2409:40c4:153:71cf::/64 14694s/14694s DNS 180s 2409:40c4:153:71cf:da23:e0ff:fe80:e3d7  which matches RA fe80::da23:e0ff:fe80:e3d7 -> ff02::1 180s 2409:40c4:153:71cf::/64 14716s/14716s DNS 180s 2409:40c4:153:71cf:da23:e0ff:fe80:e3d7 
+05-17 16:29:02.770  1745  1764 I pixel-thermal: VIRTUAL-SKIN:39.0592 raw data: VIRTUAL-NEUTRAL:39059.2 VIRTUAL-NEUTRAL-SKIN2:38960.4 VIRTUAL-QUIET-NEUTRAL:37815.8 VIRTUAL-SKIN:39059.2 disp_therm:37226 gnss_tcxo_therm:39474 neutral_therm:38205 quiet_therm:37649 skin_therm1:39808 skin_therm2:40723 
+05-17 16:29:03.360  1621  1973 I MdnsReplySender: Sending {MdnsReplyInfo: /192.168.31.153:5353 to /224.0.0.251:5353, answers: 1, additionalAnswers: 7, knownAnswers: 0, sendDelayMs 25}
+05-17 16:29:03.809   978  1032 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:29:03.896   978  1032 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:29:03.896   978  1032 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:29:03.896   978  1032 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:29:03.896   978  1032 D WifiHAL : len = 4, expected len = 4
+05-17 16:29:03.898  1745  1764 I pixel-thermal: cellular-emergency:39.0592 raw data: VIRTUAL-SKIN:39059.2 cellular-emergency:39059.2 
+05-17 16:29:03.898  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:39.0592 raw data: VIRTUAL-SKIN:39059.2 VIRTUAL-SKIN-CPU:39059.2 
+05-17 16:29:03.898  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=1639.43 err=1.9408 s_power=800 time_elapsed_ms=7006 p=776.32 i=63.1079 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:29:03.898  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 82.91 mW)(S2M_VDD_CPUCL2: 18.62 mW)(S3M_VDD_CPUCL1: 53.99 mW)
+05-17 16:29:03.899  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:39.0592 raw data: VIRTUAL-SKIN:39059.2 VIRTUAL-SKIN-CPU-GPU:39059.2 
+05-17 16:29:03.899  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3282.24 err=5.9408 s_power=800 time_elapsed_ms=7006 p=1782.24 i=700 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:29:03.899  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 82.91 mW)(S2M_VDD_CPUCL2: 18.62 mW)(S3M_VDD_CPUCL1: 53.99 mW)(S2S_VDD_G3D: 8.20 mW)
+05-17 16:29:03.899  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:39.0592 raw data: VIRTUAL-SKIN:39059.2 VIRTUAL-SKIN-HINT:39059.2 
+05-17 16:29:03.899  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:39.0592 raw data: VIRTUAL-SKIN:39059.2 VIRTUAL-SKIN-CHARGE:39059.2 
+05-17 16:29:03.899  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 447.229
+05-17 16:29:06.904   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:29:06.997   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:29:06.997   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:29:06.997   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:29:06.997   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:29:07.228  1209  1209 D AOC     : A3:MSG: usf_sensor.cc, 1581: USF: Received stop sampling request for LSM6DSR Accelerometer (active:4).
+05-17 16:29:07.231   932   973 D CHRE.HAL: Received a nanoapp message from 0x476f6f676c001016 endpoint 0x4: Type 0x8003 size 1 
+05-17 16:29:07.259   978  1032 I vendor.google.wifi_ext-service-vendor: Wifi: Resetting SAR Scenario to default
+05-17 16:29:07.259   978  1032 E WifiHAL : wifi_reset_tx_power_scenario
+05-17 16:29:07.273  2336  2336 D GRIL-S  : [7219]> UPDATE_DEVICE_STATE DeviceState: Usb:1, Wifi: 1, Wifi AP: 0, Earpiece: 0, Bluetooth: 1, Wireless charging: 0, Screen: 1, Camera: 0, 0, -, -, Motion: 0, Bluetooth tethering: 0, Voice: 0, Wifi 2.4G: 0, Radio: 1, Bluetooth connected: 0, Bluetooth media: 0, Wifi Band: 2, Wifi AP Band: 0, Wifi call: 0, mmWave: 0, mCellBackhaul: 0, mHallSensor: 0, mDozeStatus: 1, mAppClassInfo: 0, mWifiCapSensorStatus: 0, mCellCapSensorStatus: 0, mBesideHeadHandStatus: 0, mSpeakerStatus: 0, mProtectiveCaseStatus: 0, mWifiSettingStatus: 0, mGpsStatus: 0
+05-17 16:29:07.277   496   496 I hwservicemanager: getTransport: Cannot find entry hardware.google.bluetooth.bt_channel_avoidance@1.0::IBTChannelAvoidance/default in either framework or device VINTF manifest.
+05-17 16:29:07.329  2336  3076 D GRIL-S  : [7219]< UPDATE_DEVICE_STATE 
+05-17 16:29:07.340  2336  2336 D GRIL-BluetoothSar: setBluetoothModeBasedTxPowerCap invoked with parameters: chain0Cap:[76, 76, 76] chain1Cap:[76, 76, 76] beamformingCap:[66, 66, 66, 66, 66, 66]
+05-17 16:29:07.341   929   929 I bthal.aidl.sar: setBluetoothModeBasedTxPowerCap: 0 Chain 0 Power Cap:<br=76, edr=76, ble=76>, Chain 1 Power Cap:<br=76, edr=76, ble=76>, Beamforming Power Cap Chain 0: <br=66, edr=66, ble=66>, Chain 1:<br=66, edr=66, ble=66>
+05-17 16:29:07.356   929  1120 I bthal.aidl.sar: OnEventReceive: (1) Recv Success VSE <[7]{14, 5, 1, 105, 254, 0, 1}>
+05-17 16:29:07.356   929  1120 I bthal.flowcontrol: HciEventPreProcess: HCI Event 0xe Opcode 0xfe69 Length 7 handled by bthal.aidl.sar
+05-17 16:29:09.675  1745  1745 I pixel-thermal: VIRTUAL-SKIN:39.0465 raw data: VIRTUAL-NEUTRAL:39046.5 VIRTUAL-NEUTRAL-SKIN2:38966.5 VIRTUAL-QUIET-NEUTRAL:37835.9 VIRTUAL-SKIN:39046.5 disp_therm:37248 gnss_tcxo_therm:39429 neutral_therm:38272 quiet_therm:37649 skin_therm1:39763 skin_therm2:40587 
+05-17 16:29:09.679  2271  2465 D ImpulseStateSource: Notify clients: 32842
+05-17 16:29:09.781  1745  1764 I pixel-thermal: VIRTUAL-SKIN:39.0465 raw data: VIRTUAL-SKIN:39046.5 
+05-17 16:29:10.005   978  1032 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:29:10.121   978  1032 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:29:10.121   978  1032 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:29:10.122   978  1032 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:29:10.122   978  1032 D WifiHAL : len = 4, expected len = 4
+05-17 16:29:10.823 10976 25757 I NearbyMediums: Found BLE GATT Advertisements :
+05-17 16:29:10.823 10976 25757 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=false, serviceIdHash=[ 0xfc 0x9f 0x5e ], data=[ 0x23 0xfc 0x9f 0x5e 0x33 0x42 0x38 0x46 0x1d 0x06 0x87 0x5a 0x1d 0x02 0xcc 0xb8 0xfa 0xef 0xec 0xdb 0x67 0x69 0x56 0xb4 0xc2 0x09 0x0b 0x41 0x73 0x68 0x77 0x69 0x6e 0x27 0x73 0x20 0x50 0x43 0xa0 0xb3 0x39 0xf2 0x17 0x77 0x00 0x00 ], deviceToken=[ 0xee 0x40 ], rxAdvertisement=null } : 19 times.
+05-17 16:29:10.823 10976 25757 I NearbyMediums: Total 19 GATT advertisements from 1 unique advertisers.
+05-17 16:29:10.823 10976 25757 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+05-17 16:29:10.902  1745  1764 I pixel-thermal: cellular-emergency:39.0465 raw data: VIRTUAL-SKIN:39046.5 cellular-emergency:39046.5 
+05-17 16:29:10.902  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:39.0465 raw data: VIRTUAL-SKIN:39046.5 VIRTUAL-SKIN-CPU:39046.5 
+05-17 16:29:10.902  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=1644.53 err=1.95354 s_power=800 time_elapsed_ms=7006 p=781.418 i=63.1079 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:29:10.902  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 48.13 mW)(S2M_VDD_CPUCL2: 16.44 mW)(S3M_VDD_CPUCL1: 18.73 mW)
+05-17 16:29:10.903  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:39.0465 raw data: VIRTUAL-SKIN:39046.5 VIRTUAL-SKIN-CPU-GPU:39046.5 
+05-17 16:29:10.903  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3286.06 err=5.95354 s_power=800 time_elapsed_ms=7006 p=1786.06 i=700 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:29:10.903  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 48.13 mW)(S2M_VDD_CPUCL2: 16.44 mW)(S3M_VDD_CPUCL1: 18.73 mW)(S2S_VDD_G3D: 11.51 mW)
+05-17 16:29:10.903  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:39.0465 raw data: VIRTUAL-SKIN:39046.5 VIRTUAL-SKIN-HINT:39046.5 
+05-17 16:29:10.903  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:39.0465 raw data: VIRTUAL-SKIN:39046.5 VIRTUAL-SKIN-CHARGE:39046.5 
+05-17 16:29:10.903  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 355.865
+05-17 16:29:11.222  2884  2884 I pixelstats: MmMetrics: kernel: old PSI sysfs node.
+05-17 16:29:12.257  1168  1189 D RILClient: [OemClient]IND: (clientId = 0, msgId = 2016, dataLength = 996, channel = 1)
+05-17 16:29:12.264   984  3294 D RILClient: [OemClient]IND: (clientId = 7, msgId = 2016, dataLength = 996, channel = 1)
+05-17 16:29:12.283   978   978 I WifiHAL : found interface wlan0
+05-17 16:29:12.288   978   978 I WifiHAL : Setting Channel Avoidance success
+05-17 16:29:12.293  2404  2404 I SHANNON_IMS: 5069 [DATA] Received mCellStatus [ 1 ]  [  band : 0] (RilIndImsPhysicalChannelConfigs%update:44)
+05-17 16:29:12.294  2404  2404 I SHANNON_IMS: 5070 [NETW] #:PURP:# UNSOL {RILC_UNSOL_PHYSICAL_CHANNEL_CONFIGS} :   band : 40  (NetworkAdaptor$AdaptorChannel%onMessage:306)
+05-17 16:29:12.334  1621  3983 D ActivityManager: sync unfroze 21540 .ShannonImsService for 7
+05-17 16:29:13.130   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:29:13.254   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:29:13.254   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:29:13.254   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:29:13.254   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:29:16.268   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:29:16.379   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:29:16.379   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:29:16.379   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:29:16.379   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:29:16.792  1745  1764 I pixel-thermal: VIRTUAL-SKIN:38.9432 raw data: VIRTUAL-NEUTRAL:38943.2 VIRTUAL-NEUTRAL-SKIN2:38830.7 VIRTUAL-QUIET-NEUTRAL:37809.2 VIRTUAL-SKIN:38943.2 disp_therm:37248 gnss_tcxo_therm:39385 neutral_therm:38183 quiet_therm:37649 skin_therm1:39630 skin_therm2:40342 
+05-17 16:29:17.743  1621  1899 D ActivityManager: freezing 14177 com.google.android.gms
+05-17 16:29:17.915  1745  1764 I pixel-thermal: cellular-emergency:38.9432 raw data: VIRTUAL-SKIN:38943.2 cellular-emergency:38943.2 
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU:38.9432 raw data: VIRTUAL-SKIN:38943.2 VIRTUAL-SKIN-CPU:38943.2 
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=1685.85 err=2.05685 s_power=800 time_elapsed_ms=7009 p=822.739 i=63.1079 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 51.29 mW)(S2M_VDD_CPUCL2: 15.31 mW)(S3M_VDD_CPUCL1: 19.72 mW)
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:38.9432 raw data: VIRTUAL-SKIN:38943.2 VIRTUAL-SKIN-CPU-GPU:38943.2 
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3317.05 err=6.05685 s_power=800 time_elapsed_ms=7009 p=1817.05 i=700 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 51.29 mW)(S2M_VDD_CPUCL2: 15.31 mW)(S3M_VDD_CPUCL1: 19.72 mW)(S2S_VDD_G3D: 7.93 mW)
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-HINT:38.9432 raw data: VIRTUAL-SKIN:38943.2 VIRTUAL-SKIN-HINT:38943.2 
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE:38.9432 raw data: VIRTUAL-SKIN:38943.2 VIRTUAL-SKIN-CHARGE:38943.2 
+05-17 16:29:17.915  1745  1764 I pixel-thermal: VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 354.633
+05-17 16:29:18.873  1621  1899 D ActivityManager: freezing 21187 android.process.acore
+05-17 16:29:18.885  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-17 16:29:18.891  1621  1970 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-17 16:29:18.891  1621  1970 D InetDiagMessage: Destroyed live tcp sockets for uids={10068} in 12ms
+05-17 16:29:19.386   978   978 I WifiHAL : Creating message to get link statistics; iface = 47
+05-17 16:29:19.481   978   978 D WifiHAL : Start debug command: mType GET_FEATURE
+05-17 16:29:19.481   978   978 I WifiHAL : CreateRequest mType = GET_FEATURE
+05-17 16:29:19.481   978   978 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+05-17 16:29:19.481   978   978 D WifiHAL : len = 4, expected len = 4
+05-17 16:29:19.680  2271  2565 D ImpulseConnection: timeout happen: com.google.android.apps.turbo
+05-17 16:29:19.681  2271  2565 D ImpulseConnection: unbindService for releasing a CONNECTED connection com.google.android.apps.turbo
+05-17 16:29:19.692  1745  1745 I pixel-thermal: VIRTUAL-SKIN:38.8895 raw data: VIRTUAL-NEUTRAL:38889.5 VIRTUAL-NEUTRAL-SKIN2:38866.2 VIRTUAL-QUIET-NEUTRAL:37846.6 VIRTUAL-SKIN:38889.5 disp_therm:37248 gnss_tcxo_therm:39229 neutral_therm:38205 quiet_therm:37693 skin_therm1:39429 skin_therm2:40409 
+05-17 16:29:19.698  2271  2465 D ImpulseStateSource: Notify clients: 32843
+05-17 16:29:20.391 14632 14632 I adbd    : adbd service requested 'shell,v2:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'threadtime''
+05-17 16:29:20.828 10976 25757 I NearbyMediums: Found BLE GATT Advertisements :
+05-17 16:29:20.828 10976 25757 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=false, serviceIdHash=[ 0xfc 0x9f 0x5e ], data=[ 0x23 0xfc 0x9f 0x5e 0x33 0x42 0x38 0x46 0x1d 0x06 0x87 0x5a 0x1d 0x02 0xcc 0xb8 0xfa 0xef 0xec 0xdb 0x67 0x69 0x56 0xb4 0xc2 0x09 0x0b 0x41 0x73 0x68 0x77 0x69 0x6e 0x27 0x73 0x20 0x50 0x43 0xa0 0xb3 0x39 0xf2 0x17 0x77 0x00 0x00 ], deviceToken=[ 0xee 0x40 ], rxAdvertisement=null } : 19 times.
+05-17 16:29:20.828 10976 25757 I NearbyMediums: Total 19 GATT advertisements from 1 unique advertisers.
+05-17 16:29:20.836 10976 25757 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}

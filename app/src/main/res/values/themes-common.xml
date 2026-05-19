@@ -121,4 +121,7 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
+    <style name="RoundedCornerImageView" parent="">
+        <item name="cornerSize">8dp</item>
+    </style>
 </resources>

@@ -18,6 +18,9 @@ import helium314.keyboard.latin.utils.ResourceUtils
 import helium314.keyboard.latin.utils.prefs
 import helium314.keyboard.latin.utils.updateSoftInputWindowLayoutParameters
 import helium314.keyboard.settings.SettingsActivity
+import java.lang.reflect.Constructor
+import java.lang.reflect.Field
+import java.lang.reflect.Method
 import java.util.Locale
 
 object FrostedGlassHelper {
@@ -29,6 +32,112 @@ object FrostedGlassHelper {
     private val LIGHT_TINT_WITHOUT_BLUR = 0xCCFFFFFF.toInt()
     private val DARK_TINT_WITHOUT_BLUR = 0xCC000000.toInt()
     private val failedSamsungSemBlurModes = mutableSetOf<String>()
+
+    // =========================================================================
+    // LAZY STATICS: Pre-resolve reflection references ONCE and cache them forever
+    // =========================================================================
+    private val samsungSemBlurSupported: Boolean by lazy {
+        Build.MANUFACTURER.equals("samsung", ignoreCase = true) &&
+                Build.VERSION.SDK_INT >= Build.VERSION_CODES.S &&
+                !isKnownFrostedGlassBlurUnsupportedDevice() &&
+                SemBlurInfoReflect.initialized
+    }
+
+    private object SemBlurInfoReflect {
+        var initialized = false
+            private set
+
+        var semBlurInfoClass: Class<*>? = null
+        var builderClass: Class<*>? = null
+        var builderIntConstructor: Constructor<*>? = null
+        var builderNoArgConstructor: Constructor<*>? = null
+        
+        // Cached Methods
+        var setRadiusMethod: Method? = null
+        var setBackgroundColorMethod: Method? = null
+        var setBackgroundCornerRadiusMethod: Method? = null
+        var setBlurModeMethod: Method? = null
+        var buildMethod: Method? = null
+        var semSetBlurInfoMethod: Method? = null
+
+        // Pre-resolved non-captured modes sorted by preference
+        var cachedCandidates = listOf<SemBlurMode>()
+
+        init {
+            try {
+                val sbi = Class.forName("android.view.SemBlurInfo")
+                val bc = Class.forName("android.view.SemBlurInfo\$Builder")
+                semBlurInfoClass = sbi
+                builderClass = bc
+
+                // Resolve constructors
+                builderIntConstructor = runCatching { 
+                    bc.getDeclaredConstructor(Int::class.javaPrimitiveType!!).apply { isAccessible = true } 
+                }.getOrNull()
+                builderNoArgConstructor = runCatching { 
+                    bc.getDeclaredConstructor().apply { isAccessible = true } 
+                }.getOrNull()
+
+                // Cache builder methods
+                setRadiusMethod = findMethod(bc, listOf("setRadius", "hidden_setRadius"), Int::class.javaPrimitiveType!!)
+                setBackgroundColorMethod = findMethod(bc, listOf("setBackgroundColor", "hidden_setBackgroundColor"), Int::class.javaPrimitiveType!!)
+                setBackgroundCornerRadiusMethod = findMethod(bc, listOf("setBackgroundCornerRadius", "hidden_setBackgroundCornerRadius"), Float::class.javaPrimitiveType!!)
+                setBlurModeMethod = findMethod(bc, listOf("setBlurMode", "hidden_setBlurMode"), Int::class.javaPrimitiveType!!)
+                buildMethod = bc.getMethod("build").apply { isAccessible = true }
+
+                // Cache View method
+                semSetBlurInfoMethod = runCatching { 
+                    View::class.java.getMethod("semSetBlurInfo", sbi) 
+                }.recoverCatching { 
+                    View::class.java.getDeclaredMethod("semSetBlurInfo", sbi) 
+                }.getOrNull()?.apply { isAccessible = true }
+
+                // Parse and pre-cache modes
+                val modes = mutableListOf<SemBlurMode>()
+                val allFields = sbi.fields + sbi.declaredFields
+                for (field in allFields) {
+                    if (field.name.startsWith("BLUR_MODE_")) {
+                        runCatching {
+                            field.isAccessible = true
+                            modes.add(SemBlurMode(field.name, field.getInt(null)))
+                        }
+                    }
+                }
+                val distinctModes = modes.distinctBy { it.name }.sortedBy { it.value }
+                
+                // Select candidates
+                val unavailable = setOf("BLUR_MODE_WINDOW_CAPTURED", "BLUR_MODE_CAPTURED")
+                val preferred = listOf("BLUR_MODE_CANVAS", "BLUR_MODE_BACKGROUND", "BLUR_MODE_WINDOW")
+                
+                val preferredModes = preferred.mapNotNull { name -> distinctModes.firstOrNull { it.name == name } }
+                val remainingModes = distinctModes.filter { it.name !in preferred && it.name !in unavailable }
+                
+                cachedCandidates = (preferredModes + remainingModes).distinctBy { it.name }
+                if (cachedCandidates.isEmpty()) {
+                    cachedCandidates = listOf(SemBlurMode("BLUR_MODE_WINDOW", 0))
+                }
+                
+                initialized = semSetBlurInfoMethod != null && (builderIntConstructor != null || builderNoArgConstructor != null)
+            } catch (e: Throwable) {
+                Log.e(TAG, "Failed to initialize Samsung SemBlurInfo reflection framework", e)
+            }
+        }
+
+        private fun findMethod(clazz: Class<*>, names: List<String>, paramType: Class<*>): Method? {
+            for (name in names) {
+                val method = runCatching { clazz.getMethod(name, paramType) }
+                    .recoverCatching { clazz.getDeclaredMethod(name, paramType) }
+                    .getOrNull()
+                if (method != null) {
+                    method.isAccessible = true
+                    return method
+                }
+            }
+            return null
+        }
+    }
+
+    private data class SemBlurMode(val name: String, val value: Int)
 
     @JvmStatic
     fun isFrostedTheme(context: Context): Boolean {
@@ -92,34 +201,44 @@ object FrostedGlassHelper {
             return
         }
 
+        if (!samsungSemBlurSupported) {
+            Log.e(TAG, "Samsung SemBlurInfo is unsupported on this device environment; falling back to window tint")
+            target.setBackgroundColor(windowTint(context, blursEnabled = false))
+            return
+        }
+
         try {
-            val semBlurInfoClass = Class.forName("android.view.SemBlurInfo")
-            val builderClass = Class.forName("android.view.SemBlurInfo\$Builder")
-            val modes = resolveSemBlurModes(semBlurInfoClass)
-            val candidates = selectSamsungSemBlurModes(modes)
             val radius = blurRadius(context)
             val tint = windowTint(context, blursEnabled = true)
+            val candidates = SemBlurInfoReflect.cachedCandidates
 
             for (mode in candidates) {
+                if (mode.name in failedSamsungSemBlurModes) continue
                 try {
-                    val builder = createSemBlurBuilder(builderClass, mode)
+                    val builder = if (SemBlurInfoReflect.builderIntConstructor != null) {
+                        SemBlurInfoReflect.builderIntConstructor!!.newInstance(mode.value)
+                    } else {
+                        val b = SemBlurInfoReflect.builderNoArgConstructor!!.newInstance()
+                        SemBlurInfoReflect.setBlurModeMethod?.invoke(b, mode.value)
+                        b
+                    }
 
-                    invokeBuilderMethod(builder, listOf("setRadius", "hidden_setRadius"), Int::class.javaPrimitiveType!!, radius)
-                    invokeBuilderMethod(builder, listOf("setBackgroundColor", "hidden_setBackgroundColor"), Int::class.javaPrimitiveType!!, tint)
-                    invokeBuilderMethod(builder, listOf("setBackgroundCornerRadius", "hidden_setBackgroundCornerRadius"), Float::class.javaPrimitiveType!!, 0f)
+                    SemBlurInfoReflect.setRadiusMethod?.invoke(builder, radius)
+                    SemBlurInfoReflect.setBackgroundColorMethod?.invoke(builder, tint)
+                    SemBlurInfoReflect.setBackgroundCornerRadiusMethod?.invoke(builder, 0f)
 
-                    val blurInfo = builder.javaClass.getMethod("build").invoke(builder)
+                    val blurInfo = SemBlurInfoReflect.buildMethod!!.invoke(builder)
                     target.setBackgroundColor(Color.TRANSPARENT)
-                    setSamsungBlurInfo(target, semBlurInfoClass, blurInfo)
+                    SemBlurInfoReflect.semSetBlurInfoMethod!!.invoke(target, blurInfo)
                     Log.d(TAG, "Applied SemBlurInfo mode=${mode.name}(${mode.value}) radius=$radius target=${target.javaClass.simpleName} size=${target.width}x${target.height}")
                     return
                 } catch (modeError: Throwable) {
                     failedSamsungSemBlurModes.add(mode.name)
-                    Log.e(TAG, "SemBlurInfo mode ${mode.name}(${mode.value}) failed; trying next non-captured mode", modeError.cause ?: modeError)
+                    Log.e(TAG, "SemBlurInfo mode ${mode.name}(${mode.value}) failed; trying next candidate", modeError)
                 }
             }
 
-            Log.e(TAG, "No Samsung SemBlurInfo non-captured mode applied; falling back to readable tint")
+            Log.e(TAG, "No Samsung SemBlurInfo mode applied; falling back to readable tint")
             target.setBackgroundColor(windowTint(context, blursEnabled = false))
         } catch (e: Throwable) {
             Log.e(TAG, "Failed to apply Samsung SemBlurInfo blur; falling back to readable tint", e)
@@ -153,26 +272,41 @@ object FrostedGlassHelper {
 
         // 2. Target the specific Window attributes to anchor at bottom
         val params = window.attributes
-        params.width = WindowManager.LayoutParams.MATCH_PARENT
-        params.height = WindowManager.LayoutParams.WRAP_CONTENT
-        params.gravity = Gravity.BOTTOM
-        window.attributes = params
+        var changed = false
+
+        if (params.width != WindowManager.LayoutParams.MATCH_PARENT) {
+            params.width = WindowManager.LayoutParams.MATCH_PARENT
+            changed = true
+        }
+        if (params.height != WindowManager.LayoutParams.WRAP_CONTENT) {
+            params.height = WindowManager.LayoutParams.WRAP_CONTENT
+            changed = true
+        }
+        if (params.gravity != Gravity.BOTTOM) {
+            params.gravity = Gravity.BOTTOM
+            changed = true
+        }
 
         // 3. Fix Background Targeting: Set root window to transparent.
-        // The actual theme background will be applied to R.id.main_keyboard_frame in InputView.java
         window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            if (enable) {
-                window.setBackgroundBlurRadius(blurRadius(service))
-                window.attributes.flags = window.attributes.flags or WindowManager.LayoutParams.FLAG_BLUR_BEHIND
-                window.attributes = window.attributes
-            } else {
-                // Reset blur for standard themes
-                window.setBackgroundBlurRadius(0)
-                window.attributes.flags = window.attributes.flags and WindowManager.LayoutParams.FLAG_BLUR_BEHIND.inv()
-                window.attributes = window.attributes
+            val targetRadius = if (enable) blurRadius(service) else 0
+            window.setBackgroundBlurRadius(targetRadius)
+
+            val blurFlag = WindowManager.LayoutParams.FLAG_BLUR_BEHIND
+            val hasBlurFlag = (params.flags and blurFlag) != 0
+            if (enable && !hasBlurFlag) {
+                params.flags = params.flags or blurFlag
+                changed = true
+            } else if (!enable && hasBlurFlag) {
+                params.flags = params.flags and blurFlag.inv()
+                changed = true
             }
+        }
+
+        if (changed) {
+            window.attributes = params // Applied in a single layout pass!
         }
     }
 
@@ -180,104 +314,10 @@ object FrostedGlassHelper {
         return inputView?.findViewById<View?>(R.id.main_keyboard_frame) ?: inputView
     }
 
-    private data class SemBlurMode(val name: String, val value: Int)
-
-    private fun resolveSemBlurModes(semBlurInfoClass: Class<*>): List<SemBlurMode> {
-        val fields = semBlurInfoClass.fields.toList() + semBlurInfoClass.declaredFields.toList()
-        val modes = fields
-            .filter { it.name.startsWith("BLUR_MODE_") }
-            .mapNotNull { field ->
-                runCatching {
-                    field.isAccessible = true
-                    SemBlurMode(field.name, field.getInt(null))
-                }.getOrNull()
-            }
-            .distinctBy { it.name }
-            .sortedBy { it.value }
-
-        if (modes.isNotEmpty()) {
-            Log.d(TAG, "Available SemBlurInfo modes: ${modes.joinToString { "${it.name}=${it.value}" }}")
-            return modes
-        }
-
-        Log.d(TAG, "SemBlurInfo blur mode fields missing; falling back to BLUR_MODE_WINDOW=0")
-        return listOf(SemBlurMode("BLUR_MODE_WINDOW", 0))
-    }
-
-    private fun selectSamsungSemBlurModes(modes: List<SemBlurMode>): List<SemBlurMode> {
-        val unavailableCapturedModes = setOf("BLUR_MODE_WINDOW_CAPTURED", "BLUR_MODE_CAPTURED")
-        val capturedModes = modes.filter { it.name in unavailableCapturedModes }
-        if (capturedModes.isNotEmpty()) {
-            Log.d(
-                TAG,
-                "Skipping SemBlurInfo captured modes; Samsung requires capturedBitmap and third-party IMEs cannot capture the app behind them: " +
-                    capturedModes.joinToString { "${it.name}=${it.value}" }
-            )
-        }
-
-        val preferredNames = listOf(
-            "BLUR_MODE_CANVAS",
-            "BLUR_MODE_BACKGROUND",
-            "BLUR_MODE_WINDOW"
-        )
-        val preferredModes = preferredNames.mapNotNull { name -> modes.firstOrNull { it.name == name } }
-        val remainingModes = modes.filter { mode ->
-            mode.name !in preferredNames && mode.name !in unavailableCapturedModes
-        }
-        val candidates = (preferredModes + remainingModes)
-            .distinctBy { it.name }
-            .filter { it.name !in failedSamsungSemBlurModes }
-
-        if (failedSamsungSemBlurModes.isNotEmpty()) {
-            Log.d(TAG, "Skipping previously failed SemBlurInfo modes: ${failedSamsungSemBlurModes.joinToString()}")
-        }
-        Log.d(TAG, "SemBlurInfo non-captured candidates: ${candidates.joinToString { "${it.name}=${it.value}" }}")
-        return candidates
-    }
-
-    private fun createSemBlurBuilder(builderClass: Class<*>, mode: SemBlurMode): Any {
-        val intType = Int::class.javaPrimitiveType!!
-        val constructor = runCatching { builderClass.getDeclaredConstructor(intType) }.getOrNull()
-        if (constructor != null) {
-            constructor.isAccessible = true
-            return constructor.newInstance(mode.value)
-        }
-
-        val noArgConstructor = builderClass.getDeclaredConstructor()
-        noArgConstructor.isAccessible = true
-        val builder = noArgConstructor.newInstance()
-        invokeBuilderMethod(builder, listOf("setBlurMode", "hidden_setBlurMode"), intType, mode.value)
-        return builder
-    }
-
-    private fun invokeBuilderMethod(builder: Any, names: List<String>, parameterType: Class<*>, value: Any): Boolean {
-        for (name in names) {
-            val method = runCatching { builder.javaClass.getMethod(name, parameterType) }
-                .recoverCatching { builder.javaClass.getDeclaredMethod(name, parameterType) }
-                .getOrNull()
-            if (method != null) {
-                method.isAccessible = true
-                method.invoke(builder, value)
-                return true
-            }
-        }
-        Log.d(TAG, "SemBlurInfo builder method missing: ${names.joinToString("/")}")
-        return false
-    }
-
-    private fun setSamsungBlurInfo(target: View, semBlurInfoClass: Class<*>, blurInfo: Any?) {
-        val method = runCatching { View::class.java.getMethod("semSetBlurInfo", semBlurInfoClass) }
-            .recoverCatching { View::class.java.getDeclaredMethod("semSetBlurInfo", semBlurInfoClass) }
-            .getOrThrow()
-        method.isAccessible = true
-        method.invoke(target, blurInfo)
-    }
-
     private fun clearSamsungSemBlur(target: View?) {
-        if (target == null) return
+        if (target == null || !samsungSemBlurSupported) return
         try {
-            val semBlurInfoClass = Class.forName("android.view.SemBlurInfo")
-            setSamsungBlurInfo(target, semBlurInfoClass, null)
+            SemBlurInfoReflect.semSetBlurInfoMethod!!.invoke(target, null)
             Log.d(TAG, "Cleared Samsung SemBlurInfo blur")
         } catch (e: Throwable) {
             Log.e(TAG, "Failed to clear Samsung SemBlurInfo blur", e)
