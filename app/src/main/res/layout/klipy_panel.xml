@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/klipyPanelRoot"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="600dp"
     android:layout_gravity="bottom"
     android:orientation="vertical"
     android:background="@android:color/transparent">
@@ -105,29 +105,15 @@
             app:iconTint="@color/textColorPrimary" />
     </LinearLayout>
 
-    <!-- RecyclerView grids -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/gifsRecyclerView"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/klipyViewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="4dp"
-            android:clipToPadding="false"
-            android:scrollbars="vertical"
-            android:visibility="gone" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/stickersRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="4dp"
-            android:clipToPadding="false"
-            android:scrollbars="vertical"
-            android:visibility="gone" />
+            android:layout_height="match_parent" />
 
         <TextView
             android:id="@+id/emptyState"

@@ -25,6 +25,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.progressindicator.CircularProgressIndicator
 import helium314.keyboard.latin.FrostedGlassHelper
@@ -56,6 +57,7 @@ class KlipyPanelActivity : ComponentActivity() {
 
     private lateinit var gifsRecyclerView: RecyclerView
     private lateinit var stickersRecyclerView: RecyclerView
+    private lateinit var viewPager: ViewPager2
     private lateinit var emptyState: TextView
     private lateinit var loadingIndicator: CircularProgressIndicator
     private lateinit var gifsAdapter: KlipyAdapter
@@ -89,13 +91,53 @@ class KlipyPanelActivity : ComponentActivity() {
         }
 
         historyDao = KlipyHistoryDao.getInstance(this)
-        gifsRecyclerView = findViewById(R.id.gifsRecyclerView)
-        stickersRecyclerView = findViewById(R.id.stickersRecyclerView)
+
+        val padding = TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_DIP, 4f, resources.displayMetrics
+        ).toInt()
+
+        gifsRecyclerView = RecyclerView(this).apply {
+            layoutParams = ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT
+            )
+            setPadding(padding, padding, padding, padding)
+            clipToPadding = false
+            isVerticalScrollBarEnabled = true
+        }
+
+        stickersRecyclerView = RecyclerView(this).apply {
+            layoutParams = ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT
+            )
+            setPadding(padding, padding, padding, padding)
+            clipToPadding = false
+            isVerticalScrollBarEnabled = true
+        }
+
+        viewPager = findViewById(R.id.klipyViewPager)
+        viewPager.adapter = KlipyViewPagerAdapter(gifsRecyclerView, stickersRecyclerView)
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            private var lastSelectedPosition = -1
+
+            override fun onPageSelected(position: Int) {
+                lastSelectedPosition = position
+            }
+
+            override fun onPageScrollStateChanged(state: Int) {
+                if (state == ViewPager2.SCROLL_STATE_IDLE && lastSelectedPosition != -1) {
+                    val selectedTab = if (lastSelectedPosition == 0) KlipyHistoryDao.TYPE_GIF else KlipyHistoryDao.TYPE_STICKER
+                    onTabSelected(selectedTab)
+                }
+            }
+        })
+
         emptyState = findViewById(R.id.emptyState)
         loadingIndicator = findViewById(R.id.loadingIndicator)
 
         val heightInPx = TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP, 400f, resources.displayMetrics
+            TypedValue.COMPLEX_UNIT_DIP, 600f, resources.displayMetrics
         ).toInt()
         window.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, heightInPx)
         window.setGravity(Gravity.BOTTOM)
@@ -123,22 +165,34 @@ class KlipyPanelActivity : ComponentActivity() {
     private fun setupRecyclerViews() {
         gifsAdapter = KlipyAdapter(emptyList()) { item -> onItemUsed(item) }
         val staggeredLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL).apply {
-            gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_MOVE_ITEMS_BETWEEN_SPANS
+            gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_NONE
         }
         gifsRecyclerView.layoutManager = staggeredLayoutManager
         gifsRecyclerView.adapter = gifsAdapter
-        gifsRecyclerView.setItemViewCacheSize(10)
+        gifsRecyclerView.setItemViewCacheSize(2)
+        gifsRecyclerView.setHasFixedSize(true)
         gifsRecyclerView.addOnScrollListener(createPaginationScrollListener())
 
         stickersAdapter = KlipyAdapter(emptyList()) { item -> onItemUsed(item) }
         stickersRecyclerView.layoutManager = GridLayoutManager(this, 4)
         stickersRecyclerView.adapter = stickersAdapter
-        stickersRecyclerView.setItemViewCacheSize(10)
+        stickersRecyclerView.setItemViewCacheSize(2)
+        stickersRecyclerView.setHasFixedSize(true)
         stickersRecyclerView.addOnScrollListener(createPaginationScrollListener())
     }
 
     private fun createPaginationScrollListener(): RecyclerView.OnScrollListener {
         return object : RecyclerView.OnScrollListener() {
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                super.onScrollStateChanged(recyclerView, newState)
+                val adapter = recyclerView.adapter as? KlipyAdapter ?: return
+                if (newState == RecyclerView.SCROLL_STATE_IDLE) {
+                    adapter.setAnimationsRunning(true)
+                } else {
+                    adapter.setAnimationsRunning(false)
+                }
+            }
+
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
                 if (dy <= 0 || !isSearchActive || isLoadingMore || !hasMorePages) return
@@ -167,13 +221,13 @@ class KlipyPanelActivity : ComponentActivity() {
         currentPage++
 
         lifecycleScope.launch {
-            val results = withContext(Dispatchers.IO) {
+            val (results, hasMore) = withContext(Dispatchers.IO) {
                 fetchSearchResults(searchQuery, currentPage)
             }
 
-            if (results.isEmpty()) {
-                hasMorePages = false
-            } else {
+            hasMorePages = hasMore
+
+            if (results.isNotEmpty()) {
                 val currentList = if (currentTab == KlipyHistoryDao.TYPE_GIF) lastGifSearch else lastStickerSearch
                 currentList.addAll(results)
                 val activeAdapter = if (currentTab == KlipyHistoryDao.TYPE_GIF) gifsAdapter else stickersAdapter
@@ -320,9 +374,6 @@ class KlipyPanelActivity : ComponentActivity() {
     private fun loadHistory() {
         val activeAdapter = if (currentTab == KlipyHistoryDao.TYPE_GIF) gifsAdapter else stickersAdapter
 
-        gifsRecyclerView.visibility = if (currentTab == KlipyHistoryDao.TYPE_GIF) View.VISIBLE else View.GONE
-        stickersRecyclerView.visibility = if (currentTab == KlipyHistoryDao.TYPE_STICKER) View.VISIBLE else View.GONE
-
         if (isSearchActive) {
             val searchResults = if (currentTab == KlipyHistoryDao.TYPE_GIF) lastGifSearch else lastStickerSearch
             if (searchResults.isNotEmpty()) {
@@ -344,12 +395,7 @@ class KlipyPanelActivity : ComponentActivity() {
 
     private fun setupSearchBar() {
         val searchBar = findViewById<EditText>(R.id.klipySearchBar)
-        searchBar?.setOnFocusChangeListener { _, hasFocus ->
-            val targetHeight = if (hasFocus) 600f else 400f
-            window.decorView.post {
-                updatePanelHeight(targetHeight)
-            }
-        }
+
 
         searchBar?.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
@@ -400,7 +446,7 @@ class KlipyPanelActivity : ComponentActivity() {
 
         searchJob?.cancel()
         searchJob = lifecycleScope.launch {
-            val results = withContext(Dispatchers.IO) {
+            val (results, hasMore) = withContext(Dispatchers.IO) {
                 fetchSearchResults(query, 1)
             }
 
@@ -412,7 +458,7 @@ class KlipyPanelActivity : ComponentActivity() {
                 lastStickerSearch.addAll(results)
             }
 
-            hasMorePages = results.size >= 24
+            hasMorePages = hasMore
 
             loadingIndicator.visibility = View.GONE
             val activeAdapter = if (currentTab == KlipyHistoryDao.TYPE_GIF) gifsAdapter else stickersAdapter
@@ -431,7 +477,7 @@ class KlipyPanelActivity : ComponentActivity() {
         }
     }
 
-    private fun fetchSearchResults(query: String, page: Int = 1): List<KlipyItem> {
+    private fun fetchSearchResults(query: String, page: Int = 1): Pair<List<KlipyItem>, Boolean> {
         val apiKey = CloudManager.getKlipyApiKey(this)
         val endpoint = if (currentTab == KlipyHistoryDao.TYPE_GIF) "gifs" else "stickers"
 
@@ -462,7 +508,7 @@ class KlipyPanelActivity : ComponentActivity() {
             ?.addQueryParameter("locale", locale)
             ?.addQueryParameter("content_filter", "medium")
             ?.addQueryParameter("format_filter", "webp,gif,png")
-            ?.build() ?: return emptyList()
+            ?.build() ?: return Pair(emptyList(), false)
 
         val request = Request.Builder()
             .url(url)
@@ -474,56 +520,68 @@ class KlipyPanelActivity : ComponentActivity() {
             val response = client.newCall(request).execute()
             if (!response.isSuccessful) {
                 Log.e("KlipyPanel", "Search request failed with code: ${response.code}")
-                return emptyList()
+                return Pair(emptyList(), false)
             }
 
             val body = response.body?.string()
             if (body.isNullOrBlank()) {
                 Log.e("KlipyPanel", "Empty response body")
-                return emptyList()
+                return Pair(emptyList(), false)
             }
 
             val apiResponse = try {
                 json.decodeFromString<KlipySearchResponse>(body)
             } catch (e: Exception) {
                 Log.e("KlipyPanel", "Failed to parse Klipy response: ${e.message}")
-                return emptyList()
+                return Pair(emptyList(), false)
             }
 
             if (!apiResponse.result) {
                 Log.w("KlipyPanel", "API returned result=false")
-                return emptyList()
+                return Pair(emptyList(), false)
             }
 
-            if (apiResponse.data.data.isEmpty()) {
+            val rawList = apiResponse.data.data
+            if (rawList.isEmpty()) {
                 Log.i("KlipyPanel", "API returned no results for query: $query")
-                return emptyList()
+                return Pair(emptyList(), false)
             }
 
-        val useGifUrl = currentTab == KlipyHistoryDao.TYPE_GIF && !shouldSendGifsAsStickers()
+            val hasMore = rawList.size >= 24
+            val useGifUrl = currentTab == KlipyHistoryDao.TYPE_GIF && !shouldSendGifsAsStickers()
 
-        apiResponse.data.data.mapNotNull { item ->
-            val mediaUrl = if (useGifUrl) {
-                item.file.hd.gif.url
-            } else {
-                item.file.hd.webp?.url
+            val items = rawList.mapNotNull { item ->
+                // For the preview grid, we prefer the 'sm' version if available, falling back to 'hd'
+                val previewUrl = if (useGifUrl) {
+                    item.file.sm?.gif?.url ?: item.file.hd.gif.url
+                } else {
+                    item.file.sm?.webp?.url ?: item.file.hd.webp?.url
+                }
+
+                // For the actual download/send, we want the high-res HD version!
+                val hdUrl = if (useGifUrl) {
+                    item.file.hd.gif.url
+                } else {
+                    item.file.hd.webp?.url
+                }
+
+                if (hdUrl == null) {
+                    Log.d("KlipyPanel", "Skipped item ${item.id} - No HD WebP available for sticker send mode")
+                    return@mapNotNull null
+                }
+
+                KlipyItem(
+                    id = item.id.toString(),
+                    url = hdUrl,
+                    width = item.width ?: 200,
+                    height = item.height ?: 200,
+                    previewUrl = previewUrl
+                )
             }
-
-            if (mediaUrl == null) {
-                Log.d("KlipyPanel", "Skipped item ${item.id} - No WebP available for sticker send mode")
-                return@mapNotNull null
-            }
-
-            KlipyItem(
-                id = item.id.toString(),
-                url = mediaUrl,
-                width = item.width ?: 200,
-                height = item.height ?: 200
-            )
-        }
+            Pair(items, hasMore)
         } catch (e: Exception) {
             Log.e("KlipyPanel", "Search request failed: ${e.message}", e)
-            emptyList()
+            Pair(emptyList(), false)
         }
     }
 
@@ -548,10 +606,13 @@ class KlipyPanelActivity : ComponentActivity() {
     )
 
     @Serializable
-    private data class KlipyFileInfo(val hd: KlipyHdInfo)
+    private data class KlipyFileInfo(val hd: KlipyHdInfo, val sm: KlipySmInfo? = null)
 
     @Serializable
     private data class KlipyHdInfo(val gif: KlipyUrlInfo, val webp: KlipyUrlInfo? = null)
+
+    @Serializable
+    private data class KlipySmInfo(val gif: KlipyUrlInfo, val webp: KlipyUrlInfo? = null)
 
     @Serializable
     private data class KlipyUrlInfo(val url: String)
@@ -587,23 +648,35 @@ class KlipyPanelActivity : ComponentActivity() {
     }
 
     private fun selectGifsTab() {
-        currentTab = KlipyHistoryDao.TYPE_GIF
-        findViewById<MaterialButton>(R.id.tabGifs)?.isSelected = true
-        findViewById<MaterialButton>(R.id.tabStickers)?.isSelected = false
-        loadHistory()
+        if (viewPager.currentItem != 0) {
+            viewPager.setCurrentItem(0, true)
+        } else {
+            onTabSelected(KlipyHistoryDao.TYPE_GIF)
+        }
     }
 
     private fun selectStickersTab() {
-        currentTab = KlipyHistoryDao.TYPE_STICKER
-        findViewById<MaterialButton>(R.id.tabGifs)?.isSelected = false
-        findViewById<MaterialButton>(R.id.tabStickers)?.isSelected = true
-        loadHistory()
+        if (viewPager.currentItem != 1) {
+            viewPager.setCurrentItem(1, true)
+        } else {
+            onTabSelected(KlipyHistoryDao.TYPE_STICKER)
+        }
+    }
+
+    private fun onTabSelected(tab: String) {
+        if (currentTab != tab || gifsAdapter.itemCount == 0 || stickersAdapter.itemCount == 0) {
+            currentTab = tab
+            findViewById<MaterialButton>(R.id.tabGifs)?.isSelected = (tab == KlipyHistoryDao.TYPE_GIF)
+            findViewById<MaterialButton>(R.id.tabStickers)?.isSelected = (tab == KlipyHistoryDao.TYPE_STICKER)
+            loadHistory()
+        }
     }
 
     private fun applyTheme() {
         try {
-            val root = findViewById<ViewGroup>(R.id.klipyPanelRoot)
+            val root = findViewById<ViewGroup>(R.id.klipyPanelRoot) ?: return
             val isNight = ResourceUtils.isNight(resources)
+            val isBatterySaver = FrostedGlassHelper.isBatterySaverMode(this)
 
             if (FrostedGlassHelper.isFrostedTheme(this) && android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
                 val blurRadius = if (isNight) {
@@ -612,26 +685,67 @@ class KlipyPanelActivity : ComponentActivity() {
                     prefs().getInt(Settings.PREF_FROSTED_BLUR_RADIUS, Defaults.PREF_FROSTED_BLUR_RADIUS)
                 }
 
-                try {
-                    window.setBackgroundBlurRadius(blurRadius)
-                    window.addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND)
-                } catch (e: Exception) {
-                    Log.e("KlipyPanel", "Failed to set background blur radius", e)
+                // Read slider values for background tint
+                val bgTransparency = if (isNight) {
+                    prefs().getInt(Settings.PREF_FROSTED_BG_TRANSPARENCY_NIGHT, Defaults.PREF_FROSTED_BG_TRANSPARENCY_NIGHT)
+                } else {
+                    prefs().getInt(Settings.PREF_FROSTED_BG_TRANSPARENCY, Defaults.PREF_FROSTED_BG_TRANSPARENCY)
+                }
+                val colorBlendVal = (if (isNight) {
+                    prefs().getInt(Settings.PREF_FROSTED_COLOR_BLEND_NIGHT, Defaults.PREF_FROSTED_COLOR_BLEND_NIGHT)
+                } else {
+                    prefs().getInt(Settings.PREF_FROSTED_COLOR_BLEND, Defaults.PREF_FROSTED_COLOR_BLEND)
+                }) / 100f
+                val saturationMult = (if (isNight) {
+                    prefs().getInt(Settings.PREF_FROSTED_SATURATION_NIGHT, Defaults.PREF_FROSTED_SATURATION_NIGHT)
+                } else {
+                    prefs().getInt(Settings.PREF_FROSTED_SATURATION, Defaults.PREF_FROSTED_SATURATION)
+                }) / 100f
+
+                // Compute background tint (same formula as KeyboardTheme for consistency)
+                val baseBg = if (isNight) {
+                    val neutral1 = ContextCompat.getColor(this, android.R.color.system_neutral1_900)
+                    val accent1 = ContextCompat.getColor(this, android.R.color.system_accent1_700)
+                    androidx.core.graphics.ColorUtils.blendARGB(neutral1, accent1, (colorBlendVal - 0.1f).coerceIn(0f, 1f))
+                } else {
+                    val neutral1 = ContextCompat.getColor(this, android.R.color.system_neutral1_50)
+                    val accent1 = ContextCompat.getColor(this, android.R.color.system_accent1_300)
+                    androidx.core.graphics.ColorUtils.blendARGB(neutral1, accent1, (colorBlendVal + 0.1f).coerceIn(0f, 1f))
                 }
 
-                // Apply Material You tint based on system theme
-                val tintColor = if (isNight) {
-                    ContextCompat.getColor(this, android.R.color.system_neutral1_800)
+                // Apply saturation boost
+                val hsl = FloatArray(3)
+                androidx.core.graphics.ColorUtils.colorToHSL(baseBg, hsl)
+                hsl[1] = (hsl[1] * saturationMult).coerceAtMost(1.0f)
+                val saturatedBg = androidx.core.graphics.ColorUtils.HSLToColor(hsl)
+
+                if (!isBatterySaver) {
+                    // Normal mode: apply window blur + translucent tint
+                    try {
+                        window.setBackgroundBlurRadius(blurRadius)
+                        window.addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND)
+                    } catch (e: Exception) {
+                        Log.e("KlipyPanel", "Failed to set background blur radius", e)
+                    }
+
+                    val bgAlpha = if (isNight) bgTransparency else (bgTransparency * 0.8f).toInt().coerceAtMost(255)
+                    val colorWithAlpha = androidx.core.graphics.ColorUtils.setAlphaComponent(saturatedBg, bgAlpha)
+                    root.setBackgroundColor(colorWithAlpha)
                 } else {
-                    ContextCompat.getColor(this, android.R.color.system_neutral1_100)
+                    // Battery saver: no blur, fully opaque background
+                    try {
+                        window.setBackgroundBlurRadius(0)
+                        window.clearFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND)
+                    } catch (e: Exception) {
+                        Log.e("KlipyPanel", "Failed to reset background blur radius", e)
+                    }
+
+                    val colorOpaque = androidx.core.graphics.ColorUtils.setAlphaComponent(saturatedBg, 255)
+                    root.setBackgroundColor(colorOpaque)
                 }
-                // Set background with alpha for frosted effect
-                val alpha = 0.7f
-                val colorWithAlpha = (alpha * 255).toInt() shl 24 or (tintColor and 0x00FFFFFF)
-                root?.setBackgroundColor(colorWithAlpha)
             } else {
                 // Standard theme: follow system night mode
-                root?.setBackgroundResource(R.color.panelBackground)
+                root.setBackgroundResource(R.color.panelBackground)
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
                     try {
                         window.setBackgroundBlurRadius(0)
@@ -652,5 +766,20 @@ class KlipyPanelActivity : ComponentActivity() {
         const val KLIPY_LABEL_KEY = "klipy_label"
 
         private val json = Json { ignoreUnknownKeys = true }
+    }
+
+    private class KlipyViewPagerAdapter(
+        private val gifsView: View,
+        private val stickersView: View
+    ) : RecyclerView.Adapter<KlipyViewPagerAdapter.ViewHolder>() {
+        class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+            val view = if (viewType == 0) gifsView else stickersView
+            (view.parent as? ViewGroup)?.removeView(view)
+            return ViewHolder(view)
+        }
+        override fun onBindViewHolder(holder: ViewHolder, position: Int) {}
+        override fun getItemViewType(position: Int): Int = position
+        override fun getItemCount(): Int = 2
     }
 }

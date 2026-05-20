@@ -93,5 +93,5 @@ class KlipyHistoryDao private constructor(context: Context) {
         }
     }
 
-    data class KlipyItem(val id: String, val url: String, val width: Int, val height: Int)
+    data class KlipyItem(val id: String, val url: String, val width: Int, val height: Int, val previewUrl: String? = null)
 }

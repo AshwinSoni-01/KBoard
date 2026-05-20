@@ -18,6 +18,7 @@ import helium314.keyboard.latin.utils.ResourceUtils
 import helium314.keyboard.latin.utils.prefs
 import helium314.keyboard.latin.utils.updateSoftInputWindowLayoutParameters
 import helium314.keyboard.settings.SettingsActivity
+import androidx.core.graphics.ColorUtils
 import java.lang.reflect.Constructor
 import java.lang.reflect.Field
 import java.lang.reflect.Method
@@ -156,20 +157,32 @@ object FrostedGlassHelper {
     }
 
     @JvmStatic
+    fun isBatterySaverMode(context: Context): Boolean {
+        return try {
+            val powerManager = context.getSystemService(Context.POWER_SERVICE) as? android.os.PowerManager
+            powerManager?.isPowerSaveMode == true
+        } catch (e: Exception) {
+            false
+        }
+    }
+
+    @JvmStatic
     fun configureFrostedGlass(service: InputMethodService, inputView: View?, enable: Boolean) {
         val window = service.window?.window ?: return
+        val isBatterySaver = isBatterySaverMode(service)
+        val shouldEnable = enable && !isBatterySaver
 
         if (Build.MANUFACTURER.equals("samsung", ignoreCase = true)) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                applySamsungSemBlur(window, inputView, enable)
+                applySamsungSemBlur(window, inputView, shouldEnable)
             } else {
-                applyDefaultBlur(service, window, inputView, enable)
-                applySamsungLegacyBlur(window, enable)
+                applyDefaultBlur(service, window, inputView, shouldEnable)
+                applySamsungLegacyBlur(window, shouldEnable)
             }
             return
         }
 
-        applyDefaultBlur(service, window, inputView, enable)
+        applyDefaultBlur(service, window, inputView, shouldEnable)
     }
 
     private fun applySamsungSemBlur(window: Window, inputView: View?, enable: Boolean) {
@@ -339,7 +352,6 @@ object FrostedGlassHelper {
                 context.prefs().getInt(Settings.PREF_FROSTED_BLUR_RADIUS, Defaults.PREF_FROSTED_BLUR_RADIUS)
             }
     }
-
     private fun windowTint(context: Context, blursEnabled: Boolean): Int {
         val isNight = isNight(context)
         return when {
