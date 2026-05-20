@@ -71,6 +71,7 @@ fun AppearanceScreen(
         if (isFrostedActive) "adjust_frosted_glass_dialog" else null,
         SettingsWithoutKey.BACKGROUND_IMAGE,
         SettingsWithoutKey.BACKGROUND_IMAGE_LANDSCAPE,
+        Settings.PREF_KEYBOARD_CORNER_RADIUS,
         R.string.settings_category_miscellaneous,
         Settings.PREF_ENABLE_SPLIT_KEYBOARD,
         if (prefs.getBoolean(Settings.PREF_ENABLE_SPLIT_KEYBOARD_LANDSCAPE, Defaults.PREF_ENABLE_SPLIT_KEYBOARD)
@@ -204,6 +205,16 @@ fun createAppearanceSettings(context: Context) = listOf(
         R.string.customize_background_image_landscape, R.string.summary_customize_background_image_landscape)
     {
         BackgroundImagePref(it, true)
+    },
+    Setting(context, Settings.PREF_KEYBOARD_CORNER_RADIUS, R.string.prefs_keyboard_corner_radius) { setting ->
+        SliderPreference(
+            name = setting.title,
+            key = setting.key,
+            default = Defaults.PREF_KEYBOARD_CORNER_RADIUS,
+            range = Settings.KEYBOARD_CORNER_RADIUS_MIN_DP.toFloat()..Settings.KEYBOARD_CORNER_RADIUS_MAX_DP.toFloat(),
+            stepSize = 1,
+            description = { "$it dp" }
+        ) { KeyboardSwitcher.getInstance().setThemeNeedsReload() }
     },
     Setting(context, Settings.PREF_ENABLE_SPLIT_KEYBOARD, R.string.enable_split_keyboard) {
         var show by remember { mutableStateOf(false) }

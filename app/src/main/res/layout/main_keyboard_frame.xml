@@ -5,7 +5,7 @@
     SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
 -->
 
-<LinearLayout
+<helium314.keyboard.latin.RoundedKeyboardFrameView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -97,4 +97,4 @@
 
     </helium314.keyboard.latin.KeyboardWrapperView>
 
-</LinearLayout>
+</helium314.keyboard.latin.RoundedKeyboardFrameView>

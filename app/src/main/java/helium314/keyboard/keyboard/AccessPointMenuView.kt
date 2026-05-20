@@ -36,7 +36,6 @@ class AccessPointMenuView @JvmOverloads constructor(
     private val grid: GridLayout
 
     init {
-        fitsSystemWindows = true
         LayoutInflater.from(context).inflate(R.layout.access_point_menu, this, true)
         grid = findViewById(R.id.access_point_grid)
     }

@@ -645,6 +645,16 @@ public class LatinIME extends InputMethodService implements
                     // Re-open the keyboard cleanly
                     showWindow(true);
 
+                    // Safety net: force inset re-dispatch after the new view tree is attached,
+                    // ensuring nav bar padding is applied on the very first visible frame.
+                    if (mInputView != null) {
+                        mInputView.post(() -> {
+                            if (mInputView != null) {
+                                mInputView.requestApplyInsets();
+                            }
+                        });
+                    }
+
                 } catch (Exception e) {
                     android.util.Log.e("LatinIME", "Error during hard theme reset", e);
                 }
@@ -961,6 +971,9 @@ public class LatinIME extends InputMethodService implements
         mInsetsUpdater = ViewOutlineProviderUtilsKt.setInsetsOutlineProvider(view);
         FrostedGlassHelper.configureFrostedGlass(this, view, FrostedGlassHelper.isFrostedTheme(this));
         updateSuggestionStripView(view);
+        // Ensure navigation bar insets are dispatched immediately to the new view tree,
+        // preventing the first-frame race condition where the keyboard draws behind the nav bar.
+        view.requestApplyInsets();
     }
 
     public void updateSuggestionStripView(View view) {

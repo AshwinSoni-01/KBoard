@@ -402,6 +402,8 @@
     <string name="prefs_bottom_row_scale">Bottom row scale</string>
     <!-- Title of the setting for setting side padding -->
     <string name="prefs_side_padding_scale">Side padding scale</string>
+    <!-- Title of the setting for rounding the top corners of the keyboard surface -->
+    <string name="prefs_keyboard_corner_radius">Keyboard corner roundness</string>
     <!-- Title of the setting for adjusting font size on the keyboard -->
     <string name="prefs_font_scale">Keyboard font scale</string>
     <!-- Title of the setting for adjusting font size in emoji view -->

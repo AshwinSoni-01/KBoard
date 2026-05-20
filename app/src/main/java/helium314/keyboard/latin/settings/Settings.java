@@ -114,6 +114,9 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     public static final String PREF_ENABLE_SPLIT_KEYBOARD_LANDSCAPE = "split_keyboard_landscape";
     public static final String PREF_ENABLE_SPLIT_KEYBOARD_FOLDED = "split_keyboard_folded";
     public static final String PREF_ENABLE_SPLIT_KEYBOARD_FOLDED_LANDSCAPE = "split_keyboard_folded_landscape";
+    public static final String PREF_KEYBOARD_CORNER_RADIUS = "keyboard_corner_radius";
+    public static final int KEYBOARD_CORNER_RADIUS_MIN_DP = 0;
+    public static final int KEYBOARD_CORNER_RADIUS_MAX_DP = 32;
     public static final String PREF_SPLIT_SPACER_SCALE_PREFIX = "split_spacer_scale";
     public static final String PREF_KEYBOARD_HEIGHT_SCALE_PREFIX = "keyboard_height_scale";
     public static final String PREF_BOTTOM_ROW_SCALE_PREFIX = "bottom_row_scale";
@@ -482,6 +485,11 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
         final Float[] defaults = Defaults.PREF_BOTTOM_ROW_SCALE;
         final float defaultValue = defaults[index];
         return prefs.getFloat(SettingsKt.createPrefKeyForBooleanSettings(PREF_BOTTOM_ROW_SCALE_PREFIX, index, 2), defaultValue);
+    }
+
+    public static int readKeyboardCornerRadius(final SharedPreferences prefs) {
+        final int radius = prefs.getInt(PREF_KEYBOARD_CORNER_RADIUS, Defaults.PREF_KEYBOARD_CORNER_RADIUS);
+        return Math.max(KEYBOARD_CORNER_RADIUS_MIN_DP, Math.min(radius, KEYBOARD_CORNER_RADIUS_MAX_DP));
     }
 
     public static boolean readHasHardwareKeyboard(final Configuration conf) {

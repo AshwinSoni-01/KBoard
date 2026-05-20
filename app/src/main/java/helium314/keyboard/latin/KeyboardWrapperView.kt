@@ -9,6 +9,7 @@ import android.util.AttributeSet
 import android.view.Gravity
 import android.view.MotionEvent
 import android.view.View
+import android.view.WindowInsets
 import android.widget.FrameLayout
 import android.widget.ImageButton
 import helium314.keyboard.keyboard.KeyboardActionListener
@@ -33,6 +34,27 @@ class KeyboardWrapperView @JvmOverloads constructor(
     private lateinit var stopOneHandedModeBtn: ImageButton
     private lateinit var switchOneHandedModeBtn: ImageButton
     private lateinit var resizeOneHandedModeBtn: ImageButton
+
+    init {
+        // Centralized navigation bar inset handling for all keyboard panels.
+        // This replaces the fragmented fitsSystemWindows=true on individual child views
+        // (KeyboardView, EmojiPalettesView, ClipboardHistoryView, AccessPointMenuView).
+        fitsSystemWindows = true
+    }
+
+    override fun onApplyWindowInsets(insets: WindowInsets): WindowInsets {
+        val bottomInset = insets.systemWindowInsetBottom
+        // Apply the navigation bar inset as bottom padding on this wrapper,
+        // so ALL child panels are pushed above the nav bar uniformly.
+        setPadding(paddingLeft, paddingTop, paddingRight, bottomInset)
+        // Consume the bottom inset so children don't also try to apply it
+        return insets.replaceSystemWindowInsets(
+            insets.systemWindowInsetLeft,
+            insets.systemWindowInsetTop,
+            insets.systemWindowInsetRight,
+            0
+        )
+    }
 
     var oneHandedModeEnabled = false
         set(enabled) {

@@ -74,7 +74,6 @@ class ClipboardHistoryView @JvmOverloads constructor(
             getEnabledClipboardToolbarKeys(context.prefs())
                 .forEach { toolbarKeys.add(createToolbarKey(context, it)) }
         }
-        fitsSystemWindows = true
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {

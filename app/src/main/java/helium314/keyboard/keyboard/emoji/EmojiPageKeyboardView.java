@@ -113,7 +113,6 @@ public final class EmojiPageKeyboardView extends KeyboardView implements
         mPopupKeysKeyboardContainer = inflater.inflate(popupKeysKeyboardLayoutId, null);
         mDescriptionView = mPopupKeysKeyboardContainer.findViewById(R.id.description_view);
         mPopupKeysKeyboardView = mPopupKeysKeyboardContainer.findViewById(R.id.popup_keys_keyboard_view);
-        setFitsSystemWindows(false);
     }
 
     @Override
