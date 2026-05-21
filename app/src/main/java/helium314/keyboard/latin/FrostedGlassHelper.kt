@@ -238,7 +238,8 @@ object FrostedGlassHelper {
 
                     SemBlurInfoReflect.setRadiusMethod?.invoke(builder, radius)
                     SemBlurInfoReflect.setBackgroundColorMethod?.invoke(builder, tint)
-                    SemBlurInfoReflect.setBackgroundCornerRadiusMethod?.invoke(builder, 0f)
+                    val cornerRadiusPx = Settings.readKeyboardCornerRadius(context.prefs()) * context.resources.displayMetrics.density
+                    SemBlurInfoReflect.setBackgroundCornerRadiusMethod?.invoke(builder, cornerRadiusPx)
 
                     val blurInfo = SemBlurInfoReflect.buildMethod!!.invoke(builder)
                     target.setBackgroundColor(Color.TRANSPARENT)
@@ -300,8 +301,18 @@ object FrostedGlassHelper {
             changed = true
         }
 
-        // 3. Fix Background Targeting: Set root window to transparent.
-        window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        // 3. Fix Background Targeting: Set root window to transparent shape matching rounded corners.
+        val radiusPx = Settings.readKeyboardCornerRadius(service.prefs()) * service.resources.displayMetrics.density
+        val bgDrawable = android.graphics.drawable.GradientDrawable().apply {
+            setColor(Color.TRANSPARENT)
+            cornerRadii = floatArrayOf(
+                radiusPx, radiusPx, // top-left
+                radiusPx, radiusPx, // top-right
+                0f, 0f,             // bottom-right
+                0f, 0f              // bottom-left
+            )
+        }
+        window.setBackgroundDrawable(bgDrawable)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             val targetRadius = if (enable) blurRadius(service) else 0

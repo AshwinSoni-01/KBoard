@@ -280,7 +280,7 @@ class KlipyPanelActivity : ComponentActivity() {
                                 // 350ms gives Android enough time to re-establish the InputConnection.
                                 android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
                                     applicationContext.startService(intent)
-                                }, 1000) // reduce the delay later
+                                }, 350) // reduce the delay later
 
                             } catch (e: Exception) {
                                 Log.e("KlipyPanel", "Failed to get URI for file", e)
@@ -315,7 +315,7 @@ class KlipyPanelActivity : ComponentActivity() {
 
             android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
                 applicationContext.startService(intent)
-            }, 1000)
+            }, 350)
         } catch (e: Exception) {
             Log.e("KlipyPanel", "Failed to share GIF normally", e)
             Toast.makeText(applicationContext, "Error sharing GIF", Toast.LENGTH_SHORT).show()
