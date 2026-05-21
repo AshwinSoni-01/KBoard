@@ -9,9 +9,14 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
+import android.content.res.ColorStateList
+import android.graphics.Canvas
 import android.graphics.Color
+import android.graphics.ColorFilter
+import android.graphics.PorterDuff
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
+import android.graphics.drawable.InsetDrawable
 import android.text.TextUtils
 import android.util.AttributeSet
 import android.util.TypedValue
@@ -124,6 +129,8 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
     private val toolbarArrowIcon = KeyboardIconsSet.instance.getNewDrawable(KeyboardIconsSet.NAME_TOOLBAR_KEY, context)
     private val enabledToolKeyBackground = GradientDrawable()
     private var direction = 1 // 1 if LTR, -1 if RTL
+    private val suggestionsChipScroll: View = findViewById(R.id.suggestions_chip_scroll)
+    private val suggestionsChipStrip: ViewGroup = findViewById(R.id.suggestions_chip_strip)
 
     private val toolbarKeyLayoutParams = LinearLayout.LayoutParams(
         resources.getDimensionPixelSize(R.dimen.config_suggestions_strip_edge_key_width),
@@ -159,7 +166,7 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
         findViewById<ImageButton>(R.id.access_point_trigger_btn)?.let {
             setupKey(it, colors)
             it.imageTintList = android.content.res.ColorStateList.valueOf(colors.get(ColorType.KEY_TEXT))
-            colors.setColor(it.background, ColorType.TOOL_BAR_EXPAND_KEY_BACKGROUND)
+            applySpecialKeyCircleBackground(it, colors)
         }
 
         updateKeys()
@@ -211,16 +218,16 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
         }
         layoutDirection = newLayoutDirection
         suggestionsStrip.layoutDirection = newLayoutDirection
+        suggestionsChipStrip.layoutDirection = newLayoutDirection
     }
 
     fun setToolbarVisibility(toolbarVisible: Boolean) {
-        pinnedKeys.isVisible = !toolbarVisible
-        suggestionsStrip.isVisible = !toolbarVisible
         toolbarContainer.isVisible = toolbarVisible
+        updateSuggestionContainersVisibility(!toolbarVisible)
 
         if (DEBUG_SUGGESTIONS) {
             for (view in debugInfoViews) {
-                view.visibility = suggestionsStrip.visibility
+                view.visibility = if (!toolbarVisible && suggestionsStrip.isVisible) VISIBLE else GONE
             }
         }
 
@@ -231,9 +238,18 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
         clear()
         setRtl(isRtlLanguage)
         suggestedWords = suggestions
-        startIndexOfMoreSuggestions = layoutHelper.layoutAndReturnStartIndexOfMoreSuggestions(
-            context, suggestedWords, suggestionsStrip, this
-        )
+        updateSuggestionContainersVisibility(true)
+        startIndexOfMoreSuggestions =
+            if (shouldUseChipSuggestions(suggestedWords)) {
+                suggestionsChipScroll.scrollTo(0, 0)
+                layoutHelper.layoutChipsAndReturnStartIndexOfMoreSuggestions(
+                    context, suggestedWords, suggestionsChipStrip
+                )
+            } else {
+                layoutHelper.layoutAndReturnStartIndexOfMoreSuggestions(
+                    context, suggestedWords, suggestionsStrip, this
+                )
+            }
         isExternalSuggestionVisible = false
         updateKeys()
     }
@@ -241,6 +257,9 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
     fun setExternalSuggestionView(view: View?, addCloseButton: Boolean) {
         clear()
         isExternalSuggestionVisible = true
+        suggestionsChipScroll.isGone = true
+        suggestionsChipStrip.removeAllViews()
+        suggestionsStrip.isVisible = true
 
         if (addCloseButton) {
             val wrapper = LinearLayout(context)
@@ -290,7 +309,7 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
         super.onVisibilityChanged(view, visibility)
         // workaround for a bug with inline suggestions views that just keep showing up otherwise, https://github.com/HeliBorg/HeliBoard/pull/386
         if (view === this)
-            suggestionsStrip.visibility = visibility
+            updateSuggestionContainersVisibility(visibility == VISIBLE && !toolbarContainer.isVisible)
     }
 
     override fun onDetachedFromWindow() {
@@ -470,7 +489,7 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
             suggestedWords.mWillAutoCorrect, suggestedWords.mIsObsoleteSuggestions, suggestedWords.mInputStyle, suggestedWords.mSequenceNumber
         )
         setSuggestions(newSuggestedWords, direction != 1)
-        suggestionsStrip.isVisible = true
+        updateSuggestionContainersVisibility(true)
 
         // Show the toolbar if no suggestions are left and the "Auto show toolbar" setting is enabled
         if (this.suggestedWords.isEmpty && Settings.getValues().mAutoShowToolbar) {
@@ -480,9 +499,10 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
 
     private fun clear() {
         suggestionsStrip.removeAllViews()
+        suggestionsChipStrip.removeAllViews()
         if (DEBUG_SUGGESTIONS) removeAllDebugInfoViews()
         if (!toolbarContainer.isVisible)
-            suggestionsStrip.isVisible = true
+            updateSuggestionContainersVisibility(true)
         dismissMoreSuggestionsPanel()
         for (word in wordViews) {
             word.setOnTouchListener(null)
@@ -518,9 +538,20 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
         }
 
         toolbarExpandKey?.setOnClickListener(if (!toolbarIsExpandable) null else this)
-        pinnedKeys.visibility = suggestionsStrip.visibility
+        pinnedKeys.isVisible = suggestionsStrip.isVisible || suggestionsChipScroll.isVisible
         isExternalSuggestionVisible = false
         populatePinnedKeys()
+    }
+
+    private fun shouldUseChipSuggestions(words: SuggestedWords = suggestedWords): Boolean {
+        return Settings.getValues().mUseFiveWordSuggestionChips && !words.isPunctuationSuggestions
+    }
+
+    private fun updateSuggestionContainersVisibility(showSuggestions: Boolean) {
+        val showChips = showSuggestions && shouldUseChipSuggestions()
+        suggestionsStrip.isVisible = showSuggestions && !showChips
+        suggestionsChipScroll.isVisible = showChips
+        pinnedKeys.isVisible = showSuggestions
     }
 
     private fun addKeyToPinnedKeys(pinnedKey: ToolbarKey) {
@@ -531,20 +562,22 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
         pinnedKeys.removeAllViews()
         val pinned = getPinnedToolbarKeys(context.prefs())
         val colors = Settings.getValues().mColors
-        for (key in pinned) {
+        for ((index, key) in pinned.withIndex()) {
             val button = createToolbarKey(context, key)
             button.layoutParams = LinearLayout.LayoutParams(40.dpToPx(resources), 40.dpToPx(resources)).apply {
                 marginStart = 2.dpToPx(resources)
                 marginEnd = 2.dpToPx(resources)
             }
-            val p = 10.dpToPx(resources)
-            button.setPadding(p, p, p, p)
-            button.scaleType = android.widget.ImageView.ScaleType.CENTER_INSIDE
+            applySuggestionStripButtonIconSizing(button)
             button.setBackgroundResource(R.drawable.toolbar_expand_key_background)
             button.setOnClickListener(this)
             button.setOnLongClickListener(this)
             button.imageTintList = android.content.res.ColorStateList.valueOf(colors.get(ColorType.KEY_TEXT))
-            colors.setColor(button.background, ColorType.TOOL_BAR_EXPAND_KEY_BACKGROUND)
+            if (index == 0) {
+                applySpecialKeyCircleBackground(button, colors)
+            } else {
+                colors.setColor(button.background, ColorType.TOOL_BAR_EXPAND_KEY_BACKGROUND)
+            }
             pinnedKeys.addView(button)
         }
     }
@@ -553,14 +586,45 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
         colors.setBackground(this, ColorType.STRIP_BACKGROUND)
         findViewById<ImageButton>(R.id.access_point_trigger_btn)?.let {
             it.imageTintList = android.content.res.ColorStateList.valueOf(colors.get(ColorType.KEY_TEXT))
-            colors.setColor(it.background, ColorType.TOOL_BAR_EXPAND_KEY_BACKGROUND)
+            applySpecialKeyCircleBackground(it, colors)
         }
         for (i in 0 until pinnedKeys.childCount) {
             val child = pinnedKeys.getChildAt(i) as? ImageButton ?: continue
             child.imageTintList = android.content.res.ColorStateList.valueOf(colors.get(ColorType.KEY_TEXT))
-            colors.setColor(child.background, ColorType.TOOL_BAR_EXPAND_KEY_BACKGROUND)
+            if (i == 0) {
+                applySpecialKeyCircleBackground(child, colors)
+            } else {
+                colors.setColor(child.background, ColorType.TOOL_BAR_EXPAND_KEY_BACKGROUND)
+            }
         }
         invalidate()
+    }
+
+    private fun applySpecialKeyCircleBackground(view: ImageButton, colors: Colors) {
+        applySuggestionStripButtonIconSizing(view)
+        view.background = createSpecialKeyCircleBackground(colors)
+    }
+
+    private fun applySuggestionStripButtonIconSizing(view: ImageButton) {
+        view.setMinimumWidth(0)
+        view.setMinimumHeight(0)
+        view.setPadding(0, 0, 0, 0)
+        view.scaleType = android.widget.ImageView.ScaleType.CENTER
+        val drawable = view.drawable ?: return
+        if (drawable is FixedSizeDrawable) return
+        val tint = view.imageTintList
+        view.setImageDrawable(FixedSizeDrawable(drawable.mutate(), 20.dpToPx(resources)))
+        view.imageTintList = tint
+    }
+
+    private fun createSpecialKeyCircleBackground(colors: Colors): Drawable {
+        val circle = GradientDrawable().apply {
+            shape = GradientDrawable.OVAL
+            setColor(Color.WHITE)
+            colors.setColor(this, ColorType.SPECIAL_KEY_BACKGROUND)
+        }
+        val inset = 1.dpToPx(resources)
+        return InsetDrawable(circle, inset, inset, inset, inset)
     }
 
     private fun setupKey(view: ImageButton, colors: Colors) {
@@ -575,5 +639,54 @@ class SuggestionStripView(context: Context, attrs: AttributeSet?, defStyle: Int)
         var DEBUG_SUGGESTIONS = false
         private const val DEBUG_INFO_TEXT_SIZE_IN_DIP = 6.5f
         private val TAG = SuggestionStripView::class.java.simpleName
+    }
+
+    private class FixedSizeDrawable(
+        private val wrapped: Drawable,
+        private val size: Int
+    ) : Drawable() {
+        override fun draw(canvas: Canvas) {
+            val currentBounds = bounds
+            val left = currentBounds.left + (currentBounds.width() - size) / 2
+            val top = currentBounds.top + (currentBounds.height() - size) / 2
+            wrapped.setBounds(left, top, left + size, top + size)
+            wrapped.draw(canvas)
+        }
+
+        override fun setAlpha(alpha: Int) {
+            wrapped.alpha = alpha
+        }
+
+        override fun setColorFilter(colorFilter: ColorFilter?) {
+            wrapped.colorFilter = colorFilter
+        }
+
+        override fun setTint(tintColor: Int) {
+            wrapped.setTint(tintColor)
+        }
+
+        override fun setTintList(tint: ColorStateList?) {
+            wrapped.setTintList(tint)
+        }
+
+        override fun setTintMode(tintMode: PorterDuff.Mode?) {
+            wrapped.setTintMode(tintMode)
+        }
+
+        override fun isStateful(): Boolean = wrapped.isStateful
+
+        override fun onStateChange(state: IntArray): Boolean = wrapped.setState(state)
+
+        override fun getIntrinsicWidth(): Int = size
+
+        override fun getIntrinsicHeight(): Int = size
+
+        override fun mutate(): Drawable {
+            wrapped.mutate()
+            return this
+        }
+
+        @Deprecated("Deprecated in Java")
+        override fun getOpacity(): Int = wrapped.opacity
     }
 }

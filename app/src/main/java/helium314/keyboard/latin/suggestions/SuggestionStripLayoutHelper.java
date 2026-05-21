@@ -18,6 +18,7 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -53,12 +54,21 @@ import java.util.ArrayList;
 
 final class SuggestionStripLayoutHelper {
     private static final int DEFAULT_SUGGESTIONS_COUNT_IN_STRIP = 3;
+    private static final int CHIP_SUGGESTIONS_COUNT_IN_STRIP = 5;
     private static final float DEFAULT_CENTER_SUGGESTION_PERCENTILE = 0.40f;
     private static final int DEFAULT_MAX_MORE_SUGGESTIONS_ROW = 2;
     private static final int PUNCTUATIONS_IN_STRIP = 5;
     private static final float MIN_TEXT_XSCALE = 0.70f;
 
     public final int mPadding;
+    private final int mWordViewPaddingLeft;
+    private final int mWordViewPaddingTop;
+    private final int mWordViewPaddingRight;
+    private final int mWordViewPaddingBottom;
+    private final int mChipHorizontalPadding;
+    private final int mChipHorizontalMargin;
+    private final int mChipVerticalMargin;
+    private final float mChipElevation;
     public final int mDividerWidth;
     public final int mSuggestionsStripHeight;
     private final int mSuggestionsCountInStrip;
@@ -105,6 +115,10 @@ final class SuggestionStripLayoutHelper {
 
         final TextView wordView = wordViews.get(0);
         final View dividerView = dividerViews.get(0);
+        mWordViewPaddingLeft = wordView.getPaddingLeft();
+        mWordViewPaddingTop = wordView.getPaddingTop();
+        mWordViewPaddingRight = wordView.getPaddingRight();
+        mWordViewPaddingBottom = wordView.getPaddingBottom();
         mPadding = wordView.getCompoundPaddingLeft() + wordView.getCompoundPaddingRight();
         dividerView.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         mDividerWidth = dividerView.getMeasuredWidth();
@@ -150,6 +164,11 @@ final class SuggestionStripLayoutHelper {
                 R.dimen.config_more_suggestions_bottom_gap);
         mMoreSuggestionsRowHeight = res.getDimensionPixelSize(
                 R.dimen.config_more_suggestions_row_height);
+        mChipHorizontalPadding = res.getDimensionPixelSize(
+                R.dimen.config_suggestion_text_horizontal_padding) * 2;
+        mChipHorizontalMargin = Math.max(1, mChipHorizontalPadding / 3);
+        mChipVerticalMargin = Math.max(2, mSuggestionsStripHeight / 10);
+        mChipElevation = 1.5f * res.getDisplayMetrics().density;
     }
 
     public int getMaxMoreSuggestionsRow() {
@@ -381,6 +400,32 @@ final class SuggestionStripLayoutHelper {
     }
 
     /**
+     * Layout word suggestions as horizontally scrollable chips. This uses the same
+     * SuggestedWords instance and suggestion indices as the classic strip; only the
+     * visible presentation changes.
+     */
+    public int layoutChipsAndReturnStartIndexOfMoreSuggestions(
+            final Context context,
+            final SuggestedWords suggestedWords,
+            final ViewGroup chipStripView) {
+        final ArrayList<Integer> indexesToShow = getChipSuggestionIndexes(suggestedWords);
+        int maxShownIndex = -1;
+        final int stripWidth = chipStripView.getRootView() == null
+                ? chipStripView.getResources().getDisplayMetrics().widthPixels
+                : chipStripView.getRootView().getWidth();
+        for (int position = 0; position < indexesToShow.size(); position++) {
+            final int indexInSuggestedWords = indexesToShow.get(position);
+            final TextView wordView = layoutChipWord(context, suggestedWords,
+                    indexInSuggestedWords, position, stripWidth);
+            chipStripView.addView(wordView);
+            maxShownIndex = Math.max(maxShownIndex, indexInSuggestedWords);
+        }
+        final int startIndexOfMoreSuggestions = maxShownIndex + 1;
+        mMoreSuggestionsAvailable = suggestedWords.size() > startIndexOfMoreSuggestions;
+        return startIndexOfMoreSuggestions;
+    }
+
+    /**
      * Format appropriately the suggested word in {@link #mWordViews} specified by
      * <code>positionInStrip</code>. When the suggested word doesn't exist, the corresponding
      * {@link TextView} will be disabled and never respond to user interaction. The suggested word
@@ -398,6 +443,7 @@ final class SuggestionStripLayoutHelper {
      */
     private TextView layoutWord(final Context context, final int positionInStrip, final int width) {
         final TextView wordView = mWordViews.get(positionInStrip);
+        resetWordViewForStrip(wordView);
         final CharSequence word = wordView.getText();
         if (positionInStrip == mCenterPositionInStrip && mMoreSuggestionsAvailable) {
             // TODO: This "more suggestions hint" should have a nicely designed icon.
@@ -427,6 +473,47 @@ final class SuggestionStripLayoutHelper {
         return wordView;
     }
 
+    private TextView layoutChipWord(final Context context, final SuggestedWords suggestedWords,
+            final int indexInSuggestedWords, final int positionInStrip, final int stripWidth) {
+        final TextView wordView = mWordViews.get(positionInStrip);
+        final CharSequence word = getStyledSuggestedWord(suggestedWords, indexInSuggestedWords);
+        wordView.setTag(indexInSuggestedWords);
+        wordView.setText(word);
+        wordView.setTextColor(getSuggestionTextColor(suggestedWords, indexInSuggestedWords));
+        KeyboardTypeface.applyToTextView(wordView);
+        wordView.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+        wordView.setContentDescription(
+                TextUtils.isEmpty(word)
+                        ? context.getResources().getString(R.string.spoken_empty_suggestion)
+                        : word.toString());
+
+        final int maxChipWidth = Math.max(mSuggestionsStripHeight * 3,
+                Math.min(getFallbackStripWidth(context, stripWidth) / 2, mSuggestionsStripHeight * 5));
+        wordView.setMaxWidth(maxChipWidth);
+        wordView.setMinWidth(context.getResources().getDimensionPixelSize(R.dimen.config_suggestion_min_width));
+        wordView.setPadding(mChipHorizontalPadding, 0, mChipHorizontalPadding, 0);
+        wordView.setGravity(Gravity.CENTER);
+        wordView.setBackground(createChipBackground());
+        wordView.setElevation(mChipElevation);
+
+        final CharSequence text = getEllipsizedTextWithSettingScaleX(
+                word, maxChipWidth - (mChipHorizontalPadding * 2), wordView.getPaint());
+        final float scaleX = wordView.getTextScaleX();
+        wordView.setText(text);
+        wordView.setTextScaleX(scaleX);
+        wordView.setEnabled(!TextUtils.isEmpty(word)
+                || AccessibilityUtils.Companion.getInstance().isTouchExplorationEnabled());
+
+        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                mSuggestionsStripHeight - (mChipVerticalMargin * 2));
+        params.gravity = Gravity.CENTER_VERTICAL;
+        params.setMargins(mChipHorizontalMargin, mChipVerticalMargin,
+                mChipHorizontalMargin, mChipVerticalMargin);
+        wordView.setLayoutParams(params);
+        return wordView;
+    }
+
     private void layoutDebugInfo(final int positionInStrip, final ViewGroup placerView,
             final int x) {
         final TextView debugInfoView = mDebugInfoViews.get(positionInStrip);
@@ -445,6 +532,71 @@ final class SuggestionStripLayoutHelper {
         final int dividers = mDividerWidth * (mSuggestionsCountInStrip - 1);
         final int availableWidth = maxWidth - paddings - dividers;
         return (int)(availableWidth * getSuggestionWeight(positionInStrip));
+    }
+
+    private ArrayList<Integer> getChipSuggestionIndexes(final SuggestedWords suggestedWords) {
+        final SettingsValues settingsValues = Settings.getValues();
+        final boolean shouldOmitTypedWord = shouldOmitTypedWord(suggestedWords.mInputStyle,
+                settingsValues.mGestureFloatingPreviewTextEnabled, true);
+        final ArrayList<Integer> indexes = new ArrayList<>(CHIP_SUGGESTIONS_COUNT_IN_STRIP);
+        if (shouldOmitTypedWord) {
+            addChipIndex(indexes, suggestedWords, SuggestedWords.INDEX_OF_AUTO_CORRECTION,
+                    shouldOmitTypedWord);
+        } else {
+            addChipIndex(indexes, suggestedWords,
+                    suggestedWords.mWillAutoCorrect
+                            ? SuggestedWords.INDEX_OF_AUTO_CORRECTION
+                            : SuggestedWords.INDEX_OF_TYPED_WORD,
+                    shouldOmitTypedWord);
+            addChipIndex(indexes, suggestedWords,
+                    suggestedWords.mWillAutoCorrect
+                            ? SuggestedWords.INDEX_OF_TYPED_WORD
+                            : SuggestedWords.INDEX_OF_AUTO_CORRECTION,
+                    shouldOmitTypedWord);
+        }
+
+        for (int index = 0; index < suggestedWords.size()
+                && indexes.size() < CHIP_SUGGESTIONS_COUNT_IN_STRIP; index++) {
+            addChipIndex(indexes, suggestedWords, index, shouldOmitTypedWord);
+        }
+        return indexes;
+    }
+
+    private static void addChipIndex(final ArrayList<Integer> indexes,
+            final SuggestedWords suggestedWords, final int indexInSuggestedWords,
+            final boolean shouldOmitTypedWord) {
+        if (indexInSuggestedWords < 0 || indexInSuggestedWords >= suggestedWords.size()) {
+            return;
+        }
+        if (shouldOmitTypedWord && indexInSuggestedWords == SuggestedWords.INDEX_OF_TYPED_WORD) {
+            return;
+        }
+        if (!indexes.contains(indexInSuggestedWords)) {
+            indexes.add(indexInSuggestedWords);
+        }
+    }
+
+    private static int getFallbackStripWidth(final Context context, final int stripWidth) {
+        return stripWidth > 0 ? stripWidth : context.getResources().getDisplayMetrics().widthPixels;
+    }
+
+    private Drawable createChipBackground() {
+        final Colors colors = Settings.getValues().mColors;
+        final GradientDrawable background = new GradientDrawable();
+        background.setShape(GradientDrawable.RECTANGLE);
+        background.setColor(colors.get(ColorType.AUTOFILL_BACKGROUND_CHIP));
+        background.setCornerRadius(mSuggestionsStripHeight / 2.0f);
+        return background;
+    }
+
+    private void resetWordViewForStrip(final TextView wordView) {
+        wordView.setMaxWidth(Integer.MAX_VALUE);
+        wordView.setPadding(mWordViewPaddingLeft, mWordViewPaddingTop,
+                mWordViewPaddingRight, mWordViewPaddingBottom);
+        wordView.setGravity(Gravity.CENTER);
+        wordView.setElevation(0f);
+        wordView.setBackgroundColor(Color.TRANSPARENT);
+        Settings.getValues().mColors.setBackground(wordView, ColorType.STRIP_BACKGROUND);
     }
 
     private float getSuggestionWeight(final int positionInStrip) {
@@ -501,6 +653,7 @@ final class SuggestionStripLayoutHelper {
             }
 
             final TextView wordView = mWordViews.get(positionInStrip);
+            resetWordViewForStrip(wordView);
             final String punctuation = punctuationSuggestions.getLabel(positionInStrip);
             // {@link TextView#getTag()} is used to get the index in suggestedWords at
             // {@link SuggestionStripView#onClick(View)}.

@@ -172,6 +172,8 @@
     <string name="center_suggestion_text_to_enter">Always use middle suggestion</string>
     <!-- Description for the center text to enter setting -->
     <string name="center_suggestion_text_to_enter_summary">On pressing space or punctuation, the middle suggestion will be entered</string>
+    <string name="use_5_word_suggestion_chips">Use 5 word suggestion chips</string>
+    <string name="use_5_word_suggestion_chips_summary">Show 5 word suggestions chips instead of default 3 suggestions</string>
     <!-- Option to enable using next word suggestions. After the user types a space, with this option on, the keyboard will try to predict the next word. -->
     <string name="bigram_prediction">Next-word suggestions</string>
     <!-- Description for "next word suggestion" option. This displays suggestions even when there is no input, based on the previous word. -->

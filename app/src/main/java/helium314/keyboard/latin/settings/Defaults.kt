@@ -175,6 +175,7 @@ object Defaults {
     const val PREF_SPACE_BAR_TEXT = ""
     const val PREF_TIMESTAMP_FORMAT = "yyyy-MM-dd HH:mm:ss"
     const val PREF_SEND_GIFS_AS_STICKERS = true
+    const val PREF_USE_5_WORD_SUGGESTION_CHIPS = false
     const val PREF_EMOJI_RECENT_KEYS = ""
     const val PREF_LAST_SHOWN_EMOJI_CATEGORY_PAGE_ID = 0
     const val PREF_SHOW_DEBUG_SETTINGS = false
