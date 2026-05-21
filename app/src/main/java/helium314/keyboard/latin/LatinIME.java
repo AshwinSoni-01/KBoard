@@ -1665,14 +1665,14 @@ public class LatinIME extends InputMethodService implements
         if (event.getKeyCode() == KeyCode.GIFS) {
             Intent intent = new Intent(this, KlipyPanelActivity.class);
             intent.putExtra("defaultTab", "GIFS");
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
             startActivity(intent);
             return;
         }
         if (event.getKeyCode() == KeyCode.STICKERS) {
             Intent intent = new Intent(this, KlipyPanelActivity.class);
             intent.putExtra("defaultTab", "STICKERS");
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
             startActivity(intent);
             return;
         }

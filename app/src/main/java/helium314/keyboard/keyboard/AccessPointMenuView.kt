@@ -125,7 +125,7 @@ class AccessPointMenuView @JvmOverloads constructor(
                     code == helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.STICKERS) {
                     val intent = Intent(context, KlipyPanelActivity::class.java).apply {
                         putExtra("defaultTab", if (code == helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.GIFS) "GIFS" else "STICKERS")
-                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
                     }
                     context.startActivity(intent)
                     return@setOnClickListener
